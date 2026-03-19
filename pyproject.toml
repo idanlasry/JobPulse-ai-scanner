@@ -1,0 +1,12 @@
+[project]
+name = "jobs-ai-scanner"
+version = "0.1.0"
+description = "Telegram job scanner — filters and scores job offers against your Data Analyst portfolio using GPT-4o mini"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "telethon",
+    "openai",
+    "pydantic",
+    "python-dotenv",
+]
