@@ -12,7 +12,7 @@
 1. Monitors Telegram job groups using Telethon (MTProto API)
 2. Scores job offers against a Data Analyst portfolio using GPT-4o mini
 3. Sends high-scoring alerts via Telegram Bot to a personal chat
-4. Stores all jobs in SQLite with SHA-256 deduplication by job_link
+4. Stores all jobs in two independent layers: CSV (cross-run, committed to repo) + SQLite (local analytics)
 
 **Goal:** Fully automated, running on GitHub Actions every 3 hours — no local machine needed.
 
@@ -25,10 +25,36 @@
 | Ingestion | Python + Telethon | Read Telegram groups as a user (MTProto) |
 | Data Modeling | Pydantic v2 | Validate and structure LLM outputs |
 | Scoring | OpenAI GPT-4o mini | Score jobs against portfolio.txt |
-| Storage | SQLite | Persist jobs, prevent duplicates |
+| Storage (cross-run) | CSV (`data/jobs.csv`) | Committed to repo — survives GitHub Actions ephemeral runners |
+| Storage (local) | SQLite (`data/jobs.db`) | Gitignored — local only, reserved for future analytics features |
 | Alerts | Telegram Bot API | Send scored job alerts to personal chat |
 | Scheduling | GitHub Actions | Run pipeline every 3 hours, free tier |
 | Package Manager | uv | Python 3.13, pyproject.toml |
+
+---
+
+## 🗄️ Storage Architecture
+
+JobPulse uses two independent storage layers. Neither depends on the other — a failure in one must never block the other.
+
+**CSV layer (`data/jobs.csv`) — cross-run deduplication**
+- Committed to the repo after every GitHub Actions run
+- This is the source of truth for deduplication on GitHub Actions, where `jobs.db` is wiped after each run
+- Dedup key: `job_link` (exact string match, checked before every append)
+- Append-only — new rows are added; existing rows are never rewritten
+- Header is written only when the file is new or empty
+- Implemented in `engine/database.py` → `save_to_csv(job: ScoredJob) -> bool`
+  - Returns `True` if the job was new and appended, `False` if it was a duplicate and skipped
+- Alert eligibility is determined by the CSV layer: only CSV-new jobs with `confidence_score > 7` trigger a Telegram alert
+
+**SQLite layer (`data/jobs.db`) — local persistence**
+- Gitignored — ephemeral on GitHub Actions, persistent on local machine
+- Dedup key: SHA-256 hash of `job_link` (stored as `job_hash` PRIMARY KEY)
+- Reserved for future analytics: keyword trends, fit score tuning, CV recommendations
+- Implemented in `engine/database.py` → `save_job(job: ScoredJob)`, `is_duplicate(job_hash: str) -> bool`
+
+**How they interact in `main.py`:**
+Each scored job is written to both layers independently, each wrapped in its own `try/except`. A DB write failure does not affect the CSV write, and vice versa.
 
 ---
 
@@ -40,7 +66,7 @@
 │   ├── listener.py     # Telethon client — fetches messages from Telegram groups
 │   ├── models.py       # Pydantic schemas: JobOpportunity, ScoredJob
 │   ├── brain.py        # GPT-4o mini scoring logic
-│   ├── database.py     # SQLite storage, deduplication by job_link hash
+│   ├── database.py     # Dual storage: SQLite (local) + CSV (cross-run). Dedup key: job_link
 │   └── notify.py       # Telegram Bot alert sender — send_summary (stats) + send_alert (per job), score > 7 only
 │                       # Note: send_alert uses parse_mode: "HTML" not Markdown — Markdown breaks on URLs with underscores (e.g. utm_source=telegram)
 │                       # Note: send_summary signature: send_summary(groups_scanned, jobs_found, new_jobs, fitting_jobs)
@@ -49,7 +75,8 @@
 │   └── groups.txt      # Telegram group usernames/IDs to monitor
 ├── data/
 │   ├── raw_dump.json   # Intermediary: listener → brain (overwritten each run)
-│   └── jobs.db         # Persistent job storage (gitignored)
+│   ├── jobs.csv        # Cross-run job store — committed to repo, survives GitHub Actions runners
+│   └── jobs.db         # Local job store — gitignored, ephemeral on GitHub Actions
 ├── main.py             # Orchestrator — runs full pipeline
 ├── notify_all.py       # Standalone script: loads all jobs from DB, sends full-DB summary + individual alerts for all high-fit jobs (score > 7)
 ├── DB_search.py        # Dev utility: prints all high-fit jobs (score > 7) from jobs.db to terminal
@@ -168,17 +195,23 @@ class ScoredJob(JobOpportunity):
 - [x] field_validator on confidence_score verified
 - [x] job_link added as required field
 
-### Stage 3 — Brain, Persistence & Alerts ⏳ PENDING
+### Stage 3 — Brain, Persistence & Alerts ✅ COMPLETE
 - [x] Write engine/brain.py 13/15 jobs found
 - [x] Write engine/database.py
 - [x] Write engine/notify.py
-- [ ] Test scoring + alerts end-to-end
+- [x] Test scoring + alerts end-to-end
 
-### Stage 4 — Orchestration & Deployment ⏳ PENDING
+### Stage 4 — Orchestration & Deployment ✅ COMPLETE
 - [x] Write main.py
-- [ ] Write .github/workflows/run_scanner.yml
-- [ ] Add GitHub Secrets
-- [ ] Confirm automated run on GitHub Actions
+- [x] Write .github/workflows/run_scanner.yml
+- [x] Add GitHub Secrets
+- [x] Confirm automated run on GitHub Actions
+
+### Stage 5 — Storage & Deduplication ✅ COMPLETE
+- [x] Dual storage architecture implemented — CSV + SQLite independent layers
+- [x] CSV layer: cross-run deduplication on GitHub Actions via committed data/jobs.csv
+- [x] SQLite layer: local persistence and future scaling infrastructure
+- [x] Pipeline deployed and verified end-to-end on GitHub Actions
 
 ---
 

@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(Path(__file__).parent))
 
 from engine.brain import run_brain
-from engine.database import export_to_csv, init_db, is_duplicate, save_job
+from engine.database import init_db, is_duplicate, save_job, save_to_csv
 from engine.listener import load_groups
 from engine.listener import main as listener_main
 from engine.models import ScoredJob
@@ -73,37 +73,42 @@ async def main() -> None:
     init_db()
 
     alerts_sent = 0
-    new_jobs = 0  # counts jobs not seen in previous runs
-    new_job_objects: list[ScoredJob] = []
+    db_new = 0   # jobs new to SQLite (local persistence)
+    csv_new = 0  # jobs new to CSV (cross-run persistence on GitHub Actions)
     fitting_jobs: list[ScoredJob] = []
 
     for job in scored_jobs:
+        # SQLite layer — local persistence, ephemeral on GitHub Actions
         try:
             job_hash = hashlib.sha256(job.job_link.encode()).hexdigest()
-
             if is_duplicate(job_hash):
-                print(f"[main] Duplicate — skipping: {job.title}")
-                continue
-
-            save_job(job)
-            new_jobs += 1  # only increments for genuinely new jobs
-            new_job_objects.append(job)
-
-            if job.confidence_score > 7:
-                fitting_jobs.append(job)
-
+                print(f"[main] DB duplicate — skipping SQLite: {job.title}")
+            else:
+                save_job(job)
+                db_new += 1
         except Exception as e:
-            print(f"[main] Error processing '{job.title}': {e}")
+            print(f"[main] DB error for '{job.title}': {e}")
 
-    export_to_csv(new_job_objects)
-    print(f"[main] Appended {len(new_job_objects)} new rows → data/jobs.csv")
+        # CSV layer — cross-run dedup on GitHub Actions (committed to repo)
+        try:
+            is_new_csv = save_to_csv(job)
+            if is_new_csv:
+                csv_new += 1
+                if job.confidence_score > 7:
+                    fitting_jobs.append(job)
+            else:
+                print(f"[main] CSV duplicate — skipping alert: {job.title}")
+        except Exception as e:
+            print(f"[main] CSV error for '{job.title}': {e}")
+
+    print(f"[main] DB new: {db_new} | CSV new: {csv_new} | Appended {csv_new} rows → data/jobs.csv")
 
     # --- Stage 4: Summary first, then per-job alerts ---
     try:
         await send_summary(
             groups_scanned=groups_scanned,
             jobs_found=messages_fetched,  # total messages scanned
-            new_jobs=new_jobs,  # fresh jobs this run
+            new_jobs=csv_new,             # fresh jobs this run (CSV is cross-run truth)
             fitting_jobs=fitting_jobs,
         )
     except Exception as e:
@@ -121,6 +126,7 @@ async def main() -> None:
         f"[main] {groups_scanned} groups scanned | "
         f"{messages_fetched} messages fetched | "
         f"{jobs_found} jobs found | "
+        f"db_new={db_new} csv_new={csv_new} | "
         f"{alerts_sent} alerts sent"
     )
 

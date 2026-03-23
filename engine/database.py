@@ -1,6 +1,7 @@
 # %%
 import csv
 import hashlib
+import json
 import sqlite3
 import sys
 from datetime import datetime, timezone
@@ -17,7 +18,10 @@ load_dotenv()
 # Absolute path to jobs.db — works from any working directory
 DB_PATH = Path(__file__).parent.parent / "data" / "jobs.db"
 CSV_PATH = Path(__file__).parent.parent / "data" / "jobs.csv"
-CSV_HEADERS = ["job_hash", "title", "company", "confidence_score", "fit_reasoning", "contact_info", "job_link", "timestamp"]
+CSV_HEADERS = [
+    "title", "company", "location", "is_junior", "tech_stack",
+    "contact_info", "job_link", "raw_text", "confidence_score", "fit_reasoning",
+]
 
 
 # %%
@@ -87,28 +91,52 @@ def save_job(job: ScoredJob) -> None:
         conn.commit()  # Writes the transaction to disk permanently
 
 
+# --- CSV Layer ---
+
 # %%
-def export_to_csv(jobs: list[ScoredJob]) -> None:
-    """Append new jobs to CSV. Creates file with headers on first run; appends only on subsequent runs."""
-    if not jobs:
-        return
-    csv_exists = CSV_PATH.exists()
-    mode = "a" if csv_exists else "w"
-    with open(CSV_PATH, mode, newline="", encoding="utf-8") as f:
+def save_to_csv(job: ScoredJob) -> bool:
+    """Append job to CSV if job_link is not already present. Returns True if new, False if duplicate.
+
+    This is the cross-run dedup layer for GitHub Actions where jobs.db is ephemeral.
+    jobs.csv is committed to the repo after every run, so it persists across runs.
+    """
+    CSV_PATH.parent.mkdir(exist_ok=True)
+
+    file_empty = not CSV_PATH.exists() or CSV_PATH.stat().st_size == 0
+
+    # Read existing job_links to check for duplicates
+    existing_links: set[str] = set()
+    if not file_empty:
+        try:
+            with open(CSV_PATH, newline="", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    if "job_link" in row:
+                        existing_links.add(row["job_link"])
+        except Exception:
+            pass  # Unreadable CSV treated as empty — will write header
+
+    if job.job_link in existing_links:
+        return False  # Duplicate — skip
+
+    # Append new row (write header only if file is new/empty)
+    with open(CSV_PATH, "w" if file_empty else "a", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        if not csv_exists:
+        if file_empty:
             writer.writerow(CSV_HEADERS)
-        for job in jobs:
-            writer.writerow([
-                _hash(job.job_link),
-                job.title,
-                job.company,
-                job.confidence_score,
-                job.fit_reasoning,
-                job.contact_info,
-                job.job_link,
-                datetime.now(timezone.utc).isoformat(),
-            ])
+        writer.writerow([
+            job.title,
+            job.company,
+            job.location,
+            job.is_junior,
+            json.dumps(job.tech_stack),  # list → JSON string for CSV storage
+            job.contact_info,
+            job.job_link,
+            job.raw_text,
+            job.confidence_score,
+            job.fit_reasoning,
+        ])
+    return True  # New job saved
 
 
 # %%
