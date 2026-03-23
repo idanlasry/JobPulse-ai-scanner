@@ -41,7 +41,7 @@
 │   ├── models.py       # Pydantic schemas: JobOpportunity, ScoredJob
 │   ├── brain.py        # GPT-4o mini scoring logic
 │   ├── database.py     # SQLite storage, deduplication by job_link hash
-│   └── notify.py       # Telegram Bot alert sender — includes job_link
+│   └── notify.py       # Telegram Bot alert sender — send_summary (stats) + send_alert (per job), score > 7 only
 ├── config/
 │   ├── portfolio.txt   # Candidate profile — used as LLM scoring context
 │   └── groups.txt      # Telegram group usernames/IDs to monitor
@@ -167,7 +167,7 @@ class ScoredJob(JobOpportunity):
 ### Stage 3 — Brain, Persistence & Alerts ⏳ PENDING
 - [x] Write engine/brain.py 13/15 jobs found 
 - [x] Write engine/database.py
-- [ ] Write engine/notify.py
+- [x] Write engine/notify.py
 - [ ] Test scoring + alerts end-to-end
 
 ### Stage 4 — Orchestration & Deployment ⏳ PENDING
