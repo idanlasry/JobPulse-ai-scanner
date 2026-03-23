@@ -221,7 +221,13 @@ def run_brain() -> list[ScoredJob]:
 # Without this guard, importing brain.py would trigger a full 150-message scoring run automatically
 if __name__ == "__main__":
     jobs = run_brain()
+
+    scored_dump = Path(__file__).parent.parent / "data" / "scored_dump.json"
+    scored_dump.write_text(
+        json.dumps([json.loads(job.model_dump_json()) for job in jobs], indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    print(f"[brain] Saved {len(jobs)} scored jobs → {scored_dump}")
+
     for job in jobs:
-        # model_dump_json() is a Pydantic method — serializes ScoredJob instance to pretty JSON string
-        # indent=2 = 2-space indentation for readable output
         print(job.model_dump_json(indent=2))
