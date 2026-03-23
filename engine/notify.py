@@ -74,18 +74,19 @@ async def send_alert(job: ScoredJob) -> None:
 async def send_summary(
     groups_scanned: int,
     jobs_found: int,
+    new_jobs: int,  # new addition — jobs not seen in previous runs
     fitting_jobs: list[ScoredJob],
 ) -> None:
     fitting_count = len(fitting_jobs)
-    run_time = datetime.now().strftime("%Y-%m-%d %H:%M")  # local time stamp for the run
+    run_time = datetime.now().strftime("%Y-%m-%d %H:%M")
 
-    # Stats only — no job details (send_alert handles per-job messages)
     lines = [
         "*JobPulse Run Summary*",
         f"Date: {run_time}",
         f"Groups scanned: {groups_scanned}",
-        f"Jobs found: {jobs_found}",
-        f"High-fit jobs (score > 7): {fitting_count}",
+        f"Messages scanned: {jobs_found}",
+        f"New jobs (not seen before): {new_jobs}",
+        f"High-fit alerts sent (score > 7): {fitting_count}",
     ]
 
     text = "\n".join(lines)

@@ -185,23 +185,18 @@ TELEGRAM MESSAGE (from group: {message.get("group", "unknown")}):
 
 
 def run_brain() -> list[ScoredJob]:
-    portfolio = load_portfolio()  # full portfolio.txt as a string
-    messages = load_messages()  # list of message dicts from raw_dump.json
+    portfolio = load_portfolio()
+    messages = load_messages()
 
     print(f"[brain] Processing {len(messages)} messages...")
 
-    scored_jobs: list[
-        ScoredJob
-    ] = []  # empty list — will collect all valid ScoredJob instances
+    scored_jobs: list[ScoredJob] = []
 
-    # enumerate() gives both index (i) and value (message) on each iteration
-    # used for progress logging: [1/150], [2/150] etc — i+1 because enumerate starts at 0
     for i, message in enumerate(messages):
-        result = score_message(message, portfolio)  # returns ScoredJob or None
+        result = score_message(message, portfolio)
 
-        # ScoredJob object is truthy, None is falsy — clean Pythonic check
         if result:
-            scored_jobs.append(result)  # add to results list
+            scored_jobs.append(result)
             print(
                 f"[brain] [{i + 1}/{len(messages)}] Job found: {result.title} (score={result.confidence_score})"
             )
@@ -211,23 +206,29 @@ def run_brain() -> list[ScoredJob]:
     print(
         f"[brain] Done — {len(scored_jobs)} jobs extracted from {len(messages)} messages"
     )
-    return scored_jobs  # returned to main.py which handles storage and alerts
+
+    # always write scored_dump.json — whether called from main.py or run directly
+    try:
+        SCORED_DUMP_FILE.write_text(
+            json.dumps(
+                [json.loads(job.model_dump_json()) for job in scored_jobs],
+                indent=2,
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+        print(f"[brain] Saved {len(scored_jobs)} scored jobs → {SCORED_DUMP_FILE}")
+    except Exception as e:
+        print(f"[brain] Could not write scored_dump.json: {e}")
+
+    return scored_jobs
 
 
 # %%
 # --- ENTRY POINT ---
 # __name__ == "__main__" is True only when this file is run directly (uv run python engine/brain.py)
 # When main.py imports brain.py, __name__ == "brain" — this block is skipped entirely
-# Without this guard, importing brain.py would trigger a full 150-message scoring run automatically
 if __name__ == "__main__":
-    jobs = run_brain()
-
-    scored_dump = Path(__file__).parent.parent / "data" / "scored_dump.json"
-    scored_dump.write_text(
-        json.dumps([json.loads(job.model_dump_json()) for job in jobs], indent=2, ensure_ascii=False),
-        encoding="utf-8",
-    )
-    print(f"[brain] Saved {len(jobs)} scored jobs → {scored_dump}")
-
+    jobs = run_brain()  # dump is already written inside run_brain()
     for job in jobs:
         print(job.model_dump_json(indent=2))
