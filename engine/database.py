@@ -142,7 +142,6 @@ def save_to_csv(job: ScoredJob) -> bool:
 # %%
 if __name__ == "__main__":
     # Only runs when executed directly — not when imported by main.py
-    import csv
     import json
 
     init_db()
@@ -166,19 +165,3 @@ if __name__ == "__main__":
             saved += 1
 
     print(f"Processed: {processed} | Saved: {saved} | Skipped (duplicate): {skipped}")
-
-    # Replicate full DB to CSV — complete snapshot, overwritten each run
-    csv_path = Path(__file__).parent.parent / "data" / "jobs.csv"
-    with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.execute("SELECT * FROM jobs")
-        rows = cursor.fetchall()
-        headers = [
-            d[0] for d in cursor.description
-        ]  # Column names from SQLite metadata
-
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
-        writer.writerow(headers)  # Write column headers first
-        writer.writerows(rows)  # Write all rows
-
-    print(f"Exported {len(rows)} rows → {csv_path}")

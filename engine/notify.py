@@ -86,12 +86,12 @@ async def send_summary(
     run_time = datetime.now(timezone(timedelta(hours=3))).strftime("%Y-%m-%d %H:%M")
 
     lines = [
-        "*JobPulse Run Summary*",
+        "<b>JobPulse Run Summary</b>",
         f"Date: {run_time}",
         f"Groups scanned: {groups_scanned}",
         f"Messages scanned: {jobs_found}",
         f"New jobs (not seen before): {new_jobs}",
-        f"High-fit alerts sent (score > 7): {fitting_count}",
+        f"High-fit alerts sent (score &gt; 7): {fitting_count}",
     ]
 
     text = "\n".join(lines)
@@ -103,7 +103,7 @@ async def send_summary(
                 json={
                     "chat_id": TELEGRAM_CHAT_ID,
                     "text": text,
-                    "parse_mode": "Markdown",
+                    "parse_mode": "HTML",
                 },
                 timeout=10,
             )

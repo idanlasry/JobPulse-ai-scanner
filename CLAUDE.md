@@ -14,7 +14,7 @@
 3. Sends high-scoring alerts via Telegram Bot to a personal chat
 4. Stores all jobs in two independent layers: CSV (cross-run, committed to repo) + SQLite (local analytics)
 
-**Goal:** Fully automated, running on GitHub Actions every 3 hours — no local machine needed.
+**Goal:** Fully automated, running on GitHub Actions 3× daily on weekdays — no local machine needed.
 
 ---
 
@@ -28,7 +28,7 @@
 | Storage (cross-run) | CSV (`data/jobs.csv`) | Committed to repo — survives GitHub Actions ephemeral runners |
 | Storage (local) | SQLite (`data/jobs.db`) | Gitignored — local only, reserved for future analytics features |
 | Alerts | Telegram Bot API | Send scored job alerts to personal chat |
-| Scheduling | GitHub Actions | Run pipeline every 3 hours, free tier |
+| Scheduling | GitHub Actions | Run pipeline 3× daily on weekdays (Mon–Fri), free tier |
 | Package Manager | uv | Python 3.13, pyproject.toml |
 
 ---
@@ -68,18 +68,20 @@ Each scored job is written to both layers independently, each wrapped in its own
 │   ├── brain.py        # GPT-4o mini scoring logic
 │   ├── database.py     # Dual storage: SQLite (local) + CSV (cross-run). Dedup key: job_link
 │   └── notify.py       # Telegram Bot alert sender — send_summary (stats) + send_alert (per job), score > 7 only
-│                       # Note: send_alert uses parse_mode: "HTML" not Markdown — Markdown breaks on URLs with underscores (e.g. utm_source=telegram)
+│                       # Note: both send_alert and send_summary use parse_mode: "HTML" — Markdown breaks on URLs with underscores (e.g. utm_source=telegram)
 │                       # Note: send_summary signature: send_summary(groups_scanned, jobs_found, new_jobs, fitting_jobs)
 ├── config/
 │   ├── portfolio.txt   # Candidate profile — used as LLM scoring context
 │   └── groups.txt      # Telegram group usernames/IDs to monitor
 ├── data/
 │   ├── raw_dump.json   # Intermediary: listener → brain (overwritten each run)
+│   ├── scored_dump.json # Intermediary: brain → notify / database (overwritten each run)
 │   ├── jobs.csv        # Cross-run job store — committed to repo, survives GitHub Actions runners
 │   └── jobs.db         # Local job store — gitignored, ephemeral on GitHub Actions
 ├── main.py             # Orchestrator — runs full pipeline
 ├── notify_all.py       # Standalone script: loads all jobs from DB, sends full-DB summary + individual alerts for all high-fit jobs (score > 7)
 ├── DB_search.py        # Dev utility: prints all high-fit jobs (score > 7) from jobs.db to terminal
+├── connection_test.py  # Dev utility: sends a test message via Telegram Bot API to verify credentials
 ├── CLAUDE.md           # This file
 ├── pyproject.toml      # uv dependencies
 └── .github/
@@ -174,7 +176,7 @@ class ScoredJob(JobOpportunity):
 - Repo: https://github.com/idanlasry/jobs-ai-scanner
 - Secrets stored in: Settings → Secrets and variables → Actions
 - Workflow file: `.github/workflows/run_scanner.yml`
-- Schedule: every 3 hours (`cron: '0 */3 * * *'`)
+- Schedule: Mon–Fri at 08:00, 14:00, 18:00 Israel time (UTC+3) — `cron: '0 5 * * 1-5'`, `'0 11 * * 1-5'`, `'0 15 * * 1-5'`
 
 ---
 
@@ -232,7 +234,7 @@ class ScoredJob(JobOpportunity):
 
 ### 1. Optimised Listening — Skip Already-Scanned Messages
 
-**Problem:** Every run fetches and scores all messages from each group, even ones already processed in previous runs. With 150 messages and a 3-hour schedule, this means ~1,200 redundant LLM calls per day — wasted cost and time.
+**Problem:** Every run fetches and scores all messages from each group, even ones already processed in previous runs. With the current default of `limit=5` per group (4 groups = 20 messages per run), this cost is currently low — but will grow as the limit is raised for production use.
 
 **Solution:** Track the last seen Telegram message ID per group in `jobs.db`. On each run, only fetch messages newer than that ID.
 
@@ -273,6 +275,6 @@ if messages:
     save_last_seen_id(group, messages[0].id)  # messages[0] is the newest (Telethon returns newest first)
 ```
 
-**Expected result:** After the first full run, each subsequent run processes only 3-10 new messages per group instead of 150 — dramatically cutting LLM cost and run time.
+**Expected result:** After the first full run, each subsequent run processes only new messages per group — dramatically cutting LLM cost and run time as the fetch limit scales up.
 
 **When to implement:** After Stage 3 (brain, database, notify) is complete and tested end-to-end. Do not implement before `database.py` exists.
