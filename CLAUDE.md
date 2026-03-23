@@ -42,6 +42,8 @@
 │   ├── brain.py        # GPT-4o mini scoring logic
 │   ├── database.py     # SQLite storage, deduplication by job_link hash
 │   └── notify.py       # Telegram Bot alert sender — send_summary (stats) + send_alert (per job), score > 7 only
+│                       # Note: send_alert uses parse_mode: "HTML" not Markdown — Markdown breaks on URLs with underscores (e.g. utm_source=telegram)
+│                       # Note: send_summary signature: send_summary(groups_scanned, jobs_found, new_jobs, fitting_jobs)
 ├── config/
 │   ├── portfolio.txt   # Candidate profile — used as LLM scoring context
 │   └── groups.txt      # Telegram group usernames/IDs to monitor
@@ -49,6 +51,8 @@
 │   ├── raw_dump.json   # Intermediary: listener → brain (overwritten each run)
 │   └── jobs.db         # Persistent job storage (gitignored)
 ├── main.py             # Orchestrator — runs full pipeline
+├── notify_all.py       # Standalone script: loads all jobs from DB, sends full-DB summary + individual alerts for all high-fit jobs (score > 7)
+├── DB_search.py        # Dev utility: prints all high-fit jobs (score > 7) from jobs.db to terminal
 ├── CLAUDE.md           # This file
 ├── pyproject.toml      # uv dependencies
 └── .github/
@@ -165,86 +169,16 @@ class ScoredJob(JobOpportunity):
 - [x] job_link added as required field
 
 ### Stage 3 — Brain, Persistence & Alerts ⏳ PENDING
-- [x] Write engine/brain.py 13/15 jobs found 
+- [x] Write engine/brain.py 13/15 jobs found
 - [x] Write engine/database.py
 - [x] Write engine/notify.py
 - [ ] Test scoring + alerts end-to-end
 
 ### Stage 4 — Orchestration & Deployment ⏳ PENDING
-- [ ] Write main.py
+- [x] Write main.py
 - [ ] Write .github/workflows/run_scanner.yml
 - [ ] Add GitHub Secrets
 - [ ] Confirm automated run on GitHub Actions
-
----
-
-## 🛠️ Prompts for Each Remaining File
-
-### engine/brain.py
-```
-Write engine/brain.py using the OpenAI API (GPT-4o mini).
-- Load OPENAI_API_KEY from .env
-- Load config/portfolio.txt and data/raw_dump.json
-- For each message, use GPT-4o mini to:
-  1. Determine if it's a job offer (skip if not)
-  2. If yes, check if the message contains an apply link (job_link)
-     — if no link found, discard the message entirely
-  3. If link exists, parse the message into a JobOpportunity object
-  4. Compare requirements against portfolio.txt content
-  5. Assign a confidence_score (1-10) and fit_reasoning
-- Use a system prompt with role: "Expert Technical Recruiter"
-- Messages may be in Hebrew, English, or mixed — handle both
-- Return a list of ScoredJob objects
-- Import JobOpportunity and ScoredJob from engine/models.py
-- Wrap each ScoredJob(...) creation in try/except ValidationError
-  — skip bad LLM responses gracefully, never crash the pipeline
-- Add # %% cell markers
-```
-
-### engine/database.py + engine/notify.py
-```
-Create engine/database.py:
-- Setup a SQLite database at data/jobs.db
-- Create a table: jobs with columns:
-  job_hash TEXT PRIMARY KEY, title TEXT, company TEXT,
-  confidence_score INTEGER, fit_reasoning TEXT,
-  contact_info TEXT, job_link TEXT, timestamp TEXT
-- Use SHA-256 hash of job_link as job_hash
-  (deduplicates correctly when same job is posted across multiple groups)
-- Functions: init_db(), is_duplicate(hash), save_job(ScoredJob)
-
-Create engine/notify.py:
-- Load TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID from .env
-- Function send_alert(job: ScoredJob) that sends a formatted Telegram
-  message including: title, company, score, fit_reasoning, contact_info, job_link
-- Only send if confidence_score > 7
-- Add # %% cell markers
-```
-
-### main.py
-```
-Write main.py as the orchestrator for the full JobPulse pipeline:
-1. Call listener.py → fetch messages → save to data/raw_dump.json
-2. Call brain.py → score messages → return list of ScoredJob objects
-3. For each ScoredJob:
-   - Call database.py: check if job_hash already exists
-   - If new: save to jobs.db
-   - If score > 7: call notify.py to send Telegram alert
-4. Print a summary log: "X messages scanned, Y job offers found, Z alerts sent"
-5. Handle errors gracefully — one failed group should not crash the whole run
-```
-
-### .github/workflows/run_scanner.yml
-```
-Write a GitHub Actions workflow file at .github/workflows/run_scanner.yml that:
-- Triggers on a schedule every 3 hours (cron)
-- Also has a manual trigger (workflow_dispatch)
-- Runs on ubuntu-latest with Python 3.11
-- Installs dependencies via pip from pyproject.toml
-- Runs python main.py
-- Injects these secrets as env variables: OPENAI_API_KEY,
-  TELEGRAM_API_ID, TELEGRAM_API_HASH, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
-```
 
 ---
 

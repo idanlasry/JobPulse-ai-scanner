@@ -1,4 +1,5 @@
 # %%
+import csv
 import hashlib
 import sqlite3
 import sys
@@ -15,6 +16,8 @@ load_dotenv()
 
 # Absolute path to jobs.db — works from any working directory
 DB_PATH = Path(__file__).parent.parent / "data" / "jobs.db"
+CSV_PATH = Path(__file__).parent.parent / "data" / "jobs.csv"
+CSV_HEADERS = ["job_hash", "title", "company", "confidence_score", "fit_reasoning", "contact_info", "job_link", "timestamp"]
 
 
 # %%
@@ -82,6 +85,30 @@ def save_job(job: ScoredJob) -> None:
             ),
         )
         conn.commit()  # Writes the transaction to disk permanently
+
+
+# %%
+def export_to_csv(jobs: list[ScoredJob]) -> None:
+    """Append new jobs to CSV. Creates file with headers on first run; appends only on subsequent runs."""
+    if not jobs:
+        return
+    csv_exists = CSV_PATH.exists()
+    mode = "a" if csv_exists else "w"
+    with open(CSV_PATH, mode, newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        if not csv_exists:
+            writer.writerow(CSV_HEADERS)
+        for job in jobs:
+            writer.writerow([
+                _hash(job.job_link),
+                job.title,
+                job.company,
+                job.confidence_score,
+                job.fit_reasoning,
+                job.contact_info,
+                job.job_link,
+                datetime.now(timezone.utc).isoformat(),
+            ])
 
 
 # %%

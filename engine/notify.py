@@ -24,18 +24,22 @@ TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessag
 
 
 # %%
+def _esc(text: str) -> str:
+    # Escape HTML special chars — safe to apply to any dynamic content
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def _format_alert(job: ScoredJob) -> str:
-    # Private helper — builds Telegram message string from a ScoredJob
-    # *asterisks* = bold in Telegram Markdown
-    # Optional fields use `or 'N/A'` so message is never broken by None values
+    # HTML parse_mode — more reliable than Markdown because URLs with underscores
+    # (e.g. utm_source=telegram) don't break the parser
     lines = [
-        f"*{job.title}*",
-        f"Company: {job.company or 'N/A'}",
+        f"<b>{_esc(job.title)}</b>",
+        f"Company: {_esc(job.company or 'N/A')}",
         f"Score: {job.confidence_score}/10",
-        f"Fit: {job.fit_reasoning}",
+        f"Fit: {_esc(job.fit_reasoning)}",
     ]
-    if job.contact_info:  # only added if it exists — no empty "Contact: N/A" line
-        lines.append(f"Contact: {job.contact_info}")
+    if job.contact_info:
+        lines.append(f"Contact: {_esc(job.contact_info)}")
     lines.append(f"Apply: {job.job_link}")
     return "\n".join(lines)
 
@@ -55,7 +59,7 @@ async def send_alert(job: ScoredJob) -> None:
                 json={
                     "chat_id": TELEGRAM_CHAT_ID,
                     "text": text,
-                    "parse_mode": "Markdown",  # enables *bold* formatting
+                    "parse_mode": "HTML",  # HTML is immune to URL underscores breaking the parser
                 },
                 timeout=10,  # fail fast — don't hang the pipeline
             )
@@ -136,6 +140,7 @@ if __name__ == "__main__":
         await send_summary(
             groups_scanned=4,  # placeholder — main.py passes the real count
             jobs_found=len(jobs),
+            new_jobs=len(eligible),
             fitting_jobs=eligible,
         )
         for job in eligible:

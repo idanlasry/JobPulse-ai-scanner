@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(Path(__file__).parent))
 
 from engine.brain import run_brain
-from engine.database import init_db, is_duplicate, save_job
+from engine.database import export_to_csv, init_db, is_duplicate, save_job
 from engine.listener import load_groups
 from engine.listener import main as listener_main
 from engine.models import ScoredJob
@@ -32,7 +32,7 @@ async def main() -> None:
 
     # --- Stage 1: Fetch messages ---
     try:
-        await listener_main(limit=1)
+        await listener_main(limit=5)
         # to change messages fetched per group: listener_main(limit=50)
     except Exception as e:
         print(f"[main] Listener failed: {e}")
@@ -74,6 +74,7 @@ async def main() -> None:
 
     alerts_sent = 0
     new_jobs = 0  # counts jobs not seen in previous runs
+    new_job_objects: list[ScoredJob] = []
     fitting_jobs: list[ScoredJob] = []
 
     for job in scored_jobs:
@@ -86,12 +87,16 @@ async def main() -> None:
 
             save_job(job)
             new_jobs += 1  # only increments for genuinely new jobs
+            new_job_objects.append(job)
 
             if job.confidence_score > 7:
                 fitting_jobs.append(job)
 
         except Exception as e:
             print(f"[main] Error processing '{job.title}': {e}")
+
+    export_to_csv(new_job_objects)
+    print(f"[main] Appended {len(new_job_objects)} new rows → data/jobs.csv")
 
     # --- Stage 4: Summary first, then per-job alerts ---
     try:

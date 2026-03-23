@@ -2,8 +2,10 @@ name: JobPulse Scanner
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:       # Manual trigger
+    - cron: '0 5 * * 1-5'   # 08:00 Israel time (UTC+3)
+    - cron: '0 11 * * 1-5'  # 14:00 Israel time (UTC+3)
+    - cron: '0 15 * * 1-5'  # 18:00 Israel time (UTC+3)
+  workflow_dispatch:          # Manual trigger
 
 jobs:
   run-scanner:
@@ -13,13 +15,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
+      - name: Set up Python 3.13
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.13'
+
+      - name: Install uv
+        run: pip install uv
 
       - name: Install dependencies
-        run: pip install -r requirements.txt || pip install .
+        run: uv sync
+
+      - name: Decode Telegram session
+        run: echo "${{ secrets.TELEGRAM_SESSION_B64 }}" | base64 --decode > jobpulse_session.session
 
       - name: Run JobPulse pipeline
         env:
@@ -28,4 +36,12 @@ jobs:
           TELEGRAM_API_HASH: ${{ secrets.TELEGRAM_API_HASH }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python main.py
+        run: uv run python main.py
+
+      - name: Commit updated jobs.csv
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/jobs.csv
+          git diff --cached --quiet || git commit -m "chore: update jobs.csv [skip ci]"
+          git push
