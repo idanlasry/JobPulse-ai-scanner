@@ -1,305 +1,131 @@
-job_hash,title,company,confidence_score,fit_reasoning,contact_info,job_link,timestamp
-fe569820b3bcfc861e4c53e054d2e89dde02f2f8dc280963d08a3ce815d3b44c,Junior Marketing Specialist,Zimark,2,"The role is for a Junior Marketing Specialist, which does not align with the candidate's target role of Data Analyst. The required skills and responsibilities are focused on marketing rather than data analysis, making it a poor fit.","Dror Wayne, linkedin.com/in/drorwayne",https://www.linkedin.com/jobs/view/4385468728/,2026-03-22T21:48:08.554290+00:00
-3306132a725e08d4a3721ead0a54384ef486ea109a8372a4a75a59fc91444201,Night Operator Student,Stratsys,2,"The role is an internship for a Mechanical engineer student, which does not align with the candidate's target role as a Data Analyst. The technical skills required are also not relevant to the candidate's expertise in data analysis, Python, and SQL.",,https://careers.stratasys.com/job/%28On-Site%29-Rehovot-Night-Operator-Student/1372149900/,2026-03-22T21:48:08.558352+00:00
-68ca60aea85b2c1b6a75170fdde2a5d7fe408369d814869643fea3418289d7cc,"Global Planner, Floor Controller Student",Stratsys,2,"The role is an internship requiring a background in Industrial Engineering or related fields, which does not align with the candidate's focus on data analysis and BI tools. Additionally, the location is not preferred, and the tech stack does not match the candidate's skills.",,https://careers.stratasys.com/job/Kiryat-Gat-Global-Planner%2C-Floor-Controller-Student/1369906000/,2026-03-22T21:48:08.561417+00:00
-52a250ebb4b347c0741068431cfe36725c3ac0a41cec6bd27131dc647b51d802,Verification Student for the SoC group,Sony Semiconductor Israel,3,"The role is an internship with no specific data analysis or BI tools mentioned, which does not align well with the candidate's focus on data analytics. However, it is a junior position and requires no prior experience.",,https://sony-semicon.co.il/job-search/?uid=43.363,2026-03-22T21:48:08.564958+00:00
-69d1be146a0cc6b7bd3e73822c486bc2cf6cc3a3262035f808bf340e707b0947,Tax Analyst,Stratsys,2,"The role is for a Tax Analyst requiring 4+ years of experience, which exceeds the candidate's target level of junior to mid. The technical skills and domain preferences do not align with the candidate's profile.",,https://careers.stratasys.com/job/Rehovot-%28Hybrid%29-Tax-Analyst-IL/1370435400/,2026-03-22T21:48:08.568391+00:00
-25dae22048e511507110091c31c3f53ebe423b459511756a8c27cb5bc6acbc81,FP&A Business Partner,Similarweb,4,"The role requires 3 years of experience, which exceeds the candidate's target level of junior to mid. While SQL is a match, the focus on financial analysis and FP&A is not aligned with the candidate's primary interest in data analytics and BI.",,https://job-boards.greenhouse.io/similarweb/jobs/7634833,2026-03-22T21:48:08.571993+00:00
-6b4a93287f7326a2cd4beeba317bc2f6f0924801de1846e4bfd32bb9af4e12be,FP&A Business Partner (Maternity Leave Replacement),Similarweb,3,"The role requires 4 years of experience, which exceeds the candidate's target level of junior to mid. The focus is on financial analysis rather than data analytics, which is not aligned with the candidate's primary skills in data analysis and BI tools.",,https://job-boards.greenhouse.io/similarweb/jobs/7634986,2026-03-22T21:48:08.575557+00:00
-c79e6bdd4f60c3b56d4ba0e2b67370d2fb0a33f4711fc32a0e12cd883d8ce9ff,AI & LLM Data Analyst,Similarweb,3,"The role requires 4+ years of experience, which exceeds the candidate's target level of junior to mid. While the tech stack includes Python and SQL, the focus on large-scale data and additional tools like Spark or BigQuery may not align with the candidate's experience.",,https://job-boards.greenhouse.io/similarweb/jobs/7597693,2026-03-22T21:48:08.579059+00:00
-0ed58fa74f4b4bb173987013e0c08c658fb2e80e75105490c52f45cd63a5de99,Commission Analysts Team Lead,Similarweb,2,"The role is for a Team Lead position requiring 5 years of experience, which is not aligned with the candidate's target level of Junior to Mid and their experience level.",,https://job-boards.greenhouse.io/similarweb/jobs/7252360,2026-03-22T21:48:08.582724+00:00
-ad854b6f09690e3ddea78f60ce6eac15fe5bc2597363cebeed9b8981937c016e,Compliance analyst,Kissterra,5,"The role mentions analytical skills and BI tools, which aligns with the candidate's experience in data analysis and BI tools like Power BI. However, it lacks a direct mention of Python or SQL, and the focus on compliance may not fully match the candidate's primary interest in data analytics.",,https://secrethunter.io/jobz/a85814d8f3?utm_source=telegram,2026-03-22T21:48:08.585916+00:00
-c06b548dec08c141c280d61e798fb8ea1dd7df7f5846fee0bef0ac46801ad73b,Sales data specialist,Check Point Software,4,"The role is junior and located in Tel Aviv, which aligns with the candidate's location preference. However, the tech stack primarily focuses on data management and project management tools that do not match the candidate's primary skills in Python, SQL, and BI tools. The candidate's experience in data analysis and BI may not fully align with the requirements for this position.",,https://secrethunter.io/jobz/5633dbcc58?utm_source=telegram,2026-03-22T21:48:08.589418+00:00
-1ed7b6d3d70b5df21f79173172232e4834ba6640c2f8e3d667c96529d8770e2a,Junior data analyst,DRS RADA Technologies,8,"The position is for a Junior Data Analyst, which aligns with the candidate's target role. The job likely involves data analysis, which matches the candidate's skills in Python and SQL. The absence of a specified location and the potential for remote work further enhance the fit.",,https://secrethunter.io/jobz/60420f516a?utm__source=weekly__digest,2026-03-22T21:48:08.592572+00:00
-b6fbd62dbe4615b62c9f480aaab5fdec1e4cf7a5d673f51250b580ada0d18d40,Data collector,Firstsource,4,"The role is entry-level and located in Israel, which aligns with the candidate's preferences. However, the job does not specifically mention relevant technical skills like Python or SQL, and the focus seems to be more on data collection rather than analysis, which is less aligned with the candidate's target role as a Data Analyst.",,https://secrethunter.io/jobz/6aecb73510?utm_source=telegram,2026-03-22T21:48:08.595918+00:00
-d650a4d37111966fcca5c5ce387adb10c6e7c4e8353b7ed021395d091f8db739,Junior business analyst,Primis Tech,8,"The job aligns well with the candidate's skills in SQL and data analysis, and the mention of Power BI is a strong match with their preferred BI tool. The role is junior, which fits the candidate's target level, and it is located in Tel Aviv, which is within their preferred region.",,https://secrethunter.io/jobz/3ae62fa64f?utm_source=telegram,2026-03-23T10:20:07.026017+00:00
-a42708665bc7ead6ff92aca9b24bf2d64035d2cfee30422c76ad65312dc1b6a7,Senior BI Developer,Payoneer,3,"The role is for a Senior BI Developer, which is not aligned with the candidate's target of Junior to Mid-level positions. The tech stack includes SQL, which is relevant, but Looker and LookML are not part of the candidate's primary skills. Overall, the fit is low due to seniority mismatch.",,https://secrethunter.io/jobz/381abbb00d?utm_source=telegram,2026-03-23T19:34:36.058068+00:00
-a873440fe3e3b011668da87f3f114691c0236f9b87b833050d5fb0a41086642d,Data engineer,LTS Device Technologies,3,"The role is for a Data Engineer, which is not aligned with the candidate's target role of Data Analyst. While it mentions Python and Data Analysis, the focus on Data Engineering and predictive modeling does not match the candidate's primary skills and preferences.",,https://secrethunter.io/jobz/73e85bb041?utm_source=telegram,2026-03-23T19:34:36.058089+00:00
-d650a4d37111966fcca5c5ce387adb10c6e7c4e8353b7ed021395d091f8db739,Junior business analyst,Primis Tech,8,"The job aligns well with the candidate's skills in SQL and data analysis, and the mention of Power BI is a strong match with the candidate's preferred BI tool. The role is junior, which fits the candidate's target level, and it is located in Tel Aviv, which is within the candidate's preferred location. The focus on data analysis and modeling is relevant to the candidate's experience.",,https://secrethunter.io/jobz/3ae62fa64f?utm_source=telegram,2026-03-23T19:34:36.058102+00:00
-ad854b6f09690e3ddea78f60ce6eac15fe5bc2597363cebeed9b8981937c016e,Compliance analyst,Kissterra,5,"The role mentions analytical skills and BI tools, which align with the candidate's experience in data analysis and BI tools like Power BI. However, the focus on compliance and US Ad Law may not fully match the candidate's primary interests in data analytics and health tech.",,https://secrethunter.io/jobz/a85814d8f3?utm_source=telegram,2026-03-23T19:34:36.058115+00:00
-c06b548dec08c141c280d61e798fb8ea1dd7df7f5846fee0bef0ac46801ad73b,Sales data specialist,Check Point Software,4,"The role is junior and located in Tel Aviv, which aligns with the candidate's location preference. However, the tech stack does not match the candidate's primary skills in Python and SQL, and the focus on sales data and project management is not a strong fit for their analytics background.",,https://secrethunter.io/jobz/5633dbcc58?utm_source=telegram,2026-03-23T19:34:36.058126+00:00
-25f2ed52b6369c384ad14d4e2f82b46d0552e1df3b7acd92d452f6ee5f95aa39,Various Positions,Intuit,6,"The company promotes remote work and offers various employee benefits, which aligns with the candidate's preference for remote roles. However, the specific job titles and technical requirements are not mentioned, leading to a moderate confidence score.",,https://www.intuit.com/careers/locations/israel/?cid=psoc__li__clicks__Is__Yaniv__aw__Hebrew__alltechaudience__post__1X1__intuit-talent,2026-03-23T19:34:36.058136+00:00
-600b0dc9edff328cf557c88381f648917801a348a07e35384fb97b23690f0b1d,QA Student,DealHub,2,"The position is for a QA role, which is not aligned with the candidate's target role of Data Analyst. The candidate's skills in Python and SQL are not relevant to this QA internship.",,https://dealhub.io/careers/A1.52C/qa-student/,2026-03-23T19:34:36.058174+00:00
-4681f7a550ddc5c0a78d01cd788d15a147ef2cdd887247b5f69e6bd95aabc7a1,Learning Experience Designer P5,Chegg,4,"The role is remote and entry-level, which aligns with the candidate's preferences. However, it does not match the candidate's target role of Data Analyst, and the tech stack is not relevant to their skills.",,https://osv-chegg.wd5.myworkdayjobs.com/en-US/Chegg/job/United-States-Remote/Learning-Experience-Designer-P5_R5192,2026-03-23T19:34:36.058187+00:00
-f4f5b59f91c0ad87eca2aebe68865a66ace4ff71e618dc1af9e20520a83f980e,Computer Numerical Control Programmer,Rafael,2,"The role is for a Computer Numerical Control Programmer, which is not aligned with the candidate's target role of Data Analyst. Although it is entry-level, the technical skills required do not match the candidate's expertise in data analysis, Python, or SQL.",,https://il.linkedin.com/jobs/view/computer-numerical-control-programmer-at-rafael-advanced-defense-systems-4386025669,2026-03-23T19:34:36.058198+00:00
-36d1043951de0c6921c2a3272718a33527f26dd90baa3fedae4a69ebdf698680,סטודנט.ית למחלקת אלגוריתמים,Rafael,3,"The position is for a student in an algorithms department, which may not align closely with the candidate's focus on data analysis and BI. However, it is entry-level and requires no experience, which is a positive aspect for the candidate.",,https://il.linkedin.com/jobs/view/%D7%A1%D7%98%D7%95%D7%93%D7%A0%D7%98-%D7%99%D7%AA-%D7%9C%D7%9E%D7%97%D7%9C%D7%A7%D7%AA-%D7%90%D7%9C%D7%92%D7%95%D7%A8%D7%99%D7%AA%D7%9E%D7%99%D7%9D-at-rafael-advanced-defense-systems-4383494390,2026-03-23T19:34:36.058210+00:00
-39d78b82109e779849f7608821a111f7e7bafbd0ac172aa74b4e5561c24cfaaa,Strategy & Operations Manager,Optibus,2,"The position is for a Strategy & Operations Manager requiring 3 years of experience, which exceeds the candidate's target level of junior to mid. The role does not align with the candidate's desired positions in data analysis or business intelligence.",,https://optibus.com/company/careers/jobs/co/israel/0F.368/strategy-operations-manager/all,2026-03-23T19:34:36.058225+00:00
-9d6ef902d4c0ba67a23488cf2b9511a0e18ee756125f141b2a4268687ee7f9f2,Data Analyst Lead,The Data Team,2,"The position requires 5 years of experience, which exceeds the candidate's target level of junior to mid. Additionally, the role is for a lead position, which is not relevant for the candidate.",,https://il.linkedin.com/jobs/view/data-analyst-lead-%E2%80%93-outplayed-at-overwolf-4346063764,2026-03-23T19:34:36.058237+00:00
-56ba735304fca3bf3b6563b779bac0a39243365dbce5fcf6516d9e6612600b86,Senior Data Analyst,The Data Team,2,"The position requires 5 years of experience, which exceeds the candidate's target level of junior to mid. Additionally, the role is not aligned with the candidate's preference for junior roles.",,https://il.linkedin.com/jobs/view/senior-data-analyst-at-melio-4324097905,2026-03-23T19:34:36.058247+00:00
-edc2229db3f6caf77e3f8a37c8b9514807c21c9e5ca6b93258233847fc58fd7b,Junior Data Analyst,The Data Team,6,"The position is for a Junior Data Analyst, which aligns with the candidate's target role. The experience requirement is 0 years, fitting the candidate's junior level preference. However, the location in Netanya is less preferred compared to the candidate's preferred cities, and no specific tech stack is mentioned in the job description.",,https://il.linkedin.com/jobs/view/junior-data-analyst-at-drs-rada-technologies-4377891035,2026-03-23T19:34:36.058257+00:00
-Data science engineer (python & sql) - freelance AI trainer,Mindrift,,True,"[""Python"", ""SQL""]",,https://secrethunter.io/jobz/a7921285e1?utm__source=weekly__digest,"Jobs posted this week:
+job_hash,timestamp,title,company,location,is_junior,tech_stack,contact_info,job_link,raw_text,confidence_score,fit_reasoning
+cae483bf620d0b55a4c878ce510440f294baf9c7bceceb64bc4b6d7b4a9a2258,2026-03-26T09:48:24.364754+00:00,Technical Support LAB assistant,Cellebrite,Petach Tikva,False,[],,https://cellebrite.com/en/about/careers/positions/?comeet_cat=israel-petah-tikva&comeet_pos=09.569&comeet_all=all,"🆕 **Technical Support LAB assistant (Part-time)**
 
-1. **Senior software engineer in test (freelance)** - Mindrift
-https://secrethunter.io/jobz/bbf4e1bd06?utm__source=weekly__digest
+💼 **Company:** Cellebrite
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Part Time
 
-2. **Data science engineer (python & sql) - freelance AI trainer** - Mindrift
-https://secrethunter.io/jobz/a7921285e1?utm__source=weekly__digest
+---------------
 
-3. **Senior python engineer - freelance, mindrift (AI testing project)** - Mindrift
-https://secrethunter.io/jobz/dd16be1f5a?utm__source=weekly__digest
+📄 **Description:** Description Company Overview: Cellebrite’s (Nasdaq: CLBT) mission is to enable its customers to protect and save lives, accelerate justice, and preserve privacy in communities around the world........
 
-4. **Mechanical engineer with python experience / freelance AI trainer** - Mindrift
-https://secrethunter.io/jobz/de18329f76?utm__source=weekly__digest
+---------------
 
-5. **Automotive engineer with python experience / freelance AI trainer** - Mindrift
-https://secrethunter.io/jobz/6bc2e8cee9?utm__source=weekly__digest
+📊 **Requirements:** Description
+Company Overview:
+Cellebrite’s (Nasdaq: CLBT) mission is to enable its customers to protect and save lives, accelerate justice, and preserve privacy in communities around the world. Cellebrite is a global leader in Digital Intelligence so....
 
-6. **Legal consultant (us bar admitted) - freelance AI trainer** - Mindrift
-https://secrethunter.io/jobz/051caed264?utm__source=weekly__digest
+[**View full position listing and submit CV**](https://cellebrite.com/en/about/careers/positions/?comeet_cat=israel-petah-tikva&comeet_pos=09.569&comeet_all=all)",3,"The role is not aligned with the candidate's target position as a Data Analyst and requires 2 years of experience, which exceeds the candidate's junior level preference."
+3086eaa548afaf84d0e85d6dcb67cb1b72ffe27577c21e548db1b5c5dc3bf4aa,2026-03-26T09:48:24.381235+00:00,Linux Kernel Developer,VAST Data,Haifa,True,[],,https://www.comeet.com/jobs/vastdata/43.001/linux-kernel-developer/0E.06E,"🆕 **Linux Kernel Developer**
 
-7. **Freelance machine learning engineer (python)** - Mindrift
-https://secrethunter.io/jobz/45487d60db?utm__source=weekly__digest
-
-8. **Physics expert with python expertise - freelance AI trainer** - Mindrift
-https://secrethunter.io/jobz/91e9ff6b71?utm__source=weekly__digest
-
-9. **AI trainer - freelance data annotator** - Toloka Annotators
-https://secrethunter.io/jobz/265a8025ba?utm__source=weekly__digest
-
-10. **Freelance annotator (english) - AI trainer** - Toloka Annotators
-https://secrethunter.io/jobz/3c6fb5e674?utm__source=weekly__digest
-
-11. **Freelance peer reviewer, civil engineering, mechanical engineering, computer science** - Cactus Communications
-https://secrethunter.io/jobz/095d6d9f77?utm__source=weekly__digest
-
-12. **French sales consultant (l1) – freelance (remote)** - TalentWorldGroup Plc.
-https://secrethunter.io/jobz/c46ef07487?utm__source=weekly__digest
-
-This week, 7 additional jobs were sent to our premium subscribers.
-Upgrade here:
-https://secrethunter.io/upgrade",8,"The role requires Python and SQL, which are primary skills of the candidate. The freelance nature and potential for remote work align with the candidate's preferences. The job title suggests a junior level, which fits the candidate's target level."
-Marketing analyst,Primis Tech,Tel Aviv,False,"[""SQL"", ""Python"", ""BI Tools""]",,https://secrethunter.io/jobz/92e7afd2df?utm_source=telegram,"**Marketing analyst**
-Primis Tech
-Tel Aviv
-26/1/26
-ㅤ
-__SQL, Python, BI Tools, Web Analytics, Marketing, Analytical Thinking, Teamwork__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/92e7afd2df?utm_source=telegram",6,"The role requires SQL and Python, which match the candidate's skills. However, it is a mid-level position, which is not aligned with the candidate's target of junior to mid-level roles."
-Customer Support Specialist,DealHub,Holon,True,[],,https://dealhub.io/careers/9A.E5A/customer-support-specialist/,"🆕 **Customer Support Specialist**
-
-💼 **Company:** DealHub
-🔍 **Location:** Holon
+💼 **Company:** VAST Data
+🔍 **Location:** Haifa
 🧑‍💻️ **Experience required:** 0 yrs
 📁 **Position:** Full Time
 
 ---------------
 
-📄 **Description:** Description DealHub is leading in the field of business application and with its unique quote-to-revenue solution helps the hottest names in the industry increase their revenue and manage their.......
+📄 **Description:** Description VAST Data is looking for a Linux Kernel Developer to join our growing team! This is a great opportunity to be part of one of the fastest-growing infrastructure companies in history, an.......
 
 ---------------
 
 📊 **Requirements:** Description
-DealHub is leading in the field of business application and with its unique quote-to-revenue solution helps the hottest names in the industry increase their revenue and manage their growth.
-With an amazing customer-oriented approach and s....
+VAST Data is looking for a Linux Kernel Developer to join our growing team!
+This is a great opportunity to be part of one of the fastest-growing infrastructure companies in history, an organization that is in the center of the hurricane b....
 
-[**View full position listing and submit CV**](https://dealhub.io/careers/9A.E5A/customer-support-specialist/)",3,"The role is for a Customer Support Specialist, which is not aligned with the candidate's target role of Data Analyst. While it is entry-level, the lack of relevant technical skills and the focus on customer support rather than data analysis results in a low confidence score."
-Data Analyst,dbank,Rishon Letsiyon,False,"[""Excel"", ""Data Analysis""]",,https://secrethunter.io/jobz/d9e7ee3b2a?utm_source=telegram,"**Data analyst חטיבת שווקים פיננסיים**
-dbank
-Rishon Letsiyon
-24/3/26
-ㅤ
-__Risk Management, Financial Analysis, Excel, Data Analysis, Regulation, Capital Markets, Programming__
-ㅤ
-Senior
-ㅤ
-https://secrethunter.io/jobz/d9e7ee3b2a?utm_source=telegram",3,"The role is for a Senior Data Analyst, which is not aligned with the candidate's target level of Junior to Mid. The tech stack includes Excel and Data Analysis, but lacks Python and SQL, which are crucial for the candidate. Additionally, the focus on financial analysis and risk management is outside the candidate's preferred domains."
-Legal intelligence analyst / consumer protection,Darrow,Tel Aviv,False,"[""Python"", ""SQL"", ""Data Analysis"", ""AI Tools"", ""Web Scraping""]",,https://secrethunter.io/jobz/72de70112f?utm_source=telegram,"**Legal intelligence analyst / consumer protection**
-Darrow
-Tel Aviv
-24/3/26
-ㅤ
-__Python, SQL, Data Analysis, AI Tools, Web Scraping, Analytical Thinking, Teamwork__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/72de70112f?utm_source=telegram",5,"The role requires Python and SQL, which are in the candidate's skill set. However, it is a mid-level position, which is outside the candidate's target level of junior to mid. The job location is in Tel Aviv, which is acceptable, but the role does not align with the candidate's preferred industries."
-Senior Data Engineer,The Data Team,Tel Aviv,False,[],,https://il.linkedin.com/jobs/view/senior-data-engineer-at-investing-com-4381736060,"🆕 **Senior Data Engineer**
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/vastdata/43.001/linux-kernel-developer/0E.06E)",2,"The role is for a Linux Kernel Developer, which is not aligned with the candidate's target role as a Data Analyst. The required skills and experience do not match the candidate's profile."
+a30c0725bee32c53482caa0caf05be172a5386522b67a376f5e539e6aab4c2a8,2026-03-26T09:48:24.391691+00:00,נציג אונבורדינג- פתיחת חשבונות מסחר,Colmex,Tel Aviv,True,[],,https://www.comeet.com/jobs/cglms/69.003/-----/6C.167,"🆕 **נציג אונבורדינג- פתיחת חשבונות מסחר**
 
-💼 **Company:** The Data Team
+💼 **Company:** Colmex
 🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Colmex Pro Ltd היא חברת פיננסים מפוקחת וצומחת המתמחה במניות ארה""ב ובתעשיית הפורקס. החברה ממוקמת בלימסול, קפריסין, ונוסדה בשנת 2010. היא מספקת שירותי ברוקראז' למסחר במניות, CFDs, FX.......
+
+---------------
+
+📊 **Requirements:** Description
+Colmex Pro Ltd היא חברת פיננסים מפוקחת וצומחת המתמחה במניות ארה""ב ובתעשיית הפורקס. החברה ממוקמת בלימסול, קפריסין, ונוסדה בשנת 2010. היא מספקת שירותי ברוקראז' למסחר במניות, CFDs, FX וקריפטו. .
+אנחנו מחפשים איש/אשת שירות עם גישה חיובית, ראש....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/cglms/69.003/-----/6C.167)",3,"The position is entry-level, but it is in the finance sector, which is a lower priority for the candidate. The role does not align with the candidate's target of data analytics, and there is no mention of relevant technical skills like Python or SQL."
+5d6717a57ea869ac2ba47ff6413213e4f73a966f80032c436cb448c7ace976f1,2026-03-26T09:48:24.396569+00:00,FIT AI Analyst,Alice,Ramat Gan,False,[],,https://alice.io/positions/position-7E_66D#apply-form?t=1773006738799&t=1774335264717,"🆕 **FIT AI Analyst**
+
+💼 **Company:** Alice
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description ActiveFence is seeking a driven, detail-focused professional to become a vital part of our team as a Generative AI Analyst. In this role, you'll dive into the cutting-edge of technology,.......
+
+---------------
+
+📊 **Requirements:** Must have:
+Background in AI Safety and/or Responsible AI and/or AI Ethics
+Familiarity with recent Generative AI models and agents is essential, though direct technical experience is not a prerequisite.
+Command of English at a near-native level.
+Atten....
+
+[**View full position listing and submit CV**](https://alice.io/positions/position-7E_66D#apply-form?t=1773006738799&t=1774335264717)",3,"The role requires 2 years of experience and focuses on AI Safety and Ethics, which does not align with the candidate's target of junior to mid-level data analytics roles. Additionally, the tech stack does not match the candidate's skills in Python and SQL."
+8e4ae2942171770af986c2428cc56517a4df9bc943184159bc98f0696f859de3,2026-03-26T09:48:24.401174+00:00,Intelligence Infrastructure Expert (Maternity leave replacement),Alice,Ramat Gan,True,[],,https://alice.io/positions/position-87_76F,"🆕 **Intelligence Infrastructure Expert (Maternity leave replacement)**
+
+💼 **Company:** Alice
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Alice is seeking to hire an Intelligence Infrastructure Expert for a full time position. The role includes creation, management, and integration of the company’s unique infrastructure and.......
+
+---------------
+
+📊 **Requirements:** Description
+Alice is seeking to hire an Intelligence Infrastructure Expert for a full time position. The role includes creation, management, and integration of the company’s unique infrastructure and tools across the different Web environments. 
+The ....
+
+[**View full position listing and submit CV**](https://alice.io/positions/position-87_76F)",3,"The role is for an Intelligence Infrastructure Expert, which does not align with the candidate's target role of Data Analyst. Although it is a junior position, the focus on infrastructure rather than data analysis or BI tools is a significant mismatch."
+2c865e33cf073c1c6e9660de5fae2cdac2e408cc765f0f513d5648a4ef13cab2,2026-03-26T09:48:24.407547+00:00,Senior Violent Extremism Researcher,Alice,Ramat Gan,False,[],,https://alice.io/positions/position-15_16E,"🆕 **Senior Violent Extremism Researcher**
+
+💼 **Company:** Alice
+🔍 **Location:** Ramat Gan
 🧑‍💻️ **Experience required:** 5 yrs
 📁 **Position:** Full Time
 
 ---------------
 
-📄 **Description:** ....
-
----------------
-
-📊 **Requirements:** ....
-
-[**View full position listing and submit CV**](https://il.linkedin.com/jobs/view/senior-data-engineer-at-investing-com-4381736060)",2,"The position is for a Senior Data Engineer requiring 5 years of experience, which does not align with the candidate's target of Junior to Mid-level roles and their experience level."
-Founding team data researcher,CereBI,Israel,False,"[""Python"", ""SQL""]",,https://secrethunter.io/jobz/6cece047a9?utm_source=telegram,"**Founding team data researcher to redefine the ""nervous system"" of complex supply chains**
-CereBI
-Israel
-24/3/26
-ㅤ
-__ML Pipelines, Agentic AI, Python, SQL, Data Research, Problem Solving, Independence__
-ㅤ
-Senior
-ㅤ
-https://secrethunter.io/jobz/6cece047a9?utm_source=telegram",4,"The role requires senior experience, which does not align with the candidate's target level of junior to mid. While it mentions Python and SQL, the focus on ML pipelines and independence suggests a more advanced role than the candidate is seeking."
-Sales data analyst,SolarEdge Technologies,Herzliya,False,"[""SQL"", ""Excel""]",,https://secrethunter.io/jobz/057b0609c9?utm_source=telegram,"**Sales data analyst**
-SolarEdge Technologies
-Herzliya
-24/3/26
-ㅤ
-__Data Analysis, BI Tools, SQL, Excel, Research, Accuracy, Communication__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/057b0609c9?utm_source=telegram",5,"The role is for a mid-level position, which is outside the candidate's target level of junior to mid. The tech stack includes SQL, which is a match, but lacks Python and BI tools like Power BI or Tableau that the candidate prefers. The location is acceptable, but the role is not remote, which lowers the score."
-Master data specialist,Ultra Clean Technology,Nofhagalil,False,"[""SAP"", ""MM/PP modules"", ""Data Integrity"", ""Analytical skills""]",,https://secrethunter.io/jobz/fafe06ce03?utm_source=telegram,"**Master data specialist**
-Ultra Clean Technology
-Nofhagalil
-25/3/26
-ㅤ
-__SAP, MM/PP modules, Data Integrity, Analytical skills, Problem-solving, Collaboration, Communication__
-ㅤ
-Senior
-ㅤ
-https://secrethunter.io/jobz/fafe06ce03?utm_source=telegram",2,"The role is for a senior position, which does not align with the candidate's target level of junior to mid. The required tech stack does not match the candidate's primary skills in Python and SQL."
-Bi developer,DataCore,Netanya,True,"[""Power BI"", ""SQL"", ""Azure Data"", ""Databricks"", ""MS BI Dev"", ""Data Modeling""]",,https://secrethunter.io/jobz/aee724e53b?utm_source=telegram,"**Bi developer**
-DataCore
-Netanya
-25/3/26
-ㅤ
-__Power BI, SQL, Azure Data, Databricks, MS BI Dev, Data Modeling, Requirements__
-ㅤ
-Junior
-ㅤ
-https://secrethunter.io/jobz/aee724e53b?utm_source=telegram",6,"The job requires Power BI and SQL, which are in the candidate's skill set. However, the additional tools like Azure Data and Databricks are not mentioned in the candidate's portfolio, which lowers the confidence score slightly. The role is junior, which aligns with the candidate's target level."
-QA Student,DealHub,Holon,True,[],,http://dealhub.io/careers/A1.52C/qa-student/,"🆕 **QA Student**
-
-💼 **Company:** DealHub
-🔍 **Location:** Holon
-🧑‍💻️ **Experience required:** 0 yrs
-📁 **Position:** Internship
-
----------------
-
-📄 **Description:** Description DealHub is hiring a talented QA student to join our super talented QA team in Holon. We are looking for a self-motivated individual, passionate about technology, great team player with.......
-
----------------
-
-📊 **Requirements:** Description
-DealHub is hiring a talented QA student to join our super talented QA team in Holon.
-We are looking for a self-motivated individual, passionate about technology, great team player with excellent interpersonal skills
-
-What you’ll do:
-Plann....
-
-[**View full position listing and submit CV**](http://dealhub.io/careers/A1.52C/qa-student/)",2,"The role is for a QA position, which is not aligned with the candidate's target role as a Data Analyst. The candidate's skills in Python and SQL are not relevant to this QA internship."
-Product Operations Analyst,doitintl,Remote Us East,False,"[""SQL"", ""Product Analytics"", ""AI/ML"", ""Data Modeling"", ""BI Tools""]",,https://secrethunter.io/jobz/c1f932ee42?utm_source=telegram,"**Product operations analyst product analytics**
-doitintl
-Remote Us East
-25/3/26
-ㅤ
-__SQL, Product Analytics, AI/ML, Data Modeling, BI Tools, Systems Thinking, Communication__
-ㅤ
-Senior
-ㅤ
-https://secrethunter.io/jobz/c1f932ee42?utm_source=telegram",4,"The role is for a senior position, which is not aligned with the candidate's target level of junior to mid. While it includes relevant skills like SQL and BI tools, the seniority requirement significantly lowers the fit score."
-NLP data science team leader,aspectiva,Tel Aviv,False,"[""NLP"", ""LLMs"", ""Python"", ""Deep Learning""]",,https://secrethunter.io/jobz/672badafe5?utm_source=telegram,"**NLP data science team leader**
-aspectiva
-Tel Aviv
-25/3/26
-ㅤ
-__NLP, LLMs, Python, Deep Learning, ML Production, Leadership, Communication__
-ㅤ
-Teamleader
-ㅤ
-https://secrethunter.io/jobz/672badafe5?utm_source=telegram",2,"The role is for a team leader position, which is not aligned with the candidate's target level of junior to mid. Additionally, the required skills focus on NLP and deep learning, which are not part of the candidate's primary skill set."
-Dba application,Ness Technologies,Tel Aviv,False,"[""SQL Server"", ""ETL SSIS"", ""Query Optimization"", ""Perf Tuning"", ""Reporting Services"", ""Data Migration"", ""Systems Analysis""]",,https://secrethunter.io/jobz/c74ea210e8?utm_source=telegram,"**Dba application**
-Ness Technologies | נס טכנולוגיות
-Tel Aviv
-25/3/26
-ㅤ
-__SQL Server, ETL SSIS, Query Optimization, Perf Tuning, Reporting Services, Data Migration, Systems Analysis__
-ㅤ
-Senior
-ㅤ
-https://secrethunter.io/jobz/c74ea210e8?utm_source=telegram",2,"The role is for a Senior DBA position, which is not aligned with the candidate's target of Junior to Mid-level roles. Additionally, the tech stack focuses on SQL Server and ETL processes, which do not match the candidate's primary skills in Python and Power BI."
-Dynamics system analyst,Extreme,Center,False,"[""Dynamics 365 CRM"", ""SQL Server"", ""System Analysis"", ""Project Management"", ""Financial Systems"", ""Web Systems""]",,https://secrethunter.io/jobz/dec5c63c84?utm_source=telegram,"**Dynamics system analyst**
-Extreme
-Center
-25/3/26
-ㅤ
-__Dynamics 365 CRM, SQL Server, System Analysis, Project Management, Financial Systems, Web Systems__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/dec5c63c84?utm_source=telegram",3,"The role is for a mid-level position, which is outside the candidate's target level of junior to mid. The tech stack includes SQL, which is relevant, but the focus on Dynamics 365 CRM and system analysis does not align well with the candidate's primary skills in data analysis and BI tools."
-Business analyst,Roseberry,Tel Aviv,False,"[""SQL"", ""Excel"", ""Tableau""]",,https://secrethunter.io/jobz/94961d3c4f?utm_source=telegram,"**Business analyst**
-Roseberry
-Tel Aviv
-25/3/26
-ㅤ
-__SQL, Excel, Analytical thinking, Communication, Problem-solving, Tableau, Attention to detail__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/94961d3c4f?utm_source=telegram",6,"The role is a Business Analyst position which is acceptable for the candidate. It requires SQL and Tableau, which are part of the candidate's skill set. However, the position is mid-level, which may not align with the candidate's preference for junior roles."
-Data scientist – ML & data engineering,Centrical,Raanana,False,"[""Python"", ""SQL"", ""Machine Learning"", ""Predictive Analytics"", ""AWS""]",,https://secrethunter.io/jobz/10ca72f20d?utm_source=telegram,"**Data scientist – ML & data engineering**
-Centrical
-Raanana
-25/3/26
-ㅤ
-__Python, SQL, Machine Learning, Predictive Analytics, AWS, Communication, Problem Solving__
-ㅤ
-Mid
-ㅤ
-https://secrethunter.io/jobz/10ca72f20d?utm_source=telegram",3,"The role is for a Data Scientist with a focus on ML and data engineering, which is not aligned with the candidate's target role as a Data Analyst. Additionally, the position is mid-level, while the candidate is targeting junior to mid-level roles. The tech stack includes Python and SQL, which are relevant, but the emphasis on Machine Learning and AWS is outside the candidate's primary focus."
-Lead data science researcher,NICE,Israel - Raanana,False,"[""Python"", ""LLMs"", ""AI Agents"", ""NLP"", ""GenAI""]",,https://secrethunter.io/jobz/47f6614ae6?utm_source=telegram,"**Lead data science researcher**
-NICE
-Israel - Raanana
-24/3/26
-ㅤ
-__LLMs, AI Agents, NLP, Python, GenAI, Leadership, Communication__
-ㅤ
-Techlead
-ㅤ
-https://secrethunter.io/jobz/47f6614ae6?utm_source=telegram",2,"The role is for a Lead position, which is not aligned with the candidate's target level of Junior to Mid. Additionally, the focus on data science and leadership does not match the candidate's profile, which is more oriented towards data analysis and business intelligence."
-Software Engineer,Johnson & Johnson,Yokne'am,True,[],,https://www.careers.jnj.com/en/jobs/r-064901/software-engineer/,"🆕 **Software Engineer**
-
-💼 **Company:** Johnson & Johnson
-🔍 **Location:** Yokne'am
-🧑‍💻️ **Experience required:** 0 yrs
-📁 **Position:** Full Time
-
----------------
-
-📄 **Description:** &#43....
+📄 **Description:** Description Alice is seeking a highly motivated and detail-oriented individual to join our team as a Senior Violent Extremism Researcher. Here, you will play a crucial role in conducting in-depth.......
 
 ---------------
 
 📊 **Requirements:** Requirements:
-Bachelor's or Master's degree in Computer Science or Software Engineering.
+Research experience of 5+ years in the academia, journalism, government or private sector in the field of violent extremism - MUST
+A proven experience in intelligence, online investigations, or related fields - MUST
+Proven experience in....
 
-Strong proficiency in C&#43....
+[**View full position listing and submit CV**](https://alice.io/positions/position-15_16E)",2,"The role requires 5+ years of experience, which exceeds the candidate's target level of junior to mid. Additionally, the position is not aligned with the candidate's desired field of data analysis."
+3bf4a4ed7872ff4808cb0a37298dcc3e46516d3b720d3482ad7c5849d35fe9a2,2026-03-26T09:48:24.420362+00:00,Webint Analyst,Alice,Ramat Gan,False,[],,https://alice.io/positions/position-12_66E?t=1772103455331,"🆕 **Webint Analyst**
 
-[**View full position listing and submit CV**](https://www.careers.jnj.com/en/jobs/r-064901/software-engineer/)
+💼 **Company:** Alice
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
 
-    
-**POC:**  programming language with a minimum of 3 years of professional experience.
+---------------
 
-Proven experience in developing multithreaded systems.
+📄 **Description:** Description Alice is seeking a highly skilled and motivated Web Intelligence Analyst to join our dynamic team. In this role, you will be responsible for collecting intelligence data, conducting.......
 
-Solid understanding of software development principles, design patterns, and best practices.
+---------------
 
-Knowledge of one or mor
-LI of POC
-**Email:**  (11/14), Boost – an advantage.
+📊 **Requirements:** Requirements: 
+2+ years of experience in WEBINT, OSINT, or related intelligence/research fields.
+Proven experience conducting structured investigations and producing professional intelligence reports.
+Strong analytical and problem-solving skills with....
 
-Experience in C# – an advantage
-
-Excellent problem-solving and analytical skills, with the ability to diagnose and resolve complex software issues.
-
-Experience in the medical device industry- an advantage
-
-#LI-AB6
-#LI
-**Phone:**: At Johnson & Johnson, we believe health is everything. Our strength in healthcare innovation empowers us to build a world where complex diseases are prevented, treated, and cured, where treatments...",2,"The role is for a Software Engineer, which is not aligned with the candidate's target role of Data Analyst. Although it is entry-level, the required skills and experience do not match the candidate's profile."
+[**View full position listing and submit CV**](https://alice.io/positions/position-12_66E?t=1772103455331)",3,"The role requires 2+ years of experience, which exceeds the candidate's target level of junior to mid. The position does not mention relevant tools like Python or SQL, and the focus on Web Intelligence does not align with the candidate's preferred roles in data analytics."

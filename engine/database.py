@@ -19,8 +19,8 @@ load_dotenv()
 DB_PATH = Path(__file__).parent.parent / "data" / "jobs.db"
 CSV_PATH = Path(__file__).parent.parent / "data" / "jobs.csv"
 CSV_HEADERS = [
-    "title", "company", "location", "is_junior", "tech_stack",
-    "contact_info", "job_link", "raw_text", "confidence_score", "fit_reasoning",
+    "job_hash", "timestamp", "title", "company", "location", "is_junior",
+    "tech_stack", "contact_info", "job_link", "raw_text", "confidence_score", "fit_reasoning",
 ]
 
 
@@ -32,14 +32,18 @@ def init_db() -> None:
         # Safe to call every run — does nothing if table already exists
         conn.execute("""
             CREATE TABLE IF NOT EXISTS jobs (
-                job_hash      TEXT PRIMARY KEY,  -- SHA-256 of job_link, enforces uniqueness
-                title         TEXT,
-                company       TEXT,
+                job_hash         TEXT PRIMARY KEY,  -- SHA-256 of job_link, enforces uniqueness
+                timestamp        TEXT,              -- UTC ISO format
+                title            TEXT,
+                company          TEXT,
+                location         TEXT,
+                is_junior        INTEGER,
+                tech_stack       TEXT,              -- JSON-encoded list
+                contact_info     TEXT,
+                job_link         TEXT,
+                raw_text         TEXT,
                 confidence_score INTEGER,
-                fit_reasoning TEXT,
-                contact_info  TEXT,
-                job_link      TEXT,
-                timestamp     TEXT               -- UTC ISO format
+                fit_reasoning    TEXT
             )
         """)
         conn.commit()
@@ -73,19 +77,24 @@ def save_job(job: ScoredJob) -> None:
         conn.execute(
             """
             INSERT OR IGNORE INTO jobs
-                (job_hash, title, company, confidence_score, fit_reasoning, contact_info, job_link, timestamp)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                (job_hash, timestamp, title, company, location, is_junior, tech_stack,
+                 contact_info, job_link, raw_text, confidence_score, fit_reasoning)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             # Each ? maps positionally to one value in this tuple
             (
                 job_hash,
+                timestamp,
                 job.title,
                 job.company,
-                job.confidence_score,
-                job.fit_reasoning,
+                job.location,
+                int(job.is_junior),
+                json.dumps(job.tech_stack),
                 job.contact_info,
                 job.job_link,
-                timestamp,
+                job.raw_text,
+                job.confidence_score,
+                job.fit_reasoning,
             ),
         )
         conn.commit()  # Writes the transaction to disk permanently
@@ -124,7 +133,11 @@ def save_to_csv(job: ScoredJob) -> bool:
         writer = csv.writer(f)
         if file_empty:
             writer.writerow(CSV_HEADERS)
+        job_hash = _hash(job.job_link)
+        timestamp = datetime.now(timezone.utc).isoformat()
         writer.writerow([
+            job_hash,
+            timestamp,
             job.title,
             job.company,
             job.location,
