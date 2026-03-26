@@ -80,7 +80,7 @@ Each scored job is written to both layers independently, each wrapped in its own
 ```
 /jobs-ai-scanner
 ├── engine/
-│   ├── listener.py     # Telethon client — fetches messages from Telegram groups
+│   ├── listener.py     # Telethon client — fetches messages from Telegram groups; load_last_seen() / save_last_seen() for timestamp checkpoints
 │   ├── models.py       # Pydantic schemas: JobOpportunity, ScoredJob
 │   ├── brain.py        # GPT-4o mini scoring logic
 │   ├── database.py     # Dual storage: SQLite (local) + CSV (cross-run). Dedup key: job_link
@@ -94,6 +94,7 @@ Each scored job is written to both layers independently, each wrapped in its own
 │   ├── raw_dump.json   # Intermediary: listener → brain (overwritten each run)
 │   ├── scored_dump.json # Intermediary: brain → notify / database (overwritten each run)
 │   ├── jobs.csv        # Cross-run job store — committed to repo, survives GitHub Actions runners
+│   ├── last_seen.csv   # Checkpoint file — group_id → last_seen_ts (ISO 8601 UTC), committed to repo
 │   └── jobs.db         # Local job store — gitignored, ephemeral on GitHub Actions
 ├── main.py             # Orchestrator — runs full pipeline
 ├── notify_all.py       # Standalone script: loads all jobs from DB, sends full-DB summary + individual alerts for all high-fit jobs (score > 7)
@@ -238,6 +239,12 @@ class ScoredJob(JobOpportunity):
 - [x] CSV now includes `job_hash` and `timestamp`; column order matches SQLite
 - [x] Stale `data/jobs.csv` and `data/jobs.db` deleted — will be recreated fresh on next run
 
+### Stage 7 — Optimised Listening (Checkpoint-Based Skip) ✅ COMPLETE
+- [x] `data/last_seen.csv` tracks `last_seen_ts` (ISO 8601 UTC) per group — committed to repo, survives GitHub Actions runners
+- [x] `listener.py` loads checkpoint on startup (`load_last_seen()`), filters fetched messages by timestamp to skip already-processed ones
+- [x] `main.py` calls `save_last_seen()` after a clean pipeline run to advance the checkpoint
+- **Implementation note:** Uses timestamp-based filtering (not `min_id`) — each group's checkpoint is the datetime of the most recent message from the previous run. Messages with `date <= last_seen_ts` are skipped.
+
 ---
 
 ## 🔭 Future Scaling (Post-MVP)
@@ -251,53 +258,11 @@ class ScoredJob(JobOpportunity):
 
 ---
 
-## 🚨 Open Tasks — Fix Before Deploying
+## 🚨 Open Tasks
 
-> **Note:** The `last_seen` table and optimised listening feature (Section 1 below) are planned for post-deployment, to be implemented on a separate branch after the MVP is live and tested end-to-end.
+> No blocking tasks. The pipeline is fully deployed and running on GitHub Actions.
 
-### 1. Optimised Listening — Skip Already-Scanned Messages
+### Future Improvements (non-blocking)
 
-**Problem:** Every run fetches and scores all messages from each group, even ones already processed in previous runs. With the current default of `limit=5` per group (4 groups = 20 messages per run), this cost is currently low — but will grow as the limit is raised for production use.
-
-**Solution:** Track the last seen Telegram message ID per group in `jobs.db`. On each run, only fetch messages newer than that ID.
-
-**Why `min_id` works:** Every Telegram message has a unique integer ID that increments over time. Fetching with `min_id=last_seen_id` returns only messages posted after that point — guaranteed to be new.
-
-**Implementation — two steps:**
-
-Step 1: Add a new table to `database.py`:
-```python
-# in database.py — add alongside the existing jobs table
-# stores the highest message ID seen per group so listener.py knows where to resume
-CREATE TABLE IF NOT EXISTS last_seen (
-    group_id TEXT PRIMARY KEY,
-    last_message_id INTEGER
-)
-
-# add two functions:
-def load_last_seen_id(group_id: str) -> int:
-    # returns last saved message ID for this group, or 0 if first run
-    
-def save_last_seen_id(group_id: str, last_id: int) -> None:
-    # upserts (insert or replace) the latest message ID for this group
-```
-
-Step 2: Update `listener.py` to use `min_id`:
-```python
-# in listener.py — update fetch logic per group
-from engine.database import load_last_seen_id, save_last_seen_id
-
-# before fetching:
-last_seen_id = load_last_seen_id(group)  # read last checkpoint from jobs.db
-
-# pass min_id to Telethon so it only returns messages newer than last run:
-messages = await client.get_messages(group, limit=100, min_id=last_seen_id)
-
-# after fetching — save the highest ID seen so next run starts from here:
-if messages:
-    save_last_seen_id(group, messages[0].id)  # messages[0] is the newest (Telethon returns newest first)
-```
-
-**Expected result:** After the first full run, each subsequent run processes only new messages per group — dramatically cutting LLM cost and run time as the fetch limit scales up.
-
-**When to implement:** After Stage 3 (brain, database, notify) is complete and tested end-to-end. Do not implement before `database.py` exists.
+- **Raise fetch limit** — `listener.py` currently uses `limit=5` per group. Now that checkpoint-based skipping is in place, this can be safely raised (e.g. `limit=50`) to catch more jobs per run without re-processing old messages.
+- **PeerChannel error on `-1002423121294`** — fix by opening the group in the Telegram app and scrolling once, then re-running.
