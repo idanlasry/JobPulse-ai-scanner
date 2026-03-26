@@ -37,6 +37,23 @@
 
 JobPulse uses two independent storage layers. Neither depends on the other — a failure in one must never block the other.
 
+**Unified schema — both layers store the same 12 columns:**
+
+| Column | Type | Notes |
+|---|---|---|
+| `job_hash` | TEXT | SHA-256 of `job_link` — PRIMARY KEY in SQLite |
+| `timestamp` | TEXT | ISO 8601 UTC, auto-added at save time |
+| `title` | TEXT | |
+| `company` | TEXT | nullable |
+| `location` | TEXT | nullable |
+| `is_junior` | INTEGER/bool | SQLite stores as 0/1; CSV stores as True/False |
+| `tech_stack` | TEXT | JSON-encoded list in both layers |
+| `contact_info` | TEXT | nullable |
+| `job_link` | TEXT | dedup key |
+| `raw_text` | TEXT | |
+| `confidence_score` | INTEGER | 1–10 |
+| `fit_reasoning` | TEXT | |
+
 **CSV layer (`data/jobs.csv`) — cross-run deduplication**
 - Committed to the repo after every GitHub Actions run
 - This is the source of truth for deduplication on GitHub Actions, where `jobs.db` is wiped after each run
@@ -214,6 +231,12 @@ class ScoredJob(JobOpportunity):
 - [x] CSV layer: cross-run deduplication on GitHub Actions via committed data/jobs.csv
 - [x] SQLite layer: local persistence and future scaling infrastructure
 - [x] Pipeline deployed and verified end-to-end on GitHub Actions
+
+### Stage 6 — Schema Consolidation ✅ COMPLETE
+- [x] Unified both CSV and SQLite to the same 12-column schema (was mismatched: CSV had 10 cols, SQLite had 8 cols, each missing different fields)
+- [x] SQLite now stores all ScoredJob fields: added `location`, `is_junior`, `tech_stack` (JSON), `raw_text`, `timestamp`
+- [x] CSV now includes `job_hash` and `timestamp`; column order matches SQLite
+- [x] Stale `data/jobs.csv` and `data/jobs.db` deleted — will be recreated fresh on next run
 
 ---
 
