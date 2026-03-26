@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from engine.brain import run_brain
 from engine.database import init_db, is_duplicate, save_job, save_to_csv
-from engine.listener import load_groups, save_last_seen
+from engine.listener import load_groups, load_last_seen, save_last_seen
 from engine.listener import main as listener_main
 from engine.models import ScoredJob
 from engine.notify import send_alert, send_summary
@@ -33,7 +33,7 @@ async def main() -> None:
 
     # --- Stage 1: Fetch messages ---
     try:
-        await listener_main(limit=5)
+        await listener_main(limit=3)
         # to change messages fetched per group: listener_main(limit=50)
     except Exception as e:
         print(f"[main] Listener failed: {e}")
@@ -127,7 +127,9 @@ async def main() -> None:
     # --- Update last_seen checkpoint (only reached on clean run) ---
     try:
         raw_messages = json.loads(RAW_DUMP.read_text(encoding="utf-8"))
-        new_last_seen: dict[str, datetime] = {}
+        new_last_seen: dict[str, datetime] = (
+            load_last_seen()
+        )  # start from existing — preserve groups with no new messages
         for msg in raw_messages:
             group_id = msg["group"]
             ts = datetime.fromisoformat(msg["timestamp"])
