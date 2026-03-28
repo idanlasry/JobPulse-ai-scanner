@@ -29,6 +29,7 @@
 | Storage (backup) | CSV (`data/jobs.csv`) | Committed to repo — fallback if Supabase is unavailable |
 | Alerts | Telegram Bot API | Send scored job alerts to personal chat |
 | Scheduling | GitHub Actions | Run pipeline 3× daily on weekdays (Mon–Fri), free tier |
+| MCP Server | FastMCP + mcp_supabase.py | Claude Code tool interface to Supabase |
 | Package Manager | uv | Python 3.13, pyproject.toml |
 
 ---
@@ -108,11 +109,14 @@ Each scored job is written to both layers independently, each wrapped in its own
 │   ├── jobs.csv        # Cross-run job backup — committed to repo, survives GitHub Actions runners
 │   └── last_seen.csv   # Checkpoint file — group_id → last_seen_ts (ISO 8601 UTC), committed to repo
 ├── main.py             # Orchestrator — runs full pipeline
-├── notify_all.py       # Standalone script: sends full summary + individual alerts for all high-fit jobs
-├── DB_search.py        # Dev utility: query tool (references old SQLite — may need update)
+├── mcp_supabase.py     # FastMCP server — exposes Supabase tools to Claude Code (list/describe/query/update)
+├── notify_all.py       # ⚠️ Legacy — references old SQLite DB. Not connected to current Supabase/CSV pipeline.
+├── DB_search.py        # ⚠️ Legacy — query utility referencing old SQLite DB. Not connected to current pipeline.
 ├── connection_test.py  # Dev utility: sends a test message via Telegram Bot API to verify credentials
+├── example.env         # Template for required environment variables — copy to .env and fill in credentials
 ├── CLAUDE.md           # This file
-├── pyproject.toml      # uv dependencies (includes supabase>=2.28.3)
+├── pyproject.toml      # uv dependencies (includes supabase>=2.28.3, fastmcp)
+├── .mcp.json           # Claude Code MCP config — registers mcp_supabase.py as "supabase-mcp" server
 └── .github/
     └── workflows/
         └── run_scanner.yml  # GitHub Actions — scheduled automation
@@ -216,6 +220,39 @@ class ScoredJob(JobOpportunity):
 
 ---
 
+## 🔌 MCP Server (mcp_supabase.py)
+
+Claude Code connects to Supabase directly via a FastMCP server registered in `.mcp.json`.
+
+**Tools exposed:**
+
+| Tool | Description |
+|---|---|
+| `list_tables()` | Returns list of accessible tables (`["jobs"]`) |
+| `describe_table(table)` | Fetches schema by sampling one row |
+| `select_query(sql)` | Runs a read-only SELECT query |
+| `get_recent_rows(table, limit, filter_column, filter_value)` | Fetches N most recent rows, with optional filter |
+| `dry_run_update(table, filter_column, filter_value, updates)` | Previews how many rows an UPDATE would affect |
+| `update_query(table, filter_column, filter_value, updates)` | Executes an UPDATE on matched rows |
+
+**Access control:** Only `"jobs"` table is allowed (`ALLOWED_TABLES = ["jobs"]` hardcoded).
+
+**Config (`.mcp.json`):**
+```json
+{
+  "mcpServers": {
+    "supabase-mcp": {
+      "command": "uv",
+      "args": ["run", "python", "mcp_supabase.py"]
+    }
+  }
+}
+```
+
+**Credentials:** Uses `SUPABASE_URL` + `SUPABASE_KEY` from `.env` (same as pipeline).
+
+---
+
 ## ✅ Current Build Status
 
 ### Stage 1 — Repo & Environment ✅ COMPLETE
@@ -245,7 +282,7 @@ class ScoredJob(JobOpportunity):
 - [x] Automated run confirmed on GitHub Actions
 
 ### Stage 5 — Storage & Deduplication ✅ COMPLETE
-- [x] Dual storage architecture implemented — CSV + SQLite independent layers
+- [x] Dual storage architecture implemented — CSV + Supabase independent layers
 - [x] CSV layer: cross-run deduplication via committed data/jobs.csv
 - [x] Pipeline deployed and verified end-to-end
 
@@ -268,6 +305,14 @@ class ScoredJob(JobOpportunity):
 - [x] 158-row CSV backfill uploaded to Supabase; all score > 7 rows marked `alerted = true`
 - [x] Full pipeline test run passed: Supabase and CSV both updated correctly
 
+### Stage 9 — MCP Server ✅ COMPLETE
+- [x] `mcp_supabase.py` — FastMCP server exposing 6 Supabase tools to Claude Code
+- [x] `.mcp.json` — registers server as `"supabase-mcp"` via `uv run python mcp_supabase.py`
+- [x] Access control: `ALLOWED_TABLES = ["jobs"]` hardcoded — only the jobs table is accessible
+- [x] Tools: `list_tables`, `describe_table`, `select_query`, `get_recent_rows`, `dry_run_update`, `update_query`
+- [x] Read-only + write separation: `select_query` / `get_recent_rows` for reads; `dry_run_update` previews before `update_query` executes
+- [x] Credentials: uses same `SUPABASE_URL` + `SUPABASE_KEY` from `.env`
+
 ---
 
 ## 🔭 Future Scaling (Post-MVP)
@@ -288,6 +333,5 @@ class ScoredJob(JobOpportunity):
 
 ### Future Improvements (non-blocking)
 
-- **Wire `alerted` flag** — after `send_alert()` succeeds in `main.py`, call `_supabase.table("jobs").update({"alerted": True}).eq("job_hash", job_hash).execute()` to mark the row
-- **Raise fetch limit** — `listener.py` currently uses `limit=3` per group. Can be raised to `limit=50` safely — checkpoint-based skipping prevents re-processing old messages
-- **Add SUPABASE_URL / SUPABASE_KEY to GitHub Secrets** — required for Supabase writes to work on Actions
+- **Raise fetch limit** — `listener.py` has a hardcoded ceiling `LIMIT = 50`. `main.py` currently calls `listener_main(limit=3)` — raise the `limit=3` argument in `main.py` to increase messages fetched per run. Checkpoint-based skipping prevents re-processing old messages.
+- **Fix GitHub Actions Supabase wiring** — `SUPABASE_URL` and `SUPABASE_KEY` must be added to GitHub Secrets **and** exported as env vars in `run_scanner.yml` (currently only Telegram + OpenAI secrets are passed to the workflow). Without this, Supabase writes silently fail on Actions.
