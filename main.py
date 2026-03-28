@@ -32,7 +32,7 @@ async def main() -> None:
 
     # --- Stage 1: Fetch messages ---
     try:
-        await listener_main(limit=3)
+        await listener_main(limit=50)
         # to change messages fetched per group: listener_main(limit=50)
     except Exception as e:
         print(f"[main] Listener failed: {e}")
@@ -72,9 +72,9 @@ async def main() -> None:
 
     # --- Stage 3: Deduplicate, persist, collect alerts ---
     alerts_sent = 0
-    supabase_new = 0   # jobs inserted into Supabase (primary DB)
+    supabase_new = 0  # jobs inserted into Supabase (primary DB)
     supabase_errors = 0
-    csv_new = 0        # jobs new to CSV (cross-run backup, committed to repo)
+    csv_new = 0  # jobs new to CSV (cross-run backup, committed to repo)
     fitting_jobs: list[ScoredJob] = []
 
     for job in scored_jobs:
