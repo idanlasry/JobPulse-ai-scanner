@@ -99,7 +99,8 @@ Each scored job is written to both layers independently, each wrapped in its own
 │   ├── database.py     # Dual storage: Supabase (primary) + CSV (backup). Dedup key: job_link. No SQLite.
 │   └── notify.py       # Telegram Bot alert sender — send_summary (stats) + send_alert (per job) + send_error_alert (pipeline errors)
 │                       # Note: all functions use parse_mode: "HTML" — Markdown breaks on URLs with underscores (e.g. utm_source=telegram)
-│                       # Note: send_summary signature: send_summary(groups_scanned, jobs_found, new_jobs, fitting_jobs)
+│                       # Note: send_summary signature: send_summary(groups_scanned, jobs_found, new_jobs, fitting_jobs, supabase_new, supabase_errors)
+│                       # Note: send_summary appends DB status line — "✅ Supabase synced: N new" or "⚠️ Supabase: N saved, N failed"
 ├── config/
 │   ├── portfolio.txt   # Candidate profile — used as LLM scoring context
 │   └── groups.txt      # Telegram group usernames/IDs to monitor (5 groups, all numeric IDs)
@@ -334,4 +335,4 @@ Claude Code connects to Supabase directly via a FastMCP server registered in `.m
 ### Future Improvements (non-blocking)
 
 - **Raise fetch limit** — `listener.py` has a hardcoded ceiling `LIMIT = 50`. `main.py` currently calls `listener_main(limit=3)` — raise the `limit=3` argument in `main.py` to increase messages fetched per run. Checkpoint-based skipping prevents re-processing old messages.
-- **Fix GitHub Actions Supabase wiring** — `SUPABASE_URL` and `SUPABASE_KEY` must be added to GitHub Secrets **and** exported as env vars in `run_scanner.yml` (currently only Telegram + OpenAI secrets are passed to the workflow). Without this, Supabase writes silently fail on Actions.
+
