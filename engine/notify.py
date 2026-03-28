@@ -97,9 +97,16 @@ async def send_summary(
     jobs_found: int,
     new_jobs: int,  # new addition — jobs not seen in previous runs
     fitting_jobs: list[ScoredJob],
+    supabase_new: int = 0,    # jobs inserted into Supabase this run
+    supabase_errors: int = 0, # Supabase write failures this run
 ) -> None:
     fitting_count = len(fitting_jobs)
     run_time = datetime.now(timezone(timedelta(hours=3))).strftime("%Y-%m-%d %H:%M")
+
+    if supabase_errors == 0:
+        db_status = f"✅ Supabase synced: {supabase_new} new"
+    else:
+        db_status = f"⚠️ Supabase: {supabase_new} saved, {supabase_errors} failed"
 
     lines = [
         "<b>JobPulse Run Summary</b>",
@@ -108,6 +115,7 @@ async def send_summary(
         f"Messages scanned: {jobs_found}",
         f"New jobs (not seen before): {new_jobs}",
         f"High-fit alerts sent (score &gt; 7): {fitting_count}",
+        db_status,
     ]
 
     text = "\n".join(lines)

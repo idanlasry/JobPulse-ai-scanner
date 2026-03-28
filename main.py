@@ -123,6 +123,8 @@ async def main() -> None:
             jobs_found=messages_fetched,  # total messages scanned
             new_jobs=csv_new,  # fresh jobs this run (CSV is cross-run truth)
             fitting_jobs=fitting_jobs,
+            supabase_new=supabase_new,
+            supabase_errors=supabase_errors,
         )
     except Exception as e:
         print(f"[main] Summary failed: {e}")
