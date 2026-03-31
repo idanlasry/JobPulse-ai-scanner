@@ -3,7 +3,7 @@
 
 Job hunting is noise. Thousands of posts across Telegram groups. 95% irrelevant posts. Manual filtering = hours per week wasted.
 
-JobPulse solves this: an autonomous pipeline that monitors job groups 24/7, scores every post against your DA portfolio using GPT-4o mini, and alerts you only when there's a strong match. Fully automated on GitHub Actions. Zero local machine needed.
+JobPulse solves this: an autonomous pipeline built with Claude Code that monitors job groups 24/7, scores every post against your DA portfolio using GPT-4o mini, and alerts you only when there's a strong match. Fully automated on GitHub Actions. Zero local machine needed.
 
 ## What It Does
 
