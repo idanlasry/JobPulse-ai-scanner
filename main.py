@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(Path(__file__).parent))
 
 from engine.brain import run_brain
+from engine.checker import filter_new_messages
 from engine.database import save_to_csv, save_to_supabase
 from engine.listener import load_groups, load_last_seen, save_last_seen
 from engine.listener import main as listener_main
@@ -39,12 +40,28 @@ async def main() -> None:
         return  # raw_dump.json would be stale or missing — cannot proceed
 
     try:
-        messages_fetched = len(json.loads(RAW_DUMP.read_text(encoding="utf-8")))
+        raw_messages = json.loads(RAW_DUMP.read_text(encoding="utf-8"))
+        messages_fetched = len(raw_messages)
     except Exception as e:
         print(f"[main] Could not read raw_dump.json: {e}")
+        raw_messages = []
         messages_fetched = 0
 
     print(f"[main] {messages_fetched} messages fetched")
+
+    # --- Stage 1.5: Pre-LLM deduplication gate ---
+    all_raw_messages = raw_messages  # preserve full list for last_seen checkpoint
+    try:
+        raw_messages, skipped_count = filter_new_messages(raw_messages)
+        print(f"[checker] {skipped_count} duplicates skipped | {len(raw_messages)} messages passed to brain")
+        # Overwrite raw_dump.json with only the fresh messages so brain.py reads the filtered set
+        RAW_DUMP.write_text(
+            json.dumps(raw_messages, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+    except Exception as e:
+        print(f"[main] Checker failed — passing all messages to brain: {e}")
+        skipped_count = 0
 
     # --- Stage 2: Score with brain ---
     try:
@@ -138,11 +155,13 @@ async def main() -> None:
 
     # --- Update last_seen checkpoint (only reached on clean run) ---
     try:
-        raw_messages = json.loads(RAW_DUMP.read_text(encoding="utf-8"))
+        # Use all_raw_messages (pre-checker) so the checkpoint advances for duplicates too.
+        # If all_raw_messages is empty (e.g. listener failed), fall back to reading the file.
+        checkpoint_messages = all_raw_messages if all_raw_messages else json.loads(RAW_DUMP.read_text(encoding="utf-8"))
         new_last_seen: dict[str, datetime] = (
             load_last_seen()
         )  # start from existing — preserve groups with no new messages
-        for msg in raw_messages:
+        for msg in checkpoint_messages:
             group_id = msg["group"]
             ts = datetime.fromisoformat(msg["timestamp"])
             if group_id not in new_last_seen or ts > new_last_seen[group_id]:
