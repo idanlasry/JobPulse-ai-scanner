@@ -97,9 +97,11 @@ async def send_summary(
     jobs_found: int,
     new_jobs: int,  # new addition — jobs not seen in previous runs
     fitting_jobs: list[ScoredJob],
-    supabase_new: int = 0,    # jobs inserted into Supabase this run
-    supabase_errors: int = 0, # Supabase write failures this run
-    checker_skipped: int = 0, # messages dropped by pre-LLM dedup gate
+    supabase_new: int = 0,        # jobs inserted into Supabase this run
+    supabase_errors: int = 0,     # Supabase write failures this run
+    checker_skipped: int = 0,     # messages dropped by pre-LLM dedup gate
+    brain_scored: int = 0,        # actual ScoredJob outputs from brain
+    checker_available: bool = True,  # False if dedup gate was offline
 ) -> None:
     fitting_count = len(fitting_jobs)
     run_time = datetime.now(timezone(timedelta(hours=3))).strftime("%Y-%m-%d %H:%M")
@@ -110,11 +112,12 @@ async def send_summary(
     else:
         db_status = f"⚠️ Supabase: {supabase_new} saved, {supabase_errors} failed"
 
+    checker_note = "" if checker_available else " ⚠️ dedup gate offline"
     lines = [
         "<b>JobPulse Run Summary</b>",
         f"Date: {run_time}",
         f"Groups scanned: {groups_scanned}",
-        f"Messages fetched: {jobs_found} → {checker_skipped} skipped by checker → {passed_to_brain} scored",
+        f"Messages fetched: {jobs_found} → {checker_skipped} skipped by checker{checker_note} → {passed_to_brain} sent to brain → {brain_scored} scored",
         f"New jobs (not seen before): {new_jobs}",
         f"High-fit alerts sent (score &gt; 7): {fitting_count}",
         db_status,

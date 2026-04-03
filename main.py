@@ -51,9 +51,11 @@ async def main() -> None:
 
     # --- Stage 1.5: Pre-LLM deduplication gate ---
     all_raw_messages = raw_messages  # preserve full list for last_seen checkpoint
+    checker_available = False
     try:
-        raw_messages, skipped_count = filter_new_messages(raw_messages)
-        print(f"[checker] {skipped_count} duplicates skipped | {len(raw_messages)} messages passed to brain")
+        raw_messages, skipped_count, checker_available = filter_new_messages(raw_messages)
+        gate_status = "active" if checker_available else "offline (Supabase unavailable)"
+        print(f"[checker] {skipped_count} duplicates skipped | {len(raw_messages)} messages passed to brain | gate: {gate_status}")
         # Overwrite raw_dump.json with only the fresh messages so brain.py reads the filtered set
         RAW_DUMP.write_text(
             json.dumps(raw_messages, ensure_ascii=False, indent=2),
@@ -96,16 +98,19 @@ async def main() -> None:
 
     for job in scored_jobs:
         # CSV layer — cross-run dedup (committed to repo, survives GitHub Actions)
+        csv_ok = False
         try:
-            is_new_csv = save_to_csv(job)
-            if is_new_csv:
+            csv_ok = save_to_csv(job)
+            if csv_ok:
                 csv_new += 1
-                if job.confidence_score > 7:
-                    fitting_jobs.append(job)
             else:
                 print(f"[main] CSV duplicate — skipping alert: {job.title}")
         except Exception as e:
             print(f"[main] CSV error for '{job.title}': {e}")
+
+        # Alert eligibility: CSV-new jobs with high score (decoupled from CSV exception)
+        if csv_ok and job.confidence_score > 7:
+            fitting_jobs.append(job)
 
         # Supabase layer — primary DB
         try:
@@ -143,6 +148,8 @@ async def main() -> None:
             supabase_new=supabase_new,
             supabase_errors=supabase_errors,
             checker_skipped=skipped_count,
+            brain_scored=jobs_found,  # actual ScoredJob outputs from brain
+            checker_available=checker_available,
         )
     except Exception as e:
         print(f"[main] Summary failed: {e}")

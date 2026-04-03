@@ -77,7 +77,7 @@ def _load_known_data() -> tuple[set[str], set[str]]:
 
 
 # %%
-def filter_new_messages(messages: list[dict]) -> tuple[list[dict], int]:
+def filter_new_messages(messages: list[dict]) -> tuple[list[dict], int, bool]:
     """Remove messages whose job link already exists in Supabase.
 
     Extracts all http-prefixed URLs from each message's raw text, hashes each one,
@@ -85,15 +85,16 @@ def filter_new_messages(messages: list[dict]) -> tuple[list[dict], int]:
     duplicate if ANY of its extracted URLs matches a stored hash.
 
     Returns:
-        (fresh_messages, skipped_count)
-        fresh_messages — messages that passed the gate (no URL matched a known hash)
-        skipped_count  — number of messages dropped as duplicates
+        (fresh_messages, skipped_count, checker_available)
+        fresh_messages     — messages that passed the gate (no URL matched a known hash)
+        skipped_count      — number of messages dropped as duplicates
+        checker_available  — False if Supabase was unavailable (gate was bypassed)
     """
     known_hashes, known_links = _load_known_data()
 
     if not known_hashes and not known_links:
         # Supabase unavailable or empty DB (first run) — pass everything through
-        return messages, 0
+        return messages, 0, False
 
     fresh: list[dict] = []
     skipped = 0
@@ -118,4 +119,4 @@ def filter_new_messages(messages: list[dict]) -> tuple[list[dict], int]:
         else:
             fresh.append(msg)
 
-    return fresh, skipped
+    return fresh, skipped, True
