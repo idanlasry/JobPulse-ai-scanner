@@ -2,31 +2,25 @@
 import asyncio
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import httpx
 from dotenv import load_dotenv
-from datetime import datetime, timezone, timedelta
 
-# Add project root to Python's module search path so engine.models can be imported
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from engine.models import ScoredJob
 
 load_dotenv()
 
-# Bot credentials loaded from .env
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-
-# Full API endpoint — token baked in once at module level
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
 
 
 # %%
 def _esc(text: str) -> str:
-    # Escape HTML special chars — safe to apply to any dynamic content
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
@@ -45,28 +39,18 @@ def _format_alert(job: ScoredJob) -> str:
     return "\n".join(lines)
 
 
+async def _post(payload: dict) -> None:
+    async with httpx.AsyncClient() as client:
+        r = await client.post(TELEGRAM_API_URL, json=payload, timeout=10)
+        r.raise_for_status()
+
+
 # %%
 async def send_alert(job: ScoredJob) -> None:
-    # Guard — exit immediately for low scoring jobs, no network call made
     if job.confidence_score <= 7:
         return
-
-    text = _format_alert(job)
-
     try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                TELEGRAM_API_URL,
-                json={
-                    "chat_id": TELEGRAM_CHAT_ID,
-                    "text": text,
-                    "parse_mode": "HTML",  # HTML is immune to URL underscores breaking the parser
-                },
-                timeout=10,  # fail fast — don't hang the pipeline
-            )
-            response.raise_for_status()  # raises exception on 4xx/5xx HTTP errors
-            print(f"[notify] Alert sent: {job.title} (score={job.confidence_score})")
-
+        await _post({"chat_id": TELEGRAM_CHAT_ID, "text": _format_alert(job), "parse_mode": "HTML"})
     except httpx.HTTPStatusError as e:
         print(f"[notify] HTTP error sending alert for '{job.title}': {e}")
     except httpx.RequestError as e:
@@ -77,16 +61,8 @@ async def send_alert(job: ScoredJob) -> None:
 
 # %%
 async def send_error_alert(text: str) -> None:
-    """Send a plain-text error notification to the user's Telegram chat."""
     try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                TELEGRAM_API_URL,
-                json={"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML"},
-                timeout=10,
-            )
-            response.raise_for_status()
-            print("[notify] Error alert sent")
+        await _post({"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML"})
     except Exception as e:
         print(f"[notify] Could not send error alert: {e}")
 
@@ -95,26 +71,26 @@ async def send_error_alert(text: str) -> None:
 async def send_summary(
     groups_scanned: int,
     jobs_found: int,
-    new_jobs: int,  # jobs not seen in previous runs
+    new_jobs: int,
     fitting_jobs: list[ScoredJob],
-    supabase_new: int = 0,           # jobs inserted into Supabase this run
-    supabase_errors: int = 0,        # Supabase write failures this run
-    no_link_skipped: int = 0,        # messages dropped — no extractable http URL
-    duplicate_skipped: int = 0,      # messages dropped — URL already in Supabase
-    brain_scored: int = 0,           # actual ScoredJob outputs from brain
-    checker_available: bool = True,  # False if Supabase dedup gate was offline
+    supabase_new: int = 0,
+    supabase_errors: int = 0,
+    no_link_skipped: int = 0,
+    duplicate_skipped: int = 0,
+    brain_scored: int = 0,
+    checker_available: bool = True,
 ) -> None:
     fitting_count = len(fitting_jobs)
     run_time = datetime.now(timezone(timedelta(hours=3))).strftime("%Y-%m-%d %H:%M")
     passed_to_brain = jobs_found - no_link_skipped - duplicate_skipped
 
-    if supabase_errors == 0:
-        db_status = f"✅ Supabase synced: {supabase_new} new"
-    else:
-        db_status = f"⚠️ Supabase: {supabase_new} saved, {supabase_errors} failed"
-
+    db_status = (
+        f"✅ Supabase synced: {supabase_new} new"
+        if supabase_errors == 0
+        else f"⚠️ Supabase: {supabase_new} saved, {supabase_errors} failed"
+    )
     dedup_note = f"{duplicate_skipped} duplicates" if checker_available else f"{duplicate_skipped} duplicates ⚠️ gate offline"
-    lines = [
+    text = "\n".join([
         "<b>JobPulse Run Summary</b>",
         f"Date: {run_time}",
         f"Groups scanned: {groups_scanned}",
@@ -122,24 +98,10 @@ async def send_summary(
         f"New jobs (not seen before): {new_jobs}",
         f"High-fit alerts (score &gt; 7): {fitting_count}",
         db_status,
-    ]
-
-    text = "\n".join(lines)
+    ])
 
     try:
-        async with httpx.AsyncClient() as client:
-            response = await client.post(
-                TELEGRAM_API_URL,
-                json={
-                    "chat_id": TELEGRAM_CHAT_ID,
-                    "text": text,
-                    "parse_mode": "HTML",
-                },
-                timeout=10,
-            )
-            response.raise_for_status()
-            print(f"[notify] Summary sent — {fitting_count} fitting jobs")
-
+        await _post({"chat_id": TELEGRAM_CHAT_ID, "text": text, "parse_mode": "HTML"})
     except httpx.HTTPStatusError as e:
         print(f"[notify] HTTP error sending summary: {e}")
     except httpx.RequestError as e:
@@ -167,9 +129,8 @@ if __name__ == "__main__":
     print(f"[notify] {len(eligible)}/{len(jobs)} jobs qualify (score > 7)")
 
     async def _run() -> None:
-        # Summary first — overview before details land
         await send_summary(
-            groups_scanned=4,  # placeholder — main.py passes the real count
+            groups_scanned=4,
             jobs_found=len(jobs),
             new_jobs=len(eligible),
             fitting_jobs=eligible,

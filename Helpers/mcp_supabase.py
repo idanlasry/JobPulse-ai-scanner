@@ -1,14 +1,12 @@
-from fastmcp import FastMCP
+from mcp.server.fastmcp import FastMCP
 from supabase import create_client, Client
 from dotenv import load_dotenv
 import logging
 import os
 
-# Setup logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("mcp-supabase")
 
-# Load credentials
 load_dotenv()
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
@@ -16,7 +14,6 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 # Safety guard — only these tables are accessible
 ALLOWED_TABLES = ["jobs"]
 
-# Init Supabase client
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 mcp = FastMCP("supabase-mcp")
@@ -124,7 +121,7 @@ def dry_run_update(
         return {
             "rows_affected": len(response.data),
             "updates_to_apply": updates,
-            "preview": response.data,
+            "preview": response.data[:50],
         }
     except Exception as e:
         logger.error(f"dry_run_update failed: {e}")

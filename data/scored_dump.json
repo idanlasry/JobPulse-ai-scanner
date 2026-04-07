@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "title": "AI data engineer",
+    "company": "MLabs",
+    "location": "Israel",
+    "is_junior": false,
+    "tech_stack": [
+      "Python",
+      "API Design",
+      "RAG Pipelines",
+      "LLM Integration",
+      "Financial Data"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/c4d7febb60?utm_source=telegram",
+    "raw_text": "**AI data engineer**\nMLabs\nIsrael\n6/4/26\nㅤ\n__Agentic Systems, LLM Integration, Python, API Design, RAG Pipelines, LLM Evaluation, Financial Data__\nㅤ\nSenior\nㅤ\nhttps://secrethunter.io/jobz/c4d7febb60?utm_source=telegram",
+    "message_date": "2026-04-07T07:25:18+00:00",
+    "source_group": "-1002423121294",
+    "confidence_score": 2,
+    "fit_reasoning": "The role is for a senior position, which does not align with the candidate's target level of junior to mid. Additionally, the focus on AI data engineering and financial data is not a strong match for the candidate's experience in data analysis and business intelligence."
+  }
+]

@@ -20,9 +20,7 @@ from engine.notify import send_alert, send_error_alert, send_summary
 load_dotenv()
 
 RAW_DUMP = Path(__file__).parent / "data" / "raw_dump.json"
-SCORED_DUMP_FILE = (
-    Path(__file__).parent / "data" / "scored_dump.json"
-)  # written after every brain run
+SCORED_DUMP_FILE = Path(__file__).parent / "data" / "scored_dump.json"
 
 
 # %%
@@ -31,10 +29,8 @@ async def main() -> None:
     groups_scanned = len(groups)
     print(f"[main] Starting pipeline — {groups_scanned} groups to scan")
 
-    # --- Stage 1: Fetch messages ---
     try:
         await listener_main(limit=50)
-        # to change messages fetched per group: listener_main(limit=50)
     except Exception as e:
         print(f"[main] Listener failed: {e}")
         return  # raw_dump.json would be stale or missing — cannot proceed
@@ -49,7 +45,6 @@ async def main() -> None:
 
     print(f"[main] {messages_fetched} messages fetched")
 
-    # --- Stage 1.5: Pre-LLM deduplication gate ---
     all_raw_messages = raw_messages  # preserve full list for last_seen checkpoint
     checker_available = False
     no_link_skipped = 0
@@ -58,7 +53,6 @@ async def main() -> None:
         raw_messages, no_link_skipped, duplicate_skipped, checker_available = filter_new_messages(raw_messages)
         gate_status = "active" if checker_available else "offline (Supabase unavailable)"
         print(f"[checker] {no_link_skipped} no-link | {duplicate_skipped} duplicates | {len(raw_messages)} passed to brain | gate: {gate_status}")
-        # Overwrite raw_dump.json with only the fresh messages so brain.py reads the filtered set
         RAW_DUMP.write_text(
             json.dumps(raw_messages, ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -66,17 +60,14 @@ async def main() -> None:
     except Exception as e:
         print(f"[main] Checker failed — passing all messages to brain: {e}")
 
-    # --- Stage 2: Score with brain ---
     try:
         scored_jobs = run_brain()
-        # to swap model or change scoring: edit engine/brain.py → score_message()
     except Exception as e:
         print(f"[main] Brain failed: {e}")
         scored_jobs = []
 
     jobs_found = len(scored_jobs)
 
-    # write scored_dump.json after every run — keeps it in sync whether run via main or brain directly
     try:
         SCORED_DUMP_FILE.write_text(
             json.dumps(
@@ -90,15 +81,13 @@ async def main() -> None:
     except Exception as e:
         print(f"[main] Could not write scored_dump.json: {e}")
 
-    # --- Stage 3: Deduplicate, persist, collect alerts ---
     alerts_sent = 0
-    supabase_new = 0  # jobs inserted into Supabase (primary DB)
+    supabase_new = 0
     supabase_errors = 0
-    csv_new = 0  # jobs new to CSV (cross-run backup, committed to repo)
+    csv_new = 0
     fitting_jobs: list[ScoredJob] = []
 
     for job in scored_jobs:
-        # CSV layer — cross-run dedup (committed to repo, survives GitHub Actions)
         csv_ok = False
         try:
             csv_ok = save_to_csv(job)
@@ -109,11 +98,9 @@ async def main() -> None:
         except Exception as e:
             print(f"[main] CSV error for '{job.title}': {e}")
 
-        # Alert eligibility: CSV-new jobs with high score (decoupled from CSV exception)
         if csv_ok and job.confidence_score > 7:
             fitting_jobs.append(job)
 
-        # Supabase layer — primary DB
         try:
             ok = save_to_supabase(job, source_group=job.source_group or "unknown")
             if ok:
@@ -124,10 +111,6 @@ async def main() -> None:
         except Exception as e:
             supabase_errors += 1
             print(f"[main] Supabase error for '{job.title}': {e}")
-
-    print(
-        f"[main] Supabase new: {supabase_new} | CSV new: {csv_new} | Appended {csv_new} rows → data/jobs.csv"
-    )
 
     # Alert user if Supabase was unreachable (read) or had write failures
     if not checker_available or supabase_errors > 0:
@@ -141,7 +124,6 @@ async def main() -> None:
         except Exception as e:
             print(f"[main] Could not send Supabase error alert: {e}")
 
-    # --- Stage 4: Summary first, then per-job alerts ---
     try:
         await send_summary(
             groups_scanned=groups_scanned,
@@ -165,14 +147,10 @@ async def main() -> None:
         except Exception as e:
             print(f"[main] Alert failed for '{job.title}': {e}")
 
-    # --- Update last_seen checkpoint (only reached on clean run) ---
     try:
-        # Use all_raw_messages (pre-checker) so the checkpoint advances for duplicates too.
-        # If all_raw_messages is empty (e.g. listener failed), fall back to reading the file.
+        # Use pre-checker messages so checkpoint advances for duplicates too
         checkpoint_messages = all_raw_messages if all_raw_messages else json.loads(RAW_DUMP.read_text(encoding="utf-8"))
-        new_last_seen: dict[str, datetime] = (
-            load_last_seen()
-        )  # start from existing — preserve groups with no new messages
+        new_last_seen: dict[str, datetime] = load_last_seen()
         for msg in checkpoint_messages:
             group_id = msg["group"]
             ts = datetime.fromisoformat(msg["timestamp"])
@@ -180,11 +158,9 @@ async def main() -> None:
                 new_last_seen[group_id] = ts
         if new_last_seen:
             save_last_seen(new_last_seen)
-            print(f"[main] Updated last_seen for {len(new_last_seen)} groups")
     except Exception as e:
         print(f"[main] Could not update last_seen: {e}")
 
-    # --- Final log ---
     print(
         f"[main] {groups_scanned} groups scanned | "
         f"{messages_fetched} fetched | "
