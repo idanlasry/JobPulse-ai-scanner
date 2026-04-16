@@ -43,6 +43,8 @@ Your job is to:
    — If NO link is found, respond with {{"is_job": false}}.
 3. If it's a job with a link, extract all fields and score the fit.
 
+Note: Some job postings are just brief lists of keywords, a company name, and a link. Treat these as valid job offers even if they lack full sentences.
+
 Always respond with valid JSON only — no markdown, no explanation outside the JSON.
 
 Response format when IS a job with a link:
@@ -143,7 +145,9 @@ def run_brain() -> list[ScoredJob]:
 
         if result:
             scored_jobs.append(result)
-            print(f"[brain] [{i + 1}/{len(messages)}] Job found: {result.title} (score={result.confidence_score})")
+            print(
+                f"[brain] [{i + 1}/{len(messages)}] Job found: {result.title} (score={result.confidence_score})"
+            )
 
     print(
         f"[brain] Done — {len(scored_jobs)} jobs extracted from {len(messages)} messages"
