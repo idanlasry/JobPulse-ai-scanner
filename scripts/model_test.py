@@ -10,6 +10,9 @@ from google import genai
 from google.genai import types as genai_types
 import pandas as pd
 from dotenv import load_dotenv
+from pydantic import ValidationError
+
+from engine.models import ScoredJob
 
 load_dotenv(override=True)
 
@@ -38,9 +41,9 @@ You will be given:
 2. A raw message from a Telegram job group
 
 Your job is to:
-1. Decide if the message is a job offer. If not, respond with {"is_job": false}.
+1. Decide if the message is a job offer. If not, respond with {{"is_job": false}}.
 2. If it is a job offer, check if it contains an application/job link (URL starting with http/https, or t.me, or linkedin.com, or similar).
-   — If NO link is found, respond with {"is_job": false}.
+   — If NO link is found, respond with {{"is_job": false}}.
 3. If it's a job with a link, extract all fields and score the fit.
 
 Note: Some job postings are just brief lists of keywords, a company name, and a link. Treat these as valid job offers even if they lack full sentences.
@@ -48,7 +51,7 @@ Note: Some job postings are just brief lists of keywords, a company name, and a 
 Always respond with valid JSON only — no markdown, no explanation outside the JSON.
 
 Response format when IS a job with a link:
-{
+{{
   "is_job": true,
   "title": "...",
   "company": "...",
@@ -59,12 +62,12 @@ Response format when IS a job with a link:
   "job_link": "https://...",
   "confidence_score": 7,
   "fit_reasoning": "..."
-}
+}}
 
 Response format when NOT a job or no link:
-{
+{{
   "is_job": false
-}
+}}
 
 Scoring rules:
 - confidence_score must be an integer 1-10
@@ -108,12 +111,13 @@ def build_gpt_row(row: dict) -> dict:
     return out
 
 
-def build_model_row(sample_row: dict, scored: dict, model_name: str) -> dict:
+def build_model_row(sample_row: dict, scored: ScoredJob, model_name: str) -> dict:
     out = dict(sample_row)
+    scored_dict = scored.model_dump()
     for field in ("title", "company", "location", "is_junior", "tech_stack",
                   "contact_info", "job_link", "confidence_score", "fit_reasoning"):
-        if field in scored:
-            out[field] = scored[field]
+        if field in scored_dict:
+            out[field] = scored_dict[field]
     out["tech_stack"] = _serialize_tech_stack(out.get("tech_stack"))
     out["model"] = model_name
     out["original_gpt_score"] = sample_row["confidence_score"]
@@ -121,7 +125,7 @@ def build_model_row(sample_row: dict, scored: dict, model_name: str) -> dict:
 
 
 # %%
-def score_with_gemini(raw_text: str) -> dict | None:
+def score_with_gemini(raw_text: str) -> ScoredJob | None:
     global gemini_usage, _gemini_daily_quota_exhausted
     if _gemini_daily_quota_exhausted:
         print("[gemini] skipped — daily quota exhausted")
@@ -150,18 +154,12 @@ def score_with_gemini(raw_text: str) -> dict | None:
         if not data.get("is_job", False):
             return None
 
-        return {
-            "title": data.get("title", ""),
-            "company": data.get("company"),
-            "location": data.get("location"),
-            "is_junior": data.get("is_junior", False),
-            "tech_stack": data.get("tech_stack", []),
-            "contact_info": data.get("contact_info"),
-            "job_link": data.get("job_link", ""),
-            "confidence_score": data.get("confidence_score"),
-            "fit_reasoning": data.get("fit_reasoning", ""),
-        }
+        data["raw_text"] = raw_text
+        return ScoredJob.model_validate(data)
 
+    except ValidationError as e:
+        print(f"[gemini] ValidationError: {e}")
+        return None
     except Exception as e:
         err_str = str(e)
         if "GenerateRequestsPerDayPerProjectPerModel" in err_str:
@@ -172,7 +170,7 @@ def score_with_gemini(raw_text: str) -> dict | None:
         return None
 
 
-def score_with_sonnet(raw_text: str) -> dict | None:
+def score_with_sonnet(raw_text: str) -> ScoredJob | None:
     global sonnet_usage
     api_key = os.getenv("ANTHROPIC_API_KEY")
     if not api_key:
@@ -202,18 +200,12 @@ def score_with_sonnet(raw_text: str) -> dict | None:
         if not data.get("is_job", False):
             return None
 
-        return {
-            "title": data.get("title", ""),
-            "company": data.get("company"),
-            "location": data.get("location"),
-            "is_junior": data.get("is_junior", False),
-            "tech_stack": data.get("tech_stack", []),
-            "contact_info": data.get("contact_info"),
-            "job_link": data.get("job_link", ""),
-            "confidence_score": data.get("confidence_score"),
-            "fit_reasoning": data.get("fit_reasoning", ""),
-        }
+        data["raw_text"] = raw_text
+        return ScoredJob.model_validate(data)
 
+    except ValidationError as e:
+        print(f"[sonnet] ValidationError: {e}")
+        return None
     except Exception as e:
         print(f"[sonnet] ERROR: {e}")
         return None
@@ -309,13 +301,12 @@ def main() -> None:
 
     df = pd.DataFrame(all_rows)
 
-    supabase_cols = [
+    priority_cols = ["model", "job_link", "confidence_score", "original_gpt_score", "fit_reasoning"]
+    rest_cols = [
         "job_hash", "timestamp", "title", "company", "location", "is_junior",
-        "tech_stack", "contact_info", "job_link", "raw_text", "confidence_score",
-        "fit_reasoning", "source", "source_group", "repo", "alerted",
+        "tech_stack", "contact_info", "raw_text", "source", "source_group", "repo", "alerted",
     ]
-    extra_cols = ["model", "original_gpt_score"]
-    ordered_cols = [c for c in supabase_cols if c in df.columns] + extra_cols
+    ordered_cols = priority_cols + [c for c in rest_cols if c in df.columns]
     df = df[ordered_cols]
 
     df.to_csv(OUTPUT_FILE, index=False, encoding="utf-8")

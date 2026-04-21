@@ -89,7 +89,7 @@ def score_delta(df: pd.DataFrame) -> None:
         print(f"    mean delta : {d.mean():+.2f}")
         print(f"    std        : {d.std():.2f}")
         print(f"    % exact    : {(d == 0).mean() * 100:.1f}%")
-        print(f"    % within±1 : {(d.abs() <= 1).mean() * 100:.1f}%")
+        print(f"    % within +/-1 : {(d.abs() <= 1).mean() * 100:.1f}%")
 
     print("=" * 45)
 
