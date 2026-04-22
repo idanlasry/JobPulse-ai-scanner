@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT anchored on the tech stack match (SQL, Python, Power BI) and junior designation, scoring 8. It completely missed the role's 'Data Engineering' category label which Sonnet correctly flagged as a meaningful signal that the role may lean more toward engineering than analytics. No location or remote info was factored in either. The tech stack extraction is accurate and complete — the reasoning failure is contextual, not extractive."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "GPT made two errors: (1) stated the role 'does not align with the candidate's primary target roles' — Business Analyst is explicitly listed as an acceptable variant in the portfolio; (2) scored 3 instead of 1-2 for a Senior-titled role, which meets the hard exclusion threshold. Sonnet read the analytical work (KPIs, dashboards, business modeling) and preferred location, but also failed the hard exclusion check by scoring 5. Both models under-applied the Senior hard exclusion rule — GPT's score of 3 is closer to the boundary but still over it. Both correctly extracted an empty stack since no tools were specified."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT correctly identified all key positive signals — SQL, Python, Pandas/Numpy, junior level, Tel Aviv — but gave a flat 'aligns well' assessment (8) instead of recognizing this as an exceptional match. When a role is the exact target title, exact seniority, exact location, AND full tech stack match, the score should be 9-10. GPT described a good opportunity generically rather than synthesizing the cumulative weight of all positives aligning simultaneously. Stack extraction is identical across both models."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "GPT's critical failure was describing 'San Antonio, USA' as merely 'outside the candidate's preferred area in Israel' — a severe understatement of a full international relocation requiring leaving the country. Per portfolio rules, full relocation outside Israel is a hard exclusion requiring a score of 1-2. GPT scored 4, double the maximum allowed for this case. Sonnet correctly applied the hard exclusion and scored 2. GPT's tool analysis was accurate — neither model found strong stack overlap — but the location reasoning gap is the defining deficiency in this row."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT correctly spotted SQL/Python alignment and was appropriately cautious about mid-level seniority. However, it missed several compounding positive signals: Rehovot is explicitly listed as a preferred city in the candidate portfolio; Power BI is the candidate's preferred BI tool, described generically here as just part of 'the skill set'; ETL/ELT is listed under candidate methodologies. When all positives are properly weighted — exact title, preferred city, primary tools, methodology match — this is a clear 8, not a 6. GPT's stack extraction is good and captures 5 of Sonnet's 7 tools."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT's single-signal anchoring is most evident here — the largest delta in the eval set. It fixated entirely on '3+ years exceeds target' and gave 4, ignoring everything else. The portfolio explicitly says mid-level is acceptable 'if requirements are realistic for 1-3 years experience' — and 3 years IS within that range. Sonnet correctly read the full picture: exact Data Analyst title, Tel Aviv preferred location, SQL and Power BI as primary tools, partial stack match still valid. Note: 3+ years is not a Senior/Lead hard exclusion trigger, so GPT correctly avoided hard exclusion logic — the failure is in positive signal weighting, not exclusion logic. Stack extraction is identical across both models."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT explicitly stated 'the focus on Machine Learning and LLM is outside the candidate's primary skills' — factually incorrect. The portfolio directly lists 'Large Language Models — prompt engineering, MVP prototyping' and the JobPulse project demonstrates practical LLM and API integration experience. GPT dismissed the role based on the 'Data Scientist' title without reading the actual skill overlap. Sonnet correctly traced the LLM/Prompt Engineering components back to the candidate's project history. The role is not a pure ML/research hard exclusion given the LLM/prompt engineering focus, so GPT's avoidance of the 1-2 range was correct — but the underlying reasoning was wrong. Stack extraction is identical."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "GPT made two errors: (1) characterized 'sales analysis' as misaligned with the candidate's data analysis background — the role description explicitly involves pipeline, funnel, revenue, and forecast analytics, all within the candidate's demonstrated capabilities; (2) scored 2 — hard exclusion territory — for a 5+ year experience requirement, which is a 'score DOWN significantly' modifier per the portfolio, not a hard exclusion. Hard exclusions apply to Senior/Lead/Manager titles, not experience counts. After applying the 5-year downgrade to an otherwise moderately fitting analytical role, the correct score is 3-4. Sonnet's 4 is the better calibrated answer. Both models correctly extracted no tech stack."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT scored 5 for a data annotation role by anchoring entirely on junior seniority and Israel location, then treating zero tool overlap as merely a downgrade. Data annotation (fact-checking, following instructions, English proficiency) is categorically different from data analysis — no SQL, no Python, no dashboards, no analytical decision-making. Sonnet correctly identified this as fundamentally misaligned work and scored 3. No formal hard exclusion from the portfolio list covers annotation roles — GPT correctly avoided hard exclusion logic — but the calibration failure (5 vs 3) reveals over-reliance on seniority and location signals when role content is the dominant signal. Both models correctly extracted no tech stack."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT correctly identified Power BI and SQL as tool matches but immediately undercut them with a 'mid-level may not align' concern, landing at 5. The portfolio explicitly accepts mid-level roles, and Power BI + SQL is the candidate's exact primary tool combination — not a partial match but a direct hit. Tel Aviv is also the top preferred location, adding further weight. GPT gave equal gravity to a weak negative (mid-level) and multiple strong positives, producing an under-calibrated score. Sonnet's 7 reflects the correct weighting. Stack extraction is identical across both models: Power BI and SQL."
+  }
+}

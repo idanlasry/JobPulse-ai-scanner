@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Structural contradiction persists across seven versions. NEGATIVES: None but score 8 — the calibration table says junior + 3 primary tools + no negatives = 9-10. If there genuinely are no negatives the score must go higher; if it stops at 8 there must be a stated negative. GPT continues to omit the 'Data Engineering' category label from the posting, which is the real signal pulling the score below 10. Stack extraction correct (SQL, Python, Power BI). Hard exclusion correctly absent. TOOLS section now correctly enumerates 3 primary matches (+2), but the score doesn't follow to the calibration-implied range."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": false,
+    "judge_reasoning": "Hard exclusion correctly applied — title is literally 'Senior Business Analyst', so HARD BLOCK: 'Senior in title' is accurate and score 1 is correct. Score_delta of 4 reflects Sonnet gold miscalibration on this row, not a GPT failure. However, GPT extracted generic labels ['Business Analysis', 'Data Analysis', 'Modeling'] for tech_stack instead of [] — the posting has no specific tools listed. ADDITIONAL RULES explicitly prohibit 'generic skill labels like Business Analysis'. Stack_match marked false. This is a new regression from v4/v5/v6 where [] was returned correctly."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Persistent primary tool miscounting. v7 TOOLS section explicitly defines PRIMARY TOOLS as Python, SQL, Power BI, Tableau and explicitly excludes Pandas/Numpy as secondary tools. GPT v7 still writes 'SQL, Python, Pandas, Numpy — 4 primary matches (+2)'. Pandas and Numpy are named as excluded from primary count in the TOOLS section — this rule had zero effect. Correct primary count is 2 (SQL + Python), not 4. Even so, with junior + no negatives + preferred city + 2 primary matches, calibration implies 9-10 not 8. Stack extraction is comprehensive and correct."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 1,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Correct and stable. HARD BLOCK: 'outside Israel' precisely named for San Antonio, score 1. Stack correct (Excel, Data Mining, Data Analytics, SAP). Delta 1 vs Sonnet gold 2 — the difference is Sonnet assigned score 2 rather than 1, both are valid hard exclusion responses. Stable correct behavior across all seven versions."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Score 5, delta 3 vs Sonnet gold 8 — regression from v5 (delta 2) and no improvement from v6. TOOLS correctly shows 3 primary matches (+2): SQL, Python, Power BI. NEGATIVES correctly labels mid-level as 'mild penalty (-1)'. R2 trigger condition is met: ONLY negative is seniority modifier ('mid-level'), score 5 < 6. R2 must fire and push score to ≥ 6. It did not. Under v7 location zones, Rehovot = neutral (no penalty, no bonus). Starting from mid-level baseline 7-8, adding tool bonus +2 and subtracting mild mid-level -1 gives 8. GPT correctly enumerated all signals but R2 failed to enforce the floor. Score 5 is internally inconsistent with the language 'mild penalty (-1)' — if penalty is -1, score cannot be 5 below the mid-level anchor of 7."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 4,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Score 3, delta 4 vs Sonnet gold 7 — major regression from v4 (delta 2) and v5/v6 (delta 2). Two failures: (1) NEGATIVES says '3+ years — significant penalty (-2 points)' — v7 seniority rules explicitly state '3+ years explicitly stated → mild -1 penalty'. GPT applied the wrong penalty magnitude. (2) R2 trigger condition met: ONLY negative is '3+ years' (a seniority modifier listed in R2's trigger), score 3 < 6. R2 says minimum score is 6 in this case. R2 did not fire. Calibration table shows '3+ yr, exact title, preferred city, 2 primary tools → 6-7'. Score 3 is outside this range even under maximum pessimism. Stack correct (SQL, Power BI, Tableau)."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 4,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Seventh consecutive version failure. Title is 'Data scientist' — no 'Senior', 'Lead', or 'Manager' present. GPT writes HARD BLOCK: 'Senior in title' despite a dedicated pre-check explicitly instructing it to copy the exact title and verify seniority keywords, a IMPORTANT warning explicitly naming this exact hallucination ('It cannot produce HARD BLOCK: Senior in title'), and Example E demonstrating HARD BLOCK: NONE for this exact role. None of three targeted interventions had any effect. GPT correctly enumerated LLM, Prompt Engineering, A/B Testing as methodology matches in TOOLS, then wrote POSITIVES: None — inverting the rule. The model's prior that 'Data Scientist = hard exclude or very low score' is overriding every system-prompt mechanism attempted across seven versions. This row appears unreachable through prompt engineering alone."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "R1 violation persists for the fourth consecutive version (v4 had corrected this to score 2; v5, v6, v7 all regress). HARD BLOCK: NONE is correctly declared. Score is 1 — directly violates R1 and FINAL CHECK, which was moved to the most prominent position in the prompt (before the response format) specifically to fix this row. FINAL CHECK reads: 'If HARD BLOCK is NONE, confidence_score must be ≥ 3. If your score is 1 or 2 and HARD BLOCK is NONE, fix the score before outputting.' GPT declared NONE and then scored 1 without applying FINAL CHECK. POSITIVES: None — Tel Aviv is a preferred city and Sales Analyst is explicitly listed as RELEVANT. The 5yr+tool-gap penalties sum at most to -4, starting from a valid baseline of ~5-6, giving 2-3. Stack correctly []. The role's analytical content (pipeline, funnel, revenue analysis in the posting) remains invisible to GPT across all versions."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 0,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Perfect match with Sonnet gold (both score 3). CONTENT OVERRIDE PRE-CHECK fully restored this row after the v6 regression (v6 buried the override in Step 4; v7 promotes it to a standalone top-level pre-check). GPT correctly identified annotation/no-analytical-output as the dominant signal and capped the score at 3. HARD BLOCK: NONE correct. Stack correctly []. This is the only row that improved from v6 to v7. Delta 0 restored from v4/v5 behavior."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Score 5, delta 2 — regression from v5 (delta 1). TOOLS correctly shows 2 primary matches (+1): Power BI, SQL. NEGATIVES correctly labels mid-level as 'mild penalty (-1 point)'. R2 trigger: ONLY negative is 'mid-level' (seniority modifier), score 5 < 6. R2 must fire and push to ≥ 6. It did not. Calibration anchor: 'mid-level, preferred city, 2 primary matches → 6-7'. Score 5 is below the anchor's floor. The language is correct (mild penalty correctly characterized) but the score doesn't follow. Improvement over v4 in reasoning quality (v4 was rq=2, characterizes language correctly); no improvement in score outcome vs v5 which had scored 6."
+  }
+}

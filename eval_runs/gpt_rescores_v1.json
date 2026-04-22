@@ -1,0 +1,157 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "is_job": true,
+    "title": "Jr. Analytics Engineer",
+    "company": "Align Technology",
+    "location": NaN,
+    "is_junior": true,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "Power BI"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://jobs.aligntech.com/en/postings/9e85effe-4a82-41c3-953b-acbe913f3d6b",
+    "confidence_score": 8,
+    "fit_reasoning": "The role is for a Junior position requiring SQL and Python, which aligns well with the candidate's skills. Exposure to Power BI is also a match, and the job is likely to be relevant to the candidate's preferred domain of analytics."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "is_job": true,
+    "title": "Senior Business Analyst",
+    "company": "Check Point",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [],
+    "contact_info": NaN,
+    "job_link": "https://careers.checkpoint.com/index.php?m=cpcareers&a=show&joborderid=22566&source=",
+    "confidence_score": 3,
+    "fit_reasoning": "The role is for a Senior Business Analyst requiring 3-5 years of experience, which exceeds the candidate's target level of Junior to Mid. The job does not align with the candidate's primary target roles and requires a higher level of experience than the candidate possesses."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "is_job": true,
+    "title": "Data analyst",
+    "company": "Loops",
+    "location": "Tel Aviv",
+    "is_junior": true,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "Data Modeling",
+      "Data Validation",
+      "Pandas",
+      "Numpy"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/46bf496d4c?utm_source=telegram",
+    "confidence_score": 8,
+    "fit_reasoning": "The job aligns well with the candidate's skills in SQL and Python, and the focus on data modeling and validation matches their experience. The role is junior, which fits the candidate's target level, and it is located in Tel Aviv, which is within their preferred location. The tech stack is a strong match, particularly with the inclusion of Pandas and Numpy."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "is_job": true,
+    "title": "Supply chain analyst",
+    "company": "Aditi Consulting",
+    "location": "San Antonio",
+    "is_junior": true,
+    "tech_stack": [
+      "Excel",
+      "Data Mining",
+      "Data Analytics",
+      "SAP"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/e4f229bc74?utm_source=telegram",
+    "confidence_score": 4,
+    "fit_reasoning": "The role is for a junior position, but the tech stack primarily focuses on Excel and SAP, which are not the candidate's primary tools. The candidate has strong skills in Python and SQL, which are not mentioned in this job. The location is also outside the candidate's preferred area in Israel."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "is_job": true,
+    "title": "Data Analyst",
+    "company": "Osem Nestle אסם נסטלה",
+    "location": "Rehovot",
+    "is_junior": false,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "Power BI",
+      "Databricks",
+      "ETL/ELT"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/d2c0238b8e?utm_source=telegram",
+    "confidence_score": 6,
+    "fit_reasoning": "The job requires SQL and Python, which are in the candidate's skill set. However, it is a mid-level position, which may not align with the candidate's preference for junior roles. The location is acceptable, but the candidate prefers remote work, which is not specified."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "is_job": true,
+    "title": "Data Analyst",
+    "company": "Buildots",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "SQL",
+      "Power BI",
+      "Tableau"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://buildots.com/careers/co/data/2D.465/data-analyst/",
+    "confidence_score": 4,
+    "fit_reasoning": "The role requires 3+ years of experience, which exceeds the candidate's target level of junior to mid. The tech stack includes SQL and BI tools, which align with the candidate's skills, but the experience requirement is a significant mismatch."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "is_job": true,
+    "title": "Data scientist",
+    "company": "ppltx",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "Machine Learning",
+      "LLM",
+      "Prompt Engineering",
+      "A/B Testing",
+      "Python"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/f51c558a2d?utm_source=telegram",
+    "confidence_score": 3,
+    "fit_reasoning": "The role is for a Data Scientist, which is not aligned with the candidate's target role of Data Analyst. Additionally, it is a mid-level position, which does not match the candidate's preference for junior roles. While Python is mentioned, the focus on Machine Learning and LLM is outside the candidate's primary skills."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "is_job": true,
+    "title": "Sales Analyst",
+    "company": "Port",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [],
+    "contact_info": NaN,
+    "job_link": "https://www.comeet.com/jobs/port/59.004/sales-analyst/D6.46E",
+    "confidence_score": 2,
+    "fit_reasoning": "The role requires 5 years of experience, which exceeds the candidate's target level of junior to mid. Additionally, the position is focused on sales analysis rather than data analysis, which is not aligned with the candidate's primary role target."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "is_job": true,
+    "title": "AI trainer - freelance data annotator",
+    "company": "Toloka Annotators",
+    "location": "Israel",
+    "is_junior": true,
+    "tech_stack": [],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/7850e321c0?utm_source=telegram",
+    "confidence_score": 5,
+    "fit_reasoning": "The role is junior and located in Israel, which aligns with the candidate's preferences. However, it lacks a strong technical focus on data analysis tools like Python or SQL, which are key for the candidate's profile."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "is_job": true,
+    "title": "Bi developer",
+    "company": "Sysnet Group",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "Power BI",
+      "SQL"
+    ],
+    "contact_info": NaN,
+    "job_link": "https://secrethunter.io/jobz/b588dd4989?utm_source=telegram",
+    "confidence_score": 5,
+    "fit_reasoning": "The role requires Power BI and SQL, which are part of the candidate's skill set. However, it is a mid-level position, which may not align with the candidate's target of junior to mid-level roles."
+  }
+}

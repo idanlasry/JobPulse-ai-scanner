@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT v2 improved from 8 to 7 (v1 delta=2, now delta=1). It now mentions the role 'leans more towards data engineering' which is the key insight Sonnet had. Reasoning still doesn't fully enumerate all signals systematically — it identified the stack match and seniority correctly but gave a generic 'good fit' assessment rather than explaining that the Data Engineering category label is the reason to stop at 7 rather than push to 8-9. Hard exclusion correctly not applied (junior, unknown location, not a senior title). Core stack match on SQL, Python, Power BI."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT v2 correctly applied the hard exclusion: Senior title -> score 1-2, scored 1. This is the correct portfolio behavior — PROMPT_V2's seniority table worked as designed. The high score_delta (4) is because Sonnet's gold standard (5) was itself miscalibrated on this row — Sonnet did not apply the hard exclusion for a Senior-titled role. GPT v2 is MORE aligned with portfolio rules than the Sonnet gold here. Reasoning is clear and correctly grounded in the explicit rule. This is not a GPT failure — it is a gold standard limitation in this eval set. Stack extraction identical (empty, correctly)."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "GPT v2 score unchanged at 8 (Sonnet gold: 10, delta=2). Reasoning correctly identifies all individual signals — exact title, junior, Tel Aviv, full stack match — but gives a flat 'strong match' assessment at 8. Still fails to synthesize the cumulative weight: when role title, seniority, location, AND full tech stack all align simultaneously, the correct score is 9-10. No hard exclusion applies. Stack extraction identical (SQL, Python, Data Modeling, Data Validation, Pandas, Numpy). Persistent v1 failure: holistic signal synthesis. PROMPT_V2 chain-of-thought did not resolve this."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 1,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "FIXED by PROMPT_V2. v1 delta was 2 (GPT scored 4); v2 delta is 1 (GPT scored 1). GPT correctly identified San Antonio as outside Israel and immediately applied the hard exclusion with concise reasoning: 'requires relocation outside Israel, which is a hard exclusion for the candidate.' No unnecessary analysis after the exclusion trigger. Location decision table in PROMPT_V2 worked exactly as intended. Stack extraction correct (Excel, Data Mining, Data Analytics, SAP — matches Sonnet)."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "REGRESSED from v1 (delta=2 -> delta=3). GPT v2 scored 5, down from v1's 6, despite PROMPT_V2 explicitly stating 'Mid title -> valid opportunity, do NOT penalize heavily.' GPT still anchored on 'Mid level does not align with candidate's target level of Junior to Mid' — directly contradicting the seniority table. Three compounding positives were ignored: Rehovot is a listed preferred city, Power BI is the candidate's primary BI tool, ETL/ELT is a listed methodology. The chain-of-thought instruction was not followed — no POSITIVES enumeration visible in the reasoning. Stack extraction complete (SQL, Python, PySpark, Power BI, Databricks, ETL/ELT)."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Unchanged from v1 (delta=3, score=4). PROMPT_V2 seniority table explicitly states '3 years / 3+ years / Mid title -> valid opportunity, do NOT penalize heavily.' GPT v2 reasoning says '3+ years of experience exceeds the candidate's target level' and treats it as a 'significant negative factor' — directly ignoring the new instruction. The correct approach: treat 3+ years as a mild negative (-1 point), then weight positives: exact Data Analyst title, Tel Aviv preferred location, SQL + Power BI primary tool match. Score should be 6-7. GPT v2 is unable to treat 3-year experience requirements as acceptable despite explicit instruction to do so. Hard exclusion correctly not applied (3+ years is not a Senior/Lead/Manager title). Stack correct."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 4,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "REGRESSED badly from v1 (delta=2 -> delta=4). PROMPT_V2 explicitly says: 'BORDERLINE: Data Scientist roles that include LLM / Prompt Engineering / A-B Testing — read actual requirements before scoring.' GPT v2 scored 1, stating 'Data Scientist title is not relevant' and 'focuses on ML/LLM, outside candidate's target role.' It applied title-only reasoning and completely ignored the borderline guidance — the exact failure PROMPT_V2 was designed to prevent. The LLM + Prompt Engineering + A/B Testing stack is directly in the candidate's portfolio (JobPulse project, prompt engineering listed as a skill). Hard exclusion incorrectly applied: borderline Data Scientist + LLM/Prompt Engineering is NOT on the hard exclusion list. This is the most significant v2 regression."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "REGRESSED from v1 (delta=2 -> delta=3). GPT v2 scored 1 for a Sales Analyst role with 5yr experience. PROMPT_V2 seniority table explicitly states '5+ years experience required -> reduce by 2-3 points, but do NOT disqualify.' Score of 1 implies hard exclusion, which requires a Senior/Lead/Manager TITLE — 5yr experience count is not a hard exclusion trigger. The role description explicitly involves pipeline analysis, funnel monitoring, revenue analytics, and forecast work — all within the candidate's analytical capabilities. GPT treated two negatives (5yr experience + borderline title) as a hard exclusion. Correct outcome: analytically relevant role, penalized 2-3 points for experience, final score 2-3. Score of 1 is too low. Both correctly extracted no tech stack."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Unchanged from v1 (delta=2, score=5 vs Sonnet's 3). GPT v2 continues to over-weight junior seniority and Israel location, scoring 5. It notes the lack of technical tools as a negative but still treats junior+Israel as net positives sufficient for a 5. Data annotation (fact-checking, following instructions, English proficiency) is categorically different from data analysis — no SQL, no Python, no dashboards, no analytical decision-making. PROMPT_V2's NEGATIVES enumeration step did not produce the correct outcome: GPT listed 'no technical skills' as a negative but failed to weight it as the dominant signal. Hard exclusion correctly not applied. Both extracted empty stack correctly."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Minor reasoning improvement over v1. GPT v2 now says mid-level is 'acceptable' — seniority table had some effect — but the score is still 5 and the reasoning contradicts itself: says mid is acceptable, then later says 'does not match the candidate's target of junior to mid-level roles.' Correct score is 7: Power BI + SQL is the candidate's exact primary tool combination (not a partial match), Tel Aviv is the top preferred location, and BI Developer is an acceptable role variant at acceptable seniority. Underweighting a direct dual-primary-tool hit remains the calibration failure. Hard exclusion correctly not applied. Stack match identical (Power BI, SQL)."
+  }
+}

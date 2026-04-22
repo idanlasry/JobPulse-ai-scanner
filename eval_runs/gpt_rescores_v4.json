@@ -1,0 +1,158 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "is_job": true,
+    "title": "Jr. Analytics Engineer",
+    "company": "Align Technology",
+    "location": null,
+    "is_junior": true,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "Power BI"
+    ],
+    "contact_info": null,
+    "job_link": "https://jobs.aligntech.com/en/postings/9e85effe-4a82-41c3-953b-acbe913f3d6b",
+    "confidence_score": 8,
+    "fit_reasoning": "POSITIVES: Junior title, SQL and Python match candidate skills, exposure to Power BI aligns with candidate's experience. NEGATIVES: None. HARD BLOCK: NONE. SCORE: 8 — strong match with junior title and relevant tech stack."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "is_job": true,
+    "title": "Senior Business Analyst",
+    "company": "Check Point",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [],
+    "contact_info": null,
+    "job_link": "https://careers.checkpoint.com/index.php?m=cpcareers&a=show&joborderid=22566&source=",
+    "confidence_score": 1,
+    "fit_reasoning": "POSITIVES: Company is reputable, located in preferred city.\nNEGATIVES: Senior title, 3-5 years experience required — significant penalties.\nHARD BLOCK: Senior in title\nSCORE: 1 — role is a hard exclusion due to seniority."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "is_job": true,
+    "title": "Data analyst",
+    "company": "Loops",
+    "location": "Tel Aviv",
+    "is_junior": true,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "Data Modeling",
+      "Data Validation",
+      "Pandas",
+      "Numpy"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/46bf496d4c?utm_source=telegram",
+    "confidence_score": 9,
+    "fit_reasoning": "POSITIVES: Exact title, junior level, preferred city, strong stack match with SQL and Python. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "is_job": true,
+    "title": "Supply Chain Analyst",
+    "company": "Aditi Consulting",
+    "location": "San Antonio",
+    "is_junior": true,
+    "tech_stack": [
+      "Excel",
+      "Data Mining",
+      "Data Analytics",
+      "SAP"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/e4f229bc74?utm_source=telegram",
+    "confidence_score": 1,
+    "fit_reasoning": "POSITIVES: Junior role, relevant analytical skills. NEGATIVES: Location is outside Israel, not a preferred industry. HARD BLOCK: outside Israel. SCORE: 1 — significant barriers due to location."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "is_job": true,
+    "title": "Data Analyst",
+    "company": "Osem Nestle אסם נסטלה",
+    "location": "Rehovot",
+    "is_junior": false,
+    "tech_stack": [
+      "SQL",
+      "Python",
+      "PySpark",
+      "Power BI",
+      "Databricks",
+      "ETL/ELT"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/d2c0238b8e?utm_source=telegram",
+    "confidence_score": 5,
+    "fit_reasoning": "POSITIVES: Relevant title, location is acceptable, SQL and Power BI are primary tools. NEGATIVES: Mid-level position — not a perfect match for candidate's target level. HARD BLOCK: NONE SCORE: 5 — relevant role but mid-level experience requirement is a drawback."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "is_job": true,
+    "title": "Data Analyst",
+    "company": "Buildots",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "SQL",
+      "Power BI",
+      "Tableau"
+    ],
+    "contact_info": null,
+    "job_link": "https://buildots.com/careers/co/data/2D.465/data-analyst/",
+    "confidence_score": 5,
+    "fit_reasoning": "POSITIVES: Relevant role as Data Analyst, location in preferred city, SQL and BI tools match candidate skills. NEGATIVES: 3+ years experience required — significant penalty. HARD BLOCK: NONE. SCORE: 5 — relevant role but penalized for experience requirement."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "is_job": true,
+    "title": "Data Scientist",
+    "company": "ppltx",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "Machine Learning",
+      "LLM",
+      "Prompt Engineering",
+      "A/B Testing",
+      "Python"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/f51c558a2d?utm_source=telegram",
+    "confidence_score": 2,
+    "fit_reasoning": "POSITIVES: Location in Tel Aviv, Python is a match. NEGATIVES: Data Scientist title is not the primary target role; mid-level experience required. HARD BLOCK: Senior in title. SCORE: 2 — significant misalignment with candidate's target role and seniority."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "is_job": true,
+    "title": "Sales Analyst",
+    "company": "Port",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [],
+    "contact_info": null,
+    "job_link": "https://www.comeet.com/jobs/port/59.004/sales-analyst/D6.46E",
+    "confidence_score": 2,
+    "fit_reasoning": "POSITIVES: Location in Tel Aviv.\nNEGATIVES: 5 years experience required — significant penalty.\nHARD BLOCK: NONE\nSCORE: 2 — role is not relevant due to high experience requirement."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "is_job": true,
+    "title": "AI trainer - freelance data annotator",
+    "company": "Toloka Annotators",
+    "location": "Israel",
+    "is_junior": true,
+    "tech_stack": [],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/7850e321c0?utm_source=telegram",
+    "confidence_score": 3,
+    "fit_reasoning": "POSITIVES: Junior role, located in Israel. NEGATIVES: Role is primarily data annotation with no analytical output. HARD BLOCK: NONE. SCORE: 3 — relevant role but lacks analytical duties."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "is_job": true,
+    "title": "Bi developer",
+    "company": "Sysnet Group",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "Power BI",
+      "SQL"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/b588dd4989?utm_source=telegram",
+    "confidence_score": 5,
+    "fit_reasoning": "POSITIVES: Power BI and SQL are primary tools, located in preferred city, relevant BI role. NEGATIVES: Mid-level position — mild penalty for seniority. HARD BLOCK: NONE SCORE: 5 — relevant role but mid-level experience requirement slightly reduces score."
+  }
+}

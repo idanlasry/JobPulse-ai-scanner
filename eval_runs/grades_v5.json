@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Persistent structural failure across all five versions. GPT v5 still writes NEGATIVES: None, producing an internal contradiction: if there are no negatives, the calibration anchor (junior, full stack match, no negatives) dictates 9-10, not 8. The posting is explicitly labeled 'Data Engineering' — a real signal that the role leans away from analytics. GPT has omitted this from NEGATIVES in every version. The contradiction is now logically visible in the output: NEGATIVES: None + SCORE: 8 is inconsistent with the anchor table. Hard exclusion correctly absent. Stack correct (SQL, Python, Power BI)."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Correct and stable. HARD BLOCK: Senior in title precisely named, SCORE: 1, full format. Stack correctly returns [] — no tools specified in the posting. Score_delta of 4 reflects Sonnet's gold (5) being miscalibrated on this row, not a GPT failure — title literally says 'Senior', hard exclusion is correct behavior. Consistent GPT success across all five versions."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Stable pass. Score 9 (delta 1 from Sonnet's 10). POSITIVES names SQL, Python, Pandas, Numpy but omits Data Modeling and Data Validation — the full six-tool match is not fully enumerated, likely explaining why GPT stops at 9 rather than 10. HARD BLOCK: NONE correct. Stack extraction complete and correct. Acceptable calibration."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 0,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Perfect match. HARD BLOCK: outside Israel correctly named, score 2, full format. Delta 0. Stack correct (Excel, Data Mining, Data Analytics, SAP). Stable across all five versions — hardest correct-behavior case in the eval set."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "First meaningful improvement in five versions. Score moved 5->6 (delta 3->2) and reasoning quality improved (1->2). R2 fired correctly for the first time — NEGATIVES explicitly labels mid-level as 'mild penalty only (-1 point)'. Rehovot now correctly identified as preferred city (POSITIVES says 'preferred city (Rehovot)'). R2 enforced the minimum floor of 6. Remaining delta of 2 vs Sonnet's 8: GPT anchored to the Example A baseline (mid-level + primary stack = 7, minus 1 = 6) but did not account for the richer tech stack (six tools: SQL, Python, PySpark, Power BI, Databricks, ETL/ELT) that should push the starting baseline above 7. Stack extraction complete and correct."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No improvement from v4. Score unchanged at 5 (delta still 2). R2 should have fired — NEGATIVES is solely '3+ years of experience, which is above the candidate's target level', and score 5 < 6. R2's trigger condition is met ('3+ years' is in the trigger list) but GPT did not apply the floor. NEGATIVES language also contradicts the rules: '3+ years ... above the candidate's target level' treats it as more than a mild -1 modifier. The calibration table (3+ years, preferred city, stack match → 6-7) was not applied. Both R2 failure and language contradiction persist from v4 unchanged."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Complete failure. The DATA SCIENTIST PRE-CHECK gate in v5 had zero effect. GPT still writes HARD BLOCK: Senior in title for a role titled 'Data scientist' — fifth consecutive version with this specific hallucination. The pre-check gate explicitly instructed GPT to copy the exact title verbatim and verify it contains 'Senior' before invoking that block; GPT complied with none of these steps. More critically: GPT inverted the LLM and Prompt Engineering signals. Step 4 of the pre-check requires enumerating LLM/Prompt Engineering/A/B Testing from the stack — all three are present. Yet GPT listed these in NEGATIVES as 'not aligned with candidate's focus', the exact opposite of what the role type rules and Example C specify. The model's prior on 'Data Scientist = low score' is stronger than any system-prompt mechanism tested across five versions. Five explicit interventions — rule tables (v2), DATA SCIENTIST rule (v3), scored example (v4, v5), and now a step-by-step gate (v5) — have all failed to override this prior."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Regression from v4. v4 had corrected this row to score 2 with HARD BLOCK: NONE — the first time R1 had worked on it. v5 gives score 1 with HARD BLOCK: NONE, a direct R1 violation (R1 rule: HARD BLOCK NONE means score must be >= 3). The minimum floor from the 5-year experience penalty rule (minimum score 2) was also ignored. The v5 prompt additions (pre-check gate, Example E, strengthened R2 with explicit floor reasoning) appear to have increased prompt length to a point where R1's salience is diluted. The analytical content (pipeline, funnel, revenue analysis — all present in the posting) is still invisible; POSITIVES only names location. Both correctly extracted no tech stack."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 0,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Perfect match with Sonnet gold (both scored 3). Stable from v4. POSITIVES: Junior+Israel, NEGATIVES: annotation/no-analytical-output, HARD BLOCK: NONE, SCORE: 3. Content override rule working correctly and consistently. Delta 0 achieved in v4 and maintained in v5."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Improvement from v4. Score moved 5->6 (delta 2->1), now within acceptable range. POSITIVES correctly identifies Power BI, SQL, and Tel Aviv. NEGATIVES language is still slightly imprecise ('may imply a higher experience requirement' vs a direct 'mild penalty'), but the scoring outcome is correct. The R2 floor may have contributed to the upward move from 5. Stack correct (Power BI, SQL). First time this row achieves delta ≤ 1."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Regression from v2 (delta was 1, back to 2). GPT v4 dropped the Data Engineering category concern entirely — v2 and v3 both listed it as a NEGATIVE; v4 states NEGATIVES: None. This is factually wrong: the posting is labeled 'Data Engineering' which is a real signal that the role leans away from analytics. Dropping it produces an internal contradiction: NEGATIVES: None + SCORE: 8 should yield 9-10 per the calibration anchor (junior, full stack match). If there truly are no negatives, the score must go higher; if it stops at 8, there must be a stated negative. The format surfaced this contradiction but GPT did not resolve it. Hard exclusion correctly absent. Stack correct (SQL, Python, Power BI)."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Correctly hard-excluded. HARD BLOCK: 'Senior in title' is precisely named, SCORE: 1, format complete. Stack extraction fixed from v3 (correctly returns [] — no tools specified in the posting). Score_delta of 4 reflects Sonnet's gold (5) being miscalibrated on this row, not a GPT failure. This row is a consistent GPT success across all versions."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "FIXED by Example B. Score moved 8->9 (delta 2->1). The calibration anchor for zero-negative perfect matches finally produced movement. NEGATIVES: None is correct, HARD BLOCK: NONE correct, score 9 is within the '9-10' anchor range. One point short of Sonnet's 10 — GPT listed 'strong stack match with SQL and Python' but omitted Data Modeling, Data Validation, Pandas, Numpy from POSITIVES, likely underestimating the cumulative weight of the full six-tool match. Still, delta of 1 is within acceptable calibration range. Stack extraction complete and correct."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 1,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Consistent with v2/v3. Hard exclusion correctly applied: HARD BLOCK 'outside Israel', score 1. Format precise. Stack correct (Excel, Data Mining, Data Analytics, SAP). Stable correct behavior across all versions."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No movement across four versions (score still 5, delta still 3). Example A demonstrated this exact scenario: mid-level Data Analyst, preferred city, SQL + Power BI -> 7. GPT gave 5. R2 should have triggered (only negative is 'mid-level', score is 5 < 6), but it did not. NEGATIVES says 'not a perfect match for candidate's target level' — this contradicts the explicit rule that mid-level is acceptable with only -1 penalty. Location noted as 'acceptable' rather than 'preferred' despite Rehovot being listed as a preferred city. Two signal errors and R2 non-application make this the most resistant failure in the eval set. Stack extraction correct and comprehensive (SQL, Python, PySpark, Power BI, Databricks, ETL/ELT)."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Partial improvement: score moved 4->5, delta improved 3->2. R2 had some effect — the score increased but stopped short of the 6+ threshold. NEGATIVES still labels 3+ years as a 'significant penalty' which contradicts the seniority rules ('mild negative, -1 point at most'). If the penalty is mild (-1), and positives are strong (exact title, Tel Aviv, SQL + BI tools), the score should be 6-7 not 5. R2 says 'if only negative is 3+ years and score < 6, revise upward' — GPT revised from 4 to 5 but stayed below 6, technically still in violation. The language improvement ('significant penalty' was 'significant drawback' before) suggests partial internalization. Hard exclusion correctly absent. Stack correct."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Most resistant failure in the eval set. GPT v4 hallucinated 'HARD BLOCK: Senior in title' for a role titled 'Data scientist' — there is no 'Senior' in the title. This is the third consecutive version with this hallucination (v2: implied hard block via score 1; v3: explicitly named wrong block; v4: same). Example C demonstrated the exact scenario with the correct output (HARD BLOCK: NONE, score 5 for LLM/Prompt Engineering Data Scientist). GPT ignored it entirely. NEGATIVES does not mention LLM, Prompt Engineering, or A/B Testing — the three signals that should trigger the borderline analytical treatment — despite all three appearing in the role's tech_stack. The model has a stronger prior on 'Data Scientist = not relevant' than any prompting intervention can overcome through rules or examples. Stack correctly extracted."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "FIXED by R1. Score moved 1->2 (delta 3->2), and critically HARD BLOCK is now correctly NONE — the first time across four versions this row has the correct block declaration. R1's 'HARD BLOCK NONE -> score must be >=3' partially worked: GPT declared NONE and applied the minimum floor of 2 per the 5yr penalty rule. Residual gap vs Sonnet's 4 stems from GPT missing the analytical role content (pipeline, funnel, revenue analysis all in the posting) and treating Sales Analyst as implicitly misaligned despite it being explicitly listed as relevant. NEGATIVES only names the experience requirement; POSITIVES only names location. The analytical work content is invisible to GPT on this row. Both correctly extracted no tech stack."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 0,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "PERFECT MATCH with Sonnet gold (both scored 3). Score moved 4->3 (delta 1->0). Content override rule and reasoning format both working correctly: POSITIVES lists Junior+Israel, NEGATIVES correctly identifies the annotation/no-analytical-output issue as the dominant signal, HARD BLOCK: NONE, SCORE: 3 matches Sonnet exactly. This is the first row in the eval set to reach delta=0. The content mismatch cap, introduced in v3 and reinforced in v4, has fully corrected this row."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Score unchanged at 5 (delta still 2), but reasoning quality improved. NEGATIVES now correctly says 'mild penalty for seniority' — the first time across four versions GPT correctly characterizes the mid-level penalty as mild rather than significant. However, this correct characterization did not produce a corresponding score increase. R2 should have triggered (only negative is mild mid-level, score 5 < 6), but it did not move the score. The calibration anchor (mid-level, preferred city, primary stack match -> 7-8) was not applied. The improvement: language is now internally consistent with the rules; the gap: the scoring mechanism still does not follow from that language. Stack correct (Power BI, SQL)."
+  }
+}

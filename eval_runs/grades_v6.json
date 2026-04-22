@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Same structural failure as v4/v5: NEGATIVES: None but score 8, which contradicts the calibration table (junior, 3 primary tools, no negatives → 9-10). Positive: GPT correctly adopted the TOOLS section format and enumerated 3 primary matches. Negative: continues to omit the 'Data Engineering' category signal that has been present in every version. The tools framework is being used syntactically but not driving score uplift to 9-10 as the calibration requires."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Correct and stable. HARD BLOCK: Senior in title, score 1, full format. Stack correctly returns []. Score_delta of 4 reflects Sonnet gold miscalibration on this row — hard exclusion is correct behavior. Consistent GPT success across all six versions."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Regression from v5 (delta 1→2). Two issues: (1) GPT miscounted primary tools — says '4 primary matches' counting Pandas and Numpy as primary, when PRIMARY TOOLS are Python, SQL, Power BI, Tableau. Pandas and Numpy are secondary/methodology tools. Correct primary count is 2 (Python + SQL). (2) Even with the inflated count, score 8 still underperforms the calibration table (junior, no negatives, preferred city → 9-10). The TOOLS section format is working but primary/secondary boundary is being blurred."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 0,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Perfect. HARD BLOCK: outside Israel, score 2, format correct. Stack correct (Excel, Data Mining, Data Analytics, SAP). Stable across all six versions. Note: NEGATIVES lists location as '-1' before naming it as HARD BLOCK — slight logical redundancy, but outcome is correct."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No improvement from v5 (delta still 2). TOOLS section correctly enumerates 3 primary matches. Mid-level correctly labeled as mild penalty (-1). Score of 6 is now consistent with v6 location rules (Rehovot = neutral zone, no location bonus) — under v6 rules, 3 primary tools + mid-level + neutral location = 6 is actually the correct v6 output. The residual gap is a structural conflict: Sonnet's gold (8) was calibrated with Rehovot as a preferred city. The v6 rule change for Rehovot partially explains why matching Sonnet's 8 is harder here. Note: GPT still labels Rehovot as 'preferred city' in POSITIVES, which contradicts the neutral zone rule — but the final score is consistent with the neutral treatment. Stack extraction correct."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No improvement. GPT correctly enumerates all inputs: TOOLS = 3 primary matches (+2), POSITIVES = exact title + Tel Aviv, NEGATIVES = 3+ years (-1). But produces score 5 despite the calibration table explicitly showing '3+ yr, exact title, preferred city, 3+ tools → 7-8'. The tools framework is syntactically adopted but the calibration table override is ignored. R2 fires only for scores below 5 — score 5 technically passes R2 minimum but still violates the calibration anchor. The step-by-step structure guides GPT to enumerate correctly but not to follow the scoring table."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 4,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Worst result in the eval history for this row. Score dropped to 1 (from 2 in v4/v5), delta widened to 4. GPT now declares HARD BLOCK: 'Senior / Lead / Manager in TITLE' for a role titled 'Data scientist' — an expansion of the hard exclusion trigger list to include 'Data Scientist' as a title. This is a new hallucination pattern: instead of inventing 'Senior in title' (v2-v5), it now maps the 'NOT RELEVANT: Data Scientist' line from the Role Type Check directly to a hard exclusion. The step-by-step structure appears to have connected Step 4 (NOT RELEVANT roles) to the hard exclusion mechanism. Most critically: GPT correctly enumerated the 3 methodology matches (LLM, Prompt Engineering, A/B Testing) in the TOOLS section, then discarded all three when applying the role type hard exclusion. The DATA SCIENTIST PRE-CHECK gate was ignored entirely — sixth consecutive version where the gate fails. Stack correctly extracted."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "R1 violation persists from v5. HARD BLOCK: NONE declared, but score 1 — directly violates R1 (NONE → score must be ≥ 3). Also violates the minimum floor rule for 5+ years penalty (minimum score 2). v4 had this corrected to score 2; v5 and v6 both regressed. The 5+ years (-2 to -3) and 0 tools (-1) penalties sum to -4, but starting from a moderate baseline (Sales Analyst, analytical role, Tel Aviv) should still land at 3-4, not 1. POSITIVES only names location; the analytical content of the role (pipeline, funnel, revenue analysis) continues to be invisible to GPT across all versions."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Major regression from v4/v5 where this row achieved delta=0. v6 gives score 5 for a data annotation role (Sonnet gold: 3). The content override rule is in Step 4 (Role Type Check), but GPT anchored on Step 1 (0 tools = -1) and the junior/Israel positives and stopped. The step-by-step framework appears to have caused GPT to follow the tool-counting and seniority-adjustment steps mechanically without reaching the content override check in Step 4. In v4/v5, the single CONTENT OVERRIDE paragraph was prominent and applied correctly. In v6, it's buried in Step 4 after three other steps. Regression directly attributable to the structural change."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Maintained improvement from v5. Score 6, delta 1 vs Sonnet gold 7. TOOLS correctly shows 2 primary matches (+1). Mid-level correctly labeled as mild penalty. Calibration check: 'Mid (no count), exact title, preferred city, 2 tools → 6-7' — score 6 is at the bottom of the range but within it. Stack correct (Power BI, SQL). This row has been stable at delta=1 since v5."
+  }
+}

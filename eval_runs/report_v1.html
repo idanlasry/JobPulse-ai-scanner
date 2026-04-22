@@ -1,0 +1,335 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prompt Evaluation Report</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 0;
+                padding: 20px;
+                color: #333;
+            }
+            .header {
+                background-color: #f0f0f0;
+                padding: 20px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            .summary-stats {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .stat-box {
+                background-color: #fff;
+                border-radius: 5px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                flex-basis: 30%;
+                min-width: 200px;
+            }
+            .stat-value {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 5px;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th {
+                background-color: #4a4a4a;
+                color: white;
+                text-align: left;
+                padding: 12px;
+            }
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                vertical-align: top;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .output-cell {
+                white-space: pre-wrap;
+            }
+            .score {
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 3px;
+                display: inline-block;
+            }
+            .score-high {
+                background-color: #c8e6c9;
+                color: #2e7d32;
+            }
+            .score-medium {
+                background-color: #fff9c4;
+                color: #f57f17;
+            }
+            .score-low {
+                background-color: #ffcdd2;
+                color: #c62828;
+            }
+            .output {
+                overflow: auto;
+                white-space: pre-wrap;
+            }
+
+            .output pre {
+                background-color: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 10px;
+                margin: 0;
+                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #333;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+                overflow-x: auto;
+                white-space: pre-wrap;
+                word-wrap: break-word;
+            }
+
+            td {
+                width: 20%;
+            }
+            .score-col {
+                width: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Prompt Evaluation Report</h1>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <div>Total Test Cases</div>
+                    <div class="stat-value">10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Average Score</div>
+                    <div class="stat-value">7.8 / 10</div>
+                </div>
+                <div class="stat-box">
+                    <div>Pass Rate (≥7)</div>
+                    <div class="stat-value">60.0%</div>
+                </div>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Scenario</th>
+                    <th>Prompt Inputs</th>
+                    <th>Solution Criteria</th>
+                    <th>Output</th>
+                    <th>Score</th>
+                    <th>Reasoning</th>
+                </tr>
+            </thead>
+            <tbody>
+    
+            <tr>
+                <td>Jr. Analytics Engineer | GPT:8 → Sonnet:6</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> ‎*Jr. Analytics Engineer* / Align Technology
+‎
+‎_Data Engineering_
+‎
+- ‎Bachelor’s degree in computer science, Information Systems, Data Analytics, or a related field.
+- ‎Experience with SQL, Python, and data modeling concepts.
+- ‎Exposure to Power BI and dashboard/report creation.
+‎
+‎https://jobs.a…<br><strong>gpt_score (original):</strong> 8<br><strong>sonnet_score (gold):</strong> 6<br><strong>gpt_tech_stack:</strong> ['SQL', 'Python', 'Power BI']<br><strong>sonnet_tech_stack:</strong> ["SQL", "Python", "Power BI", "Data Modeling"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 8]
+The role is for a Junior position requiring SQL and Python, which aligns well with the candidate's skills. Exposure to Power BI is also a match, and the job is likely to be relevant to the candidate's preferred domain of analytics.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">GPT anchored on the tech stack match (SQL, Python, Power BI) and junior designation, scoring 8. It completely missed the role's 'Data Engineering' category label which Sonnet correctly flagged as a meaningful signal that the role may lean more toward engineering than analytics. No location or remote info was factored in either. The tech stack extraction is accurate and complete — the reasoning failure is contextual, not extractive.</td>
+            </tr>
+        
+            <tr>
+                <td>Senior Business Analyst | GPT:3 → Sonnet:5</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> 🆕 **Senior Business Analyst**
+
+💼 **Company:** Check Point
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Analyze, optimize and build business models for our products, pricing, promotions, competitor trends, activities, KPIs…<br><strong>gpt_score (original):</strong> 3<br><strong>sonnet_score (gold):</strong> 5<br><strong>gpt_tech_stack:</strong> []<br><strong>sonnet_tech_stack:</strong> []</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 3]
+The role is for a Senior Business Analyst requiring 3-5 years of experience, which exceeds the candidate's target level of Junior to Mid. The job does not align with the candidate's primary target roles and requires a higher level of experience than the candidate possesses.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">GPT made two errors: (1) stated the role 'does not align with the candidate's primary target roles' — Business Analyst is explicitly listed as an acceptable variant in the portfolio; (2) scored 3 instead of 1-2 for a Senior-titled role, which meets the hard exclusion threshold. Sonnet read the analytical work (KPIs, dashboards, business modeling) and preferred location, but also failed the hard exclusion check by scoring 5. Both models under-applied the Senior hard exclusion rule — GPT's score of 3 is closer to the boundary but still over it. Both correctly extracted an empty stack since no tools were specified.</td>
+            </tr>
+        
+            <tr>
+                <td>Data Analyst | GPT:8 → Sonnet:10</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **Data analyst**
+Loops
+Tel Aviv
+14/4/26
+ㅤ
+__SQL, Python, Data Modeling, Data Validation, Pandas, Numpy, Teamwork__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/46bf496d4c?utm_source=telegram…<br><strong>gpt_score (original):</strong> 8<br><strong>sonnet_score (gold):</strong> 10<br><strong>gpt_tech_stack:</strong> ['SQL', 'Python', 'Data Modeling', 'Data Validation', 'Pandas', 'Numpy']<br><strong>sonnet_tech_stack:</strong> ["SQL", "Python", "Data Modeling", "Data Validation", "Pandas", "Numpy"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 8]
+The job aligns well with the candidate's skills in SQL and Python, and the focus on data modeling and validation matches their experience. The role is junior, which fits the candidate's target level, and it is located in Tel Aviv, which is within their preferred location. The tech stack is a strong match, particularly with the inclusion of Pandas and Numpy.</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">GPT correctly identified all key positive signals — SQL, Python, Pandas/Numpy, junior level, Tel Aviv — but gave a flat 'aligns well' assessment (8) instead of recognizing this as an exceptional match. When a role is the exact target title, exact seniority, exact location, AND full tech stack match, the score should be 9-10. GPT described a good opportunity generically rather than synthesizing the cumulative weight of all positives aligning simultaneously. Stack extraction is identical across both models.</td>
+            </tr>
+        
+            <tr>
+                <td>Supply Chain Analyst | GPT:4 → Sonnet:2</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **Supply chain analyst**
+Aditi Consulting
+San Antonio
+15/4/26
+ㅤ
+__Excel, Data Mining, Data Analytics, Problem Solving, SAP, Communication, Analytical Skills__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/e4f229bc74?utm_source=telegram…<br><strong>gpt_score (original):</strong> 4<br><strong>sonnet_score (gold):</strong> 2<br><strong>gpt_tech_stack:</strong> ['Excel', 'Data Mining', 'Data Analytics', 'SAP']<br><strong>sonnet_tech_stack:</strong> ["Excel", "SAP", "Data Mining", "Data Analytics"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 4]
+The role is for a junior position, but the tech stack primarily focuses on Excel and SAP, which are not the candidate's primary tools. The candidate has strong skills in Python and SQL, which are not mentioned in this job. The location is also outside the candidate's preferred area in Israel.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">GPT's critical failure was describing 'San Antonio, USA' as merely 'outside the candidate's preferred area in Israel' — a severe understatement of a full international relocation requiring leaving the country. Per portfolio rules, full relocation outside Israel is a hard exclusion requiring a score of 1-2. GPT scored 4, double the maximum allowed for this case. Sonnet correctly applied the hard exclusion and scored 2. GPT's tool analysis was accurate — neither model found strong stack overlap — but the location reasoning gap is the defining deficiency in this row.</td>
+            </tr>
+        
+            <tr>
+                <td>Data Analyst | GPT:6 → Sonnet:8</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **The IT division of osem nestlé group is recruiting data analyst to join the data team.**
+Osem Nestle אסם נסטלה
+Rehovot
+15/4/26
+ㅤ
+__SQL, Python/PySpark, Power BI, Databricks, ETL/ELT, Analytical skills, Communication__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/d2c0238b8e?utm_source=telegram…<br><strong>gpt_score (original):</strong> 6<br><strong>sonnet_score (gold):</strong> 8<br><strong>gpt_tech_stack:</strong> ['SQL', 'Python', 'Power BI', 'Databricks', 'ETL/ELT']<br><strong>sonnet_tech_stack:</strong> ["SQL", "Python", "PySpark", "Power BI", "Databricks", "ETL", "ELT"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 6]
+The job requires SQL and Python, which are in the candidate's skill set. However, it is a mid-level position, which may not align with the candidate's preference for junior roles. The location is acceptable, but the candidate prefers remote work, which is not specified.</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">GPT correctly spotted SQL/Python alignment and was appropriately cautious about mid-level seniority. However, it missed several compounding positive signals: Rehovot is explicitly listed as a preferred city in the candidate portfolio; Power BI is the candidate's preferred BI tool, described generically here as just part of 'the skill set'; ETL/ELT is listed under candidate methodologies. When all positives are properly weighted — exact title, preferred city, primary tools, methodology match — this is a clear 8, not a 6. GPT's stack extraction is good and captures 5 of Sonnet's 7 tools.</td>
+            </tr>
+        
+            <tr>
+                <td>Data Analyst | GPT:4 → Sonnet:7</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> 🆕 **Data Analyst**
+
+💼 **Company:** Buildots
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Analyze large and complex datasets, in the fascinating domain of construction AI, and have a central impact on our business decision…<br><strong>gpt_score (original):</strong> 4<br><strong>sonnet_score (gold):</strong> 7<br><strong>gpt_tech_stack:</strong> ['SQL', 'Power BI', 'Tableau']<br><strong>sonnet_tech_stack:</strong> ["SQL", "Power BI", "Tableau"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 4]
+The role requires 3+ years of experience, which exceeds the candidate's target level of junior to mid. The tech stack includes SQL and BI tools, which align with the candidate's skills, but the experience requirement is a significant mismatch.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">GPT's single-signal anchoring is most evident here — the largest delta in the eval set. It fixated entirely on '3+ years exceeds target' and gave 4, ignoring everything else. The portfolio explicitly says mid-level is acceptable 'if requirements are realistic for 1-3 years experience' — and 3 years IS within that range. Sonnet correctly read the full picture: exact Data Analyst title, Tel Aviv preferred location, SQL and Power BI as primary tools, partial stack match still valid. Note: 3+ years is not a Senior/Lead hard exclusion trigger, so GPT correctly avoided hard exclusion logic — the failure is in positive signal weighting, not exclusion logic. Stack extraction is identical across both models.</td>
+            </tr>
+        
+            <tr>
+                <td>Data Scientist | GPT:3 → Sonnet:5</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **Data scientist**
+ppltx
+Tel Aviv
+9/4/26
+ㅤ
+__Machine Learning, LLM, Prompt Engineering, A/B Testing, Python, Communication, Collaboration__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/f51c558a2d?utm_source=telegram…<br><strong>gpt_score (original):</strong> 3<br><strong>sonnet_score (gold):</strong> 5<br><strong>gpt_tech_stack:</strong> ['Machine Learning', 'LLM', 'Prompt Engineering', 'A/B Testing', 'Python']<br><strong>sonnet_tech_stack:</strong> ["Python", "Machine Learning", "LLM", "Prompt Engineering", "A/B Testing"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 3]
+The role is for a Data Scientist, which is not aligned with the candidate's target role of Data Analyst. Additionally, it is a mid-level position, which does not match the candidate's preference for junior roles. While Python is mentioned, the focus on Machine Learning and LLM is outside the candidate's primary skills.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">GPT explicitly stated 'the focus on Machine Learning and LLM is outside the candidate's primary skills' — factually incorrect. The portfolio directly lists 'Large Language Models — prompt engineering, MVP prototyping' and the JobPulse project demonstrates practical LLM and API integration experience. GPT dismissed the role based on the 'Data Scientist' title without reading the actual skill overlap. Sonnet correctly traced the LLM/Prompt Engineering components back to the candidate's project history. The role is not a pure ML/research hard exclusion given the LLM/prompt engineering focus, so GPT's avoidance of the 1-2 range was correct — but the underlying reasoning was wrong. Stack extraction is identical.</td>
+            </tr>
+        
+            <tr>
+                <td>Sales Analyst | GPT:2 → Sonnet:4</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> 🆕 **Sales Analyst**
+
+💼 **Company:** Port
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About Port At Port.io, we are building an open and flexible Agentic Engineering Platform for modern engineering organizatio…<br><strong>gpt_score (original):</strong> 2<br><strong>sonnet_score (gold):</strong> 4<br><strong>gpt_tech_stack:</strong> []<br><strong>sonnet_tech_stack:</strong> []</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 2]
+The role requires 5 years of experience, which exceeds the candidate's target level of junior to mid. Additionally, the position is focused on sales analysis rather than data analysis, which is not aligned with the candidate's primary role target.</pre></td>
+                <td class="score-col"><span class="score score-medium">6</span></td>
+                <td class="reasoning">GPT made two errors: (1) characterized 'sales analysis' as misaligned with the candidate's data analysis background — the role description explicitly involves pipeline, funnel, revenue, and forecast analytics, all within the candidate's demonstrated capabilities; (2) scored 2 — hard exclusion territory — for a 5+ year experience requirement, which is a 'score DOWN significantly' modifier per the portfolio, not a hard exclusion. Hard exclusions apply to Senior/Lead/Manager titles, not experience counts. After applying the 5-year downgrade to an otherwise moderately fitting analytical role, the correct score is 3-4. Sonnet's 4 is the better calibrated answer. Both models correctly extracted no tech stack.</td>
+            </tr>
+        
+            <tr>
+                <td>AI Trainer - Freelance Data Annotator | GPT:5 → Sonnet:3</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **AI trainer - freelance data annotator**
+Toloka Annotators
+Israel
+19/4/26
+ㅤ
+__English C1+, Logical thinking, Fact-checking, Attention to detail, Communication, AI interest, Following instructions__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/7850e321c0?utm_source=telegram…<br><strong>gpt_score (original):</strong> 5<br><strong>sonnet_score (gold):</strong> 3<br><strong>gpt_tech_stack:</strong> []<br><strong>sonnet_tech_stack:</strong> []</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 5]
+The role is junior and located in Israel, which aligns with the candidate's preferences. However, it lacks a strong technical focus on data analysis tools like Python or SQL, which are key for the candidate's profile.</pre></td>
+                <td class="score-col"><span class="score score-high">8</span></td>
+                <td class="reasoning">GPT scored 5 for a data annotation role by anchoring entirely on junior seniority and Israel location, then treating zero tool overlap as merely a downgrade. Data annotation (fact-checking, following instructions, English proficiency) is categorically different from data analysis — no SQL, no Python, no dashboards, no analytical decision-making. Sonnet correctly identified this as fundamentally misaligned work and scored 3. No formal hard exclusion from the portfolio list covers annotation roles — GPT correctly avoided hard exclusion logic — but the calibration failure (5 vs 3) reveals over-reliance on seniority and location signals when role content is the dominant signal. Both models correctly extracted no tech stack.</td>
+            </tr>
+        
+            <tr>
+                <td>BI Developer | GPT:5 → Sonnet:7</td>
+                <td class="prompt-inputs"><strong>raw_text:</strong> **Bi developer**
+Sysnet Group
+Tel Aviv
+11/4/26
+ㅤ
+__Power BI, SQL__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/b588dd4989?utm_source=telegram…<br><strong>gpt_score (original):</strong> 5<br><strong>sonnet_score (gold):</strong> 7<br><strong>gpt_tech_stack:</strong> ['Power BI', 'SQL']<br><strong>sonnet_tech_stack:</strong> ["Power BI", "SQL"]</td>
+                <td class="criteria">• SCORE_DELTA ≤ 1<br>• REASONING_QUALITY ≥ 2 (partial or holistic)<br>• HARD_EXCLUSION_CORRECT = true<br>• STACK_MATCH = true</td>
+                <td class="output"><pre>[RESCORED: 5]
+The role requires Power BI and SQL, which are part of the candidate's skill set. However, it is a mid-level position, which may not align with the candidate's target of junior to mid-level roles.</pre></td>
+                <td class="score-col"><span class="score score-high">10</span></td>
+                <td class="reasoning">GPT correctly identified Power BI and SQL as tool matches but immediately undercut them with a 'mid-level may not align' concern, landing at 5. The portfolio explicitly accepts mid-level roles, and Power BI + SQL is the candidate's exact primary tool combination — not a partial match but a direct hit. Tel Aviv is also the top preferred location, adding further weight. GPT gave equal gravity to a weak negative (mid-level) and multiple strong positives, producing an under-calibrated score. Sonnet's 7 reflects the correct weighting. Stack extraction is identical across both models: Power BI and SQL.</td>
+            </tr>
+        
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

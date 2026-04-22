@@ -1,0 +1,72 @@
+{
+  "119a9b7f135827999c288e96518904a73283fed65a191c3eb3198d657355b8d8": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Regression from v2 (delta was 1, now 2 again — scored 8 vs v2's 7). The new fit_reasoning format is followed correctly: POSITIVES lists junior/SQL/Python/Power BI, NEGATIVES flags the Data Engineering focus, HARD BLOCK is NONE. However, the stated negative ('Data Engineering focus may not align') does not translate into a score reduction — GPT still arrives at 8 despite identifying the concern. A noted negative with no score impact indicates the reasoning structure is cosmetic, not causal. Hard exclusion correctly absent (junior, unknown location). Stack extraction correct."
+  },
+  "1589c50405b519a1ad2b74e14427ad5f63e746906d36632167d2cf528723e17a": {
+    "score_delta": 4,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": false,
+    "judge_reasoning": "Hard exclusion correctly applied — Senior title -> HARD BLOCK -> score 1. Reasoning format is well-formed and the block is named precisely. Score_delta of 4 reflects Sonnet's gold (5) being itself miscalibrated on this row, not a GPT failure. New issue in v3: tech_stack extracted as ['Business Analysis', 'Data Analysis', 'KPI Tracking'] — these are job functions, not tools. The job listing has no specific software tools; correct extraction is []. Sonnet and v1/v2 GPT all returned []. This is a new stack_match failure introduced in v3, likely from the format restructuring prompting GPT to fill tech_stack more aggressively."
+  },
+  "2569acd1f494242883e4518e7b06bdf009067afe1cd2e916103360521401f5eb": {
+    "score_delta": 2,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "The new format actually makes the calibration failure more visible: NEGATIVES is 'None', HARD BLOCK is NONE, yet SCORE is 8. PROMPT_V3's calibration anchor is explicit: 'Junior, exact title, preferred city, full stack match -> 9-10'. With zero stated negatives, this row satisfies every condition for that anchor. Scoring 8 when the model itself lists no negatives is a direct contradiction of its own reasoning — the format reveals rather than fixes the synthesis failure. POSITIVES also omit Data Validation and Pandas/Numpy, listing only SQL and Python. Stack extraction correct. Unchanged from v1 and v2."
+  },
+  "42591a23002acb687f4c6de707a59d2be194fa750d268bce72108f91cfa56b6e": {
+    "score_delta": 1,
+    "reasoning_quality": 3,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Consistent with v2. Hard exclusion correctly applied via the location rule (San Antonio -> outside Israel -> score 1). Format is complete and precise: HARD BLOCK names the exact rule, SCORE gives a clear one-line justification. Stack extraction correct (Excel, Data Mining, Data Analytics, SAP)."
+  },
+  "49634321b01d4e11b292524d4cb90a9b35a6da22d6d9ca73b034ddada9c48c7a": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No improvement from v2 (score still 5, delta still 3). The POSITIVES section did improve — GPT now correctly names Rehovot and Power BI. But NEGATIVES still lists 'Mid-level position, which may require more experience than the candidate has' — directly contradicting PROMPT_V3's seniority rule ('Mid-level -> mild negative, -1 point at most, these are acceptable roles'). The calibration anchor 'Mid-level, exact title, preferred city, strong stack match -> 7-8 (not 4-5)' was not applied. Score 5 is below the anchor floor despite named positives that satisfy all anchor conditions. The reasoning format surfaced the right signals but the scoring algorithm did not use them. Hard exclusion correctly absent. Stack missing PySpark vs Sonnet's extraction."
+  },
+  "52177449145634e40c7cc9e45d5dba90b06930ba910407d4968a22f140ca6197": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "No improvement from v2 (score still 4, delta still 3). NEGATIVES states '3+ years of experience, which exceeds candidate's target' — directly contradicting both the seniority table ('3+ years -> mild negative, -1 point at most') and the calibration anchor ('3+ years, exact title, preferred city, stack match -> 6-7, not 3-4'). GPT scored 4 which is explicitly in the 'not 3-4' range the prompt flags. Three versions of explicit instruction have failed to move this score — the model has a strong prior that any experience requirement above junior is a major penalty. Hard exclusion correctly absent. Stack extraction correct (SQL, Power BI, Tableau)."
+  },
+  "538f2d04034c8881170f38d21c3ce1eeafd94082d6493f4a66c8eeb5b418ae9c": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Slight score improvement (v2: 1, v3: 2) but a new and worse reasoning failure. GPT wrote 'HARD BLOCK: Senior / Lead / Manager roles' for a role titled 'Data scientist' — a hallucination. The Data Scientist title contains none of the hard-exclusion trigger words (Senior, Lead, Manager, Principal, Staff). PROMPT_V3's Data Scientist rule explicitly says: 'If requirements mention LLM / Prompt Engineering / A-B Testing -> treat as analytical, score 4-7. Must NEVER receive score 1-2 unless Senior/Lead/Manager is also present.' The role has all three signals (LLM, Prompt Engineering, A/B Testing) and GPT ignored them entirely. The format structure made the wrong hard block visible and named, which is worse than v2's implicit over-exclusion. Hard_exclusion_correct: false — HARD BLOCK field is factually wrong. Stack extraction correct."
+  },
+  "7aa11fb018d23bef91492590ac11c7d97b33b5a69ff7a9274121872da9263db2": {
+    "score_delta": 3,
+    "reasoning_quality": 1,
+    "hard_exclusion_correct": false,
+    "stack_match": true,
+    "judge_reasoning": "Identical outcome to v2 (score 1, delta 3). GPT wrote 'HARD BLOCK: Seniority requirement' — a direct violation of PROMPT_V3's explicit 'NOT HARD EXCLUSIONS' list, which names '5+ years experience required' as a score modifier with minimum final score of 2. Additionally, NEGATIVES says 'not aligned with candidate's target level' for a Sales Analyst role — PROMPT_V3 explicitly lists 'Sales Analyst / Revenue Analyst / Growth Analyst -> analytical work, treat as relevant.' Two explicit rule violations: the NOT HARD EXCLUSIONS text was ignored for the block, and the role type text was ignored for the negatives. The format made the wrong block declaration visible. Score of 1 also violates the 'minimum score 2' floor for 5+ year penalties. Both correctly extracted no tech stack."
+  },
+  "8e7794c07241f792b287a1e44d1d9f7ecce57a3b764dadeb27a9e622c56ca837": {
+    "score_delta": 1,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "FIXED by PROMPT_V3. Score moved from 5 (v1/v2) to 4, cutting delta from 2 to 1. The CONTENT OVERRIDE rule worked: NEGATIVES correctly identifies 'Role is primarily data annotation with no analytics component, lacks relevant technical skills' as the dominant signal. HARD BLOCK is correctly NONE. Score of 4 is the upper ceiling of the allowed range (2-4 per the content override rule) and one point above Sonnet's 3 — acceptable calibration. The reasoning structure correctly deprioritized seniority/location bonuses in the presence of zero technical overlap. First substantive fix in the annotator row across three versions."
+  },
+  "dae27c74f3d4f3a9fb30dc2ce38eb5d95073af2327e82307ee2be85b9ee56e54": {
+    "score_delta": 2,
+    "reasoning_quality": 2,
+    "hard_exclusion_correct": true,
+    "stack_match": true,
+    "judge_reasoning": "Unchanged score (5, delta 2). Reasoning quality slightly improved: POSITIVES now correctly lists 'acceptable role type' alongside Tel Aviv and Power BI + SQL. NEGATIVES still cites 'Mid-level may exceed candidate's experience' — contradicting the seniority table ('Mid-level -> mild negative, -1 point at most'). Calibration anchor 'Mid-level, exact title, preferred city, strong stack match -> 7-8 (not 4-5)' not applied — score 5 sits at the top of the explicitly-discouraged range. The POSITIVES list improvement (v2 didn't name role type acceptability) suggests the format is gradually surfacing more signals, but the scoring algorithm isn't reading those signals back into the final number. Hard exclusion correctly absent. Stack correct (Power BI, SQL)."
+  }
+}
