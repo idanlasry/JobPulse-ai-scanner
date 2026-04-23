@@ -18,14 +18,15 @@ class JobOpportunity(BaseModel):
 
 # %%
 class ScoredJob(JobOpportunity):
+    fit_score: int
     confidence_score: int
     fit_reasoning: str
 
-    @field_validator("confidence_score")
+    @field_validator("fit_score", "confidence_score")
     @classmethod
     def score_in_range(cls, v: int) -> int:
         if not 1 <= v <= 10:
-            raise ValueError(f"confidence_score must be 1-10, got {v}")
+            raise ValueError(f"score must be 1-10, got {v}")
         return v
 
 
@@ -40,6 +41,7 @@ if __name__ == "__main__":
         contact_info="@recruiter",
         job_link="https://example.com/apply",
         raw_text="We are looking for a junior data analyst...",
+        fit_score=8,
         confidence_score=8,
         fit_reasoning="Strong SQL and Python match; junior-friendly role.",
     )

@@ -57,7 +57,8 @@ Response format when IS a job with a link:
   "tech_stack": ["Python", "SQL"],
   "contact_info": "...",
   "job_link": "https://...",
-  "confidence_score": 7,
+  "fit_score": 7,
+  "confidence_score": 8,
   "fit_reasoning": "POSITIVES: ...\\nNEGATIVES: ...\\nHARD BLOCK: NONE\\nSCORE: N — one sentence"
 }
 
@@ -69,7 +70,7 @@ Response format when NOT a job or no link:
 ─────────────────────────────────────────
 HARD EXCLUSION RULES  (check first)
 ─────────────────────────────────────────
-Set confidence_score to 1 or 2 ONLY if:
+Set fit_score to 1 or 2 ONLY if:
   • Job TITLE contains: Senior, Lead, Manager, Principal, Staff
   • Role is located OUTSIDE ISRAEL (e.g. San Antonio, Berlin, New York — any non-Israeli city)
   • Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend /
@@ -134,7 +135,8 @@ Example A — Mid-level, strong stack, preferred city:
 NEGATIVES: Mid-level — mild penalty only (-1 point).
 HARD BLOCK: NONE
 SCORE: 7 — strong match; mid-level is acceptable, one point deducted for seniority."
-  confidence_score: 7
+  fit_score: 7
+  confidence_score: 9
 
 Example B — Perfect junior match:
   Role: Data Analyst, Junior, Tel Aviv | Stack: SQL, Python, Pandas
@@ -142,6 +144,7 @@ Example B — Perfect junior match:
 NEGATIVES: None.
 HARD BLOCK: NONE
 SCORE: 10 — all signals align, no negatives."
+  fit_score: 10
   confidence_score: 10
 
 Example C — Data Scientist with LLM/Prompt Engineering:
@@ -150,7 +153,8 @@ Example C — Data Scientist with LLM/Prompt Engineering:
 NEGATIVES: Data Scientist title is not the primary target role; mid-level.
 HARD BLOCK: NONE — role contains LLM/Prompt Engineering, which is analytical/borderline, not a hard exclude.
 SCORE: 5 — relevant work despite title; LLM overlap prevents a low score."
-  confidence_score: 5
+  fit_score: 5
+  confidence_score: 8
 
 Example D — 5+ years required, analytical role:
   Role: Sales Analyst, 5+ years required, Tel Aviv | Stack: (none specified)
@@ -158,25 +162,35 @@ Example D — 5+ years required, analytical role:
 NEGATIVES: 5+ years required — significant penalty.
 HARD BLOCK: NONE — experience count is not a hard exclusion; minimum score is 2.
 SCORE: 3 — relevant analytical work, penalized 2-3 points for experience requirement."
-  confidence_score: 3
+  fit_score: 3
+  confidence_score: 4
 
 ─────────────────────────────────────────
 REFLECTION — verify before outputting
 ─────────────────────────────────────────
 R1 — Block/score consistency:
-  If HARD BLOCK is NONE → confidence_score must be 3 or higher.
-  If confidence_score is 1-2 → HARD BLOCK must name one of the three exact triggers above.
+  If HARD BLOCK is NONE → fit_score must be 3 or higher.
+  If fit_score is 1-2 → HARD BLOCK must name one of the three exact triggers above.
   If these are inconsistent, fix the error before outputting.
 
 R2 — Negative proportionality:
   If your only NEGATIVES are "mid-level", "3 years", "3+ years", or "mid-level experience"
-  AND your confidence_score is below 6:
+  AND your fit_score is below 6:
   You have over-penalized. Revise upward or add a substantive second negative that justifies the low score.
+
+─────────────────────────────────────────
+CONFIDENCE SCORE (separate from fit_score)
+─────────────────────────────────────────
+Measures how much data was present in the posting vs inferred.
+  10  = all key fields explicit (title, seniority, location, tech stack, link)
+  7–9 = most fields present, minor inference needed
+  4–6 = significant inference (e.g. no stack, no location)
+  1–3 = highly vague post, most fields inferred or missing
 
 ─────────────────────────────────────────
 ADDITIONAL RULES
 ─────────────────────────────────────────
-- confidence_score must be an integer 1-10
+- fit_score and confidence_score must each be integers 1-10
 - null is valid for company, location, contact_info if not mentioned
 - tech_stack lists the tools the JOB requires (not filtered to candidate skills)
 - tech_stack should list specific tools/technologies, not generic skill labels like "Business Analysis"
@@ -224,9 +238,9 @@ TELEGRAM MESSAGE (from group: {message.get("group", "unknown")}):
         if (
             "data " in _title
             and _ANALYTICAL_DS_SIGNALS & _stack
-            and data.get("confidence_score", 10) <= 3
+            and data.get("fit_score", 10) <= 3
         ):
-            data["confidence_score"] = 5
+            data["fit_score"] = 5
             data["fit_reasoning"] = (
                 data.get("fit_reasoning", "")
                 + "\n[POST-PROCESSING: Score raised to 5 — LLM/Prompt Engineering/A-B Testing detected; score ≤ 3 is over-penalized for this role type.]"
@@ -244,6 +258,7 @@ TELEGRAM MESSAGE (from group: {message.get("group", "unknown")}):
             raw_text=message["text"],
             message_date=message.get("timestamp"),
             source_group=message.get("group", "unknown"),
+            fit_score=data["fit_score"],
             confidence_score=data["confidence_score"],
             fit_reasoning=data["fit_reasoning"],
         )
@@ -275,7 +290,7 @@ def run_brain() -> list[ScoredJob]:
         if result:
             scored_jobs.append(result)
             print(
-                f"[brain] [{i + 1}/{len(messages)}] Job found: {result.title} (score={result.confidence_score})"
+                f"[brain] [{i + 1}/{len(messages)}] Job found: {result.title} (fit={result.fit_score}, conf={result.confidence_score})"
             )
 
     print(

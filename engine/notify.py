@@ -30,7 +30,7 @@ def _format_alert(job: ScoredJob) -> str:
     lines = [
         f"<b>{_esc(job.title)}</b>",
         f"Company: {_esc(job.company or 'N/A')}",
-        f"Score: {job.confidence_score}/10",
+        f"Fit: {job.fit_score}/10 | Conf: {job.confidence_score}/10",
         f"Fit: {_esc(job.fit_reasoning)}",
     ]
     if job.contact_info:
@@ -47,7 +47,7 @@ async def _post(payload: dict) -> None:
 
 # %%
 async def send_alert(job: ScoredJob) -> None:
-    if job.confidence_score <= 7:
+    if job.fit_score <= 7:
         return
     try:
         await _post({"chat_id": TELEGRAM_CHAT_ID, "text": _format_alert(job), "parse_mode": "HTML"})
@@ -127,8 +127,8 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"[notify] Skipping malformed entry: {e}")
 
-    eligible = [j for j in jobs if j.confidence_score > 7]
-    print(f"[notify] {len(eligible)}/{len(jobs)} jobs qualify (score > 7)")
+    eligible = [j for j in jobs if j.fit_score > 7]
+    print(f"[notify] {len(eligible)}/{len(jobs)} jobs qualify (fit_score > 7)")
 
     async def _run() -> None:
         await send_summary(

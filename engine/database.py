@@ -23,7 +23,8 @@ _supabase = create_client(_SUPABASE_URL, _SUPABASE_KEY) if _SUPABASE_URL and _SU
 CSV_PATH = Path(__file__).parent.parent / "data" / "jobs.csv"
 CSV_HEADERS = [
     "job_hash", "timestamp", "title", "company", "location", "is_junior",
-    "tech_stack", "contact_info", "job_link", "raw_text", "confidence_score", "fit_reasoning",
+    "tech_stack", "contact_info", "job_link", "raw_text",
+    "confidence_score", "fit_score", "fit_reasoning",
 ]
 
 
@@ -68,6 +69,7 @@ def save_to_csv(job: ScoredJob) -> bool:
             job.job_link,
             job.raw_text,
             job.confidence_score,
+            job.fit_score,
             job.fit_reasoning,
         ])
     return True  # New job saved
@@ -95,6 +97,7 @@ def save_to_supabase(job: ScoredJob, source_group: str) -> bool:
             "job_link": job.job_link,
             "raw_text": job.raw_text,
             "confidence_score": job.confidence_score,
+            "fit_score": job.fit_score,
             "fit_reasoning": job.fit_reasoning,
             "source": "telegram",
             "source_group": source_group,

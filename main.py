@@ -106,7 +106,7 @@ async def main() -> None:
         except Exception as e:
             print(f"[main] CSV error for '{job.title}': {e}")
 
-        if csv_ok and job.confidence_score > 7:
+        if csv_ok and job.fit_score > 7:
             fitting_jobs.append(job)
 
         try:
