@@ -50,9 +50,15 @@ async def main() -> None:
     no_link_skipped = 0
     duplicate_skipped = 0
     try:
-        raw_messages, no_link_skipped, duplicate_skipped, checker_available = filter_new_messages(raw_messages)
-        gate_status = "active" if checker_available else "offline (Supabase unavailable)"
-        print(f"[checker] {no_link_skipped} no-link | {duplicate_skipped} duplicates | {len(raw_messages)} passed to brain | gate: {gate_status}")
+        raw_messages, no_link_skipped, duplicate_skipped, checker_available = (
+            filter_new_messages(raw_messages)
+        )
+        gate_status = (
+            "active" if checker_available else "offline (Supabase unavailable)"
+        )
+        print(
+            f"[checker] {no_link_skipped} no-link | {duplicate_skipped} duplicates | {len(raw_messages)} passed to brain | gate: {gate_status}"
+        )
         RAW_DUMP.write_text(
             json.dumps(raw_messages, ensure_ascii=False, indent=2),
             encoding="utf-8",
@@ -116,7 +122,9 @@ async def main() -> None:
     if not checker_available or supabase_errors > 0:
         lines = ["⚠️ <b>JobPulse — Supabase issue</b>"]
         if not checker_available:
-            lines.append("• Dedup gate offline — Supabase unreachable at read time. Duplicate jobs may have been scored.")
+            lines.append(
+                "• Dedup gate offline — Supabase unreachable at read time. Duplicate jobs may have been scored."
+            )
         if supabase_errors > 0:
             lines.append(f"• {supabase_errors} job(s) failed to save to Supabase.")
         try:
@@ -149,7 +157,11 @@ async def main() -> None:
 
     try:
         # Use pre-checker messages so checkpoint advances for duplicates too
-        checkpoint_messages = all_raw_messages if all_raw_messages else json.loads(RAW_DUMP.read_text(encoding="utf-8"))
+        checkpoint_messages = (
+            all_raw_messages
+            if all_raw_messages
+            else json.loads(RAW_DUMP.read_text(encoding="utf-8"))
+        )
         new_last_seen: dict[str, datetime] = load_last_seen()
         for msg in checkpoint_messages:
             group_id = msg["group"]

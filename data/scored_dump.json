@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "title": "Database administrator",
+    "company": "Allied Universal® Electronic Monitoring",
+    "location": "Tel Aviv",
+    "is_junior": false,
+    "tech_stack": [
+      "SQL",
+      "Shell Scripting",
+      "Linux"
+    ],
+    "contact_info": null,
+    "job_link": "https://secrethunter.io/jobz/fc99d6cf50?utm_source=telegram",
+    "raw_text": "**Database administrator**\nAllied Universal® Electronic Monitoring\nTel Aviv\n21/4/26\nㅤ\n__Database Admin, SQL, Shell Scripting, DB Performance Tuning, Linux, Troubleshooting, Operational Support__\nㅤ\nSenior\nㅤ\nhttps://secrethunter.io/jobz/fc99d6cf50?utm_source=telegram",
+    "message_date": "2026-04-22T19:10:44+00:00",
+    "source_group": "-1002423121294",
+    "confidence_score": 2,
+    "fit_reasoning": "The role is for a senior database administrator, which does not align with the candidate's target of junior to mid-level positions. Additionally, the required skills focus on database administration rather than data analysis, which is the candidate's primary interest."
+  }
+]
