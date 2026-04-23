@@ -6266,3 +6266,52 @@ https://secrethunter.io/jobz/76c1b63d25?utm_source=telegram",9,1,"POSITIVES: Non
 NEGATIVES: Senior role in title, outside candidate's target level.
 HARD BLOCK: Senior in title
 SCORE: 1 — role is a hard exclusion due to seniority."
+24b5f2b69d1aa831ea7759f341955c92d06648fa26ccf511e400b11e8e9e5a7d,2026-04-23T16:49:04.289162+00:00,Senior data scientist,SkySoft Solutions By Commit,Herzliya,False,"[""Machine Learning"", ""Entity Resolution"", ""Graph ML"", ""Python"", ""Big Data"", ""ML Pipelines"", ""Feature Engineering""]",,https://secrethunter.io/jobz/a2f7637848?utm_source=telegram,"**Senior data scientist**
+SkySoft Solutions By Commit
+Herzliya
+23/4/26
+ㅤ
+__Machine Learning, Entity Resolution, Graph ML, Python, Big Data, ML Pipelines, Feature Eng.__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/a2f7637848?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior in title, outside Israel.
+HARD BLOCK: Senior in title.
+SCORE: 1 — role is a hard exclusion due to seniority."
+0f4a4d129a2f1dd154f4109e8c419ec7f4d053074dbe5710d82927f8a2313475,2026-04-23T16:49:04.933255+00:00,Junior operations analyst,Unit,Tel Aviv,True,"[""Fraud analysis"", ""Transaction monitoring"", ""KYC/CIP"", ""Analytical thinking""]",,https://secrethunter.io/jobz/771aa797a6?utm_source=telegram,"**Junior operations analyst**
+Unit
+Tel Aviv
+23/4/26
+ㅤ
+__Fraud analysis, Transaction monitoring, KYC/CIP, Analytical thinking, Teamwork, English communication, Process improvement__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/771aa797a6?utm_source=telegram",7,6,"POSITIVES: Junior title, preferred city, relevant analytical skills. NEGATIVES: Role is more focused on operations rather than data analysis; tech stack does not include primary tools like Python or SQL. HARD BLOCK: NONE. SCORE: 6 — good match for junior role, but lacks strong alignment with candidate's primary skills."
+f3fc2f4de716199b9be96896d238df87fa045be28cacbaae09f11104fd9bdbdf,2026-04-23T16:49:05.501072+00:00,Senior data engineer,vizai,Tel Aviv,False,"[""Python"", ""Data Pipelines"", ""ETL/ELT"", ""AWS"", ""SQL"", ""Terraform""]",,https://secrethunter.io/jobz/82137828d6?utm_source=telegram,"**Senior data engineer**
+vizai
+Tel Aviv
+23/4/26
+ㅤ
+__Python, Data Pipelines, ETL/ELT, AWS, SQL, Terraform, Teamwork__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/82137828d6?utm_source=telegram",9,1,"POSITIVES: Location in Tel Aviv, relevant tech stack includes SQL and Python.
+NEGATIVES: Senior title is a hard exclusion, role is purely engineering with no analytics component.
+HARD BLOCK: Senior in title
+SCORE: 1 — role is a hard exclusion due to seniority."
+0583d1bf296838c4213b455885d87190d01e4a390bf2d1e561e39e7974386f5c,2026-04-23T16:49:05.729533+00:00,Data engineer,MAËLYS,Tel Aviv,False,"[""SQL"", ""Python"", ""Airflow"", ""REST APIs"", ""Linux"", ""Git""]",,https://secrethunter.io/jobz/fa79746bed?utm_source=telegram,"**Data engineer**
+MAËLYS
+Tel Aviv
+23/4/26
+ㅤ
+__SQL, Python, Airflow, REST APIs, Linux, Git, Attention to detail__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/fa79746bed?utm_source=telegram",9,1,"POSITIVES: Location in Tel Aviv.
+NEGATIVES: Senior role, Data Engineer title, which is not relevant for the candidate.
+HARD BLOCK: Senior in title
+SCORE: 1 — the role is a hard exclusion due to seniority and being a Data Engineer."
