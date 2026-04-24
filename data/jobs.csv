@@ -6443,3 +6443,104 @@ Availability to work ....
 NEGATIVES: Role is focused on lab work and materials science, which is not the candidate's target area.
 HARD BLOCK: NONE
 SCORE: 4 — relevant entry-level position, but not aligned with the candidate's primary focus on data analytics."
+a6bb6debef630635c02124d801348373d7c0187a9671b6cfd478063f8aef66c1,2026-04-24T11:08:12.117598+00:00,Software engineer- data platform,Pagayais,Tel Aviv,False,"[""Python"", ""Microservices"", ""Kubernetes"", ""ELT/ETL"", ""SQL"", ""AWS""]",,https://secrethunter.io/jobz/74f68ae79c?utm_source=telegram,"**Software engineer- data platform**
+Pagayais
+Tel Aviv
+24/4/26
+ㅤ
+__Python, Microservices, Kubernetes, ELT/ETL, SQL, AWS, Problem Solving__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/74f68ae79c?utm_source=telegram",9,1,"POSITIVES: Location in Tel Aviv.
+NEGATIVES: Senior role, which is not relevant for the candidate; tech stack includes Microservices and Kubernetes, which are not aligned with the candidate's focus on analytics.
+HARD BLOCK: Senior in title
+SCORE: 1 — the role is a senior position, which is a hard exclusion."
+3fe50f09721566279d0c3add3a9e274e95cd701474b525d7d13df7b712e02805,2026-04-24T11:08:13.010779+00:00,Senior data engineer,Versatile,Tel Aviv,False,"[""PySpark"", ""Kafka"", ""Databricks"", ""AWS"", ""Python"", ""SQL"", ""ETL/ELT""]",,https://secrethunter.io/jobz/5ead914e4e?utm_source=telegram,"**Senior data engineer**
+Versatile
+Tel Aviv
+24/4/26
+ㅤ
+__PySpark, Kafka, Databricks, AWS, Python, SQL, ETL/ELT__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/5ead914e4e?utm_source=telegram",9,1,"POSITIVES: Location in Tel Aviv, Python and SQL included in tech stack.
+NEGATIVES: Senior title, role is primarily engineering with no analytics focus.
+HARD BLOCK: Senior in title
+SCORE: 1 — role is a hard exclusion due to seniority."
+882d534480101a592630c4957d15fa803b8e4d5195427ac8a1c73f7eb9576e05,2026-04-24T11:08:13.262717+00:00,Senior data engineer,Explorium,Tel Aviv,False,"[""SQL"", ""Python"", ""DBT"", ""Databricks"", ""Spark"", ""Data Modeling"", ""GenAI""]",,https://secrethunter.io/jobz/3b72dbb8d5?utm_source=telegram,"**Senior data engineer**
+Explorium
+Tel Aviv
+22/4/26
+ㅤ
+__SQL, Python, DBT, Databricks, Spark, Data Modeling, GenAI__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/3b72dbb8d5?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior in title, role is outside candidate's target.
+HARD BLOCK: Senior in title
+SCORE: 1 — role is a hard exclusion due to seniority."
+9fa1e368e5fb842684204a17e48e0cbed30c9ce8b934ba67d2d6e28217b3193f,2026-04-24T11:08:13.507794+00:00,Global Product Support student position,Applied materials,Rehovot,True,[],,https://careers.appliedmaterials.com/careers/job/790313425472?domain=appliedmaterials.com&hl=en,"🆕 **Global Product Support student position**
+
+💼 **Company:** Applied materials
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Create HW procedure for field use. 
+
+    Take part in R&D development- make sure that field aspect is fulfilled. 
+
+    Solves problems in straightforward situations; analyzes possible solutions using technical experience and judgment and precedents. ....
+
+---------------
+
+📊 **Requirements:** 3rd year Mechanical/ Electrical engineer student with at least 3 more semesters
+Dedicated, team player, seeking for knowledge, making data-based decision, multi-cultural communication.....
+
+[**View full position listing and submit CV**](https://careers.appliedmaterials.com/careers/job/790313425472?domain=appliedmaterials.com&hl=en)",7,2,"POSITIVES: Internship role, located in Rehovot, 0 years experience required. NEGATIVES: Role is for Mechanical/Electrical engineering students, not aligned with Data Analyst target. HARD BLOCK: NONE. SCORE: 2 — while the role is entry-level, it does not match the candidate's target field."
+a5c90b631ad92bb9b359611c176b6f808d16822d0854b7eb6ba93de8b4b98f4f,2026-04-24T11:08:13.748378+00:00,Application Engineer Student,Applied materials,Rehovot,True,[],,https://careers.appliedmaterials.com/careers/job/790314071756?domain=appliedmaterials.com&hl=en,"🆕 **Application Engineer Student**
+
+💼 **Company:** Applied materials
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Conduct tool Demos for customers.
+
+Plan and run experiments (on the tool / in a lab / in the clean-room).
+
+Collect customer needs and cooperate with the various development groups in order to accommodate R&D plans to tool roadmap and customer needs.
+....
+
+---------------
+
+📊 **Requirements:** 3rd year student in Engineering (Electrical / Materials / Mechanical / Chemical / Biomedical / Biotechnological /Aerospace).
+
+Excellent English skills – speak, write, read.
+
+Experience working with complex electronic systems, experience in the semico....
+
+[**View full position listing and submit CV**](https://careers.appliedmaterials.com/careers/job/790314071756?domain=appliedmaterials.com&hl=en)",7,2,"POSITIVES: Internship role, 0 years experience required, located in Rehovot. NEGATIVES: Role is not aligned with candidate's target of Data Analyst; engineering focus is outside candidate's preferred domain. HARD BLOCK: NONE. SCORE: 2 — while the role is an internship, it does not match the candidate's desired field."
+eec8f2599c3118deb7997111154aa9b9af457b28e663831b9a34f88bddccf006,2026-04-24T11:08:13.992245+00:00,GenAI Analyst,Alice,Ramat Gan,True,"[""Generative AI"", ""AI Safety"", ""AI Ethics""]",,https://alice.io/positions/position-F5_468?#apply-form,"🆕 **GenAI Analyst (Israel/UK/Poland)**
+
+💼 **Company:** Alice
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Alice is seeking a driven, detail-focused professional to become a vital part of our team as a Generative AI Analyst. In this role, you'll dive into the cutting-edge of technology,.......
+
+---------------
+
+📊 **Requirements:** Must have: Background in AI Safety and/or Responsible AI and/or AI Ethics Familiarity with recent Generative AI models and agents is essential, though direct technical experience is not a prerequisite. Command of English at a near-native level. Atten....
+
+[**View full position listing and submit CV**](https://alice.io/positions/position-F5_468?#apply-form)",7,4,"POSITIVES: Location in Ramat Gan, junior-level experience required, relevant to AI and analytics. NEGATIVES: Role focuses on Generative AI with less emphasis on traditional data analysis; not a direct match for Data Analyst. HARD BLOCK: NONE. SCORE: 4 — relevant role but not a strong match for the candidate's primary target."
