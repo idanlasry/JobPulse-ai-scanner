@@ -8774,3 +8774,84 @@ e97e57cba96105e0e124dc527b10920ff2c1754d7f81f26918dc6803901a59a2,2026-04-27T11:4
 NEGATIVES: Requires 5 years of experience, which is significantly above the candidate's target level; role is not aligned with the candidate's focus on analytics.
 HARD BLOCK: Seniority requirement (5+ years).
 SCORE: 1 — the role is a hard exclusion due to the experience requirement."
+42c41fe8700451cf6822fb7bb2fc1f4ae3df3e89d66574c6516fb5a5c700661f,2026-04-27T16:49:32.151623+00:00,Design Verification Student,Astera Labs,Tel Aviv,True,"[""System Verilog"", ""UVM"", ""Digital Logic""]",,https://job-boards.greenhouse.io/asteralabs/jobs/4685682005,"🆕 **Design Verification Student**
+
+💼 **Company:** Astera Labs
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Student
+
+---------------
+
+📄 **Description:** Assist in building and maintaining System Verilog/UVM-based testbenches, including monitors, checkers, and functional coverage models
+Run simulations, analyze failures, and work with the design team to debug and resolve RTL issues
+Help define and imp....
+
+---------------
+
+📊 **Requirements:** Pursuing a Bachelor’s or Master’s degree in Electrical Engineering, Computer Engineering, or a related technical field
+Ability to work at least 2 days a week at our Haifa/Tel Aviv center
+Strong understanding of Digital Logic and at least one programm....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/asteralabs/jobs/4685682005)",8,1,"POSITIVES: Junior position, located in Tel Aviv, no experience required.
+NEGATIVES: Role is not relevant to candidate's target of Data Analyst; purely technical focus on design verification.
+HARD BLOCK: NONE
+SCORE: 1 — role is outside candidate's target area and does not align with desired analytics focus."
+98d1041b0eca865a5bcd5e092f23d1b6b2c4ecef1e6eaf546fed3b5a16f98da6,2026-04-27T16:49:33.194248+00:00,ASIC Design Student,Astera Labs,Tel Aviv,True,"[""Digital Logic Design"", ""VLSI"", ""EDA tools""]",,https://job-boards.greenhouse.io/asteralabs/jobs/4682567005,"🆕 **ASIC Design Student**
+
+💼 **Company:** Astera Labs
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Student
+
+---------------
+
+📄 **Description:** Assist in the development of micro-architecture, RTL coding, and debugging for complex digital blocks
+Utilize industry-leading EDA tools (Lint, CDC, Synthesis) to ensure designs are robust and power-efficient
+Work closely with the verification team t....
+
+---------------
+
+📊 **Requirements:** Pursuing a Bachelor’s or Master’s degree in Electrical Engineering, Computer Engineering, or a related technical field
+Strong academic record with a focus on Digital Logic Design and VLSI
+Ability to work at least 2 days per week at our Haifa/Tel Aviv....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/asteralabs/jobs/4682567005)",8,1,"POSITIVES: Entry-level position, located in Tel Aviv. NEGATIVES: Role is not relevant to candidate's target as it focuses on ASIC design and requires a background in Electrical Engineering. HARD BLOCK: NONE. SCORE: 1 — job is outside candidate's target role and domain."
+753a12ecc0f9c5cdab6fa424fae95d5247c3dd9c88bdd743b696164e5f9d75a5,2026-04-27T16:49:33.911834+00:00,Payments Operations Analyst,Artlist,Tel Aviv,False,"[""SQL"", ""Excel"", ""Power BI"", ""Tableau""]",,https://www.artlistjobs.io/job-page/C5.868,"🆕 **Payments Operations Analyst**
+
+💼 **Company:** Artlist
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Monitor and analyze payment performance across different dimensions
+Track and improve key metrics such as authorization, conversion, declines, and costs
+Identify and drive optimization opportunities across payment flows and logic
+Investigate and reso....
+
+---------------
+
+📊 **Requirements:** 2–4 years of experience in analytical roles within Fintech, Payments or related industries
+SQL skills for querying and analyzing large datasets
+Strong proficiency in Excel or Google Sheets
+Experience with BI tools such as Looker, Tableau, Power BI, o....
+
+[**View full position listing and submit CV**](https://www.artlistjobs.io/job-page/C5.868)",8,4,"POSITIVES: Location in Tel Aviv, analytical role, SQL and Power BI are relevant tools. NEGATIVES: Requires 2-4 years of experience, which is above the candidate's target. HARD BLOCK: NONE. SCORE: 4 — relevant role but penalized for experience requirement."
+5f76dbe20500c544dc85cc4d5bc0537f1cd51f6fcdafe56ef26734c0ef1d92f5,2026-04-27T16:49:34.648626+00:00,Senior Data Engineer,Cellebrite,Petach Tikva,False,"[""Spark"", ""PySpark"", ""AWS""]",,https://cellebrite.com/en/about/careers/positions/?comeet_cat=israel-petah-tikva&comeet_pos=86.463&comeet_all=all,"🆕 **Senior Data Engineer**
+
+💼 **Company:** Cellebrite
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 8 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About Cellebrite: Cellebrite’s (Nasdaq: CLBT) mission is to enable its global customers to protect and save lives by enhancing digital investigations and intelligence gathering to.......
+
+---------------
+
+📊 **Requirements:** Must Have) 8+ years of experience in data engineering or related fields Strong hands-on experience with Spark / PySpark Proven experience building and operating data pipelines in production environments Solid experience with AWS data services (S3, EM....
+
+[**View full position listing and submit CV**](https://cellebrite.com/en/about/careers/positions/?comeet_cat=israel-petah-tikva&comeet_pos=86.463&comeet_all=all)",9,1,"POSITIVES: None. NEGATIVES: Senior title, 8+ years experience required, outside preferred location. HARD BLOCK: Senior in title. SCORE: 1 — role is a hard exclusion due to seniority."
