@@ -1,118 +1,92 @@
 # CANDIDATE PROFILE — JobPulse Scoring Reference
-# This file is used by the AI recruiter scorer to evaluate job fit.
-# Treat every field as a scoring signal.
-
----
 
 ## ROLE TARGET
 Primary Title: Data Analyst
-Acceptable Variants: Business Analyst, BI Analyst, Product Analyst, Data & Insights Analyst
-NOT relevant: Data Engineer, Data Scientist (pure ML/research), DevOps, Backend Developer, Mobile Developer, Frontend Developer
-
----
+Acceptable Variants: Business Analyst, BI Analyst, Product Analyst, BI Developer, AI/Automation Developer, GenAI Engineer
+NOT relevant: Data Engineer (pure infra), DevOps, Backend, Mobile, Pure Frontend
 
 ## SENIORITY
-Target Level: Junior to Mid
-- Open to: Junior, Junior-Mid, Entry-level with growth path
-- Acceptable: Mid-level if requirements are realistic for 1-3 years experience
-- NOT relevant: Senior, Team Lead, Manager, Principal, Staff
-
----
+Target: Junior to Mid
+Open to: Junior, Entry-level, Junior-Mid
+Acceptable: Mid-level if requirements are realistic for 1–3 years experience
+NOT relevant: Senior, Lead, Manager, Principal, Staff
 
 ## LOCATION & AVAILABILITY
-Location: Israel — Center region preferred
-  Preferred cities: Tel Aviv, Ramat Gan, Bnei Brak, Herzliya, Lod, Rehovot, and within ~30km radius
-Remote: Strongly preferred — remote-first or hybrid roles score higher
-On-site only: Lower score, but not an automatic disqualifier
-Relocation: Not open to relocation outside Israel
-Language: Hebrew and English — score both equally
-
----
+Israel — Center region preferred (Tel Aviv, Ramat Gan, Herzliya, Bnei Brak, Rehovot, ~20km radius)
+Remote or hybrid: score UP
+On-site only: mild negative, not a disqualifier
+Outside Israel: hard exclusion
 
 ## TECHNICAL SKILLS
 
-### Primary Tools (strong match = high score)
-- Python: pandas, numpy — data wrangling, EDA, pipeline scripting
+### Primary (strong match = high score)
+- Python: pandas, numpy, Pydantic v2 — data wrangling, EDA, pipeline scripting, LLM output validation
 - SQL: complex queries, window functions, joins, aggregations
-- Power BI: DAX, Power Query, executive dashboards, KPI storytelling (preferred BI tool)
-- Tableau: acceptable alternative to Power BI — score as equivalent
-- Git / GitHub: version control, project management
-- Pydantic: data modeling, schema validation, LLM output structuring
+- Power BI: DAX, Power Query, executive dashboards, KPI storytelling
+- Git / GitHub + GitHub Actions: version control, CI/CD, autonomous deployment
+- Anthropic API (Claude Sonnet): multi-agent orchestration, prompt engineering, structured outputs
+- OpenAI API (GPT-4o mini): scoring pipelines, utility LLM calls
+- Supabase: cloud database, schema design, migrations
+- Streamlit: deployed data apps
+- Pydantic v2: LLM output validation, schema enforcement
 
-### Secondary Tools (partial match = moderate score)
+### Secondary (partial match = moderate score)
+- Tableau: equivalent to Power BI — score equally
 - R: dplyr, ggplot — statistical analysis and visualization
-- Excel: pivot tables, VLOOKUP, dynamic arrays, data visualization, statistical analysis
+- Excel: pivot tables, dynamic arrays, statistical analysis
+- Flask: lightweight API / webhook handling (deployed to Render)
 
-### Methodologies (score for overlap)
-- Exploratory Data Analysis (EDA)
-- A/B Testing & Funnel Analysis
-- Statistical Modeling
-- ETL Processes
-- Root Cause Analysis
-- AI-Integrated Workflows ("DIG" methodology)
-- Large Language Models — prompt engineering, MVP prototyping
-- JSON to Table / API data handling
-
----
+### Methodologies
+- EDA, A/B Testing, Funnel Analysis, Statistical Modeling, ETL
+- Multi-agent LLM pipeline design (parametric orchestration — Python controls flow, LLM triggers named functions)
+- Prompt engineering: zero/few-shot, structured JSON outputs, hallucination mitigation
+- AI-integrated analytical workflows
+- MVP system design and autonomous deployment
 
 ## EDUCATION
-Degree: B.A. Statistics & Psychology, Ben-Gurion University of the Negev (BGU), 2023
-GPA: 90 — Graduated with Head of Department's Honors
-Relevant Coursework: SQL Databases & BI, Advanced Statistical Analysis, OOP
+B.A. Statistics & Psychology, Ben-Gurion University of the Negev, 2023
+GPA: 90 — Head of Department's Honors
+Key courses: SQL Databases & BI, Advanced Statistical Analysis, OOP
 
-Continuing Education: AI for Data Analysts — TechTroop & Elevation, 2026
-Focus: DIG methodology, advanced prompt engineering, AI-driven BI storytelling, MVP prototyping
+AI for Data Analysts — TechTroop & Elevation, 2026
+Focus: AI-integrated analytical workflows, advanced prompt engineering, MVP prototyping
 
----
+## PROJECT HIGHLIGHTS
 
-## PROJECT HIGHLIGHTS (match against job requirements)
+1. DIG Wizard — Multi-Agent Data Analysis Platform
+   Stack: Python, Anthropic API (Claude Sonnet), OpenAI API, Streamlit, Plotly, Pydantic v2, GitHub
+   - Built a full multi-agent pipeline: CSV upload → pandas profiler → 5 specialized LLM agents → PM orchestration → Plotly dashboard + executive narrative
+   - Pandas handles all computation; LLMs interpret and synthesize — strict separation
+   - Deployed to Streamlit Cloud. Repo public on GitHub.
+   - Demonstrates: multi-agent design, parametric orchestration, Pydantic validation, LLM prompt engineering
 
-1. RTM Data Analysis (Python, Power BI, GitHub)
-   - Extracted BI insights on patient usage, billing, and churn trends using pandas
-   - Built executive dashboard to present company KPIs using DAX and Power BI
+2. JobPulse — Autonomous Job Scanner
+   Stack: Python, Telethon, OpenAI API, Anthropic API, Pydantic v2, Supabase, GitHub Actions, Flask, Render
+   - Monitors Telegram job groups, scores postings against personal profile using GPT-4o mini
+   - SHA-256 deduplication, keyword content filters, score split (fit_score + confidence_score)
+   - Deployed to GitHub Actions (3x daily). WhatsApp webhook alerts via Flask on Render.
+   - Demonstrates: ETL pipeline, API orchestration, LLM hallucination mitigation, autonomous deployment
 
-2. User Behavior & Navigation Flow Analysis (SQL, R)
-   - Analyzed large-scale user data to identify navigation patterns and friction points
-   - Worked on a health monitoring app — relevant to HealthTech domain
+3. RTM Data Analysis
+   Stack: Python, Power BI, GitHub
+   - BI insights on patient usage, billing, and churn using pandas
+   - Executive KPI dashboard built with DAX and Power BI
 
-3. JobPulse — Telegram Job Scanner (Python, OpenAI API, Telethon, SQLite)
-   - Built an automated pipeline to monitor Telegram job groups, score opportunities using LLMs
-   - Demonstrates: ETL, API integration, Pydantic modeling, AI-integrated workflows
-
----
+4. User Behavior & Navigation Flow Analysis
+   Stack: SQL, R
+   - Large-scale user data analysis for a health monitoring app
+   - Navigation pattern identification, friction points, anomaly detection
 
 ## DOMAIN PREFERENCES
-Preferred Industries (score higher for these):
-- HealthTech / MedTech
-- Product Analytics (SaaS, B2C, B2B products)
-- Business Intelligence / Business Analytics
+Preferred (score UP): HealthTech, Product Analytics (SaaS, B2C/B2B), Business Intelligence, AI/GenAI tooling
+Neutral: FinTech, E-commerce, Logistics, Education
+Lower priority: Government, heavy industry, pure research
 
-Neutral (score normally):
-- FinTech, E-commerce, Logistics, Education
-
-Lower priority (score lower, but don't disqualify):
-- Government, Heavy industry, Pure research
-
----
-
-## HARD EXCLUSIONS (score = 1-2, do not alert)
-Automatically low score for roles that are primarily:
+## HARD EXCLUSIONS (fit_score 1–2, no alert)
 - DevOps / Infrastructure / Cloud Engineering
 - Mobile Development (iOS, Android, React Native)
-- Pure Frontend Development (HTML/CSS/JS only, no analytics component)
-- Pure Backend Engineering (no data/analytics component)
-- Data Engineering without any analytics or insights component
+- Pure Frontend (no analytics component)
+- Pure Backend (no data/analytics component)
+- Data Engineering with zero analytics or insights
 - Senior / Lead / Manager roles
-- Full relocation required (outside Israel)
-
----
-
-## SCORING NOTES FOR AI RECRUITER
-- A job mentioning Python + SQL + dashboards/BI → high base score
-- A job mentioning "junior" or "entry level" or "0-3 years" → score UP
-- A job in HealthTech, Product, or Business domain → score UP
-- A job that is remote or hybrid → score UP
-- A job requiring 5+ years experience → score DOWN significantly
-- A job that is purely technical infrastructure (no insights/analytics) → score DOWN
-- Hebrew job posts are fully valid — score them the same as English posts
-- Partial tech stack match is still a valid opportunity — don't penalize missing one tool
+- Relocation outside Israel required

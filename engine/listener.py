@@ -108,7 +108,7 @@ async def main(limit: int = LIMIT) -> None:
         json.dumps(all_messages, ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
-    print(f"[listener] Saved {len(all_messages)} messages → raw_dump.json")
+    print(f"[listener] Saved {len(all_messages)} messages -> raw_dump.json")
 
 
 # %%

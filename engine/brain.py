@@ -108,14 +108,20 @@ LOCATION RULES
 ROLE TYPE RULES
 ─────────────────────────────────────────
   RELEVANT: Data Analyst, Business Analyst, BI Analyst, Product Analyst, BI Developer,
-            Data & Insights Analyst, Sales Analyst, Revenue Analyst, Growth Analyst
+            Data & Insights Analyst, Sales Analyst, Revenue Analyst, Growth Analyst,
+            AI/Automation Developer, GenAI Engineer, AI Prototyping Engineer
   DATA SCIENTIST rule:
     Requirements mention ONLY ML / deep learning / statistics / NLP research  →  score 2-4
     Requirements mention LLM / Prompt Engineering / A-B Testing / dashboards  →  treat as analytical, score 4-7
     A Data Scientist role CANNOT receive score 1-2 unless Senior/Lead/Manager is also in the title.
+  AI/GENAI ENGINEER rule:
+    Role involves LLM integration, prompt engineering, API orchestration, or AI-native tooling  →  treat as relevant, score 5-8
+    Role is purely research (NLP/ML papers, no product output)  →  score 2-4
+    Role requires 3+ years of pure software engineering with no analytics component  →  score 3-5
   NOT RELEVANT: Data Engineer (pure infra), DevOps, Backend, Frontend, Mobile
   CONTENT OVERRIDE: if job duties are ONLY annotation / fact-checking / data entry / customer support
     with no analytical output  →  score 2-4 regardless of seniority or location.
+    
 
 ─────────────────────────────────────────
 REQUIRED fit_reasoning FORMAT
