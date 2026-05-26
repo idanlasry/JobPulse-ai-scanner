@@ -3,7 +3,9 @@
 
 Job hunting is noise. Thousands of posts across Telegram groups. 95% irrelevant posts. Manual filtering = hours per week wasted.
 
-JobPulse solves this: an autonomous pipeline built with Claude Code that monitors job groups 24/7, scores every post against your DA portfolio using GPT-4o mini, and alerts you only when there's a strong match. Fully automated on GitHub Actions. Zero local machine needed.
+JobPulse solves this: an autonomous pipeline built with Claude Code that monitors job groups 24/7, scores every post against **your profile** using GPT-4o mini, and alerts you only when there's a strong match. Fully automated on GitHub Actions. Zero local machine needed.
+
+The scoring engine is **fully profile-driven** — all the hard exclusions, calibration rules, and worked examples live in [config/portfolio.txt](config/portfolio.txt). Fork the repo, swap in your own profile, and you've got a personalised job scanner. No Python edits required.
 
 ## What It Does
 
@@ -84,8 +86,11 @@ Telegram Bot alerts (notify.py) → only if score > 7
 │   ├── notify.py        # Send alerts via Telegram Bot
 │   └── models.py        # Pydantic schemas: JobOpportunity, ScoredJob
 ├── config/
-│   ├── portfolio.txt    # Your profile — LLM scoring context
-│   └── groups.txt       # Telegram groups to monitor
+│   ├── portfolio.txt              # Your profile — LLM scoring context (prose, edited by you)
+│   ├── portfolio.template.txt     # Starting template for a new profile
+│   ├── scoring_overrides.py       # Code-level guards for known LLM failure patterns (optional)
+│   ├── scoring_overrides.template.py
+│   └── groups.txt                 # Telegram groups to monitor
 ├── data/
 │   ├── jobs.csv         # Cross-run job backup (committed)
 │   └── last_seen.csv    # Checkpoint file — group_id → last_seen_ts (committed)
@@ -126,17 +131,52 @@ SUPABASE_KEY=
 
 ### 3. Configure
 
-- `config/portfolio.txt` — your skills and preferences
 - `config/groups.txt` — Telegram groups to monitor (one per line)
+- `config/portfolio.txt` — your skills, hard exclusions, calibration rules, scored examples (see **Customize Your Profile** below)
 
-### 4. Authenticate (first run only)
+### 4. Customize Your Profile
+
+All scoring personalisation lives in two files. The Python scoring engine ([engine/brain.py](engine/brain.py)) is generic and untouched.
+
+| File | What it holds | When you need it |
+|---|---|---|
+| [config/portfolio.txt](config/portfolio.txt) | Plain-prose profile: role target, seniority, location, skills, hard exclusions, calibration tables, scored examples | **Always.** This is the LLM's source of truth. |
+| [config/scoring_overrides.py](config/scoring_overrides.py) | Code-level guards that override the LLM's `fit_score` post-hoc when specific conditions match (e.g. title + tech stack + low score) | **Only if** you observe a systematic LLM mis-scoring that prompt calibration in `portfolio.txt` cannot fix. |
+
+**Start by copying the templates:**
+```bash
+cp config/portfolio.template.txt config/portfolio.txt
+cp config/scoring_overrides.template.py config/scoring_overrides.py
+```
+
+**Fill in `portfolio.txt` section by section:**
+
+1. **ROLE TARGET** — primary title + acceptable variants + NOT-relevant titles
+2. **SENIORITY** — target band (junior/mid/senior) + which levels are off-limits
+3. **LOCATION & AVAILABILITY** — preferred cities, remote/hybrid stance, what counts as a hard exclude
+4. **TECHNICAL SKILLS** — primary stack (strong match → high score), secondary stack (partial match), methodologies
+5. **EDUCATION / PROJECT HIGHLIGHTS / DOMAIN PREFERENCES** — context for the LLM
+6. **HARD EXCLUSIONS** — 2–4 unconditional triggers that drop a job to score 1–2. *Most important section.* Keep it short — every trigger you add is one the LLM will fire on aggressively.
+7. **NOT HARD EXCLUSIONS** — signals that LOOK like exclusions but should only modify the score (e.g. "5+ years required" → penalise, don't exclude). Without this section, the LLM tends to over-penalise.
+8. **CALIBRATION RULES** — score bands per seniority/location/role-type. Be explicit: ranges like `Junior, preferred city, full stack → 9–10`.
+9. **SCORED EXAMPLES** — 3–5 worked examples that anchor the 1–10 scale. Span your full range (perfect match, hard exclude, borderline, "looks bad but actually OK"). The LLM uses these as ground truth.
+
+**About `scoring_overrides.py`:**
+
+Start with `RULES = []` — empty. Only add rules when you spot a pattern the LLM gets wrong repeatedly. Example: GPT-4o mini systematically under-scores "Data Scientist" roles even when the actual responsibilities are LLM/Prompt Engineering work. A code-level override floors those at `fit_score = 5`.
+
+Each rule lists conditions (substrings in title, items in tech stack, score thresholds, etc.) and an action (set `fit_score`, append to `fit_reasoning`). A malformed rule **crashes the pipeline at startup with a clear error** — silent failures are not possible.
+
+See [config/scoring_overrides.template.py](config/scoring_overrides.template.py) for the full schema and a commented example.
+
+### 5. Authenticate (first run only)
 ```bash
 uv run python engine/listener.py
 ```
 
 Creates `jobpulse_session.session` after phone verification.
 
-### 5. Run locally
+### 6. Run locally
 ```bash
 uv run python main.py
 ```
@@ -164,6 +204,14 @@ base64 jobpulse_session.session
 ```
 
 After each run, `data/jobs.csv` auto-commits to the repo for cross-run deduplication.
+
+## Why Profile-Driven?
+
+The original version of JobPulse had a single 200-line prompt in [engine/brain.py](engine/brain.py) that mixed generic scoring framework (1–10 scale, JSON schema, reflection rules) with one specific candidate's calibration (Israel-only, Data Analyst, junior–mid, Power BI/SQL/Python). Anyone forking the repo had to read Python and re-tune the prompt before getting useful scores.
+
+The refactor splits these cleanly: `engine/brain.py` holds the **generic scoring engine** — JSON contract, reflection rules, confidence scoring rubric, the override application logic. [config/portfolio.txt](config/portfolio.txt) holds **everything personal** — hard exclusions, calibration tables, scored examples, role-type rules. [config/scoring_overrides.py](config/scoring_overrides.py) is the escape hatch for model-level failures that prompt calibration cannot fix.
+
+You can fork JobPulse for a backend engineer, a marketing lead, or a UX researcher by editing only the two `config/` files. The Python stays the same.
 
 ## Future Roadmap
 

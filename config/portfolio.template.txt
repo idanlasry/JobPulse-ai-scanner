@@ -1,0 +1,156 @@
+# CANDIDATE PROFILE — JobPulse Scoring Reference
+
+This file is the source of truth for how the LLM scores job postings against
+the candidate. The scoring engine (engine/brain.py) is generic — all
+personalization lives here. Fill in every section below; the LLM reads this
+verbatim as part of its system context.
+
+Tip: keep sections short and concrete. The LLM follows specific signals (city
+names, exact titles, exact tools) much more reliably than vague preferences.
+
+
+## ROLE TARGET
+<!-- The single primary title you want. List acceptable variants and which roles are NOT relevant. -->
+Primary Title: [e.g. Data Analyst]
+Acceptable Variants: [e.g. Business Analyst, BI Analyst, Product Analyst]
+NOT relevant: [e.g. Data Engineer (pure infra), DevOps, Backend, Mobile, Pure Frontend]
+
+
+## SENIORITY
+<!-- Target seniority range. List both acceptable and NOT-relevant levels. -->
+Target: [e.g. Junior to Mid]
+Open to: [e.g. Junior, Entry-level, Junior-Mid]
+Acceptable: [e.g. Mid-level if requirements are realistic for 1–3 years experience]
+NOT relevant: [e.g. Senior, Lead, Manager, Principal, Staff]
+
+
+## LOCATION & AVAILABILITY
+<!-- Preferred locations, remote/hybrid stance, and what's a hard exclude. -->
+[Country/Region] — [Specific cities preferred, with radius]
+Remote or hybrid: [score UP / acceptable / not acceptable]
+On-site only: [mild negative / acceptable]
+Outside [your country]: [hard exclusion / acceptable]
+
+
+## TECHNICAL SKILLS
+
+### Primary (strong match = high score)
+<!-- Tools the candidate uses daily. Strong overlap should push score up. -->
+- [Tool 1]: [brief context — what the candidate does with it]
+- [Tool 2]: ...
+- ...
+
+### Secondary (partial match = moderate score)
+<!-- Tools the candidate knows but doesn't lead with. -->
+- [Tool A]: ...
+- ...
+
+### Methodologies
+<!-- Higher-level approaches: EDA, A/B testing, ETL, multi-agent pipelines, etc. -->
+- [Method 1]
+- ...
+
+
+## EDUCATION
+<!-- Degree(s), institution(s), notable coursework/honors. -->
+[Degree, Major], [University], [Year]
+[Additional courses / certs]
+
+
+## PROJECT HIGHLIGHTS
+<!-- 2–4 projects. Each: name, stack, what was built, what it demonstrates. -->
+1. [Project Name]
+   Stack: [tools]
+   - [What was built]
+   - Demonstrates: [skills shown]
+
+
+## DOMAIN PREFERENCES
+<!-- Industries that should score UP vs. neutral vs. lower priority. -->
+Preferred (score UP): [e.g. HealthTech, Product Analytics, BI tooling]
+Neutral: [e.g. FinTech, E-commerce]
+Lower priority: [e.g. Government, heavy industry]
+
+
+─────────────────────────────────────────
+## HARD EXCLUSIONS  (force fit_score to 1 or 2)
+─────────────────────────────────────────
+<!-- THE most important section. List ONLY triggers that should drop a job
+     to score 1–2 unconditionally. Keep this list short (2–4 items max).
+     The reasoning model will name the exact trigger in `HARD BLOCK`. -->
+Set fit_score to 1 or 2 ONLY if one of these triggers is present:
+  • [Trigger 1 — e.g. Job TITLE contains: Senior, Lead, Manager]
+  • [Trigger 2 — e.g. Role is located OUTSIDE <your country>]
+  • [Trigger 3 — e.g. Role is purely: DevOps / Mobile / Pure Frontend / Pure Backend]
+
+These are the ONLY hard exclusion triggers.
+
+
+─────────────────────────────────────────
+## NOT HARD EXCLUSIONS  (use as score modifiers only)
+─────────────────────────────────────────
+<!-- Common signals that LOOK like exclusions but should only modify the score.
+     Without this section, the LLM tends to over-penalize these. -->
+The following are NOT hard exclusions. Do NOT score 1 or 2 for these alone:
+  • [e.g. "5+ years experience required"  → score DOWN 2–3 points. Minimum score: 2.]
+  • [e.g. "Mid-level" or "3+ years"  → mild negative, -1 point at most.]
+  • [e.g. Partial tech stack overlap  → reduce score, never exclude.]
+
+
+─────────────────────────────────────────
+## CALIBRATION RULES
+─────────────────────────────────────────
+
+### Seniority
+<!-- Map seniority levels to score bands. -->
+  [Junior, exact title, preferred location, full stack match]  →  9–10
+  [Mid-level, exact title, preferred location]                 →  7–8
+  [3+ years, exact title]                                      →  6–7
+  [5+ years, relevant role, partial match]                     →  2–4
+  [Senior / Lead / Manager in TITLE]                           →  1–2  (HARD EXCLUSION)
+
+### Location
+<!-- Map locations to score modifiers. -->
+  HARD EXCLUDE: [e.g. outside <your country>] → score 1–2
+  PREFERRED (score UP): [list cities/regions]
+  ACCEPTABLE: [remote, hybrid, other cities]
+  MILD NEGATIVE: [e.g. on-site only with no remote option]
+
+### Role Type
+<!-- Group roles into RELEVANT / borderline / NOT RELEVANT.
+     For borderline role types (e.g. Data Scientist for an analyst candidate),
+     list the signals that move it up or down within its band. -->
+  RELEVANT: [list of titles that should score 5+]
+
+  [Borderline title — e.g. Data Scientist] rule:
+    Requirements mention ONLY [signal_A] → score [band]
+    Requirements mention [signal_B] → treat as [other category], score [band]
+
+  NOT RELEVANT: [list of titles that should score 2–4]
+
+  CONTENT OVERRIDE: [optional — pattern that overrides everything above,
+                    e.g. annotation/data-entry duties → score 2–4 regardless]
+
+
+─────────────────────────────────────────
+## SCORED EXAMPLES  (study these before scoring)
+─────────────────────────────────────────
+<!-- 3–5 worked examples that anchor the 1–10 scale. Write examples that span
+     your full score range: a perfect match, a borderline case, a hard exclude,
+     and a "looks bad but actually OK" case. The LLM uses these as calibration
+     ground truth. -->
+
+Example A — [short label, e.g. "perfect junior match"]:
+  Role: [title], [seniority], [location] | Stack: [tools]
+  fit_reasoning: "POSITIVES: [...]
+NEGATIVES: [...]
+HARD BLOCK: [NONE or named rule]
+SCORE: [N] — [one sentence]"
+  fit_score: [N]
+  confidence_score: [N]
+
+Example B — [short label]:
+  ...
+
+Example C — [short label]:
+  ...

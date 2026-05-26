@@ -9,6 +9,8 @@ from openai import OpenAI
 from pydantic import ValidationError
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+from config.scoring_overrides import RULES as OVERRIDE_RULES
+from config.scoring_overrides import OverrideRule
 from engine.models import ScoredJob
 
 load_dotenv()
@@ -33,17 +35,18 @@ def load_messages() -> list[dict]:
 
 # %%
 SYSTEM_PROMPT = """You are an Expert Technical Recruiter evaluating job postings for a specific candidate.
-You will be given:
-1. A candidate portfolio (skills, experience, preferences)
-2. A raw message from a Telegram job group
 
-Your job is to:
+You will be given:
+1. A CANDIDATE PORTFOLIO — defines the candidate's profile, skills, hard exclusions, calibration rules, and scored examples. This is the source of truth for what makes a good vs. bad fit.
+2. A raw message from a job group (Telegram or similar).
+
+Your job:
 1. Decide if the message is a job offer. If not, respond with {"is_job": false}.
-2. If it is a job offer, check if it contains an application/job link (URL starting with http/https, or t.me, or linkedin.com, or similar).
+2. If it is a job offer, check it contains an application/job link (URL starting with http/https, t.me, linkedin.com, or similar).
    — If NO link is found, respond with {"is_job": false}.
 3. If it's a job with a link, extract all fields and score the fit.
 
-Note: Some job postings are just brief lists of keywords, a company name, and a link. Treat these as valid job offers even if they lack full sentences.
+Note: Some postings are just keywords + a company name + a link. Treat these as valid job offers even if they lack full sentences.
 
 Always respond with valid JSON only — no markdown, no explanation outside the JSON.
 
@@ -68,126 +71,39 @@ Response format when NOT a job or no link:
 }
 
 ─────────────────────────────────────────
-HARD EXCLUSION RULES  (check first)
+HOW TO SCORE
 ─────────────────────────────────────────
-Set fit_score to 1 or 2 ONLY if:
-  • Job TITLE contains: Senior, Lead, Manager, Principal, Staff
-  • Role is located OUTSIDE ISRAEL (e.g. San Antonio, Berlin, New York — any non-Israeli city)
-  • Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend /
-    Pure Backend with zero analytics duties
+The CANDIDATE PORTFOLIO defines:
+  • HARD EXCLUSIONS — triggers that force fit_score to 1 or 2. Apply them first.
+  • CALIBRATION RULES — score modifiers based on seniority, location, role type, etc.
+  • SCORED EXAMPLES — worked examples that anchor the 1–10 scale. Treat them as the ground truth.
 
-These are the ONLY three hard exclusion triggers.
-
-─────────────────────────────────────────
-NOT HARD EXCLUSIONS — use score modifiers
-─────────────────────────────────────────
-The following are NOT hard exclusions. Do NOT score 1-2 for these:
-  • "5+ years experience required" → score DOWN 2-3 points. Minimum score: 2.
-  • "Mid-level" or "3 years" or "3+ years" → mild negative, -1 point at most.
-  • "Data Scientist" title → NOT a hard exclusion. See Role Type rules.
-  • Partial tech stack overlap → reduce score, never exclude.
-
-─────────────────────────────────────────
-SENIORITY CALIBRATION
-─────────────────────────────────────────
-  Junior / Entry level / 0-2 years, exact title, preferred city, full stack match  →  9-10
-  Mid-level, exact title, preferred city, strong stack match                        →  7-8
-  "3+ years", exact title, preferred city, stack match                              →  6-7
-  "5+ years", relevant analytical role, partial match                               →  2-4
-  Senior / Lead / Manager in TITLE                                                  →  1-2  (stop here)
-
-─────────────────────────────────────────
-LOCATION RULES
-─────────────────────────────────────────
-  HARD EXCLUDE: outside Israel → score 1-2
-  PREFERRED (score UP): Tel Aviv, Ramat Gan, Rehovot, Herzliya, Bnei Brak, Lod, ~30km radius
-  ACCEPTABLE: Remote (Israel-based), hybrid, any Israeli city
-  MILD NEGATIVE: on-site only with no remote option
-
-─────────────────────────────────────────
-ROLE TYPE RULES
-─────────────────────────────────────────
-  RELEVANT: Data Analyst, Business Analyst, BI Analyst, Product Analyst, BI Developer,
-            Data & Insights Analyst, Sales Analyst, Revenue Analyst, Growth Analyst,
-            AI/Automation Developer, GenAI Engineer, AI Prototyping Engineer
-  DATA SCIENTIST rule:
-    Requirements mention ONLY ML / deep learning / statistics / NLP research  →  score 2-4
-    Requirements mention LLM / Prompt Engineering / A-B Testing / dashboards  →  treat as analytical, score 4-7
-    A Data Scientist role CANNOT receive score 1-2 unless Senior/Lead/Manager is also in the title.
-  AI/GENAI ENGINEER rule:
-    Role involves LLM integration, prompt engineering, API orchestration, or AI-native tooling  →  treat as relevant, score 5-8
-    Role is purely research (NLP/ML papers, no product output)  →  score 2-4
-    Role requires 3+ years of pure software engineering with no analytics component  →  score 3-5
-  NOT RELEVANT: Data Engineer (pure infra), DevOps, Backend, Frontend, Mobile
-  CONTENT OVERRIDE: if job duties are ONLY annotation / fact-checking / data entry / customer support
-    with no analytical output  →  score 2-4 regardless of seniority or location.
-    
+Follow the portfolio exactly. Your role is to apply its rules to each message, not to substitute your own judgment about what is or isn't a good fit.
 
 ─────────────────────────────────────────
 REQUIRED fit_reasoning FORMAT
 ─────────────────────────────────────────
-  POSITIVES: [signal 1, signal 2, ...]
-  NEGATIVES: [signal 1, signal 2, ...]
-  HARD BLOCK: NONE  — OR —  [name the exact rule: "Senior in title" / "outside Israel" / "pure DevOps"]
-  SCORE: [N] — [one sentence]
-
-─────────────────────────────────────────
-SCORED EXAMPLES  (study these before scoring)
-─────────────────────────────────────────
-
-Example A — Mid-level, strong stack, preferred city:
-  Role: Data Analyst, Mid-level, Tel Aviv | Stack: SQL, Power BI
-  fit_reasoning: "POSITIVES: Exact title, preferred city, SQL and Power BI are primary candidate tools.
-NEGATIVES: Mid-level — mild penalty only (-1 point).
-HARD BLOCK: NONE
-SCORE: 7 — strong match; mid-level is acceptable, one point deducted for seniority."
-  fit_score: 7
-  confidence_score: 9
-
-Example B — Perfect junior match:
-  Role: Data Analyst, Junior, Tel Aviv | Stack: SQL, Python, Pandas
-  fit_reasoning: "POSITIVES: Exact title, junior, preferred city, full primary stack match.
-NEGATIVES: None.
-HARD BLOCK: NONE
-SCORE: 10 — all signals align, no negatives."
-  fit_score: 10
-  confidence_score: 10
-
-Example C — Data Scientist with LLM/Prompt Engineering:
-  Role: Data Scientist, Mid-level, Tel Aviv | Stack: LLM, Prompt Engineering, A/B Testing, Python
-  fit_reasoning: "POSITIVES: LLM and Prompt Engineering match candidate skills, preferred city, Python match.
-NEGATIVES: Data Scientist title is not the primary target role; mid-level.
-HARD BLOCK: NONE — role contains LLM/Prompt Engineering, which is analytical/borderline, not a hard exclude.
-SCORE: 5 — relevant work despite title; LLM overlap prevents a low score."
-  fit_score: 5
-  confidence_score: 8
-
-Example D — 5+ years required, analytical role:
-  Role: Sales Analyst, 5+ years required, Tel Aviv | Stack: (none specified)
-  fit_reasoning: "POSITIVES: Analytical role (pipeline/revenue work), preferred city.
-NEGATIVES: 5+ years required — significant penalty.
-HARD BLOCK: NONE — experience count is not a hard exclusion; minimum score is 2.
-SCORE: 3 — relevant analytical work, penalized 2-3 points for experience requirement."
-  fit_score: 3
-  confidence_score: 4
+POSITIVES: [signal 1, signal 2, ...]
+NEGATIVES: [signal 1, signal 2, ...]
+HARD BLOCK: NONE  — OR —  [name the exact rule from the portfolio's HARD EXCLUSIONS]
+SCORE: [N] — [one sentence]
 
 ─────────────────────────────────────────
 REFLECTION — verify before outputting
 ─────────────────────────────────────────
 R1 — Block/score consistency:
   If HARD BLOCK is NONE → fit_score must be 3 or higher.
-  If fit_score is 1-2 → HARD BLOCK must name one of the three exact triggers above.
+  If fit_score is 1 or 2 → HARD BLOCK must name a specific rule from the portfolio's HARD EXCLUSIONS.
   If these are inconsistent, fix the error before outputting.
 
 R2 — Negative proportionality:
-  If your only NEGATIVES are "mid-level", "3 years", "3+ years", or "mid-level experience"
-  AND your fit_score is below 6:
+  If your only NEGATIVES are mild signals (e.g. "mid-level", "3+ years") AND fit_score is below 6:
   You have over-penalized. Revise upward or add a substantive second negative that justifies the low score.
 
 ─────────────────────────────────────────
 CONFIDENCE SCORE (separate from fit_score)
 ─────────────────────────────────────────
-Measures how much data was present in the posting vs inferred.
+Measures how much data was present in the posting vs. inferred.
   10  = all key fields explicit (title, seniority, location, tech stack, link)
   7–9 = most fields present, minor inference needed
   4–6 = significant inference (e.g. no stack, no location)
@@ -196,12 +112,98 @@ Measures how much data was present in the posting vs inferred.
 ─────────────────────────────────────────
 ADDITIONAL RULES
 ─────────────────────────────────────────
-- fit_score and confidence_score must each be integers 1-10
+- fit_score and confidence_score must each be integers 1–10
 - null is valid for company, location, contact_info if not mentioned
 - tech_stack lists the tools the JOB requires (not filtered to candidate skills)
 - tech_stack should list specific tools/technologies, not generic skill labels like "Business Analysis"
-- Messages may be in Hebrew, English, or mixed — handle both equally
+- Messages may be in any language — handle multilingual content equally
 """
+
+
+# %%
+_SUPPORTED_CONDITIONS = {
+    "title_contains_any",
+    "tech_stack_any_of",
+    "location_contains_any",
+    "fit_score_lte",
+    "fit_score_gte",
+    "is_junior_eq",
+}
+_SUPPORTED_ACTIONS = {"set_fit_score", "append_reasoning"}
+
+
+def _validate_override_rules(rules: list[OverrideRule]) -> None:
+    """Validate every rule at import time. Raises loudly on any malformed rule.
+
+    Silent override failures would be worse than a startup crash — a rule that
+    never matches because of a typo would let bad scores ship undetected.
+    """
+    for i, rule in enumerate(rules):
+        for key in ("name", "description", "conditions", "action"):
+            if key not in rule:
+                raise RuntimeError(
+                    f"[overrides] malformed rule at index {i}: missing required key '{key}'"
+                )
+        unknown_conds = set(rule["conditions"]) - _SUPPORTED_CONDITIONS
+        if unknown_conds:
+            raise RuntimeError(
+                f"[overrides] rule '{rule['name']}': unknown condition keys {unknown_conds}. "
+                f"Supported: {sorted(_SUPPORTED_CONDITIONS)}"
+            )
+        unknown_actions = set(rule["action"]) - _SUPPORTED_ACTIONS
+        if unknown_actions:
+            raise RuntimeError(
+                f"[overrides] rule '{rule['name']}': unknown action keys {unknown_actions}. "
+                f"Supported: {sorted(_SUPPORTED_ACTIONS)}"
+            )
+        if not rule["action"]:
+            raise RuntimeError(f"[overrides] rule '{rule['name']}': action is empty")
+
+
+_validate_override_rules(OVERRIDE_RULES)
+print(f"[brain] Loaded {len(OVERRIDE_RULES)} scoring override rule(s)")
+
+
+def _rule_matches(rule: OverrideRule, data: dict) -> bool:
+    title = (data.get("title") or "").lower()
+    location = (data.get("location") or "").lower()
+    stack = {t.lower() for t in data.get("tech_stack", []) if isinstance(t, str)}
+    fit_score = data.get("fit_score")
+    is_junior = data.get("is_junior")
+
+    for key, val in rule["conditions"].items():
+        if key == "title_contains_any":
+            if not any(sub.lower() in title for sub in val):
+                return False
+        elif key == "tech_stack_any_of":
+            if not ({s.lower() for s in val} & stack):
+                return False
+        elif key == "location_contains_any":
+            if not any(sub.lower() in location for sub in val):
+                return False
+        elif key == "fit_score_lte":
+            if not isinstance(fit_score, int) or fit_score > val:
+                return False
+        elif key == "fit_score_gte":
+            if not isinstance(fit_score, int) or fit_score < val:
+                return False
+        elif key == "is_junior_eq":
+            if is_junior != val:
+                return False
+    return True
+
+
+def apply_overrides(data: dict, rules: list[OverrideRule]) -> dict:
+    """Apply all matching override rules to `data` in place. Returns the same dict."""
+    for rule in rules:
+        if _rule_matches(rule, data):
+            action = rule["action"]
+            if "set_fit_score" in action:
+                data["fit_score"] = action["set_fit_score"]
+            if "append_reasoning" in action:
+                existing = data.get("fit_reasoning", "") or ""
+                data["fit_reasoning"] = (existing + "\n" + action["append_reasoning"]).strip()
+    return data
 
 
 # %%
@@ -232,25 +234,7 @@ TELEGRAM MESSAGE (from group: {message.get("group", "unknown")}):
         if not data.get("is_job", False):
             return None
 
-        # Code-level guard: DS + analytical LLM stack scored ≤ 3 is the known GPT hallucination pattern
-        _ANALYTICAL_DS_SIGNALS = {
-            "llm",
-            "prompt engineering",
-            "a/b testing",
-            "ab testing",
-        }
-        _title = (data.get("title") or "").lower()
-        _stack = {t.lower() for t in data.get("tech_stack", [])}
-        if (
-            "data " in _title
-            and _ANALYTICAL_DS_SIGNALS & _stack
-            and data.get("fit_score", 10) <= 3
-        ):
-            data["fit_score"] = 5
-            data["fit_reasoning"] = (
-                data.get("fit_reasoning", "")
-                + "\n[POST-PROCESSING: Score raised to 5 — LLM/Prompt Engineering/A-B Testing detected; score ≤ 3 is over-penalized for this role type.]"
-            )
+        apply_overrides(data, OVERRIDE_RULES)
 
         # data["job_link"] raises KeyError if missing — enforces: no link = no job
         job = ScoredJob(
