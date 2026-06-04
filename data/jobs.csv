@@ -16045,3 +16045,372 @@ SCORE: 2 — significant misalignment with candidate's profile."
 NEGATIVES: Principal title is a hard exclusion; 8 years of experience required.
 HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff
 SCORE: 1 — hard exclusion due to Principal title."
+18d12d74e35fad26e6f037da8879e8847ffe5ee3fefda67ab8c6bf5804032ba2,2026-06-04T08:49:40.844118+00:00,Marketing analyst,,Tel Aviv,True,"[""SQL"", ""BI tools"", ""Data analysis"", ""Marketing analytics"", ""Paid Search"", ""Affiliate marketing"", ""Communication""]",,https://secrethunter.io/jobz/bbd8206a00?utm_source=telegram,"**Marketing analyst**
+Resident
+Tel Aviv
+3/6/26
+ㅤ
+__SQL, BI tools, Data analysis, Marketing analytics, Paid Search, Affiliate marketing, Communication__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/bbd8206a00?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",8,6,"POSITIVES: Junior role, located in preferred city, relevant tech stack includes SQL and BI tools. NEGATIVES: Marketing focus may not align perfectly with candidate's primary interests. HARD BLOCK: NONE SCORE: 6 — relevant role with some alignment, but marketing focus is a slight deviation."
+eb8f28725aaab34a25988fd887a1dcff46830977e2c29058f84512f0d0e0a5f1,2026-06-04T08:49:41.738548+00:00,Data analytics AI engineer,Fireblocks,Tel Aviv,False,"[""Python"", ""SQL"", ""LLMs"", ""Prompt Engineering"", ""AI/ML""]",,https://secrethunter.io/jobz/f9e4a9faaa?utm_source=telegram,"**Data analytics AI engineer**
+Fireblocks
+Tel Aviv
+3/6/26
+ㅤ
+__Python, SQL, LLMs, Prompt Eng., AI/ML, Analytical, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/f9e4a9faaa?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",9,5,"POSITIVES: Preferred city, relevant tech stack includes Python and SQL.
+NEGATIVES: Senior role — hard exclusion due to title.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority in title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+0c37c8e79623b407fdef40123c6d96c9096a69901826f0609cb3e75eea575378,2026-06-04T08:49:42.477314+00:00,Marketing analyst,Resident Home,Tel Aviv,False,"[""SQL"", ""BI tools"", ""Paid Search"", ""Affiliate marketing""]",,https://secrethunter.io/jobz/3052901c3d?utm_source=telegram,"**Marketing analyst**
+Resident Home
+Tel Aviv
+3/6/26
+ㅤ
+__SQL, BI tools, Paid Search, Affiliate marketing, analytical solutions, curious, business-oriented__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/3052901c3d?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",7,4,"POSITIVES: Located in Tel Aviv, SQL and BI tools are relevant to candidate skills. NEGATIVES: Mid-level position, which is a mild penalty. HARD BLOCK: NONE SCORE: 4 — relevant role but penalized for mid-level seniority."
+c1ef64d1c8d851f0234fd0c1f8911e191d4cb4f80a34c98e36e5e4536173974a,2026-06-04T08:49:43.202785+00:00,Erp financial system analyst / implementor,DRS RADA Technologies,Netanya,False,"[""Oracle ERP"", ""ERP implementation"", ""Financial modules"", ""System configuration"", ""Data handling""]",,https://secrethunter.io/jobz/7a1f915577?utm_source=telegram,"**Erp financial system analyst / implementor**
+DRS RADA Technologies
+Netanya
+3/6/26
+ㅤ
+__Oracle ERP, ERP implementation, Financial modules, System configuration, Data handling, Problem-solving, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/7a1f915577?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+51cfa54916fe0736371ab70dc3c28999cdd32fd8c7507647a817342cab1786e7,2026-06-04T08:49:43.486614+00:00,Erp financial system analyst / implementor,rada,Netanya,False,"[""Oracle ERP"", ""ERP implementation"", ""Financial modules"", ""Accounting""]",,https://secrethunter.io/jobz/e83970adf9?utm_source=telegram,"**Erp financial system analyst / implementor**
+rada
+Netanya
+3/6/26
+ㅤ
+__Oracle ERP, ERP implementation, Financial modules, Accounting, Analytical thinking, Problem-solving, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/e83970adf9?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+169b05345f25bf124a38d181f2c3bc9344c81a58e5e48830fafae05423283862,2026-06-04T08:49:43.770216+00:00,Software quality engineering - power bi custom visuals team,Microsoft,Israel,False,"[""Test Automation"", ""Manual Testing"", ""Python"", ""TypeScript"", ""AI Engineering"", ""Agile""]",,https://secrethunter.io/jobz/859f4c070b?utm_source=telegram,"**Software quality engineering - power bi custom visuals team**
+Microsoft
+Israel
+3/6/26
+ㅤ
+__Test Automation, Manual Testing, Python, TypeScript, AI Engineering, Agile, Communication__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/859f4c070b?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",7,3,"POSITIVES: Role is in Israel, Python is a primary skill. NEGATIVES: Mid-level position is a mild penalty, and the role is not a direct match for the candidate's target roles. HARD BLOCK: NONE SCORE: 3 — relevant role but penalized for mid-level seniority and lack of direct alignment with candidate's target roles."
+fc438b74f4e0ec80a1281e2f1c90331dfb5ef714c8e52fd11bb7adb30b923b48,2026-06-04T08:49:44.046566+00:00,Data analyst,Workaround,Hod Hasharon,True,"[""SQL"", ""Python"", ""AI/LLM"", ""Data analysis""]",,https://secrethunter.io/jobz/44fa8592d9?utm_source=telegram,"**Data analyst**
+Workaround
+Hod Hasharon
+3/6/26
+ㅤ
+__SQL, Python, AI/LLM, Data analysis, Product mindset, Teamwork, Communication__
+ㅤ
+Entry, Junior
+ㅤ
+https://secrethunter.io/jobz/44fa8592d9?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",9,9,"POSITIVES: Exact title, junior level, preferred location, strong match with SQL and Python in the tech stack. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+4111e679b5e382c7ee3e26fe7bd5ea7e9e206131b5f4c1686ae69c214900c0c3,2026-06-04T08:49:44.321695+00:00,Data solution engineer,Cyera,Tel Aviv,False,"[""Python"", ""SQL"", ""Data analysis""]",,https://secrethunter.io/jobz/087750ed6d?utm_source=telegram,"**Data solution engineer**
+Cyera
+Tel Aviv
+3/6/26
+ㅤ
+__Python, SQL, Data analysis, Problem solving, Communication, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/087750ed6d?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",7,5,"POSITIVES: Relevant role type, preferred city, Python and SQL are primary candidate tools. NEGATIVES: Mid-level — mild penalty only (-1 point). HARD BLOCK: NONE SCORE: 5 — relevant role with a mild penalty for seniority."
+a901cab4eca7bf4db329e04b5f784840c4ce45066fe86bc0a97d26e67549c6c2,2026-06-04T08:49:44.596773+00:00,Senior data analyst,monday.com,Tel Aviv,False,"[""SQL"", ""Data Analysis"", ""Data Modeling"", ""Dashboards"", ""AI"", ""Communication""]",,https://secrethunter.io/jobz/67409f1a80?utm_source=telegram,"**Senior data analyst**
+monday(.)com
+Tel Aviv
+3/6/26
+ㅤ
+__SQL, Data Analysis, Data Modeling, Dashboards, AI, Communication, Independent__
+ㅤ
+__English__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/67409f1a80?utm_source=telegram
+ㅤ
+--
+Search jobs:
+https://secrethunter.io/search?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack signals.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority in title."
+b50dca45b149928f42c487f8c7df6f0351dfe4639c71407bbaf4c3f3ca1ef95c,2026-06-04T08:49:44.878155+00:00,Operations Intern [Student Position],Mixtiles,Tel Aviv,True,[],,https://www.mixtiles.com/positions/8565941002?gh_jid=8565941002,"🆕 **Operations Intern [Student Position] – Oasis**
+
+💼 **Company:** Mixtiles
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Own end-to-end procurement management
+Coordinate and monitor shipments and logistics
+Identify and address supply imbalances to keep the supply chain running smoothly
+Grow into project management, new product rollouts, and leading cross-functional ini....
+
+---------------
+
+📊 **Requirements:** Final-year student in BSc. Industrial Engineering & Management, PPE, or Economics
+Strong communicator - confident and clear in English, both written and verbal
+Eager to learn, with ambitions to grow into a senior operations role
+Sharp analytical thin....
+
+[**View full position listing and submit CV**](https://www.mixtiles.com/positions/8565941002?gh_jid=8565941002)",8,2,"POSITIVES: Internship position, located in Tel Aviv, 0 years experience required. NEGATIVES: Role is not relevant to candidate's target (Data Analyst), and lacks analytical duties. HARD BLOCK: NONE SCORE: 2 — while the location and experience level are suitable, the role type does not align with the candidate's profile."
+45ec05b92be6687b208e16bd9c719f11f8a48cbc9f54053bbba6ad4ad5c6bdff,2026-06-04T08:49:45.154947+00:00,Priority System Analyst,Maytronics,Israel,False,[],,https://www.linkedin.com/jobs/view/4412374351/,"🆕 **Priority System Analyst**
+
+💼 **Company:** Maytronics
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About the Company As part of our team, you will join an exceptional group dedicated to providing service and support across all departments, while collaborating on the development of exciting,.......
+
+---------------
+
+📊 **Requirements:** About the Company As part of our team, you will join an exceptional group dedicated to providing service and support across all departments, while collaborating on the development of exciting, high-impact products. Responsibilities Requirements Analy....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4412374351/)",7,3,"POSITIVES: Located in Israel, full-time position. NEGATIVES: Requires 4 years of experience — significant penalty. HARD BLOCK: NONE SCORE: 3 — relevant location but penalized for experience requirement."
+99e0340d0a33b8b20390d2535c95544444d9cddaeb542a9d1dfa1686ff3268dc,2026-06-04T08:49:45.432222+00:00,Information System Manager,Paragon,Tel Aviv,False,[],,https://www.comeet.com/jobs/paragon/76.006/information-system-manager/2E.B6C,"🆕 **Information System Manager**
+
+💼 **Company:** Paragon
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Paragon is on a mission to transform the world of cyber intelligence. Based in Tel Aviv, Paragon is made up of top-tier talent who are passionate about making an impact. At Paragon,.......
+
+---------------
+
+📊 **Requirements:** The ideal candidate combines strong technical expertise with business understanding, excellent communication skills, and a passion for improving employee productivity through technology. Responsibilities Own and manage the company's business applicat....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/paragon/76.006/information-system-manager/2E.B6C)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Job title contains 'Manager' — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to 'Manager' in the title."
+9f70bf38e7968a9c0b511bb3e147a8fe7c300b06154746178e426c71c4691bef,2026-06-04T08:49:45.698651+00:00,Business Process Data Analyst,Aidoc,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4422422508/,"🆕 **Business Process Data Analyst**
+
+💼 **Company:** Aidoc
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose.......
+
+---------------
+
+📊 **Requirements:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose urgent cases, ultimately improving patient outcome....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4422422508/)",9,8,"POSITIVES: Exact title aligns with candidate's target role, located in preferred city, 2 years experience aligns with junior level. NEGATIVES: None. HARD BLOCK: NONE SCORE: 8 — strong match with no negatives."
+50cc6cd64dfc53ab29ac1a761f20975bb732c7d01af43a9756a1ae8905ec8716,2026-06-04T08:49:45.974397+00:00,Senior Data Engineer,Solidus Labs,Tel Aviv,False,"[""Java""]",,https://www.linkedin.com/jobs/view/4422925383/,"🆕 **Senior Data Engineer - Application**
+
+💼 **Company:** Solidus Labs
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Solidus Labs At Solidus, we are shaping the financial markets of tomorrow by providing cutting-edge trade surveillance technology that protects investors, enhances transparency, and ensures.......
+
+---------------
+
+📊 **Requirements:** Requirements: Requirements: BSc. in Computer Sciences. Strong background as a software engineer with at least 3+ years of experience with Java. 5+ years in data engineering and data pipeline development on high-volume, low-latency production environm....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4422925383/)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 5+ years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+0e23415ca058e84cdf930a616b1ace5448ee156ddbb064755dd4b064819a5a64,2026-06-04T08:49:46.253785+00:00,FP&A Analyst,Maytronics,Israel,False,[],,https://www.linkedin.com/jobs/view/4424049869/,"🆕 **Experienced FP&A Analyst**
+
+💼 **Company:** Maytronics
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About the Role Maytronics is a publicly traded company that develops and manufactures leading consumer technology products, with international commercial operations. We are seeking an Experienced.......
+
+---------------
+
+📊 **Requirements:** About the Role Maytronics is a publicly traded company that develops and manufactures leading consumer technology products, with international commercial operations. We are seeking an Experienced FP&A Analyst to join our finance team. This role offer....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4424049869/)",7,2,"POSITIVES: Located in Israel.
+NEGATIVES: Requires 5 years of experience — significant penalty.
+HARD BLOCK: NONE
+SCORE: 2 — role is relevant but heavily penalized for experience requirement."
+a0b931f83993184d936dfd3cd77db26346137fa31f59cdfb5c5722aedee844d8,2026-06-04T08:49:46.522897+00:00,Data Analyst,Aidoc,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4422414656/,"🆕 **Data Analyst**
+
+💼 **Company:** Aidoc
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose.......
+
+---------------
+
+📊 **Requirements:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose urgent cases, ultimately improving patient outcome....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4422414656/)",9,8,"POSITIVES: Exact title, preferred city, full-time position aligns with candidate's target role. NEGATIVES: 2 years experience required — mild penalty. HARD BLOCK: NONE SCORE: 8 — strong match with minor penalty for experience requirement."
+8ee8e791fe780c50ee23176fce24e47bb2b8273b6d3f784f4f19f3870ecbb67d,2026-06-04T08:49:46.795475+00:00,Senior Product Analyst,Aidoc,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4422420529/,"🆕 **Senior Product Analyst**
+
+💼 **Company:** Aidoc
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose.......
+
+---------------
+
+📊 **Requirements:** About Aidoc Aidoc is revolutionizing clinical decision-making with real-time clinical AI imaging solutions, impacting over 60 million patients annually. Our technology empowers physicians to diagnose urgent cases, ultimately improving patient outcome....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4422420529/)",9,1,"POSITIVES: Preferred city, relevant industry (HealthTech). NEGATIVES: Senior title, 6 years experience required — both are hard exclusions. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority."
+c46cd58fc0d68a9eb5ef0ed361a7259335200ebb744f3798b338cca09af5991d,2026-06-04T08:49:47.086231+00:00,TMS Analyst,Melio,Tel Aviv,False,[],"Email: , Phone: ",https://job-boards.greenhouse.io/melio/jobs/7737276003,"🆕 **TMS Analyst **
+
+💼 **Company:** Melio
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 
+1-3 years experience as an AML, transaction monitoring or relevant compliance analyst role in a FinTech or other closely regulated industry
+Ability to manage and prioritize simultaneous projects, related to different stakeholders, internal and exter....
+
+---------------
+
+📊 **Requirements:** Bachelor’s degree or relevant work experience.
+Professional English skills 
+A comprehensive understanding of US Regulations....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/melio/jobs/7737276003)
+
+    
+**POC:** The TMS Analyst will lead initiatives, in collaboration with the TLV Director of Compliance Operations and TLV TMS Team Lead, to handle the daily tasks to support our regulatory AML requirements
+Analyze transaction data and identify potentially suspi
+LI of POC
+**Email:** 
+**Phone:**:",7,3,"POSITIVES: Located in Tel Aviv, relevant industry experience. NEGATIVES: Requires 3 years of experience, which is a significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant role but penalized for experience requirement."
+2bd04a988abfa69bb8b8f9252442d0f3fc72a259dce5edd45a06557245d02ce9,2026-06-04T08:49:47.367264+00:00,Senior FP&A Analyst,Melio,Tel Aviv,False,"[""Excel""]",,https://job-boards.greenhouse.io/melio/jobs/7719441003,"🆕 **Senior FP&A Analyst**
+
+💼 **Company:** Melio
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:**  provide value-added insights to enable senior management optimization of actual spend.
+A sharp eye for detail with the ability to audit others' work, identify potential efficiencies, and implement improvements to existing modeling processes.
+High le....
+
+---------------
+
+📊 **Requirements:** 4-5+ years of experience in an analytical position in high-tech companies. Extensive knowledge of Excel (Pivot table, data formulas, etc).
+Proven experience in economic modeling
+Fast learner of business knowledge and for grasping the concept of new m....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/melio/jobs/7719441003)
+
+    
+**POC:** Lead financial models to support forecasts and various ad-hoc requests, providing added-value insights to management to support business decisions.
+Analyze the business activity and trends.
+Building and maintaining yearly budget and rolling forecast.
+LI of POC
+**Email:** 
+**Phone:**:",9,2,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Senior title is a hard exclusion; 4-5+ years required is a significant penalty. 
+HARD BLOCK: Job TITLE contains: Senior. 
+SCORE: 2 — senior title disqualifies the role."
+0e7aee029958df1038548988ba6394271280008bb72b7beacb530be2f0f725ab,2026-06-04T08:49:47.653982+00:00,KYC Analyst,Melio,Tel Aviv,False,[],,https://job-boards.greenhouse.io/melio/jobs/7719396003,"🆕 **KYC Analyst **
+
+💼 **Company:** Melio
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 
+Professional English skills 
+A comprehensive understanding of US Regulations KYC Regulations....
+
+---------------
+
+📊 **Requirements:** 1+ years experience in FinTech or other closely regulated industry
+Bachelor’s degree or relevant work experience....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/melio/jobs/7719396003)
+
+    
+**POC:** 
+Ability to manage and prioritize simultaneous projects, related to different stakeholders, internal and external to company
+Excellent interpersonal, verbal, and communication skills, strong professional presence to support regular interactions with 
+LI of POC
+**Email:** 
+**Phone:**:",7,3,"POSITIVES: Exact location in Tel Aviv, relevant industry experience. NEGATIVES: Role requires 3 years of experience — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant location but penalized for experience requirement."
