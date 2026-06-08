@@ -16955,3 +16955,333 @@ SCORE: 1 — role does not align with candidate's profile."
 NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
 HARD BLOCK: Job TITLE contains: Senior.
 SCORE: 1 — hard exclusion due to seniority."
+7564c7e0f59137003dec312a414b0d3d53d91b249538651f8b7fa904b5416252,2026-06-08T09:24:33.362727+00:00,Technical Writing Analyst,griddable.io,Tel Aviv,False,"[""Technical Writing"", ""AI Writing Tools"", ""Agile"", ""Documentation"", ""Communication"", ""Collaboration"", ""Editing""]",,https://secrethunter.io/jobz/196b8acc97?utm_source=telegram,"**Technical writing analyst**
+griddable(.)io
+Tel Aviv
+7/6/26
+ㅤ
+__Technical Writing, AI Writing Tools, Agile, Documentation, Communication, Collaboration, Editing__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/196b8acc97?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv).
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+0782e8a7bb9691a6939ce4e8e08286b60b8b942ae897a593fa0efb97055c50b1,2026-06-08T09:24:34.763050+00:00,System analyst & project manager,Moveo Source,Ramat Gan,False,"[""Project management"", ""Systems analysis"", ""Agile"", ""Web systems"", ""Databases""]",,https://secrethunter.io/jobz/ee7433d882?utm_source=telegram,"**System analyst & project manager**
+Moveo Source
+Ramat Gan
+7/6/26
+ㅤ
+__Project management, Systems analysis, Agile, Web systems, Databases, Communication, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/ee7433d882?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referers list:
+https://secrethunter.io/referers?utm_source=telegram",7,2,"POSITIVES: Location is preferred (Ramat Gan). NEGATIVES: Role is mid-level, which is a mild negative; not a relevant title for the candidate. HARD BLOCK: NONE. SCORE: 2 — role is not aligned with the candidate's target titles."
+db83de4dad2a92847e03b80b238d93aadb259e3df3fd13f6d7de8b68530a119d,2026-06-08T09:24:35.197240+00:00,Database administrator,Software AG Israel,Petahtikva,True,"[""ADABAS"", ""LINUX"", ""Troubleshooting"", ""DBA"", ""critical environment management""]",,https://secrethunter.io/jobz/7a566e94b0?utm_source=telegram,"**Database administrator**
+Software AG Israel
+Petahtikva
+7/6/26
+ㅤ
+__ADABAS, LINUX, Troubleshooting, DBA, critical environment management__
+ㅤ
+Junior, Entry
+ㅤ
+https://secrethunter.io/jobz/7a566e94b0?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",9,1,"POSITIVES: Junior role, entry-level position. NEGATIVES: Database administrator title is not relevant to the candidate's target roles. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 1 — hard exclusion due to location."
+e1b65b0f87a926a806534f6446eca9747e35e861c37474234e9ce23d4032527a,2026-06-08T09:24:35.541198+00:00,Data engineering team lead,Port,Tel Aviv,False,"[""Data Warehousing"", ""Data Modeling"", ""ETL/ELT"", ""SQL"", ""Python""]",,https://secrethunter.io/jobz/cda19495e3?utm_source=telegram,"**Data engineering team lead**
+Port
+Tel Aviv
+7/6/26
+ㅤ
+__Data Warehousing, Data Modeling, ETL/ELT, SQL, Python, Team Lead, Communication__
+ㅤ
+__English__
+ㅤ
+Teamleader, Senior, Techlead
+ㅤ
+https://secrethunter.io/jobz/cda19495e3?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Title contains 'Team Lead' which is a hard exclusion. 
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. 
+SCORE: 1 — hard exclusion due to the title."
+2c4e839b5f5af99fe5f2eca37c2d354cf0d513a829d62ca51035911b8df4ed8f,2026-06-08T09:24:35.752363+00:00,Experienced dba,Brillix,,False,"[""PostgreSQL"", ""AWS"", ""Troubleshooting"", ""Optimization"", ""Architecture"", ""Backup and Recovery"", ""Database Development""]",,https://secrethunter.io/jobz/1c96804fd8?utm_source=telegram,"**Experienced dba**
+Brillix
+
+7/6/26
+ㅤ
+__PostgreSQL, AWS, Troubleshooting, Optimization, Architecture, Backup and Recovery, Database Development__
+ㅤ
+Entry, Senior
+ㅤ
+https://secrethunter.io/jobz/1c96804fd8?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",7,1,"POSITIVES: None.
+NEGATIVES: Role is for a DBA, which is not relevant to the candidate's target roles; also, 'Senior' in title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority in title."
+387e8ae254de65cd18df89870edf9636758479a698ca5929c0f15be26801e518,2026-06-08T09:24:35.967663+00:00,Salesforce marketing cloud analyst & implementer,Be2See(.),Tel Aviv,True,"[""Salesforce Marketing Cloud"", ""SQL"", ""Data analysis""]",,https://secrethunter.io/jobz/d41acabaa5?utm_source=telegram,"**Salesforce marketing cloud analyst & implementer**
+Be2See(.)
+Tel Aviv
+7/6/26
+ㅤ
+__Salesforce Marketing Cloud, SQL, Data analysis, Teamwork, Communication, Flexibility, Accuracy__
+ㅤ
+Mid, Entry
+ㅤ
+https://secrethunter.io/jobz/d41acabaa5?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",7,4,"POSITIVES: Location is preferred (Tel Aviv), relevant tech stack includes SQL and data analysis. NEGATIVES: Mid-level designation is a mild penalty. HARD BLOCK: NONE SCORE: 4 — relevant role but penalized for mid-level designation."
+b5cda2c0a676a525c0e5f799e295e5715ee49aee54271bac469aa41849c02c4f,2026-06-08T09:24:36.183079+00:00,Data analyst,Aqurate Data,Shoham,False,"[""SQL"", ""Big Data"", ""Python"", ""BI Tools""]",,https://secrethunter.io/jobz/d0d7dada0d?utm_source=telegram,"**Data analyst**
+Aqurate Data
+Shoham
+7/6/26
+ㅤ
+__Data Analysis, SQL, Big Data, Python, BI Tools, Business Acumen, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/d0d7dada0d?utm_source=telegram
+ㅤ
+--
+Talk to career experts:
+https://secrethunter.io/experts?utm_source=telegram",7,5,"POSITIVES: Relevant role as Data Analyst, location in Israel, SQL and Python are primary candidate tools. NEGATIVES: Mid-level designation — mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with some penalties for seniority."
+102044c4d04b542917b46f2465e2f8c6b4a84557512888215854fa84266d92b8,2026-06-08T09:24:36.411365+00:00,Marketing analyst,Dbit Marketing,Tel Aviv,False,"[""Data Analysis"", ""Campaign Management"", ""Excel""]",,https://secrethunter.io/jobz/929cc515ec?utm_source=telegram,"**Marketing analyst**
+Dbit Marketing
+Tel Aviv
+7/6/26
+ㅤ
+__Data Analysis, Campaign Management, Excel, Communication, Problem Solving, Fast Learner__
+ㅤ
+Senior, Mid
+ㅤ
+https://secrethunter.io/jobz/929cc515ec?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",9,1,POSITIVES: Location is preferred (Tel Aviv). NEGATIVES: Title contains 'Senior' — hard exclusion. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority in title.
+cb420c7ac3c177a64bfcdba6a0ba570c613250f2360ebfbe2963f0be3de0a2b2,2026-06-08T09:24:36.628074+00:00,Senior data engineer,Noma Security,Tel Aviv,False,"[""Data Engineering"", ""SQL"", ""Data Warehousing"", ""Data Modeling"", ""BI Dashboards""]",,https://secrethunter.io/jobz/9ebf4fa00b?utm_source=telegram,"**Senior data engineer**
+Noma Security
+Tel Aviv
+7/6/26
+ㅤ
+__Data Engineering, SQL, Data Warehousing, Data Modeling, BI Dashboards, Cross-functional, Problem Solving__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/9ebf4fa00b?utm_source=telegram
+ㅤ
+--
+Talk to career experts:
+https://secrethunter.io/experts?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Job title contains 'Senior' — hard exclusion. 
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. 
+SCORE: 1 — hard exclusion due to seniority in title."
+fc52d309fc874740ddc1b1b3b60d8e8ea51a382e0278461aa67a0c25b69a7c59,2026-06-08T09:24:36.842709+00:00,Senior data engineer,Rafael Advanced Defense Systems,Tel Aviv,False,"[""Python"", ""ETL"", ""SQL"", ""NoSQL"", ""Spark"", ""Airflow"", ""Docker""]",,https://secrethunter.io/jobz/1f326c1c15?utm_source=telegram,"**Senior data engineer**
+Rafael Advanced Defense Systems
+Tel Aviv
+7/6/26
+ㅤ
+__Python, ETL, SQL, NoSQL, Spark, Airflow, Docker__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/1f326c1c15?utm_source=telegram
+ㅤ
+--
+Talk to career experts:
+https://secrethunter.io/experts?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv).
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+8d8a4a05a7e94e7f07a1bc82dcb0260de8f433813bd6a8253d20535154adc13b,2026-06-08T09:24:37.055972+00:00,Threat intelligence analyst,au10tix,Hod Hasharon,False,"[""Open Web Intelligence"", ""SQL"", ""Analytical Writing"", ""Research"", ""Critical Thinking"", ""Cybersecurity""]",,https://secrethunter.io/jobz/d7ec862fac?utm_source=telegram,"**Threat intelligence analyst**
+au10tix
+Hod Hasharon
+7/6/26
+ㅤ
+__Open Web Intelligence, SQL, Analytical Writing, Research, Critical Thinking, Cybersecurity, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/d7ec862fac?utm_source=telegram
+ㅤ
+--
+Talk to career experts:
+https://secrethunter.io/experts?utm_source=telegram",8,2,"POSITIVES: SQL is a primary candidate skill. 
+NEGATIVES: Role is not a Data Analyst; title is Threat Intelligence Analyst, which is not relevant. Mid-level is also a negative. 
+HARD BLOCK: Role is located OUTSIDE ISRAEL. 
+SCORE: 2 — hard exclusion due to location."
+ee5990cb7df435109a94d6bebd4a817402c92af5c067e8d9aa759933a1580f5b,2026-06-08T09:24:37.278284+00:00,Technical writing analyst,Salesforce,Tel Aviv,False,"[""Technical Writing"", ""AI-assisted writing"", ""Agile"", ""Collaboration"", ""Communication"", ""Problem-solving""]",,https://secrethunter.io/jobz/eea143bc5b?utm_source=telegram,"**Technical writing analyst**
+Salesforce
+Tel Aviv
+7/6/26
+ㅤ
+__Technical Writing, AI-assisted writing, Agile, Collaboration, Communication, Problem-solving__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/eea143bc5b?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",7,3,"POSITIVES: Located in Tel Aviv, relevant role type. NEGATIVES: Mid-level — mild penalty only (-1 point). HARD BLOCK: NONE SCORE: 3 — relevant role but penalized for mid-level seniority."
+aa094ba0d33489437a71b4184c6155e22a075e9f66573b67c034bb8f937d31c8,2026-06-08T09:24:37.492291+00:00,Radar performance analyst,DRS RADA Technologies,Netanya,True,"[""MATLAB"", ""Signal Processing""]",,https://secrethunter.io/jobz/1ce3db3d85?utm_source=telegram,"**Radar performance analyst**
+DRS RADA Technologies
+Netanya
+7/6/26
+ㅤ
+__MATLAB, Signal Processing, Teamwork, Problem Solving, Communication__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/1ce3db3d85?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",9,1,"POSITIVES: Junior role, company is in Israel.
+NEGATIVES: Role requires MATLAB and Signal Processing, which are not aligned with candidate's skills.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+da1419cf8321f774bde07eea02e31c3561a1469a797cf3a46855f73050dd97ce,2026-06-08T09:24:37.729015+00:00,Radar performance analyst,rada,Netanya,True,"[""Signal Processing"", ""MATLAB"", ""Performance Analysis""]",,https://secrethunter.io/jobz/debe2f2261?utm_source=telegram,"**Radar performance analyst**
+rada
+Netanya
+7/6/26
+ㅤ
+__Signal Processing, MATLAB, Performance Analysis, R&D, Teamwork, Analytical Thinking__
+ㅤ
+Junior, Mid
+ㅤ
+https://secrethunter.io/jobz/debe2f2261?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",7,2,"POSITIVES: Junior position, analytical role. NEGATIVES: Location is outside Israel (Netanya). HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 2 — hard exclusion due to location."
+42667dd2abe4e289f9802dd8860c12785cf906d0319127b31b92d696bb34da1c,2026-06-08T09:24:37.949587+00:00,Operations Control Center Operator - Student Position,Mobileye,Jerusalem,True,[],,https://careers.mobileye.com/jobs/operations-control-center-operator-student-position/77903715-3b36-4804-a142-cc6c030dcae4,"🆕 **Operations Control Center Operator - Student Position**
+
+💼 **Company:** Mobileye
+🔍 **Location:** Jerusalem
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Student
+
+---------------
+
+📄 **Description:** Using digital systems to monitor and control security & safety systems: CCTV, Intrusion detection, Fire alarm systems, Elevators, and more…
+Track CCTV displays on wall to wall security monitors, and access control systems
+Incident response and notifi....
+
+---------------
+
+📊 **Requirements:** Available for shift work 24/7, including night shifts, weekends and holidays
+Minimum 3 shifts per week
+Experience in a digital work environment
+Prior work in an operations or military/security command center – An advantage
+Practiced in multitasking a....
+
+[**View full position listing and submit CV**](https://careers.mobileye.com/jobs/operations-control-center-operator-student-position/77903715-3b36-4804-a142-cc6c030dcae4)",9,1,"POSITIVES: Student position, 0 years experience required, located in Israel.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); purely operational role.
+HARD BLOCK: Role is purely operations with no analytics duties.
+SCORE: 1 — hard exclusion due to lack of analytical duties."
+a91e7119874dd421008a0fc99a2947bddeabff0e360e78d7e5de5184a1855806,2026-06-08T09:24:38.166096+00:00,Full Time,Blockaid,Tel Aviv,True,[],,https://blockaid.io/careers/B4.652,"🆕 **Future Opportunities**
+
+💼 **Company:** Blockaid
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description At Blockaid, we are constantly growing and redefining trust in the Web3 space. We know that incredible talent doesn’t always fit into a neat, pre-defined box. If you are passionate about.......
+
+---------------
+
+📊 **Requirements:** your background, we will reach out to you directly. Requirements....
+
+[**View full position listing and submit CV**](https://blockaid.io/careers/B4.652)",7,9,"POSITIVES: Exact location in Tel Aviv, position is entry-level with 0 years experience required, aligns with candidate's target role. NEGATIVES: No specific tech stack mentioned. HARD BLOCK: NONE SCORE: 9 — strong match due to preferred location and junior level."
+47c9e0d22e6258c2dd314bc77f97943e1bd6efa0d16efb795d7c25f8f430bbef,2026-06-08T09:24:38.376852+00:00,Systems implementation,abra,Herzliya,True,"[""SAP""]",,https://www.comeet.com/jobs/abra_rnd/15.007/systems-implementation/F3.C65,"🆕 **Systems implementation**
+
+💼 **Company:** abra
+🔍 **Location:** Herzliya
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description abra is seeking for an Systems implementation . We are looking for a SD Implementer who is at the beginning of his career, with high motivation, professional curiosity and a desire to.......
+
+---------------
+
+📊 **Requirements:** you have a positive attitude, the ability to learn quickly and a real desire to progress – we would love to meet you. Those who have completed an implementation course, or are familiar with the SAP system through QA roles, training or business users ....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/abra_rnd/15.007/systems-implementation/F3.C65)",7,2,"POSITIVES: Junior position, located in Herzliya. NEGATIVES: Role is not relevant to candidate's target (Data Analyst), and requires familiarity with SAP, which is not in the candidate's skill set. HARD BLOCK: NONE SCORE: 2 — while the position is junior and local, it does not align with the candidate's profile."
+7c33820ec2f51d415f66fd7479316d8c5f6c5ca1eeec2e492a7f97d109c0aa7f,2026-06-08T09:24:38.581680+00:00,support engineer,Rayzone Group,Tel Aviv,True,[],,https://apply.workable.com/j/102418B8CC,"🆕 **support engineer -""2עמותת “חיבורים 0-80**
+
+💼 **Company:** Rayzone Group
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** ....
+
+---------------
+
+📊 **Requirements:** ....
+
+[**View full position listing and submit CV**](https://apply.workable.com/j/102418B8CC)",8,1,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years, which aligns with junior level. NEGATIVES: Role title is not relevant (support engineer). HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to irrelevant title."
+997b655ff85e1af7b3ccdb1bd4e71da0d80602dfa53684c33a12b72f6eadd1ca,2026-06-08T09:24:38.789097+00:00,Technical Writing Analyst,Salesforce,Tel Aviv,False,[],,https://careers.salesforce.com/en/jobs/jr344585/technical-writing-analyst/,"🆕 **Technical Writing Analyst**
+
+💼 **Company:** Salesforce
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About the Role The Marketing Cloud Content Experience team is looking for a Technical Writing Analyst who's energized by the challenge of making complex technology clear, useful, and human. In this.......
+
+---------------
+
+📊 **Requirements:** What We're Looking For Required Qualifications 3+ years of experience documenting software for technical audiences Demonstrated experience writing UI text, in-app help content, release notes, and developer documentation Hands-on experience with AI-as....
+
+[**View full position listing and submit CV**](https://careers.salesforce.com/en/jobs/jr344585/technical-writing-analyst/)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Role requires 3+ years of experience — hard exclusion due to seniority.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority requirement."
+bdb944495a8c1929138133c1aa055411e01dfd4765d4e26d1bcbe47673082779,2026-06-08T09:24:38.997827+00:00,Functional & Performance Analysis Team Lead,Mobileye,Jerusalem,False,"[""data analysis"", ""software development"", ""algorithm validation"", ""AI-based technologies""]",,https://careers.mobileye.com/jobs/functional-performance-analysis-team-lead/fa546eb7-7efe-4408-b009-a08790b81893,"🆕 **Functional & Performance Analysis Team Lead**
+
+💼 **Company:** Mobileye
+🔍 **Location:** Jerusalem
+🧑‍💻️ **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Lead a small, focused HLB algorithm validation team, driving innovation, automation, and the adoption of state-of-the-art and AI-based technologies.
+Build deep system understanding of the HLB product to enable thorough analysis, root-cause investigat....
+
+---------------
+
+📊 **Requirements:** 4–7 years of experience in data analysis, software development, or algorithm-related roles, with strong analytical and problem-solving skills.
+B.Sc. in Computer Science, Engineering, or a related field.
+Ability to investigate complex systems and anal....
+
+[**View full position listing and submit CV**](https://careers.mobileye.com/jobs/functional-performance-analysis-team-lead/fa546eb7-7efe-4408-b009-a08790b81893)",9,1,"POSITIVES: Company is well-known, role involves data analysis. NEGATIVES: Title includes 'Lead', requires 4–7 years of experience, located outside preferred area. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to 'Lead' in the title."
