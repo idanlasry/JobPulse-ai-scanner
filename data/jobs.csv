@@ -19707,3 +19707,160 @@ feec2a78ae249c99199a0b6320b98f97a0b683585004d6583b0393438e64174a,2026-06-17T09:5
 NEGATIVES: Senior title and 5 years experience required — both are hard exclusions.
 HARD BLOCK: Job TITLE contains: Senior.
 SCORE: 1 — hard exclusion due to seniority."
+0df1823ecca6567579d840a684bcf5cc6a8c6423ed4a350f5b955cff470420fb,2026-06-18T09:13:58.047631+00:00,Campaign analyst,PivotHR,Rishon Lezion,False,"[""SQL"", ""Data Analysis"", ""A/B Testing""]",,https://secrethunter.io/jobz/b91353a491?utm_source=telegram,"**Campaign analyst**
+PivotHR
+Rishon Lezion
+17/6/26
+ㅤ
+__SQL, Data Analysis, A/B Testing, Communication, Analytical Thinking, Collaboration__
+ㅤ
+Mid, Senior
+ㅤ
+https://secrethunter.io/jobz/b91353a491?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",7,3,"POSITIVES: Role involves data analysis, SQL is a primary tool. NEGATIVES: Mid/Senior level is a hard exclusion; location is acceptable but not preferred. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 2 — seniority is a hard exclusion."
+d4800fd20198550274821fc02acb6de3b0f04915e852c0f75d0faa88a67bd64a,2026-06-18T09:13:59.480905+00:00,Service operations analyst (graduate trainee),Samsung India,Petahtikva,True,"[""Excel"", ""Data Analysis"", ""Problem Solving"", ""Teamwork"", ""Communication""]",,https://secrethunter.io/jobz/308b62a616?utm_source=telegram,"**Service operations analyst (graduate trainee)**
+Samsung India
+Petahtikva
+17/6/26
+ㅤ
+__Excel, Data Analysis, Problem Solving, Teamwork, Communication__
+ㅤ
+Entry
+ㅤ
+https://secrethunter.io/jobz/308b62a616?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",7,6,"POSITIVES: Entry-level position, located in Israel, relevant analytical role. NEGATIVES: Tech stack includes Excel which is secondary, and lacks primary tools like Python or SQL. HARD BLOCK: NONE SCORE: 6 — good match for entry-level role, but tech stack is not fully aligned."
+e0c37fceca8d43532c4443ab8260887de702476b55c6b279126bd196b3f8cc74,2026-06-18T09:13:59.792164+00:00,Intelligence analyst,Black Cube,Tel Aviv,False,"[""OSINT"", ""WEBINT"", ""Data analysis""]",,https://secrethunter.io/jobz/d3f3ecb65d?utm_source=telegram,"**Intelligence analyst**
+Black Cube
+Tel Aviv
+17/6/26
+ㅤ
+__OSINT, WEBINT, Research, Data analysis, Analytical thinking, Communication, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/d3f3ecb65d?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",7,4,"POSITIVES: Location is preferred (Tel Aviv), role involves data analysis which is relevant. NEGATIVES: Mid-level position — mild penalty. HARD BLOCK: NONE SCORE: 4 — relevant role but penalized for mid-level seniority."
+6d88bea831f666d44b5e61a5499626c73ef0b7f3119cf27d4baf16cb35c2644a,2026-06-18T09:14:00.063729+00:00,Data Analyst,IRONSCALES,Ramat Gan,True,"[""AI"", ""cloud-native solution"", ""detection research""]",,https://www.comeet.com/jobs/ironscales/1A.007/data-analyst/AF.C66,"🆕 **Data Analyst**
+
+💼 **Company:** IRONSCALES
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description IRONSCALES is redefining email security with an AI-powered platform built to stop phishing and advanced email threats at scale. Our cloud-native solution detects, analyzes, and remediates.......
+
+---------------
+
+📊 **Requirements:** you bring to the problem. The job itself is detection research: investigating attacks, defining the detection that catches them, and proving it works at scale. Your work feeds directly into Adaptive AI and Themis, the agentic systems at the core of t....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/ironscales/1A.007/data-analyst/AF.C66)",9,9,"POSITIVES: Exact title, junior position, preferred city, relevant analytical role in AI and detection research. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+3898829b8485c1dce7c83db3930cd3f1b51a6f105882dd5046d8b4da58d97303,2026-06-18T09:14:00.335878+00:00,Product Data Analyst,Anecdotes,Tel Aviv,True,"[""BI"", ""product analytics""]",,https://www.linkedin.com/jobs/view/4429561928/,"🆕 **Product Data Analyst**
+
+💼 **Company:** Anecdotes
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Anecdotes is redefining enterprise GRC for the AI era, and data sits at the core of everything we do. As an AI-native GRC platform trusted by some of the world’s largest enterprises, we rely on deep,.......
+
+---------------
+
+📊 **Requirements:** Requirements: Must-Have B.A./B.Sc. in Industrial Engineering, Economics, Statistics, Computer Science, Business Management, or a related quantitative field. 1-2 years of experience in BI, product analytics, or a similar analytical role (or equivalent....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4429561928/)",9,8,"POSITIVES: Exact title, junior experience required, preferred city, relevant analytical role in product analytics. NEGATIVES: None. HARD BLOCK: NONE SCORE: 8 — strong match with all key signals aligning."
+4a8a8e7c603b949592a256e20a8d989bfc8370b4d6a907868843b9ea894e0284,2026-06-18T09:14:00.602741+00:00,Senior BI Developer,Port,Tel Aviv,False,"[""BI Development"", ""Data Warehousing"", ""ETL"", ""Data Modeling""]",,https://www.comeet.com/jobs/port/59.004/senior-bi-developer/90.66B,"🆕 **Senior BI Developer**
+
+💼 **Company:** Port
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 7 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About Port At Port.io, we are building an open and flexible Agentic Engineering Platform for modern engineering organizations. Following our recent $100M Series C funding round, we are in.......
+
+---------------
+
+📊 **Requirements:** skills and experience working with large, complex datasets Strong program/project management skills Experience working with data warehousing, data modeling, and ETL/ELT concepts Strong understanding and experience with business domain processes (GTM,....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/port/59.004/senior-bi-developer/90.66B)",9,1,"POSITIVES: Preferred city, relevant domain. NEGATIVES: Senior title, 7 years experience required. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority."
+8676e0b3b84862b5863367ec01ba63a49b8760dc5b0778194c96d9ad53bcb897,2026-06-18T09:14:00.875654+00:00,Data Engineer,Cust2Mate,Givatayim,False,[],,https://www.linkedin.com/jobs/view/4428716321/,"🆕 **Data Engineer**
+
+💼 **Company:** Cust2Mate
+🔍 **Location:** Givatayim
+🧑‍💻️ **Experience required:** 7 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Cust2Mate is a global leader in smart-cart platforms, transforming in-store shopping through digitalization and personalization. Our award-winning Smart Carts, trusted by leading grocery chains,.......
+
+---------------
+
+📊 **Requirements:** Cust2Mate is a global leader in smart-cart platforms, transforming in-store shopping through digitalization and personalization. Our award-winning Smart Carts, trusted by leading grocery chains, elevate the customer experience, optimize store operati....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4428716321/)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Job title contains 'Data Engineer' which is a hard exclusion; 7 years of experience required.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to job title."
+367e116c476171ea203c57b89ea4c731881fade655e4b35fccfe80bd09bce8ad,2026-06-18T09:14:01.139248+00:00,Senior Data Analyst,ONE ZERO Digital Bank,Tel Aviv,False,[],,https://www.onezerobank.com/career/position/?positionID=7D.B6D,"🆕 **Senior Data Analyst**
+
+💼 **Company:** ONE ZERO Digital Bank
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About the role We're looking for a sharp and business-oriented Data Analyst to join ONE ZERO and help shape the future of digital banking. In this role, you'll work across product,.......
+
+---------------
+
+📊 **Requirements:** Description About the role We're looking for a sharp and business-oriented Data Analyst to join ONE ZERO and help shape the future of digital banking. In this role, you'll work across product, marketing, finance, and technology teams to identify oppo....
+
+[**View full position listing and submit CV**](https://www.onezerobank.com/career/position/?positionID=7D.B6D)",9,1,"POSITIVES: Preferred city, relevant role type. NEGATIVES: Senior title, 5 years experience required. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority."
+2da2beca777e51b922c90d66d7d6b1da17aa62e909b1f877fdb6e4ff0e31ef91,2026-06-18T09:14:01.456374+00:00,Spanish Data Annotator and Analyst,Walmart,Tel Aviv,True,[],,https://www.comeet.com/jobs/walmart/35.000/spanish-data-annotator-and-analyst/DE.C67,"🆕 **Spanish Data Annotator and Analyst**
+
+💼 **Company:** Walmart
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Spanish Data Annotator and Analyst at Walmart Global Tech IL About the role: We are looking for a native Spanish speaker with a high level of proficiency in English to join our Annotation.......
+
+---------------
+
+📊 **Requirements:** Description Spanish Data Annotator and Analyst at Walmart Global Tech IL About the role: We are looking for a native Spanish speaker with a high level of proficiency in English to join our Annotation and Analysis team at the as a Data Annotator and A....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/walmart/35.000/spanish-data-annotator-and-analyst/DE.C67)",7,2,"POSITIVES: Located in Tel Aviv, full-time position. NEGATIVES: Role is primarily annotation with no analytical output, and requires 2 years of experience which is a mild negative. HARD BLOCK: NONE. SCORE: 2 — role lacks analytical duties and is primarily focused on data annotation."
+4e4ac8f4f04e3cd47cfc83558ce49817f1d7af8ab16b39ab429c93753b54d506,2026-06-18T09:14:01.721219+00:00,Data Analyst,penlink,Herzliya,True,"[""AWS Athena"", ""Geospatial"", ""Location Intelligence"", ""Cyber data"", ""AWS"", ""Datadog"", ""Apache Spark"", ""Tableau"", ""AI tools""]",,https://www.comeet.com/jobs/penlink/E5.002/data-analyst/DE.B6B?location=all,"🆕 **Data Analyst**
+
+💼 **Company:** penlink
+🔍 **Location:** Herzliya
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About us: Penlink is a global leader in digital intelligence solutions. Our advanced technologies simplify complex data, empowering public safety organizations to make informed decisions.......
+
+---------------
+
+📊 **Requirements:** Qualifications: Experience with AWS Athena is an advantage. Experience with Geospatial, Location Intelligence, or Cyber data. Experience working with AWS, Datadog, Apache Spark, or Tableau. Experience working with AI tools and leveraging AI for data ....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/penlink/E5.002/data-analyst/DE.B6B?location=all)",8,5,"POSITIVES: Exact title, preferred city, relevant analytical role, some overlap with AI tools. NEGATIVES: 2 years experience required — mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with some penalties for experience requirement."
