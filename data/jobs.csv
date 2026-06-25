@@ -21756,3 +21756,652 @@ f0f8397a896666b84bbc99decd8335385bab9abc88e768f6f759458787154377,2026-06-24T08:2
 NEGATIVES: Requires 6+ years of experience, which is a significant penalty; role is not aligned with candidate's target seniority. 
 HARD BLOCK: NONE 
 SCORE: 2 — the experience requirement is too high for the candidate's profile."
+36ea08d884b5a4fdc64e623fd71727b17933a1fe7f240ad7ad61c26c67ed57ae,2026-06-25T08:25:54.794616+00:00,Application infrastructure support analyst,Oz Software Solutions Ltd.,Petahtikva,True,"[""Oracle DB"", ""SQL"", ""Linux"", ""Adabas"", ""ETL"", ""Bash""]",,https://secrethunter.io/jobz/6492c87718?utm_source=telegram,"**Application infrastructure support analyst**
+Oz Software Solutions Ltd(.)
+Petahtikva
+25/6/26
+ㅤ
+__Oracle DB, SQL, Linux, Adabas, ETL, Bash, Teamwork__
+ㅤ
+Mid, Entry
+ㅤ
+https://secrethunter.io/jobz/6492c87718?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",8,1,"POSITIVES: None.
+NEGATIVES: Role is located outside Israel (Petahtikva).
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+2e903f8b6e05fb0e42ca2d596af4b11d82beeecb0c276c13fa672b22328bcd6d,2026-06-25T08:25:55.941184+00:00,Internship - data science,Hilti Israel,Israel,True,"[""Python"", ""SQL"", ""AWS"", ""Data Engineering"", ""Software Engineering""]",,https://secrethunter.io/jobz/7a09444439?utm_source=telegram,"**Internship - data science**
+Hilti Israel
+Israel
+25/6/26
+ㅤ
+__Python, SQL, AWS, Data Engineering, Software Engineering, Communication, Problem Solving__
+ㅤ
+Student
+ㅤ
+https://secrethunter.io/jobz/7a09444439?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referrers list:
+https://secrethunter.io/referers?utm_source=telegram",7,4,"POSITIVES: Internship role aligns with junior level, Python and SQL are primary candidate tools. NEGATIVES: Data Engineering and Software Engineering are not primary focus areas for the candidate. HARD BLOCK: NONE SCORE: 4 — relevant internship opportunity, but some tech stack components are not aligned."
+d5c6ef6b05b11733e81d4d6bfc9eb197a86c743090ab27c7f8e34ea3e3762c52,2026-06-25T08:25:56.496809+00:00,Staff AI engineer - data visualization,Datadog,Tel Aviv,False,"[""AI"", ""LLM"", ""Software Engineering"", ""Data Visualization""]",,https://secrethunter.io/jobz/a673726b7e?utm_source=telegram,"**Staff AI engineer - data visualization**
+Datadog
+Tel Aviv
+24/6/26
+ㅤ
+__AI, LLM, Software Engineering, Product Mindset, Collaboration, Technical Leadership, Communication__
+ㅤ
+Techlead
+ㅤ
+https://secrethunter.io/jobz/a673726b7e?utm_source=telegram
+ㅤ
+--
+Talk to career experts:
+https://secrethunter.io/experts?utm_source=telegram",9,5,"POSITIVES: Company is in Tel Aviv, relevant tech stack includes AI and LLM. 
+NEGATIVES: Staff title is a hard exclusion, not relevant for the candidate. 
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. 
+SCORE: 1 — hard exclusion due to 'Staff' in the title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+65565b2369ea1b718c5e5b21b98daf32b74c27a2fefa96bb028abb780f9c28c6,2026-06-25T08:25:57.088865+00:00,Data engineer,Sidelines Group,Tel Aviv,False,"[""GCP"", ""BigQuery"", ""Dataflow"", ""Python"", ""Data modeling""]",,https://secrethunter.io/jobz/89cc5500aa?utm_source=telegram,"**Data engineer**
+Sidelines Group
+Tel Aviv
+24/6/26
+ㅤ
+__GCP, BigQuery, Dataflow, Python, Data modeling, Ownership, Communication__
+ㅤ
+Mid, Senior
+ㅤ
+https://secrethunter.io/jobz/89cc5500aa?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv).
+NEGATIVES: Job title is Data Engineer, which is not relevant; mid/senior level is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to the job title."
+6cab3b1bac4d9c1804590c4f8b931c8ed83323b922d452593627c2d95c8cf3f9,2026-06-25T08:25:57.322875+00:00,Software engineer (data platform),Act,Tel Aviv,False,"[""Node.js"", ""TypeScript"", ""Python"", ""Golang"", ""Data Pipelines"", ""ETLs""]",,https://secrethunter.io/jobz/26ce472111?utm_source=telegram,"**Software engineer (data platform)**
+Act
+Tel Aviv
+24/6/26
+ㅤ
+__Node.js, TypeScript, Python, Golang, Data Pipelines, ETLs, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/26ce472111?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Job title contains 'Senior' — hard exclusion. 
+HARD BLOCK: Job TITLE contains: Senior. 
+SCORE: 1 — hard exclusion due to seniority in title."
+b935659a98505cb379c9f9b6bd55999f4deab6d242657a3eb79501e7e754c4b2,2026-06-25T08:25:57.551628+00:00,"Staff engineer, data products",Forter,Tel Aviv,False,"[""Flink"", ""Kafka"", ""Distributed Systems"", ""Data Quality"", ""Observability""]",,https://secrethunter.io/jobz/f6c83e8d6c?utm_source=telegram,"**Staff engineer, data products**
+Forter
+Tel Aviv
+24/6/26
+ㅤ
+__Flink, Kafka, Distributed Systems, Data Quality, Observability, Teamwork, Communication__
+ㅤ
+Techlead, Senior
+ㅤ
+https://secrethunter.io/jobz/f6c83e8d6c?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,1,"POSITIVES: Located in Tel Aviv. NEGATIVES: Title contains 'Staff' which is a hard exclusion. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to title."
+caa9ccef9899f1bac29b6007d0aa3bf1f79927953a61db0c226844b4b460798e,2026-06-25T08:25:57.778002+00:00,Senior data analyst,VYBS,Tel Aviv,False,"[""SQL"", ""Python"", ""Tableau"", ""Generative AI"", ""A/B Testing"", ""Data Storytelling"", ""Communication""]",,https://secrethunter.io/jobz/808ea9a358?utm_source=telegram,"**Senior data analyst**
+VYBS
+Tel Aviv
+24/6/26
+ㅤ
+__SQL, Python, Tableau, Generative AI, A/B Testing, Data Storytelling, Communication__
+ㅤ
+Mid, Senior
+ㅤ
+https://secrethunter.io/jobz/808ea9a358?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,5,"POSITIVES: Preferred city (Tel Aviv), relevant tech stack includes SQL and Python.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+66541b5f9449da3508ec1e7fcd72ba34f73ac833cb42753effdb188e75c776b6,2026-06-25T08:25:58.006111+00:00,System analyst,CONNECTECH - creating connections,Bnei Brak,False,"[""XML"", ""JSON""]",,https://secrethunter.io/jobz/74728d4684?utm_source=telegram,"**System analyst**
+CONNECTECH - creating connections
+Bnei Brak
+24/6/26
+ㅤ
+__ניתוח מערכות, פיננסים, אפיונים, XML, JSON, אינטגרציה, עבודת צוות__
+ㅤ
+Senior, Mid
+ㅤ
+https://secrethunter.io/jobz/74728d4684?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",9,1,"POSITIVES: Location is acceptable (Bnei Brak).
+NEGATIVES: Title contains 'Senior', which is a hard exclusion; also, the role is not relevant to the candidate's target roles.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to 'Senior' in the title."
+5b14188d844772b7a63dff789558d772045d11233a429b2502981bfef7bf5403,2026-06-25T08:25:58.231068+00:00,Bi analyst,Insightec,Israel,False,"[""Power BI"", ""SQL"", ""Snowflake"", ""DBT"", ""Data Modeling"", ""Communication"", ""Analytical""]",,https://secrethunter.io/jobz/3cb6393329?utm_source=telegram,"**Bi analyst**
+Insightec
+Israel
+24/6/26
+ㅤ
+__Power BI, SQL, Snowflake, DBT, Data Modeling, Communication, Analytical__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/3cb6393329?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",9,1,"POSITIVES: Role is in Israel, relevant analytical role. NEGATIVES: Senior title is a hard exclusion. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority."
+45bf1197363282077a0c074e8224c120cb1e641fa8c3d77fa8b6307f4eee6bbc,2026-06-25T08:25:58.455196+00:00,Data researcher,Navina Technologies,Ramat Gan,False,"[""SQL"", ""Python"", ""dbt"", ""Data Modeling"", ""Big Data""]",,https://secrethunter.io/jobz/a9a4b72cf6?utm_source=telegram,"**Data researcher**
+Navina Technologies
+Ramat Gan
+24/6/26
+ㅤ
+__SQL, Python, dbt, Data Modeling, Big Data, Communication, Analytical Thinking__
+ㅤ
+Senior, Mid
+ㅤ
+https://secrethunter.io/jobz/a9a4b72cf6?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referrers list:
+https://secrethunter.io/referers?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Ramat Gan). 
+NEGATIVES: Job title contains 'Senior', which is a hard exclusion. 
+HARD BLOCK: Job title contains: Senior. 
+SCORE: 1 — hard exclusion due to seniority in the title."
+f27fce86d5fe0930dc0a3be1b3ab9fb43d8f01f4f962e42577b6f60b195e70ca,2026-06-25T08:25:58.677646+00:00,AI data specialist - hebrew,RWS Group,Israel,True,"[""Transcription"", ""Data quality"", ""Communication""]",,https://secrethunter.io/jobz/b4c2587fd0?utm_source=telegram,"**AI data specialist - hebrew**
+RWS Group
+Israel
+24/6/26
+ㅤ
+__Hebrew, English, Transcription, Data quality, Flexibility, Communication__
+ㅤ
+Entry
+ㅤ
+https://secrethunter.io/jobz/b4c2587fd0?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",7,6,"POSITIVES: Entry-level position, located in Israel, relevant data quality skills. NEGATIVES: Title does not match primary target role; tech stack is not aligned with candidate's primary skills. HARD BLOCK: NONE SCORE: 6 — relevant entry-level role, but title and tech stack do not fully align."
+b26ed9fd4853c97f600a94bff0517e9cbdfe00eea23e08ccc56f823438b4cb3d,2026-06-25T08:25:58.899864+00:00,Data analyst,somekhchaikin,Tel Aviv,True,"[""Python"", ""SQL"", ""Excel"", ""PowerPoint""]",,https://secrethunter.io/jobz/9e22697687?utm_source=telegram,"**Data analyst**
+somekhchaikin
+Tel Aviv
+24/6/26
+ㅤ
+__Data Analysis, Python, SQL, Excel, PowerPoint, Teamwork, Communication__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/9e22697687?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referrers list:
+https://secrethunter.io/referers?utm_source=telegram",9,9,"POSITIVES: Exact title, junior, preferred city, strong primary stack match with Python and SQL. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+f395b7f94c3f358399f66a9e156509cb653cb2380e6ecb870458a2bc95bf68f3,2026-06-25T08:25:59.121620+00:00,רכז/ת אדמיניסטרציה להון האנושי,IAI,Yehud,True,[],,https://www.linkedin.com/jobs/view/4428476515/,"🆕 **רכז/ת אדמיניסטרציה להון האנושי**
+
+💼 **Company:** IAI
+🔍 **Location:** Yehud
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד **העסקה דרך מיקור חוץ** לתפקיד מגוון ודינמי בחטיבת מערכות טילים וחלל דרוש/ה רכז/ת אדמיניסטרציה ותפעול לעבודה בסביבה מעניינת ומרובת ממשקים בהון האנושי של החטיבה התפקיד כולל: ניהול משרד.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד **העסקה דרך מיקור חוץ** לתפקיד מגוון ודינמי בחטיבת מערכות טילים וחלל דרוש/ה רכז/ת אדמיניסטרציה ותפעול לעבודה בסביבה מעניינת ומרובת ממשקים בהון האנושי של החטיבה התפקיד כולל: ניהול משרד שוטף ותיאום יומנים מרובי ממשקים תיאום פגישות ומעקב א....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4428476515/)",9,1,"POSITIVES: Entry-level position, located in Israel.
+NEGATIVES: Role is administrative with no analytical duties, not relevant to candidate's profile.
+HARD BLOCK: Role is purely administrative with no analytics duties.
+SCORE: 1 — hard exclusion due to lack of relevant analytical responsibilities."
+4c0a04b6db9303969a13fed9532f1cc30fc9739f44cc2d8c872d63f6942b45c6,2026-06-25T08:25:59.346022+00:00,מהנדס/ת או הנדסאי/ת אינטגרציה מטוס ניסוי,IAI,Lod,True,[],,https://www.linkedin.com/jobs/view/4425001870/,"🆕 **מהנדס/ת או הנדסאי/ת אינטגרציה מטוס ניסוי**
+
+💼 **Company:** IAI
+🔍 **Location:** Lod
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד למפעל מערכות מוטסות בחטיבת אלתא דרוש/ה מהנדס/ת או הנדסאי/ת אינטגרציה מטוס ניסוי. התפקיד כולל: תמיכה טכנית לניסויים המתקיימים במטוס תמיכה בקליטת פרויקט חדש מבחינת ניירת ואינטגרציה הובלת.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד למפעל מערכות מוטסות בחטיבת אלתא דרוש/ה מהנדס/ת או הנדסאי/ת אינטגרציה מטוס ניסוי. התפקיד כולל: תמיכה טכנית לניסויים המתקיימים במטוס תמיכה בקליטת פרויקט חדש מבחינת ניירת ואינטגרציה הובלת שלב ניסויי הטיסה משלב התכנון ועד הביצוע של טיסות הנ....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4425001870/)",9,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is not relevant to the candidate's target (Data Analyst); purely engineering role.
+HARD BLOCK: Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend / Pure Backend with zero analytics duties.
+SCORE: 1 — hard exclusion due to the role being purely engineering with no analytics component."
+7ac37097ef8f91585176e4d35f62d6ed090f0b7fe8814b70977a57ca5cc25a5e,2026-06-25T08:25:59.564756+00:00,מהנדס/ת אינטגרציה,IAI,Yehud,True,[],,https://www.linkedin.com/jobs/view/4430336072/,"🆕 **מהנדס/ת אינטגרציה**
+
+💼 **Company:** IAI
+🔍 **Location:** Yehud
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד למפעל מערכות הגנה, חטיבת מט""ח דרוש/ה מהנדס/ת אינטגרציה. התפקיד כולל: ביצוע תהליכי שילובים ובדיקות לכלל מרכיבי מערכות ההגנה האווירית המסופקות ללקוחות המפעל במגוון פרויקטים (ימיים.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד למפעל מערכות הגנה, חטיבת מט""ח דרוש/ה מהנדס/ת אינטגרציה. התפקיד כולל: ביצוע תהליכי שילובים ובדיקות לכלל מרכיבי מערכות ההגנה האווירית המסופקות ללקוחות המפעל במגוון פרויקטים (ימיים ויבשתיים). ביצוע שילובים ובדיקות במעבדות הפיתוח. שילוב המע....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4430336072/)",9,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is for an Integration Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend / Pure Backend with zero analytics duties.
+SCORE: 1 — hard exclusion due to the role type being irrelevant."
+4198e00ab01dffabd1aa40cbde3d3b4df79a678e371d5fab390c9b0f06a14f17,2026-06-25T08:25:59.785889+00:00,Software Developer - Networking,NVIDIA,Israel,True,"[""C"", ""C++""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Developer---Networking_JR2015540-1?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Software Developer - Networking**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA is seeking best-in-class Software Developer Engineer to join our exceptional Networking engineering team, which develops the industry's leading high-speed communication devices, delivering the.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.SC./ M.SC. in Computer Engineering/Science Engineering/Communication Engineering 0 - 3 years of relevant working experience. Experience in C/C++ Versatility, ability to work on more than 1 platform Multitasking capable Good kno....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Software-Developer---Networking_JR2015540-1?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Location is within Israel, entry-level position. NEGATIVES: Role is for Software Developer, which is not relevant to the candidate's target roles. HARD BLOCK: Role is purely Software Development with no analytics duties. SCORE: 1 — hard exclusion due to irrelevant role type."
+93fa51037a40ddc7acffc37d065cc6a92bad4c37dfa6aa01fe0ab89f0d56c8d1,2026-06-25T08:26:00.013293+00:00,מכונאי/ת מטוסים,IAI,Lod,True,[],,https://www.linkedin.com/jobs/view/4398793912/,"🆕 **מכונאי/ת מטוסים**
+
+💼 **Company:** IAI
+🔍 **Location:** Lod
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד לחטיבת התעופה מפעל בדק מטוסים דרוש/ה מכונאי/ית מטוסים התפקיד כולל: תיקון תקלות במטוסים עבודה בהתאם לתוכניות העבודה ועמידה ביעדים עבודה בכל איזורי המטוס, הכוללת פירוקים, הרכבות, בדיקות.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד לחטיבת התעופה מפעל בדק מטוסים דרוש/ה מכונאי/ית מטוסים התפקיד כולל: תיקון תקלות במטוסים עבודה בהתאם לתוכניות העבודה ועמידה ביעדים עבודה בכל איזורי המטוס, הכוללת פירוקים, הרכבות, בדיקות מערכות וחתימות על הפעילות עבודת צוות מול ממשקים תומכ....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4398793912/)",9,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is not relevant to the candidate's profile (mechanic position).
+HARD BLOCK: Role is purely mechanical with no analytics duties.
+SCORE: 1 — hard exclusion due to irrelevance of the role."
+d32dbf6316d71ec5c7be17fccd7754c3f64f7bc203beb70eb3434f2412513376,2026-06-25T08:26:00.222972+00:00,הנדסאי.ת / טכנאי.ת שדה ניסוי,IAI,Israel,True,[],,https://www.linkedin.com/jobs/view/4321452059/,"🆕 **הנדסאי.ת / טכנאי.ת שדה ניסוי**
+
+💼 **Company:** IAI
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד למפעל מלמ בחטיבת מערכות טילים וחלל דרוש/ה הנדסאי.ת / טכנאי.ת שדה ניסוי. ניסוי טיסה הוא אחד השלבים החשובים בכל פרויקט, גמר פיתוח המוצר והוכחתו בניסוי טיסה מבוצע בשדה הניסוי. התפקיד כולל:.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד למפעל מלמ בחטיבת מערכות טילים וחלל דרוש/ה הנדסאי.ת / טכנאי.ת שדה ניסוי. ניסוי טיסה הוא אחד השלבים החשובים בכל פרויקט, גמר פיתוח המוצר והוכחתו בניסוי טיסה מבוצע בשדה הניסוי. התפקיד כולל: תפעול וניהול שדה ניסוי למערכות מוטסות בכל תחומי הפ....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4321452059/)",9,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); title does not match.
+HARD BLOCK: NONE
+SCORE: 1 — role is outside candidate's relevant field."
+08238f8abbca24d3333a318d3a1f1fc0f8de549fdae4a7cc9ccde5f056532e83,2026-06-25T08:26:00.483747+00:00,כלכלן/ית פרויקטים,IAI,Lod,True,[],,https://www.linkedin.com/jobs/view/4410817046/,"🆕 **כלכלן/ית פרויקטים**
+
+💼 **Company:** IAI
+🔍 **Location:** Lod
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד לחטיבת כט""צ דרוש/ה כלכלן/ית פרויקטים התפקיד כולל: * תמחור והכנת הצעות מחיר * ליווי פרויקטים בהיבטים הכלכליים משלב הצעת המחיר, קליטת הזמנות, הוצאת חשבוניות, גביה ועד לסיום הפרויקט * הכנת.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד לחטיבת כט""צ דרוש/ה כלכלן/ית פרויקטים התפקיד כולל: * תמחור והכנת הצעות מחיר * ליווי פרויקטים בהיבטים הכלכליים משלב הצעת המחיר, קליטת הזמנות, הוצאת חשבוניות, גביה ועד לסיום הפרויקט * הכנת תקציבים פרויקטלים שנתיים ורב שנתיים * הכנה/אישור ד....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4410817046/)",9,1,"POSITIVES: Junior position, full-time role. NEGATIVES: Role is not relevant to candidate's target (Data Analyst), located outside preferred area (Lod). HARD BLOCK: Role is purely economic/project management with no analytics duties. SCORE: 1 — hard exclusion due to role type."
+86c9499bfee5016f82ce84d156455cd571a880b84bb0801e57a785dabc4e8e20,2026-06-25T08:26:00.687536+00:00,"Network and System Verification Engineer, E2E",NVIDIA,Yokne'am,True,[],,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Network-and-System-Verification-Engineer--E2E_JR2006471?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Network and System Verification Engineer, E2E**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for a System/Network Test Engineer to join our End-to-End Cloud solution team. You are going to be part of the E2E Verification team with the main goal of testing and be part of.......
+
+---------------
+
+📊 **Requirements:** The....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Network-and-System-Verification-Engineer--E2E_JR2006471?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Company is reputable, position is full-time. NEGATIVES: Role is located outside Israel (Yokne'am). HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 1 — hard exclusion due to location."
+3685e583efc9fdf6faff29cb5c0198c4ab6c3c4672785aa38b34fb22254d6234,2026-06-25T08:26:00.885043+00:00,מנהל/ת צוות כלים תעופתיים,IAI,Lod,True,[],,https://www.linkedin.com/jobs/view/4351885888/,"🆕 **מנהל/ת צוות כלים תעופתיים**
+
+💼 **Company:** IAI
+🔍 **Location:** Lod
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד למפעל להב מבנים תעופתיים בחטיבת התעופה דרוש/ה מנהל/ת צוות כלים תעופתיים התפקיד כולל: ניהול מצבת העובדים וניוד עובדים בין התחנות בקווי הייצור בהתאמה למודל העלות ניהול עבודות מגוונות.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד למפעל להב מבנים תעופתיים בחטיבת התעופה דרוש/ה מנהל/ת צוות כלים תעופתיים התפקיד כולל: ניהול מצבת העובדים וניוד עובדים בין התחנות בקווי הייצור בהתאמה למודל העלות ניהול עבודות מגוונות בתחום טכני מקצועי הובלה רוחבית של כלל התהליכים התפעוליי....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4351885888/)",7,1,"POSITIVES: Location is acceptable (Lod), experience required is 0 years, which aligns with junior level. NEGATIVES: Job title contains 'מנהל/ת' (Manager), which is a hard exclusion. HARD BLOCK: Job title contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to the Manager title."
+233147da888aaa5bf42a636c7c83732c2b3a9ba931bab4513a02d2922ef42926,2026-06-25T08:26:01.106178+00:00,Firmware QA Engineer,NVIDIA,Israel,True,[],,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Firmware-QA-Engineer_JR2012610?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Firmware QA Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are seeking a passionate QA Engineer to join our FW testing team. This position will be part of our growing team, which enables NVIDIA products to meet the industry-leading benchmarks of.......
+
+---------------
+
+📊 **Requirements:** What we need to see: Practical / BSc in Computer Science or Electrical/Electronics Engineering. 0-3 years of proven experience Clear verbal and written communication, proficient in written and spoken English. Self-reliant individual, capable of plann....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Firmware-QA-Engineer_JR2012610?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Located in Israel, entry-level position. NEGATIVES: Role is for a QA Engineer, which is not relevant to the candidate's target roles. HARD BLOCK: NONE SCORE: 1 — the role does not align with the candidate's profile."
+31b05e168db739c66b5d2454be6d0abf4d4550fcae13062b8b4b22ae42dec8f4,2026-06-25T08:26:01.302790+00:00,Salesforce Developer,Nuvei,Tel Aviv,True,"[""Salesforce""]",,https://apply.workable.com/j/277ED8815A,"🆕 **Salesforce Developer**
+
+💼 **Company:** Nuvei
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** ....
+
+---------------
+
+📊 **Requirements:** ....
+
+[**View full position listing and submit CV**](https://apply.workable.com/j/277ED8815A)",9,1,"POSITIVES: Location is preferred (Tel Aviv), entry-level position. NEGATIVES: Role is not relevant to candidate's target (Salesforce Developer). HARD BLOCK: NONE SCORE: 1 — role is outside candidate's target area."
+f66cdf885a746a3849c52073b73c23f74a7b46d130b2906887f2915ebe295b08,2026-06-25T08:26:01.500735+00:00,Planner Junior,Rafael,Israel,True,"[""ERP"", ""Data Analysis""]",,https://www.linkedin.com/jobs/view/4431693535/,"🆕 **Planner Junior**
+
+💼 **Company:** Rafael
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** בוגרי.ות תעשייה וניהול? זו ההזדמנות שלכם.ן להתחיל קריירה משמעותית ברפאל תחום הפלנינג ושרשרת האספקה, מעניין אתכם.ן? במסגרת התפקיד תעסקו בתכנון ובקרת חומר, ניהול מלאים, עבודה עם מערכות ERP , ניתוח.......
+
+---------------
+
+📊 **Requirements:** בוגרי.ות תעשייה וניהול? זו ההזדמנות שלכם.ן להתחיל קריירה משמעותית ברפאל תחום הפלנינג ושרשרת האספקה, מעניין אתכם.ן? במסגרת התפקיד תעסקו בתכנון ובקרת חומר, ניהול מלאים, עבודה עם מערכות ERP , ניתוח נתונים ותיאום בין ממשקים שונים בארגון. דרישות: הנדסאי.ת....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4431693535/)",7,2,"POSITIVES: Junior position, located in Israel. NEGATIVES: Role is not aligned with candidate's target roles (Data Analyst, BI Analyst, etc.). HARD BLOCK: NONE SCORE: 2 — while the position is junior and located in Israel, it does not match the candidate's relevant role preferences."
+e71eb0caf0e6da8c78c95bf5b89c02dfa943e316beab9cf5450d5e38277c4868,2026-06-25T08:26:01.697141+00:00,Embedded Software Engineer,Amazon,Tel Aviv,True,"[""C/C++"", ""AWS"", ""embedded systems""]",,https://amazon.jobs/en/jobs/3166304/embedded-software-engineer,"🆕 **Embedded Software Engineer**
+
+💼 **Company:** Amazon
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Annapurna Labs, a key division within Amazon, seeks a Software Embedded Development Engineer to design, develop, and optimize mission-critical embedded software for cloud infrastructure. You will.......
+
+---------------
+
+📊 **Requirements:** - Bachelor's degree in Computer Science or a closely related field - Experience in embedded development in C/C++ - Experience with embedded systems - Experience with AWS or cloud technologies Our inclusive culture empowers Amazonians to deliver the b....
+
+[**View full position listing and submit CV**](https://amazon.jobs/en/jobs/3166304/embedded-software-engineer)",9,1,"POSITIVES: Junior position, located in Tel Aviv. NEGATIVES: Role is for Embedded Software Engineer, which is not relevant to the candidate's target roles. HARD BLOCK: Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend / Pure Backend with zero analytics duties. SCORE: 1 — hard exclusion due to role type."
+4161b9d756595d87952c49d5d7aad3cd53e545615e0fb54681b7745d4ea8dee6,2026-06-25T08:26:01.892455+00:00,Interconnect NPI Product Engineer,NVIDIA,Yokne'am,True,"[""Electrical Engineering"", ""Material Engineering"", ""Chemistry Engineering"", ""JMP""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Interconnect-NPI-Product-Engineer_JR2019605?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Interconnect NPI Product Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for a creative and independent Product Engineer. NVIDIA's high-speed products are leading in the markets with innovative ways to improve speed and bandwidth from one generation to.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.Sc. in Electrical Engineering/Material Engineering/Chemistry Engineering 3+ years of proven experience Strong problem solving and prioritization ability Strong statistics and data analysis background (JMP) Good software skills,....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Interconnect-NPI-Product-Engineer_JR2019605?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",7,1,"POSITIVES: Location is in Israel, entry-level position. NEGATIVES: Role is not relevant to candidate's target (Product Engineer, not Data Analyst). HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 1 — hard exclusion due to location."
+d859b467733262953c4ca344892d8b56d5d646dd7d01999f73bfa6dbf882ebfa,2026-06-25T08:26:02.088827+00:00,Senior Tools Engineer,NVIDIA,Yokne'am,False,"[""Python"", ""Perl""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2018612?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior Tools Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** NVIDIA is seeking a highly motivated and experienced Senior Tools/Regression Engineer to join our Qualification Hardware Group. We are looking for a dynamic individual who excels in complex software.......
+
+---------------
+
+📊 **Requirements:** What We Need to See: B.Sc. in Computer Science, Computer Engineering, Electrical Engineering, or equivalent experience. 8+ years of experience in QA, Tools, or Regression Engineering, preferably at a senior level. Proficiency in Python and Perl. Hand....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2018612?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: None.
+NEGATIVES: Senior title, 6+ years experience required — both are significant negatives.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+483fa995ffed826800afd7b2aab12fd784b85bb9ece886d3ae6a06b96b8d7a1c,2026-06-25T08:26:02.285451+00:00,"Senior STA Engineer, Sub-chip",NVIDIA,Israel,False,"[""Electrical Engineering"", ""STA"", ""Prime Time""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-STA-Engineer--Sub-chip_JR2015231?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior STA Engineer, Sub-chip**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA is looking for best-in-class Physical Design Engineers to join our outstanding Networking Silicon engineering team, developing the industry's best high-speed communication devices, delivering.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.SC./ M.SC. in Electrical Engineering. At least 5+ years of hands-on STA experience. Experience in Prime Time and signoff methodologies. A great teammate who thrives in a collaborative environment. AI tools orientation or altern....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-STA-Engineer--Sub-chip_JR2015231?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Senior title, 5+ years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+66dbb5aa524a04fcb533c05e7bf33659fcc32027e51400da8d5a87c11b941ac3,2026-06-25T08:26:02.482087+00:00,רכז/ת הדרכה,Passportcard,Netanya,False,[],,https://www.comeet.com/jobs/passportcard/92.00A/None/D3.D64,"🆕 **רכז/ת הדרכה**
+
+💼 **Company:** Passportcard
+🔍 **Location:** Netanya
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description לקבוצת PassportCard דרוש/ה: רכז/ת הדרכה אם את/ה חי/ה ונושם/ת למידה, נהנה/ית לעמוד מול קהל, להוביל תהליכי הכשרה ולהשפיע על חוויית העובד – אנחנו מחפשים אותך! מחלקת ההדרכה שלנו מחפשת רכז/ת.......
+
+---------------
+
+📊 **Requirements:** Description לקבוצת PassportCard דרוש/ה: רכז/ת הדרכה אם את/ה חי/ה ונושם/ת למידה, נהנה/ית לעמוד מול קהל, להוביל תהליכי הכשרה ולהשפיע על חוויית העובד – אנחנו מחפשים אותך! מחלקת ההדרכה שלנו מחפשת רכז/ת הדרכה שייקח/תיקח חלק משמעותי בהכשרת עובדי השירות והמ....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/passportcard/92.00A/None/D3.D64)",7,1,"POSITIVES: None.
+NEGATIVES: Role is located outside Israel, not relevant to candidate's profile.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+7ede86e92bff9f46c0b929a9801c2ac315955f46a2a37fa0606528b5b75c9e8b,2026-06-25T08:26:02.684552+00:00,Senior Tools Engineer,NVIDIA,Yokne'am,False,"[""Python"", ""Perl""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2015387?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior Tools Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** NVIDIA is seeking a highly motivated and experienced Senior Tools/Regression Engineer to join our Qualification Hardware Group. We are looking for a dynamic individual who excels in complex software.......
+
+---------------
+
+📊 **Requirements:** What We Need to See: B.Sc. in Computer Science, Computer Engineering, Electrical Engineering, or equivalent experience. 12+ years of experience in QA, Tools, or Regression Engineering, preferably at a senior level. Proficiency in Python and Perl. Han....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Tools-Engineer_JR2015387?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: None.
+NEGATIVES: Senior title, 12+ years experience required — both are significant negatives.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+683c49608e0a550c01938825f32a8f9cfe735860b2b7bd0295f47eb62fe1d21e,2026-06-25T08:26:02.883258+00:00,BI Analyst,Insightec,Tirat Carmel,False,[],,https://www.comeet.com/jobs/insightec/4A.004/bi-analyst/63.D6F,"🆕 **BI Analyst**
+
+💼 **Company:** Insightec
+🔍 **Location:** Tirat Carmel
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description · Serve as primary point of contact for data analysis initiatives, esp. for Finance and Commercial related data. Gather requirements from stakeholders across the company and translate.......
+
+---------------
+
+📊 **Requirements:** Description · Serve as primary point of contact for data analysis initiatives, esp. for Finance and Commercial related data. Gather requirements from stakeholders across the company and translate them into actionable specifications for dashboards and....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/insightec/4A.004/bi-analyst/63.D6F)",7,3,"POSITIVES: Relevant role in data analysis, company is in Israel. NEGATIVES: 5 years of experience required — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant analytical work, penalized 2–3 points for experience requirement."
+da3457deb8f6be1caf69e4b83fc58eebc421d51d5168c9c22bb63dccbfa698f3,2026-06-25T08:26:03.094708+00:00,Senior Data Engineer,Rafael,Tel Aviv,False,"[""PostgreSQL"", ""Elasticsearch""]",,https://www.linkedin.com/jobs/view/4419137396/,"🆕 **Senior Data Engineer**
+
+💼 **Company:** Rafael
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד : פיתוח תהליכי דאטה מקצה לקצה, משלב קצירת הנתונים ועד להנגשה במערכות פיתוח תשתיות דאטה המאפשרות עבודת Data Science, ותהליכי עיבוד מקדים לטובת אימון מודלי AI עבודה עם בסיסי נתונים.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד : פיתוח תהליכי דאטה מקצה לקצה, משלב קצירת הנתונים ועד להנגשה במערכות פיתוח תשתיות דאטה המאפשרות עבודת Data Science, ותהליכי עיבוד מקדים לטובת אימון מודלי AI עבודה עם בסיסי נתונים מגוונים, רלציוניים ולא רלציוניים (PostgreSQL, Elasticsear....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4419137396/)",9,1,"POSITIVES: Preferred city, company is reputable.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+4f1c1e983d925634bf1c53070974dffbf0f575f0766e720950f006da187ced7c,2026-06-25T08:26:03.291658+00:00,"Manager, AI Networking Performance Research and Analysis",NVIDIA,Israel,False,[],,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Manager--AI-Networking-Performance-Research-and-Analysis_JR2012439?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Manager, AI Networking Performance Research and Analysis**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA is seeking a highly skilled and versatile Performance Research and Analysis Manager to join our Performance Group. This role will drive end-to-end performance strategy and execution for.......
+
+---------------
+
+📊 **Requirements:** The....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Manager--AI-Networking-Performance-Research-and-Analysis_JR2012439?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Manager title is a hard exclusion; 6 years of experience required.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to Manager title."
+b817a230bae46df9aa6e4aae7edca3e4a53f4a1be660808497f4db62ed1c97ed,2026-06-25T08:26:03.486709+00:00,Senior SAP Business System Analyst – PP,NVIDIA,Israel,False,"[""SAP"", ""Business Analysis""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-SAP-Business-System-Analyst---PP_JR2013867?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior SAP Business System Analyst – PP**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA IT Supply Chain Execution Team is looking for a Business System Analyst specializing in SAP PP and manufacturing to become part of our growing team. The Business System Analyst will lead the.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.sc in Industrial Engineering or Information Systems (MBA is....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-SAP-Business-System-Analyst---PP_JR2013867?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+6d098a972abf7fcb18d82c37979f4c46dd918185b181d7dbad62864acac5dfe5,2026-06-25T08:26:03.705512+00:00,Senior Data Engineer,NVIDIA,Israel,False,"[""SQL"", ""NoSQL"", ""PostgreSQL"", ""MySQL""]",,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Tel-Hai/Senior-Data-Engineer_JR2015129?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior Data Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA seeks a Senior Data Engineer for the Vertical Verification Group. You will help build and improve data-driven systems that support complex networking verification and optimize advanced.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.Sc. in Computer Science, Engineering, or a related field (or equivalent experience) 5+ years of software engineering experience with a focus on databases Strong experience with SQL and/or NoSQL databases (PostgreSQL, MySQL, Mon....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Tel-Hai/Senior-Data-Engineer_JR2015129?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: Located in Israel, relevant company. NEGATIVES: Senior title, 5+ years experience required. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to senior title."
+05c9c59a7cd9978828b39ff996e0933579697a5e64882161eaa92ed6c31778af,2026-06-25T08:26:03.926786+00:00,Senior Validation and Qualification Engineer,NVIDIA,Yokne'am,False,[],,https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Validation-and-Qualification-Engineer_JR2015382?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c,"🆕 **Senior Validation and Qualification Engineer**
+
+💼 **Company:** NVIDIA
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** NVIDIA's Networking division is a leading supplier of innovative end-to-end InfiniBand and Ethernet connectivity solutions and services for servers and storage. We offer market-leading solutions that.......
+
+---------------
+
+📊 **Requirements:** What we need to see: B.Sc. degree in Electronic Engineering or equivalent experience 5+ years experience in electro-optics or electrical measurements Experience with establishing complex lab setups using various high-speed lab optical equipment (VOA,....
+
+[**View full position listing and submit CV**](https://nvidia.wd5.myworkdayjobs.com/en-GB/NVIDIAExternalCareerSite/job/Israel-Yokneam/Senior-Validation-and-Qualification-Engineer_JR2015382?locationHierarchy1=2fcb99c455831013ea52bbe14cf9326c)",9,1,"POSITIVES: None.
+NEGATIVES: Senior title, 5+ years experience required.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+0f48dca30125ea2a81919c66105c3052a584a486faa73dbffcaeb847b8a54f48,2026-06-25T08:26:04.152215+00:00,Data Researcher,Navina,Ramat Gan,True,[],,https://www.navina.ai/positions/position-63_d6a,"🆕 **Data Researcher**
+
+💼 **Company:** Navina
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Navina is a fast-growing digital health SaaS company that’s on a mission to transform the way physicians interact with patient data. Thousands of clinicians across the United States.......
+
+---------------
+
+📊 **Requirements:** Description Navina is a fast-growing digital health SaaS company that’s on a mission to transform the way physicians interact with patient data. Thousands of clinicians across the United States already use Navina’s AI-powered solution that transforms....
+
+[**View full position listing and submit CV**](https://www.navina.ai/positions/position-63_d6a)",7,6,"POSITIVES: Relevant industry (HealthTech), location in Ramat Gan, experience requirement aligns with candidate's profile. NEGATIVES: Title 'Data Researcher' is not an exact match for 'Data Analyst'; 2 years experience is a mild negative. HARD BLOCK: NONE SCORE: 6 — overall a good fit with minor penalties for title and experience."
+69de3cabe5e51046ea6d2f9f69117067a9efffa22cb59e636a63e9f84787bec1,2026-06-25T08:26:04.348564+00:00,מראיינ/ת ביטחונ/ית,IAI,Yehud,False,[],,https://www.linkedin.com/jobs/view/4415789040/,"🆕 **מראיינ/ת ביטחונ/ית**
+
+💼 **Company:** IAI
+🔍 **Location:** Yehud
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד למטה חטיבת מט""ח דרוש/ה מראיין/ת לביטחון התפקיד כולל: ביצוע ראיונות בביטחון עבודה שוטפת מול גורמי פנים וגורמי חוץ הפעלה ועדכון נתונים במערכות מחשוב בביטחון *העסקה דרך מיקור חוץ* מה אנחנו.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד למטה חטיבת מט""ח דרוש/ה מראיין/ת לביטחון התפקיד כולל: ביצוע ראיונות בביטחון עבודה שוטפת מול גורמי פנים וגורמי חוץ הפעלה ועדכון נתונים במערכות מחשוב בביטחון *העסקה דרך מיקור חוץ* מה אנחנו מחפשים בוגר/ת תואר אקדמאי- יתרון רקע מקצועי קודם (....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4415789040/)",9,1,"POSITIVES: Company is known, job is in Israel.
+NEGATIVES: Title includes 'מראיינ/ת' which is not relevant to the candidate's target roles; requires 3 years of experience — significant penalty.
+HARD BLOCK: Role is not relevant — title does not match candidate's target roles.
+SCORE: 1 — hard exclusion due to irrelevant title."
