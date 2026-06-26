@@ -22405,3 +22405,1308 @@ SCORE: 1 — hard exclusion due to senior title."
 NEGATIVES: Title includes 'מראיינ/ת' which is not relevant to the candidate's target roles; requires 3 years of experience — significant penalty.
 HARD BLOCK: Role is not relevant — title does not match candidate's target roles.
 SCORE: 1 — hard exclusion due to irrelevant title."
+f525dec26c7aeda951aeced05e962854e40ef537183cafc4e98a1e041872debc,2026-06-26T08:33:47.265172+00:00,Experienced AI engineer - data analytics & business use cases,Sandisk,Kfar Saba,False,"[""AI"", ""LLM"", ""Databricks"", ""Snowflake"", ""SQL"", ""Cloud""]",,https://secrethunter.io/jobz/7fc2cd1ea7?utm_source=telegram,"**Experienced AI engineer - data analytics & business use cases**
+Sandisk
+Kfar Saba
+25/6/26
+ㅤ
+__AI, LLM, Databricks, Snowflake, SQL, Cloud, Independent__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/7fc2cd1ea7?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,5,"POSITIVES: None.
+NEGATIVES: Senior title, located outside Israel (Kfar Saba).
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+03b4a7fd36540a37838018901d129fee12b0aa56b1b2041cbf55c9bcfc57eeba,2026-06-26T08:34:06.849348+00:00,Business analyst,Gett,Tel Aviv,False,"[""SQL"", ""Python"", ""Data Visualization""]",,https://secrethunter.io/jobz/0ee34ab966?utm_source=telegram,"**Business analyst**
+Gett
+Tel Aviv
+25/6/26
+ㅤ
+__SQL, Python, Data Visualization, Business Acumen, Analytical Skills, Communication, Teamwork__
+ㅤ
+__English__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/0ee34ab966?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",8,5,"POSITIVES: Relevant role type (Business Analyst), preferred city (Tel Aviv), SQL and Python are primary candidate tools. NEGATIVES: Mid-level — mild penalty only (-1 point). HARD BLOCK: NONE SCORE: 5 — relevant role with a mild penalty for seniority."
+1eafcbcb4ecd73cc600120a64add5f6e4dd936e8ecec96d9ae828ea5c0d7e354,2026-06-26T08:34:07.692957+00:00,Remote Data Analyst,Vinesight,Israel,True,[],,https://secrethunter.io/jobz/dfb4cafb4b?utm_source=telegram,"**Remote data analyst**
+Vinesight
+Israel
+25/6/26
+ㅤ
+Entry
+ㅤ
+https://secrethunter.io/jobz/dfb4cafb4b?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",8,9,"POSITIVES: Exact title, entry-level, located in Israel, remote option is available.
+NEGATIVES: None.
+HARD BLOCK: NONE
+SCORE: 9 — strong match with all signals aligning."
+ef7be580a8e6a49505c62cd1892ee05fd54222ec1779d6566259b72148038d49,2026-06-26T08:34:07.996910+00:00,Data analyst,Ness Digital Engineering,Netanya,True,"[""Python"", ""SQL"", ""Data Analysis"", ""Dashboards"", ""Power BI"", ""Tableau"", ""Kibana""]",,https://secrethunter.io/jobz/3a0cb6205a?utm_source=telegram,"**Data analyst**
+Ness Digital Engineering
+Netanya
+25/6/26
+ㅤ
+__Python, SQL, Data Analysis, Dashboards, Power BI, Tableau, Kibana__
+ㅤ
+Entry
+ㅤ
+https://secrethunter.io/jobz/3a0cb6205a?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",9,8,"POSITIVES: Exact title, entry-level position, relevant tech stack including Python and SQL, located in Israel. NEGATIVES: None. HARD BLOCK: NONE SCORE: 8 — strong match with all key signals aligning."
+a78c60610212aa8d9246244ed74a8ead954dc379c878dfaa42a05c9a9fe93d0e,2026-06-26T08:34:27.338507+00:00,Intern FY27 - AI Driven Test Automation Engineer,Qualcomm,Hod Hasharon,True,[],,https://careers.qualcomm.com/careers?domain=qualcomm.com&pid=446718699721,"🆕 **Intern FY27 - AI Driven Test Automation Engineer - Hod Hasharon**
+
+💼 **Company:** Qualcomm
+🔍 **Location:** Hod Hasharon
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** ....
+
+---------------
+
+📊 **Requirements:** ....
+
+[**View full position listing and submit CV**](https://careers.qualcomm.com/careers?domain=qualcomm.com&pid=446718699721)",7,2,"POSITIVES: Internship role, located in Israel, no experience required.
+NEGATIVES: Role is for an AI Driven Test Automation Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 2 — while the role is an internship and located in Israel, it does not align with the candidate's desired job type."
+8a744242b61b647a0aecbd605ef531a1b2f28b3909bc4f1b6dc2562e8a7bd07a,2026-06-26T08:34:27.642669+00:00,System Engineer,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/System-Engineer_2636923?Country=084562884af243748dad7c84c304d89a,"🆕 **System Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/System-Engineer_2636923?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position.
+NEGATIVES: Role is for a System Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+c81dbe0116f016b6a19cefb8f25987a9bd864225ee0a8ac07aa2b32bb600adaa,2026-06-26T08:34:27.950653+00:00,מחסנאי/ת,Teva,Shoham,True,[],,https://www.careers.teva/careers/job/563602792135338,"🆕 **מחסנאי/ת לסלא טבע שוהם**
+
+💼 **Company:** Teva
+🔍 **Location:** Shoham
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Supply Chain Warehousing מדווח ל: עובד/ת טבע? עובד/ת טבע? כדאי לחפש ולהגיש מועמדות באמצעות אתר הקריירה של טבע שנמצא בEmployee Central. כמו כן, באתר זה אפשר לאתר הזדמנויות קריירה נוספות הרלוונטיות.......
+
+---------------
+
+📊 **Requirements:** Supply Chain Warehousing מדווח ל: עובד/ת טבע? עובד/ת טבע? כדאי לחפש ולהגיש מועמדות באמצעות אתר הקריירה של טבע שנמצא בEmployee Central. כמו כן, באתר זה אפשר לאתר הזדמנויות קריירה נוספות הרלוונטיות עבור עובדי/ות טבע בלבד. למעבר לאתר הניוד: Internal Car....
+
+[**View full position listing and submit CV**](https://www.careers.teva/careers/job/563602792135338)",7,1,"POSITIVES: Junior position, company is well-known. NEGATIVES: Role is outside Israel, not relevant to candidate's profile. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 1 — hard exclusion due to location."
+9686e4c82a6418613c411819c7592a40f217d312f7e8ce4a2084f19f9d09687b,2026-06-26T08:34:31.980994+00:00,Enterprise Account Executive,AllCloud,Ra'anana,True,[],,https://allcloud.io/careers/co/israel/CB.46D/enterprise-account-executive/all/,"🆕 **Enterprise Account Executive**
+
+💼 **Company:** AllCloud
+🔍 **Location:** Ra'anana
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About AllCloud AllCloud is a leader in amplifying organizations’ cloud potential through AI. With a track record of hundreds of successful migrations and implementations across AWS and.......
+
+---------------
+
+📊 **Requirements:** The....
+
+[**View full position listing and submit CV**](https://allcloud.io/careers/co/israel/CB.46D/enterprise-account-executive/all/)",8,1,"POSITIVES: Location is acceptable (Ra'anana), entry-level position. NEGATIVES: Role is not relevant to candidate's target (Account Executive, not analytical). HARD BLOCK: NONE. SCORE: 1 — role does not align with candidate's profile."
+0c9f055653b8392d1bfede2db777ff73c86ecdd712eb42ee9afa6b9715a984f8,2026-06-26T08:34:32.269704+00:00,Spare Parts System Integration,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Spare-Parts-System-Integration_2635797-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Spare Parts System Integration**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Spare-Parts-System-Integration_2635797-1?Country=084562884af243748dad7c84c304d89a)",7,2,"POSITIVES: Location is within Israel, entry-level position. NEGATIVES: Role does not align with candidate's target roles (Data Analyst, etc.), no relevant tech stack mentioned. HARD BLOCK: NONE. SCORE: 2 — while the location and experience level are favorable, the role type is not relevant to the candidate's profile."
+5d0a7cf016b146754b07475a37aee88ee21ebbd6ee9a28f7e3851e5926404b60,2026-06-26T08:34:32.559862+00:00,Senior Backend Engineer- Data Platform,Transmit Security,Tel Aviv,False,[],,https://www.transmitsecurity.com/about/careers/job?gh_jid=8533933002,"🆕 **Senior Backend Engineer- Data Platform**
+
+💼 **Company:** Transmit Security
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We offer the industry’s only platform that fuses customer identity and anti-fraud solutions – customer identity management, identity verification, and fraud prevention. We sell to industries with.......
+
+---------------
+
+📊 **Requirements:** We offer the industry’s only platform that fuses customer identity and anti-fraud solutions – customer identity management, identity verification, and fraud prevention. We sell to industries with large, consumer-facing businesses such as: banking, fi....
+
+[**View full position listing and submit CV**](https://www.transmitsecurity.com/about/careers/job?gh_jid=8533933002)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+1e051969ee700681c98dec76b83173eeeec02562f9f061fa4c2cbe1ea7218f34,2026-06-26T08:34:32.849570+00:00,Motion Control Engineer,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Motion-Control-Engineer_2635212-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Motion Control Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Motion-Control-Engineer_2635212-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position.
+NEGATIVES: Role is for Motion Control Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+d6c026903122eb9847b53bd65b71de722033931160ac81719a0762e7e2057e1c,2026-06-26T08:34:33.151723+00:00,Global Network & Product Strategy (GNPS) Leader - Solids & Semi-Solids,Teva,Tel Aviv,True,[],,https://www.careers.teva/careers/job/563602812608549,"🆕 **Global Network & Product Strategy (GNPS) Leader - Solids & Semi-Solids**
+
+💼 **Company:** Teva
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** ....
+
+---------------
+
+📊 **Requirements:** ....
+
+[**View full position listing and submit CV**](https://www.careers.teva/careers/job/563602812608549)",7,2,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years which aligns with junior level. NEGATIVES: Role title does not match candidate's target roles; no specified tech stack. HARD BLOCK: NONE. SCORE: 2 — while the location and experience are favorable, the title does not align with the candidate's profile."
+ae087f829beb1c9be16e929956c4c1573d8d6ffcd2061ee3a67e9cf5e7928f83,2026-06-26T08:34:33.450436+00:00,Integration Engineer,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Integration-Engineer_2637484-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Integration Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Integration-Engineer_2637484-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, 0 years experience required.
+NEGATIVES: Role is for Integration Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — role does not align with candidate's profile."
+8fe19e3f5c03f7df8e6854c9df34f468a02eb6cf6e7ae6958a5aedb3a26e11bc,2026-06-26T08:34:33.745622+00:00,Research Scientist,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Research-Scientist_2637007-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Research Scientist**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Research-Scientist_2637007-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position.
+NEGATIVES: Research Scientist title is not relevant to the candidate's target roles; no specified tech stack.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+c49d5561bbe277219d8378987bd32c6e0d1938eb9dc6c7f61f6cf8d8c5da6178,2026-06-26T08:34:34.041215+00:00,"Expert, Software Embedded Developer",Stratasys,Rehovot,True,"[""C++"", ""C#"", ""Java""]",,https://careers.stratasys.com/job/Rehovot-Expert%2C-Software-Embedded-Developer-IL/1388486300/,"🆕 **Expert, Software Embedded Developer**
+
+💼 **Company:** Stratasys
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for a highly skilled SW developer Expert with substantial Object-Oriented experience in a multi-disciplinary environment to join our R&D group in Israel (Rehovot). You will be a part.......
+
+---------------
+
+📊 **Requirements:** Must have for this role: Master's degree in Computer Engineering / Computer Science 8+ years of extensive knowledge of C++ and object Oriented programming Experienced with a high level language such as C# or Java Solid understanding of OS internals a....
+
+[**View full position listing and submit CV**](https://careers.stratasys.com/job/Rehovot-Expert%2C-Software-Embedded-Developer-IL/1388486300/)",9,1,"POSITIVES: Company is located in Rehovot, which is within the preferred location. Experience required is 0 years.
+NEGATIVES: Role is for a Software Embedded Developer, which is not relevant to the candidate's target roles. Requires a Master's degree and extensive knowledge of C++ and object-oriented programming, which are not aligned with the candidate's profile.
+HARD BLOCK: Role is purely Software Embedded Developer, which is not relevant.
+SCORE: 1 — the role does not match the candidate's target roles."
+3c9b384f1337cd95256febe993e8a2127dfd1ca9baa5857599686a9b0ba4ba85,2026-06-26T08:34:34.325253+00:00,נהג/ת הפצה,Teva,Shoham,True,[],,https://www.careers.teva/careers/job/563602812443686,"🆕 **נהג/ת הפצה**
+
+💼 **Company:** Teva
+🔍 **Location:** Shoham
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** אנחנו טבע אנחנו טבע, חברת ביו-פרמצבטית חדשנית ומובילה, המתבססת על מנוע גנרי ברמה עולמית. בין אם מדובר בחדשנות בתחומי מדעי המוח והאימונולוגיה או אספקת תרופות באיכות גבוהה, אנו מחויבים לתת מענה לצרכי.......
+
+---------------
+
+📊 **Requirements:** אנחנו טבע אנחנו טבע, חברת ביו-פרמצבטית חדשנית ומובילה, המתבססת על מנוע גנרי ברמה עולמית. בין אם מדובר בחדשנות בתחומי מדעי המוח והאימונולוגיה או אספקת תרופות באיכות גבוהה, אנו מחויבים לתת מענה לצרכי המטופלים עכשיו ובעתיד. כאן, תהיו חלק מתרבות מכילה הש....
+
+[**View full position listing and submit CV**](https://www.careers.teva/careers/job/563602812443686)",7,1,"POSITIVES: None.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); location is outside preferred area.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+5cc446d86444b331a8747c45fb25a45aa5706e198e3daf2e67989a115255632c,2026-06-26T08:34:35.028759+00:00,Economist,Rafael,Israel,True,[],,https://www.linkedin.com/jobs/view/4419874798/,"🆕 **Economist**
+
+💼 **Company:** Rafael
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** קצת על התפקיד: תמיכה בהכנת תקציב, תחזיות רבעוניות ושנתיות. בקרה תקציבית פנים וחוץ ארגונית. הכנת ספר תקציב ודוחות כספיים, חוזים והצעות מחיר. ביצוע בקרה כלכלית על עלויות הייצור, תכן פרויקטאלי והשקעות.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד: תמיכה בהכנת תקציב, תחזיות רבעוניות ושנתיות. בקרה תקציבית פנים וחוץ ארגונית. הכנת ספר תקציב ודוחות כספיים, חוזים והצעות מחיר. ביצוע בקרה כלכלית על עלויות הייצור, תכן פרויקטאלי והשקעות שונות ברמת הארגון. ניתוח נתונים ודו""חות, הסקת מסקנות....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4419874798/)",7,2,"POSITIVES: Located in Israel, entry-level position. NEGATIVES: Role is not aligned with candidate's target roles (Data Analyst, etc.), and lacks relevant technical skills. HARD BLOCK: NONE SCORE: 2 — while the position is entry-level, it does not match the candidate's profile."
+3b94364078584b259b28d568e6976585ade3b4abe72d169c31d3b85e1d3111cb,2026-06-26T08:34:35.323023+00:00,Administrative Assistant for Operations Unit - Temporary position,KLA,Yavne,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Administrative-Assistant-for-Operations-Unit---Temporary-position_2636798-1?Country=084562884af243748dad7c84c304d89a,"🆕 **עוזר/ת אדמיניסטרטיבי/ת - החלפה לחל""ד**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Administrative-Assistant-for-Operations-Unit---Temporary-position_2636798-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Entry-level position, located in Israel.
+NEGATIVES: Role is not relevant to candidate's target (Administrative Assistant).
+HARD BLOCK: NONE
+SCORE: 1 — position does not align with candidate's desired role type."
+ddf3cd992dd21d90d53cc50b8a2eebc0758f43b8e05a054b509d93f9ecaf1651,2026-06-26T08:34:35.586820+00:00,Travel Experience Agent,Navan,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4432418632/,"🆕 **Travel Experience Agent**
+
+💼 **Company:** Navan
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Navan, our mission is to power the in-person connections that move people, ideas and businesses forward. We help our travelers focus on being there, not getting there and our Global Operations and.......
+
+---------------
+
+📊 **Requirements:** At Navan, our mission is to power the in-person connections that move people, ideas and businesses forward. We help our travelers focus on being there, not getting there and our Global Operations and Service team is central to this mission! As a memb....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4432418632/)",7,2,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years, which aligns with junior level. NEGATIVES: Role does not match candidate's target roles (Data Analyst, etc.), and lacks relevant technical skills. HARD BLOCK: NONE. SCORE: 2 — while the location and experience level are positive, the role type is not relevant to the candidate's profile."
+be8af5007f4fb06c31d79496b960717e07b30ee560ebc70e35ac5b38de41fb65,2026-06-26T08:34:35.878168+00:00,Customer Acceptance Engineer,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Customer-Acceptance-Engineer_2637963-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Customer Acceptance Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Customer-Acceptance-Engineer_2637963-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position. NEGATIVES: Role is not relevant to the candidate's target (Customer Acceptance Engineer is not an analytical role). HARD BLOCK: NONE SCORE: 1 — the role does not align with the candidate's profile."
+75624be1230a1db90216a239148be42003ed5ce28d198e7825e47821bdb3807b,2026-06-26T08:34:36.178259+00:00,Board Design Engineer,KLA,Yavne,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Lead-Board-Desginer-Engineer_2637975-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Board Design Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Lead-Board-Desginer-Engineer_2637975-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: 0 years experience required, located in Israel.
+NEGATIVES: Role is for Board Design Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+49ff44e51aaeafd39357a5ee15c2910d24664027ef8a3825b899f7b9a6bb6854,2026-06-26T08:34:36.451169+00:00,Motion Control Student,KLA,Yavne,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Motion-control-student_2637948-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Motion Control Student**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Motion-control-student_2637948-1?Country=084562884af243748dad7c84c304d89a)",9,1,"POSITIVES: Internship role, 0 years experience required, located in Israel.
+NEGATIVES: Role is not relevant to the candidate's target (Data Analyst); no relevant tech stack mentioned.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+753a1b4c755837e716de5aba212e0d3c89f654b89dedeb4d77828b2f8fb8d451,2026-06-26T08:34:36.720356+00:00,Supply Chain Planner,KLA,Yavne,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Escalation-Supply-Chain-Planner_2636518-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Supply Chain Planner**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Escalation-Supply-Chain-Planner_2636518-1?Country=084562884af243748dad7c84c304d89a)",8,1,"POSITIVES: Location in Israel, 0 years experience required.
+NEGATIVES: Role is not relevant to candidate's target (Supply Chain Planner).
+HARD BLOCK: NONE
+SCORE: 1 — role does not align with candidate's profile."
+363abad64444387058ad2b711bb602d572cc18206d0f5bd4d47305aefbe95326,2026-06-26T08:34:36.990846+00:00,Quality Control Engineer,mPrest,Petach Tikva,True,[],,https://www.linkedin.com/jobs/view/4423631489/,"🆕 **Quality Control Engineer**
+
+💼 **Company:** mPrest
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** QC Engineer Petah Tikva, Israel About The Position mPrest is looking for an Electronics Quality Inspector - QC. Responsibilities: Perform quality inspections for parts and assemblies according to.......
+
+---------------
+
+📊 **Requirements:** Requirement: Electronics or Electrical Technician / Practical Engineer certifications. Relevant experience from the Israeli Air Force / Navy – an....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4423631489/)",8,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is not relevant to the candidate's target (Quality Control Engineer).
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+1cef5f87b8ea521b9e490702344c2acb60896cc27f6acbd82174cdcaaa31bf90,2026-06-26T08:34:37.244313+00:00,System Software Engineer,UVeye,Tel Aviv,True,"[""C++"", ""Python""]",,https://uveye.com/job/system-software-engineer/,"🆕 **System Software Engineer**
+
+💼 **Company:** UVeye
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Founded in Tel Aviv in 2016, UVeye is a computer vision and data company that creates automatic vehicle inspection systems to encourage road safety and increase transparency across the.......
+
+---------------
+
+📊 **Requirements:** The ideal candidate will work closely with hardware engineers to create efficient, reliable, and scalable embedded solutions for various applications. Here’s what you’ll be doing: Implement C++ and Python software for data processing, system-level or....
+
+[**View full position listing and submit CV**](https://uveye.com/job/system-software-engineer/)",8,1,"POSITIVES: Junior position, located in Tel Aviv.
+NEGATIVES: Role is primarily focused on system software engineering, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+1fd21ff5330c198dd18bf5d48d54cdcfef3bb1cdf06d77829335cb5c88791ba4,2026-06-26T08:34:37.508056+00:00,AI Engineer,Deloitte,Haifa,True,"[""AI"", ""Data""]",,https://careers.deloitte.co.il/position/e3-46c-en/,"🆕 **AI Engineer**
+
+💼 **Company:** Deloitte
+🔍 **Location:** Haifa
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** AI Engineer Haifa, Israel Data & AI....
+
+---------------
+
+📊 **Requirements:** AI Engineer Haifa, Israel Data & AI....
+
+[**View full position listing and submit CV**](https://careers.deloitte.co.il/position/e3-46c-en/)",7,4,"POSITIVES: Junior position, company is reputable, role is in Israel.
+NEGATIVES: Title is AI Engineer, which is not the primary target role; location is Haifa, which is acceptable but not preferred.
+HARD BLOCK: NONE
+SCORE: 4 — relevant role but penalized for title and location."
+dd81ca35cb41ad9e1ee97419ba619624b76b277940b5089e9fa8f9f05f84bb6d,2026-06-26T08:34:37.768410+00:00,Audit Associate (CPA),Deloitte,Tel Aviv,True,[],,https://careers.deloitte.co.il/position/62-267-en/,"🆕 **Audit Associate (CPA)**
+
+💼 **Company:** Deloitte
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Audit Associate (CPA) Tel Aviv, Israel Audit....
+
+---------------
+
+📊 **Requirements:** Audit Associate (CPA) Tel Aviv, Israel Audit....
+
+[**View full position listing and submit CV**](https://careers.deloitte.co.il/position/62-267-en/)",9,1,"POSITIVES: Exact location in Tel Aviv, entry-level position. NEGATIVES: Role is not relevant to candidate's target (Data Analyst); hard exclusion due to job title being unrelated. HARD BLOCK: NONE. SCORE: 1 — not a relevant role for the candidate."
+bef491dbd00580a7c07186649a7f472ab6d041c85cd32d52c92d711c2191b74e,2026-06-26T08:34:38.033346+00:00,Systems Integration Engineer,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Systems-Integration-Engineer_2634700-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Systems Integration Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Systems-Integration-Engineer_2634700-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position.
+NEGATIVES: Role is for Systems Integration Engineer, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role does not align with the candidate's profile."
+322c7beff681affde245b160837eed7fa8fe6a6eb27f51a2732c7a6e875d2cbf,2026-06-26T08:34:38.291332+00:00,Security Guard,InManage,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4402177457/,"🆕 **Security Guard**
+
+💼 **Company:** InManage
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** A software development company, specializing in sophisticated e-commerce solutions, is looking for a motivated, talented security guard to join our growing team.....
+
+---------------
+
+📊 **Requirements:** A software development company, specializing in sophisticated e-commerce solutions, is looking for a motivated, talented security guard to join our growing team.....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4402177457/)",9,1,"POSITIVES: Location is preferred (Tel Aviv), entry-level position.
+NEGATIVES: Role is not relevant to the candidate's target (Security Guard).
+HARD BLOCK: NONE
+SCORE: 1 — role is outside the candidate's relevant field."
+4af3ca29c4f7608527a8e860c5cfb58b2100cd9b91f1edaf2a1a204f8723e7a3,2026-06-26T08:34:38.550853+00:00,Enterprise Account Executive,airwallex,Tel Aviv,True,[],,https://jobs.ashbyhq.com/airwallex/d1e5513f-529a-403c-9ef4-93cd20705341,"🆕 **Enterprise Account Executive**
+
+💼 **Company:** airwallex
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Airwallex Airwallex is the only unified payments and financial platform for global businesses. Powered by our unique combination of proprietary infrastructure and software, we empower over.......
+
+---------------
+
+📊 **Requirements:** You bring strong role-related expertise and sharp thinking, and you’re motivated by our mission and operating principles. You move fast with good judgment, dig deep with curiosity, and make decisions from first principles, balancing speed and rigor. ....
+
+[**View full position listing and submit CV**](https://jobs.ashbyhq.com/airwallex/d1e5513f-529a-403c-9ef4-93cd20705341)",9,1,"POSITIVES: Location is preferred (Tel Aviv), 0 years experience aligns with junior level. NEGATIVES: Role is not relevant to candidate's target (Enterprise Account Executive). HARD BLOCK: NONE. SCORE: 1 — role does not match candidate's profile."
+d9eb7ebaf1aaf6427397c0125d84602ead3c46566bb802145fea5d774d346b9b,2026-06-26T08:34:39.219713+00:00,Audit Associate (CPA),Deloitte,Tel Aviv,True,[],,https://careers.deloitte.co.il/position/c8-76d-en/,"🆕 **Audit Associate (CPA) for the Private Sector**
+
+💼 **Company:** Deloitte
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Audit Associate (CPA) for the Private Sector Tel Aviv, Israel Audit....
+
+---------------
+
+📊 **Requirements:** Audit Associate (CPA) for the Private Sector Tel Aviv, Israel Audit....
+
+[**View full position listing and submit CV**](https://careers.deloitte.co.il/position/c8-76d-en/)",9,1,"POSITIVES: Junior position, located in Tel Aviv.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); no technical stack match.
+HARD BLOCK: NONE
+SCORE: 1 — not a relevant role for the candidate."
+344f13c7f29bc908d5c0141e9ccde52a8422a9e343298a83cabda8ca64d6da6e,2026-06-26T08:34:39.481400+00:00,AI Security Engineer,Deloitte,Tel Aviv,True,"[""AI"", ""Cybersecurity""]",,https://careers.deloitte.co.il/position/1e-e56-en/,"🆕 **AI Security Engineer**
+
+💼 **Company:** Deloitte
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** AI Security Engineer Tel Aviv, Israel Cyber....
+
+---------------
+
+📊 **Requirements:** AI Security Engineer Tel Aviv, Israel Cyber....
+
+[**View full position listing and submit CV**](https://careers.deloitte.co.il/position/1e-e56-en/)",7,2,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years. NEGATIVES: Role is not relevant to candidate's target (AI Security Engineer vs. Data Analyst). HARD BLOCK: NONE SCORE: 2 — while the location and experience are favorable, the role does not align with the candidate's profile."
+0d2ceb1877bae681f09c670e57c22216b36c8098d11a5c6a36ff135c0fa76bed,2026-06-26T08:34:39.741083+00:00,Offensive Security Researcher,SafeBreach,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4433324479/,"🆕 **Offensive Security Researcher**
+
+💼 **Company:** SafeBreach
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 🔹 Title: Offensive Security Researcher 📍 Locations (Hybrid): Tel Aviv (Sky Tower) 👥 Reporting To: Threat Research Team Leader 🌟 Opportunity Highlights We are looking for an Offensive Security.......
+
+---------------
+
+📊 **Requirements:** you have Knowledge in exploitations and vulnerabilities -....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4433324479/)",9,1,"POSITIVES: Location is preferred (Tel Aviv), entry-level position. NEGATIVES: Role is not relevant to the candidate's target (Offensive Security Researcher). HARD BLOCK: NONE — while the role is not relevant, it does not trigger a hard exclusion. SCORE: 1 — the role does not align with the candidate's profile."
+e04ed565d83087c0e0f004c21a791ba0f790c6bd2570976bdeec06eefb71e7d9,2026-06-26T08:34:39.998466+00:00,Mechanical Engineering Student Internship,Stratasys,Rehovot,True,[],,https://www.linkedin.com/jobs/view/4413529626/,"🆕 **Mechanical Engineering Student**
+
+💼 **Company:** Stratasys
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Stratasys is a world leader in 3D printing! Stratasys is leading the global shift to additive manufacturing with innovative 3D printing solutions for industries such as aerospace, automotive,.......
+
+---------------
+
+📊 **Requirements:** Stratasys is a world leader in 3D printing! Stratasys is leading the global shift to additive manufacturing with innovative 3D printing solutions for industries such as aerospace, automotive, consumer products and healthcare. Through smart and connec....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4413529626/)",9,1,"POSITIVES: Internship role, located in Rehovot, 0 years experience required. NEGATIVES: Role is not relevant to candidate's target (Data Analyst). HARD BLOCK: NONE SCORE: 1 — not a relevant role for the candidate's profile."
+4b0ab2148a1b03d97e2752a1657417b5ce7cdec595ae2be13cc3fe1eb24c82b6,2026-06-26T08:34:40.258962+00:00,System Integrator,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/System-Integrator_2634646-1?Country=084562884af243748dad7c84c304d89a,"🆕 **System Integrator**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/System-Integrator_2634646-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Located in Israel, entry-level position.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); no specified tech stack.
+HARD BLOCK: NONE
+SCORE: 1 — not a relevant role for the candidate."
+2269325733bcc803a2ad24a5ebad8785ba68eb6e0d6096c900488a81fd847b6f,2026-06-26T08:34:40.521334+00:00,Product Security Engineer,Zenity,Tel Aviv,True,"[""AppSec"", ""SAST"", ""DAST"", ""ASPM""]",,https://zenity.io/careers/hybrid-tel-aviv-jaffa-tel-aviv-district-israel/product-security-engineer/54.966,"🆕 **Product Security Engineer**
+
+💼 **Company:** Zenity
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description About Us Zenity is the first and only holistic platform built to secure and govern AI Agents from buildtime to runtime. We help organizations defend against security threats, meet.......
+
+---------------
+
+📊 **Requirements:** You have a strong opinion on what a “project plan” doc should look like You’ve owned and delivered the migration or deployment of an AppSec focused security tool (SAST, DAST, ASPM, etc.) What We Look For At Zenity Interview Process Compensation....
+
+[**View full position listing and submit CV**](https://zenity.io/careers/hybrid-tel-aviv-jaffa-tel-aviv-district-israel/product-security-engineer/54.966)",7,2,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years which aligns with junior level. NEGATIVES: Role is not relevant to the candidate's target (Data Analyst) and focuses on security rather than analytics. HARD BLOCK: NONE. SCORE: 2 — while the location and experience are favorable, the role type is not relevant to the candidate's profile."
+1a07e0d47c869b78759de43c254c82c775a1d53018cef1d4d6b315b2a7aaeba0,2026-06-26T08:34:40.784151+00:00,Mechanical Engineer,KLA,Yavne,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Mechanical-Engineer_2637002-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Mechanical Engineer**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Mechanical-Engineer_2637002-1?Country=084562884af243748dad7c84c304d89a)",9,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is for Mechanical Engineer, which is not relevant to the candidate's profile.
+HARD BLOCK: Role is purely Mechanical Engineering, not relevant.
+SCORE: 1 — hard exclusion due to irrelevant role type."
+a871e2cdaa4d7e12f2457a66ab25d48d591f3bcc253a300eb6264834a08b97d6,2026-06-26T08:34:41.057172+00:00,Experienced Back End Developer - Big Data Platform Back-End,Check Point,Tel Aviv,False,[],,https://careers.checkpoint.com/index.php?m=cpcareers&a=show&joborderid=25074,"🆕 **Experienced Back End Developer - Big Data Platform Back-End**
+
+💼 **Company:** Check Point
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Israel: Tel Aviv/ Hybrid (Israel) R&D | Full Time | Job Id: 25074 Key Responsibilities Design and build new solutions/features to help our customers improve their cloud security. Gain experience with.......
+
+---------------
+
+📊 **Requirements:** Israel: Tel Aviv/ Hybrid (Israel) R&D | Full Time | Job Id: 25074 Key Responsibilities Design and build new solutions/features to help our customers improve their cloud security. Gain experience with new technologies and languages, develop challengin....
+
+[**View full position listing and submit CV**](https://careers.checkpoint.com/index.php?m=cpcareers&a=show&joborderid=25074)",7,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Role is for a Back End Developer, which is not relevant; requires 3 years of experience — significant penalty.
+HARD BLOCK: Role is purely Backend with zero analytics duties.
+SCORE: 1 — hard exclusion due to role type."
+4c9bb6ab08e525f816b6f577a727c08500af5ccbdc48068cdd59f21fe09232b9,2026-06-26T08:34:41.316618+00:00,"Expert, Software Embedded Developer",Stratasys,Rehovot,True,"[""C++"", ""C#"", ""Java""]",,https://www.linkedin.com/jobs/view/4409946496/,"🆕 **Expert, Software Embedded Developer**
+
+💼 **Company:** Stratasys
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for a highly skilled SW developer Expert with substantial Object-Oriented experience in a multi-disciplinary environment to join our R&D group in Israel (Rehovot). You will be a part.......
+
+---------------
+
+📊 **Requirements:** Must Have For This Role Master's degree in Computer Engineering / Computer Science 8+ years of extensive knowledge of C++ and object Oriented programming Experienced with a high level language such as C# or Java Solid understanding of OS internals an....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4409946496/)",9,1,"POSITIVES: Located in Rehovot, entry-level position.
+NEGATIVES: Role requires 8+ years of experience, which is a significant penalty.
+HARD BLOCK: NONE
+SCORE: 1 — hard exclusion due to the experience requirement."
+e99e22c31ab5e8dae89b0f3a229d2f0b49b1af03cf78f5db207a6b8334455699,2026-06-26T08:34:41.577093+00:00,נציג/ת שירות לקוחות סלא,Teva,Shoham,True,[],,https://www.careers.teva/careers/job/563602812857516,"🆕 **נציג/ת שירות לקוחות סלא**
+
+💼 **Company:** Teva
+🔍 **Location:** Shoham
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** אנחנו טבע אנחנו טבע, חברת ביו-פרמצבטית חדשנית ומובילה, המתבססת על מנוע גנרי ברמה עולמית. בין אם מדובר בחדשנות בתחומי מדעי המוח והאימונולוגיה או אספקת תרופות באיכות גבוהה, אנו מחויבים לתת מענה לצרכי.......
+
+---------------
+
+📊 **Requirements:** אנחנו טבע אנחנו טבע, חברת ביו-פרמצבטית חדשנית ומובילה, המתבססת על מנוע גנרי ברמה עולמית. בין אם מדובר בחדשנות בתחומי מדעי המוח והאימונולוגיה או אספקת תרופות באיכות גבוהה, אנו מחויבים לתת מענה לצרכי המטופלים עכשיו ובעתיד. כאן, תהיו חלק מתרבות מכילה הש....
+
+[**View full position listing and submit CV**](https://www.careers.teva/careers/job/563602812857516)",7,1,"POSITIVES: Company is located in Israel, entry-level position. NEGATIVES: Role is not relevant to candidate's target (Customer Service). HARD BLOCK: Role is purely Customer Service with no analytical duties. SCORE: 1 — hard exclusion due to role type."
+54fc3a963423cbc7ade876fafb3070dd76fef5515eaadb5a7f7d33cbb570b983,2026-06-26T08:34:41.829952+00:00,System Engineer,mPrest,Petach Tikva,True,[],,https://www.linkedin.com/jobs/view/4425720740/,"🆕 **System Engineer**
+
+💼 **Company:** mPrest
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** mPrest Systems is a global provider of mission critical, software Command and Control solutions for the defense sector. We are looking for a system engineer to join our talented system engineering.......
+
+---------------
+
+📊 **Requirements:** Requirements: • BSc in Electrical/Aerospace/Mechanical/Computer or Software Engineering is a threshold requirement. (Bachelors in Physics/Math/Computer Science with relevant experience will also be considered.) • MSc in Systems/Electrical/Aerospace E....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4425720740/)",7,1,"POSITIVES: Entry-level position, company is based in Israel. NEGATIVES: Role is for a System Engineer, which is not relevant to the candidate's target roles. HARD BLOCK: Role is purely System Engineer, which is not relevant. SCORE: 1 — hard exclusion due to role type."
+9d6e96bb3b1a6b08943fb983f6acf4f19507cd7dc75e2cc7b682ebf7e36ef760,2026-06-26T08:34:42.090989+00:00,Field Sales Engineer,Hyperspace Talents,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4430201719/,"🆕 **Field Sales Engineer**
+
+💼 **Company:** Hyperspace Talents
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** אנחנו מחפשים מהנדס מכירות לחברה ותיקה ויציבה. פרופיל של מהנדס בתחילת דרכו שאוהב ורוצה למכור. מוצרי תעשייה כבדים לחברות גדולות ומוכרות בעולמות הכימיה. המשרה כוללת איפיון, מכירה וליווי של הלקוחות........
+
+---------------
+
+📊 **Requirements:** אנחנו מחפשים מהנדס מכירות לחברה ותיקה ויציבה. פרופיל של מהנדס בתחילת דרכו שאוהב ורוצה למכור. מוצרי תעשייה כבדים לחברות גדולות ומוכרות בעולמות הכימיה. המשרה כוללת איפיון, מכירה וליווי של הלקוחות. כלומר, התפקיד הוא מכירות + ניהול לקוחות. המשרה מיועדת ל....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4430201719/)",9,1,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years, which aligns with junior level. NEGATIVES: Role is not relevant to the candidate's target (Sales Engineer, not Data Analyst). HARD BLOCK: NONE. SCORE: 1 — the role does not match the candidate's profile."
+6e88b46ff59072aa43163036edfc2e2d0d95b7ed90a3e851769959235a9c645c,2026-06-26T08:34:42.365093+00:00,Software Engineering Student,KLA,Israel,True,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Software-Engineering-Student_2635341-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Software Engineering Student**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Software-Engineering-Student_2635341-1?Country=084562884af243748dad7c84c304d89a)",7,1,"POSITIVES: Internship role, located in Israel, 0 years experience required.
+NEGATIVES: Role is for Software Engineering, which is not relevant to the candidate's target roles.
+HARD BLOCK: NONE
+SCORE: 1 — the role is outside the candidate's relevant field."
+cd52bca281a065a4273cc9d7889c386b91ada23cf4271e331d5c21bac3bb1b3f,2026-06-26T08:34:42.626444+00:00,Offensive Security Researcher,SafeBreach,Israel,True,"[""Exploitations"", ""Vulnerabilities""]",,https://job-boards.greenhouse.io/safebreach/jobs/4297569009,"🆕 **Offensive Security Researcher**
+
+💼 **Company:** SafeBreach
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 🔹 Title: Offensive Security Researcher 📍 Locations (Hybrid): Tel Aviv (Sky Tower) 👥 Reporting To: Threat Research Team Leader 🌟 Opportunity Highlights We are looking for an Offensive Security.......
+
+---------------
+
+📊 **Requirements:** you have Knowledge in exploitations and vulnerabilities -....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/safebreach/jobs/4297569009)",9,1,"POSITIVES: Located in Israel, entry-level position. NEGATIVES: Role is not relevant to candidate's target roles (Data Analyst, etc.). HARD BLOCK: NONE. SCORE: 1 — the role does not align with the candidate's profile."
+51a52ec521da8ffd772d129e1eeb7ddbcdc81b505b5c5f1a1b6073518ef1d089,2026-06-26T08:34:42.887500+00:00,NOC & SOC Analyst,CommIT,Petach Tikva,True,"[""Linux"", ""Windows"", ""Scripting""]",,https://www.linkedin.com/jobs/view/4421804878/,"🆕 **NOC & SOC Analyst**
+
+💼 **Company:** CommIT
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** As a NOC & SOC Analyst within our Managed Services team, you’ll play a critical role in maintaining the health and security of customer environments. You will act as the first line of defense,.......
+
+---------------
+
+📊 **Requirements:** Requirements: Requirements Availability for 24/7 shift work (including nights, weekends, and holidays) – Must Proficiency in Linux and Windows operating systems – Must Excellent English communication skills, both written and spoken – Must Scripting k....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4421804878/)",8,1,"POSITIVES: Junior position, located in Israel.
+NEGATIVES: Role is not relevant to candidate's target (NOC & SOC Analyst is outside the acceptable roles).
+HARD BLOCK: NONE
+SCORE: 1 — role does not align with candidate's target roles."
+349b34e7c6272eb70fe43e4ba7af0ed9e68adf9bb578ca68d710f5b82f180048,2026-06-26T08:34:43.154342+00:00,Post Silicon Dev Engineer,Amazon,Haifa,True,"[""Electrical Engineering"", ""Chip Design"", ""Debug Techniques""]",,https://amazon.jobs/en/jobs/10459544/post-silicon-dev-engineer,"🆕 **Post Silicon Dev Engineer**
+
+💼 **Company:** Amazon
+🔍 **Location:** Haifa
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** AnnapurnaLabs is looking for talented engineers to help us develop the semiconductor platform which is based on revolutionary architecture. Take part in the development of cutting edge products.......
+
+---------------
+
+📊 **Requirements:** - Bachelor's degree in Electrical Engineering - Experience working in a fast-paced, rapidly changing operations environment - Familiar with chip design processes and debug techniques - Deep understanding of DFT and DFM Our inclusive culture empowers ....
+
+[**View full position listing and submit CV**](https://amazon.jobs/en/jobs/10459544/post-silicon-dev-engineer)",9,1,"POSITIVES: Junior position, full-time role, no experience required.
+NEGATIVES: Role is outside Israel, not relevant to candidate's profile.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+5e2fdc559482f2a0113f05e67d30d0496284778e1f225ccb9b8304cb55349cae,2026-06-26T08:34:43.414397+00:00,Data Engineer,Trigo,Ramat Gan,False,"[""SQL"", ""Python"", ""dbt""]",,https://www.linkedin.com/jobs/view/4429023320/,"🆕 **Data Engineer**
+
+💼 **Company:** Trigo
+🔍 **Location:** Ramat Gan
+🧑‍💻️ **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Trigo Is Crafting Tomorrow's Retail Experience We started with a simple question: How can vision AI make shopping better for everyone? Today, our team of passionate experts is transforming how people.......
+
+---------------
+
+📊 **Requirements:** You bring to the table: 4+ years of experience as a Data Engineer, Analytics Engineer, or similar hands-on data role Strong command of SQL and proficiency in Python for data modeling and transformation Experience with modern data tools such as dbt, B....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4429023320/)",9,1,"POSITIVES: Located in Ramat Gan, which is within the preferred area.
+NEGATIVES: Job title is Data Engineer, which is a hard exclusion; requires 4+ years of experience, which is not suitable for the candidate's target.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to the job title."
+48d1162b81f435577a3ed42279579bcda3606927fa83b2bdb72ce0bbfb3f2063,2026-06-26T08:34:43.704891+00:00,AI Operation Assistant,DriveNets,Ra'anana,False,[],,https://www.linkedin.com/jobs/view/4431480963/,"🆕 **AI Operation Assistant**
+
+💼 **Company:** DriveNets
+🔍 **Location:** Ra'anana
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Job Title: AI Operations Assistant Location: Ra'anana Hybrid: Yes About The Company DriveNets is a leader in large-scale networking solutions for AI infrastructure and service providers........
+
+---------------
+
+📊 **Requirements:** Description Job Title: AI Operations Assistant Location: Ra'anana Hybrid: Yes About The Company DriveNets is a leader in large-scale networking solutions for AI infrastructure and service providers. The company’s disaggregated networking architecture....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4431480963/)",7,4,"POSITIVES: Hybrid work option, located in Israel. NEGATIVES: Role is not a direct match for the candidate's target titles; requires 2 years of experience which is a mild negative. HARD BLOCK: NONE. SCORE: 4 — relevant location and hybrid option, but the title and experience requirement do not align closely with the candidate's profile."
+efae628107f1fe1287e697c0e93cad817316c80dc95b9e8b219d84c407067800,2026-06-26T08:34:43.964762+00:00,AI Data Engineer,Fetcherr,Tel Aviv,False,"[""Deep Learning"", ""AI Technology""]",,https://www.fetcherr.io/careers/f1661,"🆕 **AI Data Engineer**
+
+💼 **Company:** Fetcherr
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Fetcherr experts in deep learning, e-commerce, and digitization, Fetcherr disrupts traditional systems with its cutting-edge AI technology. At its core is the Large Market Model (LMM), an.......
+
+---------------
+
+📊 **Requirements:** Description Fetcherr experts in deep learning, e-commerce, and digitization, Fetcherr disrupts traditional systems with its cutting-edge AI technology. At its core is the Large Market Model (LMM), an adaptable AI engine that forecasts demand and mark....
+
+[**View full position listing and submit CV**](https://www.fetcherr.io/careers/f1661)",7,4,"POSITIVES: Located in Tel Aviv, relevant AI technology focus. NEGATIVES: Title is AI Data Engineer, which is not a primary target role; requires 2 years of experience, which is a mild penalty. HARD BLOCK: NONE SCORE: 4 — relevant role but penalized for title and experience requirement."
+9fa6c794acad5fe06ba80f9c3d57c01420f21639018afbac76249ddbd58a5e51,2026-06-26T08:34:44.226710+00:00,Senior Analytics Engineer,Connecteam,Tel Aviv,False,[],,https://connecteam.com/careers/6098439004?gh_jid=6098439004,"🆕 **Senior Analytics Engineer**
+
+💼 **Company:** Connecteam
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Senior Analytics Engineer – Analytics Platform Who Connecteam is: Connecteam is the leading platform for managing deskless teams, trusted by over 80,000 businesses worldwide. We built Connecteam for.......
+
+---------------
+
+📊 **Requirements:** Senior Analytics Engineer – Analytics Platform Who Connecteam is: Connecteam is the leading platform for managing deskless teams, trusted by over 80,000 businesses worldwide. We built Connecteam for real operators - the people running shifts, jobs, a....
+
+[**View full position listing and submit CV**](https://connecteam.com/careers/6098439004?gh_jid=6098439004)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 6 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+c6bac3280174c19b4cb0f023203f5639456a69c237a1d296d84dca9a857dc43f,2026-06-26T08:34:44.494549+00:00,Workforce Strategy & Planning Manager,Payoneer,Tel Aviv,False,[],,https://www.payoneer.com/careers/position/7985025/?gh_jid=7985025,"🆕 **Workforce Strategy & Planning Manager**
+
+💼 **Company:** Payoneer
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Payoneer Founded in 2005, Payoneer is the global financial platform that removes friction from doing business across borders, with a mission to connect the world’s underserved businesses to a.......
+
+---------------
+
+📊 **Requirements:** Who you are: 4–5 years of experience in strategy consulting, workforce strategy, business operations, FP&A, HR strategy, or organizational transformation roles in global or high-growth environments. Strong analytical and financial acumen, with the ab....
+
+[**View full position listing and submit CV**](https://www.payoneer.com/careers/position/7985025/?gh_jid=7985025)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Manager title is a hard exclusion; 6 years of experience required.
+HARD BLOCK: Job TITLE contains: Manager.
+SCORE: 1 — hard exclusion due to manager title."
+9d395322be213c774acbff88aca8480fdb53082b88b8e41c238b56c0568674f2,2026-06-26T08:34:44.756113+00:00,Data Engineering Team Lead,SimilarWeb,Tel Aviv,False,[],,https://job-boards.greenhouse.io/similarweb/jobs/8015039,"🆕 **Data Engineering Team Lead**
+
+💼 **Company:** SimilarWeb
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Similarweb is the leading digital intelligence platform used by over 3500 global customers. Our wide range of solutions power the digital strategies of companies like Google, eBay, and Adidas. We.......
+
+---------------
+
+📊 **Requirements:** Similarweb is the leading digital intelligence platform used by over 3500 global customers. Our wide range of solutions power the digital strategies of companies like Google, eBay, and Adidas. We help our customers succeed in today’s digital world by....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/similarweb/jobs/8015039)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Title contains 'Team Lead' — hard exclusion; 5 years experience required.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to the title."
+5bdef2435e106f6446077473adf1aaeee6337402def9c513d1d593719c892205,2026-06-26T08:34:45.012063+00:00,Assembler,KLA,Yavne,False,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Assembler_2637511-2?Country=084562884af243748dad7c84c304d89a,"🆕 **Assembler**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** Requirements: Valid Certified Electrician license – mandatory. Minimum 3 years of experience in industrial electrical work – mandatory. Strong technological orientation and ability to work with computer systems. Good command of English – reading, wri....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Assembler_2637511-2?Country=084562884af243748dad7c84c304d89a)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Job title is not relevant (Assembler), requires 3+ years of experience, which is outside the candidate's target range.
+HARD BLOCK: Role is purely industrial electrical work, not analytical.
+SCORE: 1 — hard exclusion due to role type."
+7ccc3b128af3699e08ec464d83a3ea761e6d55cd06a773ba648a38377fdd8eed,2026-06-26T08:34:45.275716+00:00,Application Group Manager,KLA,Israel,False,[],,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Application-Group-Manager_2636920-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Application Group Manager**
+
+💼 **Company:** KLA
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** you have searched KLA’s Careers website for legitimate job postings. KLA follows a recruiting process that involves multiple interviews in person or on video conferencing with our hiring managers. If you are concerned that a communication, an intervi....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Migdal-Haemek-Israel/Application-Group-Manager_2636920-1?Country=084562884af243748dad7c84c304d89a)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Title contains 'Manager', requires 6 years of experience — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to managerial title."
+4c28f51ba54848f5ae3dd3abf7cc41e87df462b17de05f85ab38104cae87adf0,2026-06-26T08:34:45.534823+00:00,Hands-on AI & Data Engineering Manager,April,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4414710567/,"🆕 **Hands-on AI & Data Engineering Manager**
+
+💼 **Company:** April
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About The Role We’re looking for a Hands-on AI & Data Engineering Manager to lead a team building intelligent, large-scale consumer experiences powered by AI. In this role, you will lead engineers.......
+
+---------------
+
+📊 **Requirements:** About The Role We’re looking for a Hands-on AI & Data Engineering Manager to lead a team building intelligent, large-scale consumer experiences powered by AI. In this role, you will lead engineers developing AI-driven products, work closely with data....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4414710567/)",9,1,"POSITIVES: Preferred city.
+NEGATIVES: Manager title is a hard exclusion; 5 years experience required.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to Manager title."
+9bed08feeafc627fd10c123361ecb5be5ae11c8a744148fbb5ac2f5e2acad48e,2026-06-26T08:34:45.802741+00:00,Student Business Analyst,KLA,Yavne,True,"[""Data Science"", ""Analytical Skills""]",,https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Student-Business-Analyst_2635712-1?Country=084562884af243748dad7c84c304d89a,"🆕 **Student Business Analyst**
+
+💼 **Company:** KLA
+🔍 **Location:** Yavne
+🧑‍💻️ **Experience required:** 1 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Company Overview KLA is a global leader in diversified electronics for the semiconductor manufacturing ecosystem. Virtually every electronic device in the world is produced using our technologies. No.......
+
+---------------
+
+📊 **Requirements:** Must Have) 2nd year BSc student in Industrial Engineering, Information Systems, Data Science or a related analytical field Strong English skills (written and verbal) Availability for 20+ hours per week (minimum 3 working days) Strong analytical skill....
+
+[**View full position listing and submit CV**](https://kla.wd1.myworkdayjobs.com/en-GB/Search/job/Yavne-Israel/Student-Business-Analyst_2635712-1?Country=084562884af243748dad7c84c304d89a)",8,6,"POSITIVES: Internship role aligns with junior experience, location in Israel, analytical field relevant to candidate's studies. NEGATIVES: Requires 1 year of experience which is a mild penalty. HARD BLOCK: NONE SCORE: 6 — relevant internship opportunity with a slight penalty for experience requirement."
+c2f58ca3c3764bf6cbfe1c31bdc434013e8b20c7c50d2d210bef4eb254bb7f2b,2026-06-26T08:34:46.066959+00:00,BI Data analyst - Temp,Stratasys,Rehovot,False,"[""Qlik Sense""]",,https://careers.stratasys.com/job/Rehovot-%28Hybrid%29-BI-Data-analyst-Temp-IL/1396729500/,"🆕 **BI Data analyst - Temp**
+
+💼 **Company:** Stratasys
+🔍 **Location:** Rehovot
+🧑‍💻️ **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for a Data analyst with a background in finance, for a temporary role in dynamic organization. The Data analyst will be responsible for aggregating data into meaningful management.......
+
+---------------
+
+📊 **Requirements:** Skills and Experience: •Bachelor’s degree in Industrial Engineering/ Economics/ Statistics or other quantitative discipline. •Minimum 4 years of relevant employment experience as Qlik Sense developer,driving business insights through large, complex d....
+
+[**View full position listing and submit CV**](https://careers.stratasys.com/job/Rehovot-%28Hybrid%29-BI-Data-analyst-Temp-IL/1396729500/)",7,3,"POSITIVES: Relevant role as Data Analyst, located in Rehovot, acceptable hybrid option.
+NEGATIVES: Requires 4 years of experience — significant penalty.
+HARD BLOCK: NONE
+SCORE: 3 — relevant role but penalized for high experience requirement."
+9ef82f605ad847ed92ff5c34fed228ac4eb889d2d23bb876e1e620c0f3c8ed2a,2026-06-26T08:34:46.326200+00:00,Senior Software Engineer- Data Engineering,Axonius,Tel Aviv,False,"[""Data Engineering"", ""ML pipelines"", ""cloud infrastructure""]",,https://www.axonius.com/company/careers/open-jobs?gh_jid=7633981003,"🆕 **Senior Software Engineer- Data Engineering**
+
+💼 **Company:** Axonius
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Axonius is seeking a Senior Software Engineer (Data Engineering) . You will be responsible for designing and building all data, ML pipelines, data tools, and cloud infrastructure required to.......
+
+---------------
+
+📊 **Requirements:** Axonius is seeking a Senior Software Engineer (Data Engineering) . You will be responsible for designing and building all data, ML pipelines, data tools, and cloud infrastructure required to transform massive, fragmented data into a format that suppo....
+
+[**View full position listing and submit CV**](https://www.axonius.com/company/careers/open-jobs?gh_jid=7633981003)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+fe9062c1b997a0d798cc12022c7269e817ae86072b7b57dc29beeb835524e482,2026-06-26T08:34:46.582563+00:00,Senior Analytics Engineer,Riverside.fm,Tel Aviv,False,[],,https://careers.riverside.com/careers/senior-analytics-engineer,"🆕 **Senior Analytics Engineer**
+
+💼 **Company:** Riverside.fm
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description For many of us there’s that one podcast we never miss, and video content is part of our daily routine, whether it’s professional or personal. But how many of us truly understand the.......
+
+---------------
+
+📊 **Requirements:** Description For many of us there’s that one podcast we never miss, and video content is part of our daily routine, whether it’s professional or personal. But how many of us truly understand the effort that goes on behind the scenes? Here at Riverside....
+
+[**View full position listing and submit CV**](https://careers.riverside.com/careers/senior-analytics-engineer)",9,1,"POSITIVES: Preferred city.
+NEGATIVES: Senior title, 5+ years experience required.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+0740f754ccd6e482da1064bf1015e2556a56de44a5c7ab4ec7e21182fd2c615e,2026-06-26T08:34:46.842585+00:00,Data Architect,HoneyBook,Tel Aviv,False,[],,https://jobs.ashbyhq.com/honeybook/498217af-40d5-4caf-a152-2f88ea5d24a0,"🆕 **Data Architect**
+
+💼 **Company:** HoneyBook
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 8 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** HoneyBook is the leading AI-powered business management platform for service-based business owners. Designed to enhance - not replace - independent professionals. HoneyBook’s AI-powered tools help.......
+
+---------------
+
+📊 **Requirements:** HoneyBook is the leading AI-powered business management platform for service-based business owners. Designed to enhance - not replace - independent professionals. HoneyBook’s AI-powered tools help businesses attract leads, connect with clients, book ....
+
+[**View full position listing and submit CV**](https://jobs.ashbyhq.com/honeybook/498217af-40d5-4caf-a152-2f88ea5d24a0)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Title is Data Architect, which is not relevant; 8 years of experience required — significant penalty.
+HARD BLOCK: NONE
+SCORE: 1 — hard exclusion due to irrelevant title."
+d754a68e27e5d8ee9ae7af9308cfb075e47ecab7ad487a927fbafc710b0bf436,2026-06-26T08:34:47.102793+00:00,Full-Cycle Data Engineer,April,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4414720539/,"🆕 **Full-Cycle Data Engineer**
+
+💼 **Company:** April
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About The Role We're looking for a Full-Cycle Data Engineer to join our Data & AI team and own the flow from product data sources → modeling → dashboards → insights. You'll partner with product.......
+
+---------------
+
+📊 **Requirements:** About The Role We're looking for a Full-Cycle Data Engineer to join our Data & AI team and own the flow from product data sources → modeling → dashboards → insights. You'll partner with product managers, engineers, and AI teams to turn raw product da....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4414720539/)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Job title contains 'Engineer', which is not relevant; 5+ years experience required — significant penalty.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to the role being purely Data Engineer."
+b5178dab0613b58e8adf551f118b242da24e9e8c9e620f5dd3f0be60854feb63,2026-06-26T08:34:47.363837+00:00,Senior Business Analyst,Empathy,Tel Aviv,False,[],,https://www.empathy.com/careers/senior-business-analyst.03.E52,"🆕 **Senior Business Analyst**
+
+💼 **Company:** Empathy
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Empathy is transforming the way families navigate life’s most difficult times - from the loss of a loved one to other major life transitions. By combining technology with compassionate.......
+
+---------------
+
+📊 **Requirements:** Description Empathy is transforming the way families navigate life’s most difficult times - from the loss of a loved one to other major life transitions. By combining technology with compassionate human care, we bring clarity, comfort, and peace of m....
+
+[**View full position listing and submit CV**](https://www.empathy.com/careers/senior-business-analyst.03.E52)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title is a hard exclusion; 5 years experience required is a significant penalty.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+90fd55d5cb43d53c04ce13b922faa23d4d3a6aa3b9cc2e5a985dd6b3c092d142,2026-06-26T08:34:47.615313+00:00,CRM Administrator,"Ceva, Inc.",Ra'anana,True,"[""Salesforce""]",,https://www.linkedin.com/jobs/view/4429995105/,"🆕 **CRM Administrator**
+
+💼 **Company:** Ceva, Inc.
+🔍 **Location:** Ra'anana
+🧑‍💻️ **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Ceva Ceva is at the forefront of AI inference and signal processing, powering some of the world's most advanced edge devices with our NPU, Connectivity, Wireless, and Sensing IP platforms........
+
+---------------
+
+📊 **Requirements:** Requirements: B.Sc. in Information Systems, Industrial Engineering, or a related field. 1-3 years experience in a Salesforce Administrator role, with demonstrable hands-on configuration experience. Salesforce Administration: Proficiency in objects, f....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4429995105/)",8,2,"POSITIVES: Location is acceptable (Ra'anana), junior position with 1 year experience required.
+NEGATIVES: Role is not relevant to candidate's target (CRM Administrator vs. Data Analyst), Salesforce is not in the candidate's tech stack.
+HARD BLOCK: NONE
+SCORE: 2 — while the location and experience level are acceptable, the role type is not relevant to the candidate's profile."
+6c316c83d517b9e2ed5baa9f40940907bcb15c51d4fd9f27d260838f7c148aa0,2026-06-26T08:34:47.875191+00:00,Compliance Excellence Manager,Payoneer,Tel Aviv,False,[],,https://www.payoneer.com/careers/position/7811574/?gh_jid=7811574,"🆕 **Compliance Excellence Manager**
+
+💼 **Company:** Payoneer
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Payoneer Founded in 2005, Payoneer is the global financial platform that removes friction from doing business across borders, with a mission to connect the world’s underserved businesses to a.......
+
+---------------
+
+📊 **Requirements:** Who you are 4+ years of experience with at least 2 years in Program or Project Management (Preferable) Hold a Bachelor’s degree Ability to work independently with broad guidance, manage multiple priorities, and lead through influence Fast learner, wi....
+
+[**View full position listing and submit CV**](https://www.payoneer.com/careers/position/7811574/?gh_jid=7811574)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Title contains 'Manager', requires 6+ years of experience — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to managerial title."
+11672c59af4a5e2fdbb03087c68bf38a37fb323087b27fba24ef497af25484df,2026-06-26T08:34:48.132463+00:00,Senior Business Data Analyst,monday.com,Tel Aviv,False,[],,https://monday.com/careers/2cfe1dc2-278a-4d4a-9713-03669e4d7e96,"🆕 **Senior Business Data Analyst, Customer Business**
+
+💼 **Company:** monday.com
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** monday.com is the AI work platform powering the most ambitious teams. 250,000+ customers across departments use us to bring people, workflows, and AI agents together on one flexible platform where AI.......
+
+---------------
+
+📊 **Requirements:** monday.com is the AI work platform powering the most ambitious teams. 250,000+ customers across departments use us to bring people, workflows, and AI agents together on one flexible platform where AI doesn't just assist, it executes. We move fast, bu....
+
+[**View full position listing and submit CV**](https://monday.com/careers/2cfe1dc2-278a-4d4a-9713-03669e4d7e96)",9,1,"POSITIVES: Preferred location in Tel Aviv.
+NEGATIVES: Senior title, 5 years experience required.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+316368165c90dcc1c060cc1411a7296810eda2a40545f26b1ece1f1e20df1025,2026-06-26T08:34:48.393237+00:00,Big Data Engineer,SimilarWeb,Tel Aviv,False,[],,https://job-boards.greenhouse.io/similarweb/jobs/7972320,"🆕 **Core Data - Big Data Engineer**
+
+💼 **Company:** SimilarWeb
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Similarweb, we're revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our cutting-edge platform and unique data empower over.......
+
+---------------
+
+📊 **Requirements:** At Similarweb, we're revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our cutting-edge platform and unique data empower over 4,300 customers globally, including industry giants li....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/similarweb/jobs/7972320)",8,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Job title contains 'Engineer', which is not relevant; experience required is 2 years, which is outside the candidate's target range.
+HARD BLOCK: Job TITLE contains: Engineer.
+SCORE: 1 — hard exclusion due to the job title."
+a681097a3b12f9a7cbff659e09e6a901531f6cceec66e8cc1c1f2027eae36f99,2026-06-26T08:34:49.059427+00:00,Senior Data Engineer ( Data Collection),SimilarWeb,Tel Aviv,False,[],,https://job-boards.greenhouse.io/similarweb/jobs/7911963,"🆕 **Senior Data Engineer ( Data Collection)**
+
+💼 **Company:** SimilarWeb
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Similarweb, we're revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our cutting-edge platform and unique data empower over.......
+
+---------------
+
+📊 **Requirements:** At Similarweb, we're revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our cutting-edge platform and unique data empower over 4,300 customers globally, including industry giants li....
+
+[**View full position listing and submit CV**](https://job-boards.greenhouse.io/similarweb/jobs/7911963)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+150c9c298507d4e243f19c2cfd2f7b9591a46d95a224682ceb9ca3d7506dfc7c,2026-06-26T08:34:49.323042+00:00,Business Analyst,Gett,Tel Aviv,False,"[""SQL"", ""AI tools""]",,https://www.linkedin.com/jobs/view/4432688325/,"🆕 **Business Analyst**
+
+💼 **Company:** Gett
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are looking for an ambitious Business Analyst who is passionate about strategy in the tech space. The Business Analyst will support Gett's business strategy and data-driven decision-making in the.......
+
+---------------
+
+📊 **Requirements:** Requirements: 2+ years of experience as a Business/ Data/ Product Analyst or similar Experience in complex operations and running a marketplace- Must Degree in statistics, economics, or similar -a must Master abilities in SQL Experience with AI tools....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4432688325/)",8,6,"POSITIVES: Relevant role type (Business Analyst), preferred city (Tel Aviv), SQL is a primary candidate skill. NEGATIVES: Requires 2+ years of experience — significant penalty. HARD BLOCK: NONE. SCORE: 6 — relevant role but penalized for experience requirement."
+169b08443a8ddc755335b2f561103a535bf5e515f03b4eaaa29f5f74fd608a4c,2026-06-26T08:34:49.582882+00:00,Data Engineer - Web Attribution,AppsFlyer,Herzliya,False,"[""Data Engineering"", ""Big Data"", ""Spark""]",,https://careers.appsflyer.com/jobs/position/8525921002?gh_jid=8525921002,"🆕 **Data Engineer - Web Attribution**
+
+💼 **Company:** AppsFlyer
+🔍 **Location:** Herzliya
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** AppsFlyer processes 150+ billion events across its platform, and our Web Attribution team is at the center of extending that power beyond mobile. We’re building the data infrastructure that tracks,.......
+
+---------------
+
+📊 **Requirements:** you have 3-5 years in Data / Big Data Engineering, with hands-on production experience at scale. Strong experience with distributed processing frameworks (e.g., Spark) - you understand execution plans, memory management, and how to debug performance ....
+
+[**View full position listing and submit CV**](https://careers.appsflyer.com/jobs/position/8525921002?gh_jid=8525921002)",9,1,"POSITIVES: Located in Herzliya, which is acceptable. 
+NEGATIVES: Job title contains 'Engineer', which is not relevant; requires 3-5 years experience, which is a significant penalty. 
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra). 
+SCORE: 1 — hard exclusion due to the role being purely Data Engineering."
+a0413792f6e7fa0e2f8beda2ca47c2ac6cd129516505adf4142f995e69d32ddf,2026-06-26T08:34:49.844654+00:00,Business Analyst Lead,Kendago,Petach Tikva,False,[],,https://www.kendago.com/career/co/ramat-gan/8B.A60/business-analyst-lead/all/,"🆕 **Business Analyst Lead – B2C / DTC**
+
+💼 **Company:** Kendago
+🔍 **Location:** Petach Tikva
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Kendago is looking for a sharp ,hands-on Business Analyst Lead to join our global B2C performance marketing team. This is a key role for someone with exceptional analytical and.......
+
+---------------
+
+📊 **Requirements:** The ideal candidate understands how business processes, marketing performance, customer value, and profitability are connected, and knows how to translate complex data into clear insights, recommendations, and business actions. Our office is located ....
+
+[**View full position listing and submit CV**](https://www.kendago.com/career/co/ramat-gan/8B.A60/business-analyst-lead/all/)",9,1,"POSITIVES: Company is located in Israel, relevant role type. NEGATIVES: Lead position, 5 years experience required. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to 'Lead' in the title."
+9d955651e820b59bfd596e2c6ad03e0f1b168796a544810e27916bc1d860a802,2026-06-26T08:34:50.104435+00:00,Senior Product Analyst,Navan,Tel Aviv,False,"[""SQL""]",,https://www.linkedin.com/jobs/view/4432400936/,"🆕 **Senior Product Analyst**
+
+💼 **Company:** Navan
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We are in search of a detail-oriented and analytical Senior Product Analyst to join our growth team in Navan. You are a product thinker who uses data to advocate for our users. In this role, you will.......
+
+---------------
+
+📊 **Requirements:** What We're Looking For 5+ years of experience in data or product analytics. Highly experienced in SQL and building data models that scale. Self-Starter Mentality: You don't wait for a ticket to be assigned; you dig into the data, find an anomaly, and....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4432400936/)",9,1,POSITIVES: Location is preferred (Tel Aviv). NEGATIVES: Senior title is a hard exclusion; 5+ years experience required is a significant penalty. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to senior title.
+46f6a46c21816137438b79040f29c779cf3ae596cb5323ee9abf789cbb9c8238,2026-06-26T08:34:50.364655+00:00,Staff Data Engineer – Data Modeling,Cloudinary,Israel,False,"[""SQL""]",,https://jobs.lever.co/cloudinary/9c07c819-725b-4491-94b2-f5bacc9dc86a,"🆕 **Staff Data Engineer – Data Modeling**
+
+💼 **Company:** Cloudinary
+🔍 **Location:** Israel
+🧑‍💻️ **Experience required:** 7 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Our Data team consists of highly skilled senior software and data professionals who collaborate to solve complex data challenges. We process billions of records daily from multiple sources using.......
+
+---------------
+
+📊 **Requirements:** Requirements 7+ years of experience as a Data Engineer or Architect or in a similar data-focused role, with clear ownership of end-to-end data solutions. Strong expertise in writing and optimizing complex SQL queries (advanced joins, aggregations, pe....
+
+[**View full position listing and submit CV**](https://jobs.lever.co/cloudinary/9c07c819-725b-4491-94b2-f5bacc9dc86a)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Title contains 'Staff', requires 7+ years of experience — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to title and experience requirement."
+bb2827425b2b231d0b8ad2b2373bba538be7d94f9977141a9accef1398490e0f,2026-06-26T08:34:50.627076+00:00,Senior Data Engineer,Sunbit,Tel Aviv,False,[],hr@sunbit.com,https://www.linkedin.com/jobs/view/4419853610/,"🆕 **Senior Data Engineer**
+
+💼 **Company:** Sunbit
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Sunbit builds financial technology for real life. Our technology eases the stress of paying for life’s expenses by giving people more options on how and when they pay. Founded in 2016, Sunbit offers.......
+
+---------------
+
+📊 **Requirements:** about your candidacy that are sent to hr@sunbit.com directly, and your email about your application will be deleted from our systems.....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4419853610/)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title, 5 years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
