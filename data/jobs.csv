@@ -26096,3 +26096,134 @@ c25ed3776e28edbb23aeaa792e6bab72c9fb11217b7ff20bb65ef9317771fe58,2026-07-02T08:1
 NEGATIVES: Job title is Data Engineer, which is not relevant; 4 years of experience required — significant penalty.
 HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
 SCORE: 1 — hard exclusion due to the role being purely Data Engineer."
+2759f66a6cbc398a69d72b861ac8f6fc3211c27bb82b0deb53cd9c9caf6b6112,2026-07-03T08:09:38.150116+00:00,Financial controller & analyst,Arugga AI Farming,Netanya,False,"[""Financial modeling"", ""Financial reporting"", ""Excel"", ""ERP"", ""Analytical thinking""]",,https://secrethunter.io/jobz/8428fc1a7c?utm_source=telegram,"**Financial controller & analyst (banking & modelling)**
+Arugga AI Farming
+Netanya
+2/7/26
+ㅤ
+__Financial modeling, Financial reporting, Excel, Excel, ERP, Analytical thinking, Teamwork__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/8428fc1a7c?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",9,1,"POSITIVES: Company is in the AI sector, which is a preferred domain. 
+NEGATIVES: Senior title is a hard exclusion. 
+HARD BLOCK: Job TITLE contains: Senior. 
+SCORE: 1 — hard exclusion due to seniority."
+1171fc1e64ebb8ff7db7ec2cc8ad4ffe860329fe56139e9eb10f9a07c7ab407c,2026-07-03T08:09:39.263520+00:00,Senior data analyst,Flare,Tel Aviv,False,"[""SQL"", ""Tableau"", ""AI Tools"", ""Data Analysis""]",,https://secrethunter.io/jobz/8ce82e1a9b?utm_source=telegram,"**Senior data analyst**
+Flare
+Tel Aviv
+2/7/26
+ㅤ
+__SQL, Tableau, AI Tools, Data Analysis, Experimentation, Communication, Problem Solving__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/8ce82e1a9b?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack includes SQL.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+9b6f7a9c50aa9f72b3614426c9574ec84c4843fb1fd21e094e76eaa5b8430221,2026-07-03T08:09:39.578048+00:00,Senior AI analyst (support agent),Palo Alto Networks,Tel Aviv,False,"[""AI/ML"", ""Prompt Engineering"", ""Python"", ""Data Governance""]",,https://secrethunter.io/jobz/9f319450c3?utm_source=telegram,"**Senior AI analyst (support agent)- cortex**
+Palo Alto Networks
+Tel Aviv
+1/7/26
+ㅤ
+__AI/ML, Prompt Engineering, Python, Data Governance, Technical Communication, Ownership, Collaboration__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/9f319450c3?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack includes Python and AI/ML. NEGATIVES: Senior title is a hard exclusion. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to seniority."
+8f26159e46a64e2413d671620be4415453ead365db274935ff4aa6176ae35bc4,2026-07-03T08:09:39.839247+00:00,Back End Developer,Better,Tel Aviv,True,[],,https://www.comeet.com/jobs/allbetter/F8.00E/back-end-developer/B9.D65,"🆕 **Back End Developer**
+
+💼 **Company:** Better
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description Who we are: Join Better, a rapidly growing B2C company that is revolutionizing the way people manage their finances. With our cutting-edge technology and dedicated team of financial.......
+
+---------------
+
+📊 **Requirements:** must have the following: A sense of humor. We spend a lot of hours together, and we'd like them to be good ones. You learn fast. New frameworks, unfamiliar codebases, shifting requirements - you pick things up quickly and don't need hand-holding. Int....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/allbetter/F8.00E/back-end-developer/B9.D65)",7,1,"POSITIVES: Location is preferred (Tel Aviv), 0 years experience aligns with junior role. NEGATIVES: Role is Back End Developer, which is not relevant to the candidate's target roles. HARD BLOCK: Role is purely Backend with zero analytics duties. SCORE: 1 — hard exclusion due to role type."
+3330313b3cd00ad73c1b18d21c30afbc002a08563d22a9ea46872d36298f47a7,2026-07-03T08:09:40.103603+00:00,Junior QA Manual Tester- Artillery tester,Qualitest acq,Yokne'am,True,[],,https://www.linkedin.com/jobs/view/4430924601/,"🆕 **21062 - Junior QA Manual Tester- Artillery tester**
+
+💼 **Company:** Qualitest acq
+🔍 **Location:** Yokne'am
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Qualitest is the world’s leading AI-powered Quality Engineering company. With 8,000+ experts worldwide and 1,500 in Israel, we partner with top global brands to deliver smarter, faster, and more.......
+
+---------------
+
+📊 **Requirements:** Qualitest is the world’s leading AI-powered Quality Engineering company. With 8,000+ experts worldwide and 1,500 in Israel, we partner with top global brands to deliver smarter, faster, and more reliable technology solutions. For the fifth year in a ....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4430924601/)",7,2,"POSITIVES: Junior position, located in Israel. NEGATIVES: Role is not relevant to candidate's target (QA Manual Tester). HARD BLOCK: NONE. SCORE: 2 — while the position is junior and located in Israel, it does not align with the candidate's desired role."
+73cc515206fb06f6536eea1f9ec354671999377f97c160a75ba1bd2fa50931e5,2026-07-03T08:09:40.367944+00:00,Full Time,Fabric,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4435543227/,"🆕 **RSO**
+
+💼 **Company:** Fabric
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Description At Fabric, we enable retailers and brands to profitability scale both their online and brick-and-mortar business with a high density, high-throughput automated fulfillment platform. With.......
+
+---------------
+
+📊 **Requirements:** Who you are Team player with excellent communication skills. Highly dedicated and required to stay on post in the SOC throughout the shift, dedicated to the robotic site’s production and support needs. Fast learner with auto-deducting issues capabili....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4435543227/)",8,9,"POSITIVES: Location is preferred (Tel Aviv), experience required is 0 years, which aligns with junior level. NEGATIVES: Job title is generic and lacks specific analytical focus. HARD BLOCK: NONE SCORE: 9 — strong match for a junior role in a preferred location."
+57199b39062af99abea8841eadcb269fa53140c14b26713388920cffe6011592,2026-07-03T08:09:40.630296+00:00,Proposal Manager,Motorola Solutions,Tel Aviv,False,[],,https://motorolasolutions.wd5.myworkdayjobs.com/en-GB/Careers/job/Tel-Aviv-Israel-ZIL87/Proposal-Manager_R66364,"🆕 **Proposal Manager**
+
+💼 **Company:** Motorola Solutions
+🔍 **Location:** Tel Aviv
+🧑‍💻️ **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Company Overview At Motorola Solutions, we believe that everything starts with our people. We’re a global close-knit community, united by the relentless pursuit to help keep people safer everywhere........
+
+---------------
+
+📊 **Requirements:** The ideal candidate will look beyond standard proposal compilation and compliance, taking a proactive role in assessing deal risks, building financial models (P&L), and driving the business parameters that lead to winning outcomes. Key Responsibiliti....
+
+[**View full position listing and submit CV**](https://motorolasolutions.wd5.myworkdayjobs.com/en-GB/Careers/job/Tel-Aviv-Israel-ZIL87/Proposal-Manager_R66364)",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Title contains 'Manager', requires 6 years of experience — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to the Manager title."
+a8dff5701352059f291c576145d23ab1b851725582501d5ffa1317f4bebf85bf,2026-07-03T08:09:40.889082+00:00,Bookkeeping Specialist,Ceragon Networks,Rosh HaAyin,False,[],,https://www.linkedin.com/jobs/view/4431081588/,"🆕 **Bookkeeping Specialist**
+
+💼 **Company:** Ceragon Networks
+🔍 **Location:** Rosh HaAyin
+🧑‍💻️ **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Job Description Ceragon is the global innovator and leading solutions provider of end-to-end wireless connectivity, specializing in transport, access, and AI-powered managed & professional services........
+
+---------------
+
+📊 **Requirements:** Job Description Ceragon is the global innovator and leading solutions provider of end-to-end wireless connectivity, specializing in transport, access, and AI-powered managed & professional services. We are seeking a Bookkeeper that will fill the foll....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4431081588/)",9,1,"POSITIVES: Located in Israel, company is established. NEGATIVES: Role is not relevant to candidate's target (Bookkeeping), requires 3 years of experience which is outside candidate's acceptable range. HARD BLOCK: NONE — role is not relevant to candidate's profile. SCORE: 1 — not a fit due to irrelevance of the role."
