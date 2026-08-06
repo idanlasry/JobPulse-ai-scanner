@@ -37537,3 +37537,195 @@ fd5e36ea59c31f045a7fbe945b31e7a48a72d2b84694ac926915e0c3f50b27fd,2026-08-05T07:4
 NEGATIVES: Job title contains 'בכיר/ה' (senior), 5 years experience required.
 HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
 SCORE: 1 — hard exclusion due to seniority in title."
+d7d0ebb8168b6f9f8ff153f0a39c651bd4a04a7a59481268db96ee64a6ce7f9c,2026-08-06T07:39:35.662882+00:00,Senior data scientist,SMARTECH - A Hexion Company,Herzliya,False,"[""Python"", ""Machine Learning"", ""Data Science"", ""Statistics"", ""Data Exploration""]",,https://secrethunter.io/jobz/0ae3bc9875?utm_source=telegram,"**Senior data scientist**
+SMARTECH - A Hexion Company
+Herzliya
+5/8/26
+ㅤ
+__Python, Machine Learning, Data Science, Statistics, Data Exploration, Communication, Problem Solving__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/0ae3bc9875?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",9,1,"POSITIVES: Located in Herzliya, which is within the preferred area.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+d1091be1675d7fc5885ab7f32964cac0f53ae09e5ccbaf2d61708e9339e6f803,2026-08-06T07:39:36.731037+00:00,Algorithm analyst & tools developer,Mobileye,Ramat Gan,False,"[""Python"", ""Data analysis"", ""AI""]",,https://secrethunter.io/jobz/1fdd9679a0?utm_source=telegram,"**Algorithm analyst & tools developer**
+Mobileye
+Ramat Gan
+5/8/26
+ㅤ
+__Python, Data analysis, AI, Collaboration, Problem solving, Communication__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/1fdd9679a0?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",8,5,"POSITIVES: Relevant role type (analyst), preferred city, Python is a primary skill. NEGATIVES: Mid-level designation — mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with a mild penalty for seniority."
+b700cfa5db5fd916d2f96329eae3a47c90285fbda7a60f0514de5f78e898ed1f,2026-08-06T07:39:37.479528+00:00,Data engineer,Sela,Tel Aviv,False,"[""Data Engineering"", ""Big Data"", ""Spark"", ""Hadoop"", ""Elastic Search""]",,https://secrethunter.io/jobz/90abe11934?utm_source=telegram,"**Data engineer**
+Sela
+Tel Aviv
+5/8/26
+ㅤ
+__Data Engineering, Big Data, Spark, Hadoop, Elastic Search, Problem solving, Communication__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/90abe11934?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",9,1,"POSITIVES: Located in preferred city.
+NEGATIVES: Job title contains 'Data engineer' which is a hard exclusion; role is purely engineering with no analytics duties.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to job title."
+09faff15683531184b5a0a7cada42a59934118f848fff0de7f32be966f2878f1,2026-08-06T07:39:37.793484+00:00,Staff data engineer – data modeling,Cloudinary,Petahtikva,False,"[""SQL"", ""Python"", ""Airflow"", ""Snowflake"", ""Data Modeling"", ""Data Pipelines""]",,https://secrethunter.io/jobz/d9927c8823?utm_source=telegram,"**Staff data engineer – data modeling**
+Cloudinary
+Petahtikva
+5/8/26
+ㅤ
+__SQL, Python, Airflow, Snowflake, Data Modeling, Data Pipelines, Problem Solving__
+ㅤ
+Senior, Techlead
+ㅤ
+https://secrethunter.io/jobz/d9927c8823?utm_source=telegram
+ㅤ
+--
+Search jobs:
+https://secrethunter.io/search?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Job title contains 'Staff' — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority in title."
+ebced167acdb81d3f71d849daf07880e36b92e4fa55e37ae53188dc9cf32cba7,2026-08-06T07:39:38.100136+00:00,Applied Data Science,Backslash Security,Tel Aviv,False,"[""Python"", ""PyTorch"", ""HuggingFace"", ""LLM""]",,https://secrethunter.io/jobz/451948bcee?utm_source=telegram,"**Applied data science**
+Backslash Security
+Tel Aviv
+5/8/26
+ㅤ
+__Python, PyTorch, HuggingFace, LLM, Applied Research, Problem Solving, Independence__
+ㅤ
+Mid, Senior
+ㅤ
+https://secrethunter.io/jobz/451948bcee?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",9,5,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Mid, Senior roles are not relevant for the candidate. 
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. 
+SCORE: 1 — hard exclusion due to seniority in title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+ab7baabf295df1dc3390a90f83e4e04a525b93501784b9c5431b1ceb3a410d19,2026-08-06T07:39:38.814968+00:00,Business applications & data student,topgummiceuticals,Sderot,True,"[""Data analysis"", ""Excel"", ""SQL""]",,https://secrethunter.io/jobz/ae3cd2b83e?utm_source=telegram,"**Business applications & data student‎**
+topgummiceuticals
+Sderot
+5/8/26
+ㅤ
+__Data analysis, Excel, SQL, Communication, Teamwork, Problem solving__
+ㅤ
+Student
+ㅤ
+https://secrethunter.io/jobz/ae3cd2b83e?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referrers list:
+https://secrethunter.io/referers?utm_source=telegram",7,6,"POSITIVES: Role involves data analysis and SQL, which align with candidate skills; junior level is a good fit. NEGATIVES: Location in Sderot is not preferred; title is vague. HARD BLOCK: NONE SCORE: 6 — relevant role with some alignment, but location and title vagueness reduce the score."
+23b4e1abbadc0b0bf268a0c5265483b64d291f3b96d4a04b7855f5f5916aa5fb,2026-08-06T07:39:39.557860+00:00,Engineering team lead- data & AI platform,everc,Tel Aviv,False,"[""Python"", ""Java"", ""Distributed Systems"", ""Cloud Native"", ""Data Platforms""]",,https://secrethunter.io/jobz/7332e9300d?utm_source=telegram,"**Engineering team lead- data & AI platform**
+everc
+Tel Aviv
+5/8/26
+ㅤ
+__Python, Java, Distributed Systems, Cloud Native, Data Platforms, Team Leadership, Communication__
+ㅤ
+Teamleader, Senior
+ㅤ
+https://secrethunter.io/jobz/7332e9300d?utm_source=telegram
+ㅤ
+--
+Search jobs:
+https://secrethunter.io/search?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack includes Python.
+NEGATIVES: Senior role, team leader position — hard exclusion due to title.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority in title."
+3162213135ca4cba1cefed2d84904a68b16aa8f3b63d4b5912cc777abed61dbf,2026-08-06T07:39:39.855669+00:00,Contract analyst i,ICON Strategic Solutions,Tel Aviv,True,"[""Data analysis"", ""Contract negotiation"", ""Budgeting""]",,https://secrethunter.io/jobz/bd5d0fa8aa?utm_source=telegram,"**Contract analyst i**
+ICON Strategic Solutions
+Tel Aviv
+5/8/26
+ㅤ
+__Contract negotiation, Budgeting, Data analysis, Communication, Organizational skills, Decision making, Teamwork__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/bd5d0fa8aa?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",8,7,"POSITIVES: Junior role, preferred city, relevant analytical duties. NEGATIVES: Tech stack is not fully aligned with primary skills. HARD BLOCK: NONE SCORE: 7 — strong match with junior title and location, minor deduction for tech stack alignment."
+63923da829b8ea82616f55148fc804192ae5b4ffdc0d73ef162c8433f0bd9faf,2026-08-06T07:39:40.590103+00:00,Data Analyst,Qodo,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4448862352/,"🆕 **Data Analyst**
+
+💼 **Company:** Qodo
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Qodo is building the future of AI-powered software development. Our tools help engineering teams write better code, ship with more confidence, and move faster — without sacrificing quality. From.......
+
+---------------
+
+📊 **Requirements:** Requirements: 3+ years of industry experience as a Data, Product, Business, or BI Analyst,....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4448862352/)",7,4,"POSITIVES: Exact title, preferred city, relevant analytical role. NEGATIVES: 3+ years required — significant penalty. HARD BLOCK: NONE. SCORE: 4 — relevant role but penalized for experience requirement."
+7dc5e5e666bf4435e8b2b432dcf6910efe8a5f91cbb3c0e3e3a60e8af78e7f7f,2026-08-06T07:39:40.894030+00:00,Business Analyst,Torq,Tel Aviv,False,"[""SQL""]",,https://www.linkedin.com/jobs/view/4447991943/,"🆕 **Business Analyst**
+
+💼 **Company:** Torq
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Skeletons, lasers, tattoo buses — the Torq brand grabs attention like nothing else in cybersecurity. And we're growing like crazy, backed by Series D funding, 200% employee growth, and 300% revenue.......
+
+---------------
+
+📊 **Requirements:** You Bring to the Table? At least 3 years of experience as a Business Analyst or in a strategic, business-oriented analytical role. Experience working in a B2B technology company. Strong SQL skills and hands-on experience building dashboards and analy....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4447991943/)",8,3,"POSITIVES: Exact location, relevant analytical role, SQL skills match. NEGATIVES: 3 years of experience required — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant role but penalized for experience requirement."
+a5198e020ea281794b1b8a21272f3d479245f6786d42adf52ad7ea6fc0be23b1,2026-08-06T07:39:41.193167+00:00,Data Analyst (Chargeback),Global-e,Petach Tikva,True,"[""Excel"", ""SQL""]",,https://www.linkedin.com/jobs/view/4448821934/,"🆕 **Data Analyst (Chargeback)**
+
+💼 **Company:** Global-e
+🔍 **Location:** Petach Tikva
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Global-e (Nasdaq: GLBE) is the world’s leading platform for global direct-to-consumer e-commerce, enabling brands and retailers to seamlessly sell worldwide, delivering localized experiences across.......
+
+---------------
+
+📊 **Requirements:** Requirements: Bachelor’s degree in economics, Business Administration, Industrial Engineering or a related field. Proven experience with Excel – Must Proficiency in SQL –....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4448821934/)",8,6,"POSITIVES: Relevant title, acceptable location, SQL is a primary candidate skill. NEGATIVES: 2 years experience required — mild penalty. HARD BLOCK: NONE SCORE: 6 — relevant role with a mild penalty for experience requirement."
+c83f3cba1be03e7f5b0f3c4a29de577802f448f421100ccd80c013695caa3095,2026-08-06T07:39:41.922098+00:00,Senior BI Analyst,Port,Tel Aviv,False,[],,https://www.comeet.com/jobs/port/59.004/senior-bi-analyst/15.F68,"🆕 **Senior BI Analyst**
+
+💼 **Company:** Port
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Port Port is the Agentic SDLC Platform. The way engineering teams build software is constantly evolving, and every new wave - such as AI agents operating across the SDLC- makes engineering more.......
+
+---------------
+
+📊 **Requirements:** Description About Port Port is the Agentic SDLC Platform. The way engineering teams build software is constantly evolving, and every new wave - such as AI agents operating across the SDLC- makes engineering more powerful, but also more complex and ch....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/port/59.004/senior-bi-analyst/15.F68)",9,1,"POSITIVES: Preferred city. NEGATIVES: Senior title, 5 years experience required. HARD BLOCK: Job TITLE contains: Senior. SCORE: 1 — hard exclusion due to senior title."
