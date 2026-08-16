@@ -39200,3 +39200,237 @@ c566631979469785d85883f52089033268e5bb49cd1dac183c187e0e0362b01f,2026-08-14T06:1
 NEGATIVES: Job title contains 'מנהל.ת' (Manager), which is a hard exclusion; experience required is 2 years, which is not a fit for the candidate's target role.
 HARD BLOCK: Job title contains: Senior, Lead, Manager, Principal, Staff.
 SCORE: 1 — hard exclusion due to the Manager title."
+2e13f2d97bb139e5503ae4e3a9b913d6907b96fdbd1b40f949c38776342dbd96,2026-08-16T05:28:07.982142+00:00,QA Engineer,WeSki,Tel Aviv,True,"[""QA"", ""Software Testing""]",,https://www.linkedin.com/jobs/view/4452995487/,"🆕 **QA Engineer**
+
+💼 **Company:** WeSki
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Who we are: WeSki is a self-service ski trip booking platform built for the modern traveler. Our vision is simple: make great ski experiences available to everyone. Customers build and book a fully.......
+
+---------------
+
+📊 **Requirements:** Requirements: Recent graduate in Computer Science or Software Engineering. 0-2 years of experience in QA or software testing (including internships or relevant project experience). Strong attention to detail and a structured, methodical approach to t....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4452995487/)",7,2,"POSITIVES: Junior position, located in Tel Aviv. NEGATIVES: Role is in QA, which is not relevant to the candidate's target roles; experience required is 0-2 years but still not aligned with the candidate's profile. HARD BLOCK: NONE SCORE: 2 — while the position is junior and local, it does not align with the candidate's desired role type."
+7f87014ad51c8b6bbe507ebd513327c0d926aaff4dbf7d3015d41d148617050c,2026-08-16T05:28:08.951805+00:00,אחראי/ת פרויקט טכנולוגי BI,Aman Group,Jerusalem,False,"[""BI"", ""ETL"", ""Data Modeling""]",,https://www.drushim.co.il/job/38090918/10276909/,"🆕 **אחראי/ת פרויקט טכנולוגי BI**
+
+💼 **Company:** Aman Group
+🔍 **Location:** Jerusalem
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** למשרד ממשלתי בירושלים דרוש/ה אחראי/ת פרויקט טכנולוגי BI ניהול והובלת פרויקטי BI מקצה לקצה, תוך ביצוע ניתוח מערכות, אפיון פתרונות BI והגדרת צרכים עסקיים. התפקיד כולל אפיון מודלי נתונים וממשקי ETL עבור.......
+
+---------------
+
+📊 **Requirements:** ניסיון בניהול פרויקטי מחשוב וטכנולוגיה של 4 שנים ומעלה. דרישות חובה: ניהול פרויקטי מערכות מידע BI ניתוח מערכות ואפיון פתרונות BI מקצה לקצה, לרבות איסוף והגדרת צרכים עסקיים, הגדרת דוחות, דשבורדים ומדדים, ועבודה בפרויקטים הכוללים מחסן נתונים (DWH) הגדר....
+
+[**View full position listing and submit CV**](https://www.drushim.co.il/job/38090918/10276909/)",7,2,"POSITIVES: BI role aligns with candidate's skills, position is full-time. NEGATIVES: Location in Jerusalem is outside preferred area, 4+ years experience required is a significant penalty. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 2 — hard exclusion due to location."
+67ab7eb37a870a9175880b2e2df303638a9908c485529a25fd7681eacbed4222,2026-08-16T05:28:09.290166+00:00,Data Analyst,Autofleet Systems Ltd.,Tel Aviv,False,"[""Apache Airflow"", ""AI-assisted coding tools"", ""BI"", ""data analysis""]",,https://www.linkedin.com/jobs/view/4436078442/,"🆕 **Data Analyst**
+
+💼 **Company:** Autofleet Systems Ltd.
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Autofleet, we're transforming the way fleets operate by leveraging data, automation, and AI to power smarter mobility. As a Data Analyst, you'll play a key role in shaping product strategy and.......
+
+---------------
+
+📊 **Requirements:** skills and experience working with large-scale datasets Experience building and maintaining workflows using Apache Airflow Experience using AI-assisted coding tools such as Claude Code as part of your day-to-day workflow Experience with BI and visual....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4436078442/)",8,4,"POSITIVES: Exact title, preferred city, relevant analytical role. NEGATIVES: 4 years experience required — significant penalty. HARD BLOCK: NONE. SCORE: 4 — relevant role but penalized for experience requirement."
+5c27a8c30708bc3c9799ed316580c14e85fbe9aa3429b38f802095d8367c77a5,2026-08-16T05:28:09.648115+00:00,GTM Business Analyst,DealHub,Holon,False,[],,https://dealhub.io/careers/0A.E61/gtm-business-analyst/,"🆕 **GTM Business Analyst**
+
+💼 **Company:** DealHub
+🔍 **Location:** Holon
+🧑 **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Requirements 4+ years of experience in GTM Operations, Revenue Operations, Business Operations, Strategy & Operations, or a similar analytical role. Strong analytical skills with experience in data.......
+
+---------------
+
+📊 **Requirements:** Requirements 4+ years of experience in GTM Operations, Revenue Operations, Business Operations, Strategy & Operations, or a similar analytical role. Strong analytical skills with experience in data analysis, KPI tracking, reporting, and maintaining a....
+
+[**View full position listing and submit CV**](https://dealhub.io/careers/0A.E61/gtm-business-analyst/)",7,3,"POSITIVES: Analytical role, acceptable location. NEGATIVES: 4+ years required — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant analytical work, penalized 2–3 points for experience requirement."
+d649a2ab435380420b34b93aa144e3746a3bcd874cfa9efc57d7040c99fe452d,2026-08-16T05:28:09.923561+00:00,Marketing Analyst,Helfy,Tel Aviv,True,"[""Tableau"", ""Mixpanel"", ""GA4""]",,https://www.linkedin.com/jobs/view/4452439173/,"🆕 **Marketing Analyst**
+
+💼 **Company:** Helfy
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Helfy, we’re building the future of digital healthcare, making access to prescriptions, treatments, and delivery simpler, smarter, and fully online. We’re looking for a Marketing Analyst who is.......
+
+---------------
+
+📊 **Requirements:** skills and experience working with large datasets Experience with advertising platforms, attribution tools, Tableau, Mixpanel and GA4 Experience in B2C and large-scale platforms Strong analytical thinking and problem-solving skills with a data driven....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4452439173/)",7,4,"POSITIVES: Location is preferred (Tel Aviv), role is analytical, and requires 2 years of experience which is acceptable. NEGATIVES: Title is not a direct match (Marketing Analyst), tech stack includes Tableau which is secondary. HARD BLOCK: NONE SCORE: 4 — relevant analytical role but penalized for title mismatch and secondary tech stack."
+1109bb17563995199f76c77ec319024a2273e6dfe51a92130b6b33581b1e56ad,2026-08-16T05:28:10.203944+00:00,ML & Big Data Analyst,SimilarWeb,Tel Aviv,True,"[""ML"", ""Big Data""]",,https://www.linkedin.com/jobs/view/4453104016/,"🆕 **ML & Big Data Analyst**
+
+💼 **Company:** SimilarWeb
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Similarweb, we are revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our unique data and solutions empower thousands of.......
+
+---------------
+
+📊 **Requirements:** At Similarweb, we are revolutionizing the way businesses interact with the digital world by revealing to them everything that happens online. Our unique data and solutions empower thousands of customers globally, including industry giants like Google....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4453104016/)",8,6,"POSITIVES: Exact location in Tel Aviv, relevant analytical role, 2 years experience aligns with candidate's profile. NEGATIVES: Title includes 'Big Data' which is not a primary target role; experience requirement is at the upper limit of acceptable. HARD BLOCK: NONE SCORE: 6 — relevant role with some penalties for title and experience."
+af6f9b5c1970390bd564f236dfd43fb9c44668eded25d8205ca955b496a26c34,2026-08-16T05:28:10.856200+00:00,Senior FinOps Analyst,AppsFlyer,Tel Aviv,False,"[""AWS"", ""GCP"", ""FinOps"", ""data analysis""]",,https://www.linkedin.com/jobs/view/4440661588/,"🆕 **Senior FinOps Analyst**
+
+💼 **Company:** AppsFlyer
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** AppsFlyer is a cutting-edge technology company that specializes in mobile attribution and marketing analytics. We are known for our rapid deployment of innovative solutions, handling over 150 billion.......
+
+---------------
+
+📊 **Requirements:** you have 5+ years of experience in FinOps analysis, or cloud cost analysis Hands-on experience with AWS and/or GCP cost and usage data (Cost Explorer, billing exports, or a third-party FinOps platform such as Finout). Strong data analysis skills; pro....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4440661588/)",9,1,"POSITIVES: Location is preferred (Tel Aviv).
+NEGATIVES: Senior title, 5+ years experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+a2244aca9fe8ffbabfdedd45636cacad6df716eeeb29a88b8118d585830fe779,2026-08-16T05:28:11.137711+00:00,Data Analyst,Aman Group,Holon,True,"[""SQL"", ""Power BI"", ""Python""]",,https://www.drushim.co.il/job/38078682/e17c5d0e/,"🆕 **דרוש/ה אנליסט/ית נתונים ו-BI לארגון גדול**
+
+💼 **Company:** Aman Group
+🔍 **Location:** Holon
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** לארגון רפואי גדול ומוביל בחולון דרוש/ה אנליסט/ית נתונים ו-BI להשתלבות בתפקיד טכנולוגי הכולל עבודה עם מאגרי מידע קליניים, ניתוח נתונים, פיתוח דוחות ודשבורדים. תיאור התפקיד: שליפת נתונים ממערכות.......
+
+---------------
+
+📊 **Requirements:** ניסיון נדרש : לפחות שנה ידע וניסיון בעבודה עם SQL – חובה. ידע וניסיון ב-Power BI – חובה. היכרות עם Python – חובה. היכרות עם JSON ו-XML. יכולת עבודה עם בסיסי נתונים, ניתוח מידע והבנת תהליכים. יכולת למידה עצמאית, חשיבה אנליטית וירידה לפרטים.....
+
+[**View full position listing and submit CV**](https://www.drushim.co.il/job/38078682/e17c5d0e/)",9,9,"POSITIVES: Exact title, junior experience requirement, preferred location, full primary stack match with SQL, Power BI, and Python. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+d244b1d5c5316b83ff6f58544361b9c929204874eed85ed462e0f76b46f4d788,2026-08-16T05:28:11.417839+00:00,Fraud Analyst - Student position,Global-e,Petach Tikva,True,[],,https://www.global-e.com/en/careers/6d-c6c/,"🆕 **Fraud Analyst - Student position**
+
+💼 **Company:** Global-e
+🔍 **Location:** Petach Tikva
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Global-e (Nasdaq: GLBE) is the world’s leading platform for global direct-to-consumer e-commerce, enabling brands and retailers to seamlessly sell worldwide, delivering localized experiences across.......
+
+---------------
+
+📊 **Requirements:** Description Global-e (Nasdaq: GLBE) is the world’s leading platform for global direct-to-consumer e-commerce, enabling brands and retailers to seamlessly sell worldwide, delivering localized experiences across markets. Trusted by some of the world’s ....
+
+[**View full position listing and submit CV**](https://www.global-e.com/en/careers/6d-c6c/)",7,2,"POSITIVES: Internship position aligns with junior experience, company is relevant. NEGATIVES: Role is outside Israel, experience requirement of 2 years is a mild negative. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 2 — hard exclusion due to location."
+fd1182f3db62247471e193f47171155db66a04516afa086547ada7508ef9421a,2026-08-16T05:28:11.695453+00:00,Head of Treasury & Payments,Okoora,Ramat Gan,False,[],,https://www.linkedin.com/jobs/view/4452392845/,"🆕 **Head of Treasury & Payments**
+
+💼 **Company:** Okoora
+🔍 **Location:** Ramat Gan
+🧑 **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Head of Treasury & Payments About Okoora Okoora is the AI-native intelligence layer that operates finance. Across accounts, payments, FX, exposure, and money flows, Okoora turns financial activity.......
+
+---------------
+
+📊 **Requirements:** What We're Looking For 3+ years of relevant experience in Treasury, Payments, Cash Management, Settlement, Financial Operations, or Reconciliation. At least 1 years of direct people-management experience in a finance or payments environment. Hands-on....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4452392845/)",9,1,"POSITIVES: Located in Ramat Gan.
+NEGATIVES: Title contains 'Head', which indicates a senior role; requires 3+ years of experience, which is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority in title."
+5a0633424f23b326ab06f428dc7e3a09c8ac4a87b74c9ab9655aa992ae85efab,2026-08-16T05:28:11.970097+00:00,CRM Administrator,CEVA,Ra'anana,True,[],,https://www.linkedin.com/jobs/view/4447306533/,"🆕 **CRM Administrator**
+
+💼 **Company:** CEVA
+🔍 **Location:** Ra'anana
+🧑 **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Back to careers Description About Ceva Ceva is at the forefront of AI inference and signal processing, powering some of the world's most advanced edge devices with our NPU, Connectivity, Wireless,.......
+
+---------------
+
+📊 **Requirements:** Back to careers Description About Ceva Ceva is at the forefront of AI inference and signal processing, powering some of the world's most advanced edge devices with our NPU, Connectivity, Wireless, and Sensing IP platforms. About The Role As part of o....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4447306533/)",7,2,"POSITIVES: Junior position, located in Israel. NEGATIVES: Role is not relevant to the candidate's target roles (Data Analyst, etc.). HARD BLOCK: NONE. SCORE: 2 — while the position is junior and located in Israel, it does not align with the candidate's desired role."
+76c00bf9a37bc82a9ff22e790ecb2886171e31807df30eca7e82b36114169a69,2026-08-16T05:28:12.258766+00:00,Total Rewards & People Analytics Lead,Alma Lasers,Caesarea,False,[],,https://almalasers.com/careers/co/caesarea/CE.F6D/total-rewards-people-analytics-lead/all/,"🆕 **Total Rewards & People Analytics Lead**
+
+💼 **Company:** Alma Lasers
+🔍 **Location:** Caesarea
+🧑 **Experience required:** 25 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Alma, a Sisram Medical company, is a global leader in medical-aesthetic technologies, with over 25 years of experience in energy-based devices (EBD). Over the years, Alma has evolved into an.......
+
+---------------
+
+📊 **Requirements:** Description Alma, a Sisram Medical company, is a global leader in medical-aesthetic technologies, with over 25 years of experience in energy-based devices (EBD). Over the years, Alma has evolved into an integrated aesthetic and wellness ecosystem tha....
+
+[**View full position listing and submit CV**](https://almalasers.com/careers/co/caesarea/CE.F6D/total-rewards-people-analytics-lead/all/)",9,1,"POSITIVES: Company is located in Israel, job link provided. NEGATIVES: Title requires 25 years of experience, which is far beyond the candidate's target. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to seniority requirement."
+828d4ff0e579b8ca3690e03607c03d8063023ecbfc8f2aa146987a757b706987,2026-08-16T05:28:12.517800+00:00,CRM Administrator,CEVA,Ra'anana,True,"[""Salesforce""]",,https://www.linkedin.com/jobs/view/4449012124/,"🆕 **CRM Administrator**
+
+💼 **Company:** CEVA
+🔍 **Location:** Ra'anana
+🧑 **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Ceva Ceva is at the forefront of AI inference and signal processing, powering some of the world's most advanced edge devices with our NPU, Connectivity, Wireless, and Sensing IP platforms........
+
+---------------
+
+📊 **Requirements:** Requirements: B.Sc. in Information Systems, Industrial Engineering, or a related field. 1-3 years experience in a Salesforce Administrator role, with demonstrable hands-on configuration experience. Salesforce Administration: Proficiency in objects, f....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4449012124/)",9,1,"POSITIVES: Company is in Israel, role is full-time. NEGATIVES: Role is not relevant to candidate's target (CRM Administrator), and requires 1-3 years experience which is outside the candidate's junior target. HARD BLOCK: Role is purely CRM Administration, which is not relevant. SCORE: 1 — hard exclusion due to irrelevance of the role."
+5e8cca441c0a75c6594162f09f1c86875c4465a58131679c22b3da18ea35708c,2026-08-16T05:28:12.811691+00:00,CRM Dynamics System Analyst,abra,Center District,False,"[""Microsoft Dynamics 365""]",,https://www.comeet.com/jobs/abra_rnd/15.007/crm-dynamics-system-analyst/2C.F6E,"🆕 **CRM Dynamics System Analyst**
+
+💼 **Company:** abra
+🔍 **Location:** Center District
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Analyze business requirements and translate them into Dynamics 365 solutions.
+Work closely with end users and business stakeholders to gather, document, and refine requirements.
+Write functional specification documents and support implementation proc....
+
+---------------
+
+📊 **Requirements:** At least 2 years of hands-on experience with Microsoft Dynamics 365 Cloud applications – mandatory.
+Experience writing functional specification and requirements documents.
+Proven experience working directly with end users and business stakeholders – ....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/abra_rnd/15.007/crm-dynamics-system-analyst/2C.F6E)",9,2,"POSITIVES: Located in Israel, full-time position. NEGATIVES: Role is not relevant to candidate's target (Data Analyst), requires 2 years of experience which is a mild negative. HARD BLOCK: NONE. SCORE: 2 — role does not align with candidate's profile."
