@@ -43123,3 +43123,341 @@ SCORE: 2 — hard exclusion due to location."
 NEGATIVES: Job title contains 'מנהל/ת' (Manager), requires 5 years of experience — both are hard exclusions.
 HARD BLOCK: Job title contains: Senior, Lead, Manager, Principal, Staff.
 SCORE: 1 — hard exclusion due to managerial title."
+1850a59790517f17613bdff869f400e4b60b64ff0fd14c47ba39a5baae4853ee,2026-08-31T11:23:11.508007+00:00,Data team lead,Cust2Mate - A2Z,Givatayim,False,"[""Data Engineering"", ""Data Architecture"", ""Database"", ""SQL"", ""ETL/ELT""]",,https://secrethunter.io/jobz/503fc133c1?utm_source=telegram,"**Data team lead**
+Cust2Mate - A2Z (Nasdaq:AZ / FRA - WKN: A3CSQ )
+Givatayim
+31/8/26
+ㅤ
+__Data Engineering, Data Architecture, Database, SQL, ETL/ELT, Leadership, Communication__
+ㅤ
+Teamleader, Senior, Mid, Techlead
+ㅤ
+https://secrethunter.io/jobz/503fc133c1?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,1,"POSITIVES: Located in Israel, relevant tech stack includes SQL.
+NEGATIVES: Title includes 'Lead' and 'Senior' — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority in title."
+6426bf85d58d2b13727a891ed58e11328bdab0220385e1f329632628fea9ab0e,2026-08-31T11:23:12.465168+00:00,ML-ops analyst - (student position),Forter,Tel Aviv,True,"[""Python"", ""SQL"", ""Machine Learning"", ""Data Analysis""]",,https://secrethunter.io/jobz/de00111381?utm_source=telegram,"**ML-ops analyst - (student position)**
+Forter
+Tel Aviv
+31/8/26
+ㅤ
+__Python, SQL, Machine Learning, Data Analysis, Communication, Proactivity, Problem Solving__
+ㅤ
+__German__
+ㅤ
+Student
+ㅤ
+https://secrethunter.io/jobz/de00111381?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",8,6,"POSITIVES: Junior position, preferred city, relevant tech stack including Python and SQL. NEGATIVES: Title includes 'ML-ops', which is not the primary target role; student position may imply limited experience. HARD BLOCK: NONE SCORE: 6 — relevant role with some penalties for title and experience level."
+9525dea9943bcc8727b2e22e2d97ea01ee33e1927f886bf225194788b8f7c403,2026-08-31T11:23:12.795689+00:00,QA & data quality engineer,evoke,Herzliya,False,"[""SQL"", ""ETL testing"", ""Data quality"", ""BDD"", ""Automation""]",,https://secrethunter.io/jobz/fabece2258?utm_source=telegram,"**QA & data quality engineer**
+evoke
+Herzliya
+31/8/26
+ㅤ
+__SQL, ETL testing, Data quality, BDD, Automation, Communication, Problem-solving__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/fabece2258?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",7,3,"POSITIVES: Location is preferred (Herzliya), relevant tech stack includes SQL. NEGATIVES: Mid-level position is a mild penalty. HARD BLOCK: NONE SCORE: 3 — relevant role but penalized for mid-level seniority."
+e286c15b20cb727f4c3ae243bab9d1081770142e9a7855978a4c71e150c58c16,2026-08-31T11:23:13.116254+00:00,Junior operations analyst,Xsight Labs LTD,Givatayim,True,"[""Data Analysis"", ""ERP"", ""Excel""]",,https://secrethunter.io/jobz/7a3a5e4b0e?utm_source=telegram,"**Junior operations analyst**
+Xsight Labs LTD
+Givatayim
+30/8/26
+ㅤ
+__Data Analysis, ERP, Excel, Negotiation, Communication, Problem Solving, Analytical Thinking__
+ㅤ
+Junior, Entry
+ㅤ
+https://secrethunter.io/jobz/7a3a5e4b0e?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",7,6,"POSITIVES: Junior title, relevant analytical role, location is acceptable (Givatayim). NEGATIVES: Tech stack includes ERP which is not a primary candidate skill; Excel is a secondary skill. HARD BLOCK: NONE SCORE: 6 — strong match for junior role, but some tech stack misalignment."
+b5f1c6f90482f0a0e2ae5b17d18801e1c76ae1379b982402c741472819ecdf86,2026-08-31T11:23:13.857007+00:00,Data science student,Intel Corporation,Kiryatgat,True,"[""R"", ""Python"", ""SAS""]",,https://secrethunter.io/jobz/846f3bcc77?utm_source=telegram,"**Data science student for intel kiryat gat**
+Intel Corporation
+Kiryatgat
+30/8/26
+ㅤ
+__Data analysis, Statistical analysis, R, Python, SAS, Problem-solving, Communication__
+ㅤ
+Student
+ㅤ
+https://secrethunter.io/jobz/846f3bcc77?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",7,2,"POSITIVES: Role involves data analysis, which aligns with candidate's skills; company is reputable. NEGATIVES: Location is outside Israel (Kiryatgat); student role may not align with full-time expectations. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 2 — hard exclusion due to location."
+bc1e290c573a12d289b1b208cfab6b5aea397bd9d5e3928ef6d970e5f3d46f11,2026-08-31T11:23:14.627867+00:00,Data analysis engineer - student position,Mobileye,Jerusalem,True,"[""Python"", ""Data Analysis"", ""Big Data""]",,https://secrethunter.io/jobz/27bf52f252?utm_source=telegram,"**Data analysis engineer - student position**
+Mobileye
+Jerusalem
+31/8/26
+ㅤ
+__Python, Data Analysis, Big Data, Analytical thinking, Teamwork, Communication, Independence__
+ㅤ
+Student
+ㅤ
+https://secrethunter.io/jobz/27bf52f252?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",7,5,"POSITIVES: Student position aligns with junior level, Python is a primary skill, relevant company in tech. NEGATIVES: Location in Jerusalem is outside preferred area, title is not an exact match. HARD BLOCK: NONE SCORE: 5 — relevant role with some alignment, but location is a negative."
+7b650759d681ce0b67a14c2182546492e9091e31ca0b14e21e54bd09f928eddf,2026-08-31T11:23:15.417031+00:00,ERP Financial implementor,Alma Lasers,Caesarea,True,[],,https://www.comeet.com/jobs/almalasers/67.006/erp-financial-implementor/7C.179,"🆕 **ERP Financial implementor**
+
+💼 **Company:** Alma Lasers
+🔍 **Location:** Caesarea
+🧑 **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Alma, a Sisram Medical company, is a global leader in medical-aesthetic technologies, with over 25 years of experience in energy-based devices (EBD). Over the years, Alma has evolved into an.......
+
+---------------
+
+📊 **Requirements:** Description Alma, a Sisram Medical company, is a global leader in medical-aesthetic technologies, with over 25 years of experience in energy-based devices (EBD). Over the years, Alma has evolved into an integrated aesthetic and wellness ecosystem tha....
+
+[**View full position listing and submit CV**](https://www.comeet.com/jobs/almalasers/67.006/erp-financial-implementor/7C.179)",8,1,"POSITIVES: Entry-level position, company is based in Israel.
+NEGATIVES: Role is not relevant to candidate's target (Data Analyst); no specified tech stack.
+HARD BLOCK: Role is purely financial, not analytical.
+SCORE: 1 — hard exclusion due to irrelevance of role type."
+3ae8f225068cb044704aa2a9316769bbca56c4ef0a55355c4668219ce2683774,2026-08-31T11:23:16.197765+00:00,Automation Student,Radware,Tel Aviv,True,[],,https://www.linkedin.com/jobs/view/4452294600/,"🆕 **Automation Student**
+
+💼 **Company:** Radware
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 0 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** Radware is a global leader of cyber security and application delivery solutions for physical, cloud, and software defined data centers. At Radware, we live and breathe cybersecurity. It is our.......
+
+---------------
+
+📊 **Requirements:** Radware is a global leader of cyber security and application delivery solutions for physical, cloud, and software defined data centers. At Radware, we live and breathe cybersecurity. It is our passion. Each day, our international team works to earn t....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4452294600/)",8,6,"POSITIVES: Internship role, located in preferred city, 0 years experience aligns with junior target. NEGATIVES: Role is not directly aligned with candidate's primary focus on data analytics. HARD BLOCK: NONE SCORE: 6 — relevant opportunity for a junior role, but lacks direct alignment with data analytics."
+9df059b43fd4e215b44d1d32dcc418cc98a7927b7557533a878f76a11cb21ed1,2026-08-31T11:23:16.934571+00:00,Priority Developer (Junior),Abra IT,Haifa,True,"[""Priority ERP""]",,https://www.abra-it.com/en/career/abra-north/priority-developer-junior-required-priority-development-course/,"🆕 **Priority Developer (Junior) - required Priority development course**
+
+💼 **Company:** Abra IT
+🔍 **Location:** Haifa
+🧑 **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** abra North is looking for an experienced Priority Developer to join a growing ERP Priority development team, working with a wide range of clients and projects. Work Model: Hybrid – full remote or.......
+
+---------------
+
+📊 **Requirements:** Description abra North is looking for an experienced Priority Developer to join a growing ERP Priority development team, working with a wide range of clients and projects. Work Model: Hybrid – full remote or from our northern offices in Alonim / Kiry....
+
+[**View full position listing and submit CV**](https://www.abra-it.com/en/career/abra-north/priority-developer-junior-required-priority-development-course/)",7,1,"POSITIVES: Junior position, hybrid work model. NEGATIVES: Role is for a Priority Developer, which is not relevant to the candidate's target roles. HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 1 — hard exclusion due to location."
+a40a7c91e66073417e5c23070c7fbd4d8a4cdf6b84d322611a00e04ebb361c84,2026-08-31T11:23:17.257490+00:00,Account Executive,Sela,Bnei Brak,True,[],,https://www.linkedin.com/jobs/view/4445840157/,"🆕 **Account Executive**
+
+💼 **Company:** Sela
+🔍 **Location:** Bnei Brak
+🧑 **Experience required:** 0 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About Us We are international Multi-Cloud experts, leveraging the power of the cloud to drive smart digital transformation. With 5 sites across 4 continents, 450+ experts, 1000+ customers, and over.......
+
+---------------
+
+📊 **Requirements:** About Us We are international Multi-Cloud experts, leveraging the power of the cloud to drive smart digital transformation. With 5 sites across 4 continents, 450+ experts, 1000+ customers, and over 30 years of proven experience, our mission is to del....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4445840157/)",9,1,"POSITIVES: Location is within preferred area, experience required is 0 years (junior). NEGATIVES: Role is not relevant to candidate's target (Account Executive). HARD BLOCK: NONE. SCORE: 1 — role does not align with candidate's target positions."
+00b50da69ff330c71cc071b5f48e318d69380e5cd4dec2bd6e6a8f95d42f8070,2026-08-31T11:23:17.596397+00:00,Head Of Data,Upwind Security,Ramat Gan,False,[],,https://www.linkedin.com/jobs/view/4460875970/,"🆕 **Head Of Data**
+
+💼 **Company:** Upwind Security
+🔍 **Location:** Ramat Gan
+🧑 **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Upwind is a next-generation Cloud Security Platform that leverages runtime context to identify and prioritize critical risks, providing precise insights and efficient cloud security management........
+
+---------------
+
+📊 **Requirements:** Description Upwind is a next-generation Cloud Security Platform that leverages runtime context to identify and prioritize critical risks, providing precise insights and efficient cloud security management. Unlike traditional tools, Upwind uses runtim....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4460875970/)",9,1,"POSITIVES: Preferred city.
+NEGATIVES: Title contains 'Head', requiring 5 years of experience — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to title and experience requirement."
+4098b43492461653ee54d24e02460e07a86a06ba9de61d1e461b49914267a38b,2026-08-31T11:23:17.916897+00:00,Wireless Testing Engineer,Apple,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4414153780/,"🆕 **Wireless Testing Engineer**
+
+💼 **Company:** Apple
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 5 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Summary Are you an innovative person? Do you like working in a fast-paced environment, developing interesting testing scenarios with informative reports? Apple is looking for people like you. As part.......
+
+---------------
+
+📊 **Requirements:** Summary Are you an innovative person? Do you like working in a fast-paced environment, developing interesting testing scenarios with informative reports? Apple is looking for people like you. As part of Apple’s Wireless Connectivity group, you will b....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4414153780/)",7,2,POSITIVES: Located in preferred city (Tel Aviv). NEGATIVES: Requires 5 years of experience — significant penalty. HARD BLOCK: NONE. SCORE: 2 — experience requirement is too high for the candidate's profile.
+376c6e843504477e0494689c367317fec91655e10b80ff0acdd1f44d94290300,2026-08-31T11:23:18.236802+00:00,Data Analyst,GE HealthCare,Rehovot,True,"[""manufacturing analytics"", ""business intelligence""]",,https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Rehovot/Data-Analyst_R4045167-1/apply,"🆕 **Data Analyst**
+
+💼 **Company:** GE HealthCare
+🔍 **Location:** Rehovot
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Join our team as a Data Analyst to transform manufacturing data into actionable insights, supporting process improvement and operational efficiency. Collaborate with cross-functional teams to drive.......
+
+---------------
+
+📊 **Requirements:** skills and experience in manufacturing analytics or business intelligence.....
+
+[**View full position listing and submit CV**](https://gehc.wd5.myworkdayjobs.com/GEHC_ExternalSite/job/Rehovot/Data-Analyst_R4045167-1/apply)",9,8,"POSITIVES: Exact title, junior experience requirement, preferred city, relevant analytical role in business intelligence. NEGATIVES: None. HARD BLOCK: NONE SCORE: 8 — strong match with all signals aligning."
+989bdcbb46c399f557592eca1e1fa9aae6a5770385be08223554bf7c16b5e2fc,2026-08-31T11:23:18.560551+00:00,Business Analyst,Helfy,Tel Aviv,True,"[""Tableau"", ""Mixpanel"", ""GA4"", ""HubSpot""]",,https://www.linkedin.com/jobs/view/4461000037/,"🆕 **Business Analyst**
+
+💼 **Company:** Helfy
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Helfy, we’re building the future of digital healthcare, making access to prescriptions, treatments, and delivery simpler, smarter, and fully online. We’re looking for a Business Analyst who is.......
+
+---------------
+
+📊 **Requirements:** skills and experience working with large datasets Experience with Tableau, Mixpanel, GA4, and analytics platforms Experience with HubSpot or similar CRM platforms Experience in B2C and large scale digital platforms Strong analytical thinking and prob....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4461000037/)",8,6,"POSITIVES: Exact title variant, preferred city, relevant analytical role. NEGATIVES: 2 years experience required — mild penalty. HARD BLOCK: NONE SCORE: 6 — relevant role with a mild penalty for experience requirement."
+96ba241395922477a98adf28a757bf8a4d150542fb59b0d7dbadfd74480cb30c,2026-08-31T11:23:18.878509+00:00,AI Product Data Analyst,HiBob,Tel Aviv,False,"[""LLM"", ""BI"", ""data visualization""]",,https://www.linkedin.com/jobs/view/4461002711/,"🆕 **AI Product Data Analyst**
+
+💼 **Company:** HiBob
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** HiBob helps modern, mid-size businesses transform the way they manage people, giving HR and managers all they need to connect, engage, develop, and retain top talent. Since 2015, we’ve achieved.......
+
+---------------
+
+📊 **Requirements:** skills and experience analyzing large-scale product usage datasets. Hands-on experience with LLM concepts, including basic prompt engineering, output evaluation, or experimenting with GenAI tools. Proven track record with BI & data visualization tool....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4461002711/)",8,5,"POSITIVES: Exact title, preferred city, relevant experience with LLM and BI tools. NEGATIVES: 3 years experience required — significant penalty. HARD BLOCK: NONE. SCORE: 5 — relevant role with some penalties for experience requirement."
+f3b0b52cb0e428168f2b909e753bab597908fd177be77d06ac761d4ce017be06,2026-08-31T11:23:19.204190+00:00,BI Engineer,abra,Center District,True,"[""SQL"", ""Snowflake"", ""Redshift"", ""BigQuery"", ""Data Factory""]",,https://www.linkedin.com/jobs/view/4432190338/,"🆕 **BI Engineer**
+
+💼 **Company:** abra
+🔍 **Location:** Center District
+🧑 **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** abra’s Data & AI Division is Hiring a BI Developer We’re looking for a talented BI Developer to join our growing Data & AI division and help drive data-driven decision-making across the organization........
+
+---------------
+
+📊 **Requirements:** Requirements: 1-4 years of experience as a BI Developer Strong proficiency in SQL Hands-on experience with data warehouse implementation—preferably in Snowflake, Redshift, BigQuery, or Data Factory Proven track record in implementing and supporting B....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4432190338/)",8,5,"POSITIVES: Role is relevant (BI Developer), located in Israel (Center District), junior experience required (1-4 years). NEGATIVES: Requires hands-on experience with data warehouse implementation, which is not a primary skill for the candidate. HARD BLOCK: NONE SCORE: 5 — relevant role with some alignment, but penalized for specific data warehouse experience requirement."
+84315365306e7cccfe71e2dee89d829a54b3acc2044c7210d4c4b4ae2c0d5d53,2026-08-31T11:23:19.498697+00:00,Data Analyst,G-STAT,Center District,True,"[""SQL"", ""Salesforce""]",,https://www.linkedin.com/jobs/view/4459743236/,"🆕 **Data Analyst**
+
+💼 **Company:** G-STAT
+🔍 **Location:** Center District
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 🎓 Graduated? This is your opportunity to launch your career in Data, Technology & Marketing! Have a Bachelor’s degree, strong SQL skills, and familiarity with Salesforce? Looking for your first.......
+
+---------------
+
+📊 **Requirements:** 🎓 Graduated? This is your opportunity to launch your career in Data, Technology & Marketing! Have a Bachelor’s degree, strong SQL skills, and familiarity with Salesforce? Looking for your first opportunity in a professional, technology-driven enviro....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4459743236/)",8,6,"POSITIVES: Exact title, junior position, SQL skills match candidate's primary skills, located in Israel. NEGATIVES: Requires 2 years of experience — mild penalty. HARD BLOCK: NONE SCORE: 6 — relevant role with a mild penalty for experience requirement."
+20a392e4ede7e344c94f57e27fc87b2b0ea18d68bcfbb25ebd1337f22722fb15,2026-08-31T11:23:19.802740+00:00,Software Development Engineer (AWS ML),Amazon,Tel Aviv,False,"[""AWS"", ""Machine Learning"", ""Linux""]",,https://amazon.jobs/en/jobs/10521270/software-development-engineer-aws-ml-machine-learning-israel-mlil-flow-sub-team-fleet-lifecycle-operational-workflows,"🆕 **Software Development Engineer (AWS ML), Machine Learning Israel (MLIL) — FLOW sub-team (Fleet Lifecycle & Operational Workflows)**
+
+💼 **Company:** Amazon
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Annapurna Labs designs silicon and software that accelerates innovation. Our custom chips, accelerators, and software stacks enable us to take on technical challenges that have never been seen.......
+
+---------------
+
+📊 **Requirements:** - 3+ years of software development engineer or related occupational experience - Bachelor's degree in Computer Science, Electrical Engineering, Computer Engineering or a related discipline or equivalent - Experience using Linux, demonstrating profici....
+
+[**View full position listing and submit CV**](https://amazon.jobs/en/jobs/10521270/software-development-engineer-aws-ml-machine-learning-israel-mlil-flow-sub-team-fleet-lifecycle-operational-workflows)",9,2,"POSITIVES: Located in Tel Aviv, full-time position. NEGATIVES: Requires 3+ years of software development experience, which is outside the candidate's target experience level. HARD BLOCK: NONE. SCORE: 2 — the role is not relevant due to the experience requirement."
+9c3b66d31c8e9f8d56632ce1be48f0cbb301a19b3f5dcb1a055b90200d219eb9,2026-08-31T11:23:20.095760+00:00,Data Analyst,G-STAT,Center District,True,[],,https://www.linkedin.com/jobs/view/4459752183/,"🆕 **Data Analyst**
+
+💼 **Company:** G-STAT
+🔍 **Location:** Center District
+🧑 **Experience required:** 1 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** 🚀 DATA ANALYST? Ready for your next career move in Financial Services? A leading financial institution is looking for a Data Analyst to join its Strategy Department. This is a high-impact, core role.......
+
+---------------
+
+📊 **Requirements:** 🚀 DATA ANALYST? Ready for your next career move in Financial Services? A leading financial institution is looking for a Data Analyst to join its Strategy Department. This is a high-impact, core role that combines deep data research, complex analysis....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4459752183/)",9,8,"POSITIVES: Exact title, junior experience required, located in Center District which is preferred. NEGATIVES: None. HARD BLOCK: NONE SCORE: 8 — strong match with all signals aligning."
+29ae00dcbfcfdf03f38f62295ad9903e68011fa49f3a238da96c0bf168e7ebcb,2026-08-31T11:23:21.737968+00:00,Business Analyst,Helfy,Herzliya,False,"[""Tableau"", ""Mixpanel"", ""GA4"", ""HubSpot""]",,https://helfy.co/careers-2/co/herzliya/4D.174/business-analyst/all/,"🆕 **Business Analyst**
+
+💼 **Company:** Helfy
+🔍 **Location:** Herzliya
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Helfy, we’re building the future of digital healthcare, making access to prescriptions, treatments, and delivery simpler, smarter, and fully online. We’re looking for a Business Analyst who is.......
+
+---------------
+
+📊 **Requirements:** skills and experience working with large datasets Experience with Tableau, Mixpanel, GA4, and analytics platforms Experience with HubSpot or similar CRM platforms Experience in B2C and large scale digital platforms Strong analytical thinking and prob....
+
+[**View full position listing and submit CV**](https://helfy.co/careers-2/co/herzliya/4D.174/business-analyst/all/)",8,5,"POSITIVES: Relevant role type (Business Analyst), preferred location (Herzliya), analytical focus. NEGATIVES: 2 years experience required — mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with some penalties for experience requirement."
+88f727d031fb559b178dda4e68198c3301421536c4ba7146d1aea9887047c3a5,2026-08-31T11:23:22.045265+00:00,סטודנט.ית לתחום הסמכות והרשאות בטיחות,Rafael,Kiryat Bialik,True,[],,https://career.rafael.co.il/job/12541/,"🆕 **סטודנט.ית לתחום הסמכות והרשאות בטיחות**
+
+💼 **Company:** Rafael
+🔍 **Location:** Kiryat Bialik
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Internship
+
+---------------
+
+📄 **Description:** קצת על התפקיד אחריות לטיפול בהסמכות מקצועיות בתחום הבטיחות לעובדי רפאל תיעוד והזנת נתונים, עדכון לומדות, הסמכות והרשאות בטיחות לכלל עובדי הארגון ליווי ומענה לעובדים בתהליכי הסמכה ועדכון הרשאות עבודה.......
+
+---------------
+
+📊 **Requirements:** קצת על התפקיד אחריות לטיפול בהסמכות מקצועיות בתחום הבטיחות לעובדי רפאל תיעוד והזנת נתונים, עדכון לומדות, הסמכות והרשאות בטיחות לכלל עובדי הארגון ליווי ומענה לעובדים בתהליכי הסמכה ועדכון הרשאות עבודה מול ממשקים פנימיים ומול גורמי רגולציה חיצוניים הפקת....
+
+[**View full position listing and submit CV**](https://career.rafael.co.il/job/12541/)",9,1,"POSITIVES: Internship role, located in Israel.
+NEGATIVES: Role is not relevant to the candidate's target (Data Analyst); hard exclusion due to lack of analytical duties.
+HARD BLOCK: Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend / Pure Backend with zero analytics duties.
+SCORE: 1 — not a relevant role for the candidate."
