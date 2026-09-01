@@ -43461,3 +43461,168 @@ f3b0b52cb0e428168f2b909e753bab597908fd177be77d06ac761d4ce017be06,2026-08-31T11:2
 NEGATIVES: Role is not relevant to the candidate's target (Data Analyst); hard exclusion due to lack of analytical duties.
 HARD BLOCK: Role is purely: DevOps / Infrastructure / Cloud Engineering / Mobile / Pure Frontend / Pure Backend with zero analytics duties.
 SCORE: 1 — not a relevant role for the candidate."
+bc74f60ba643492b9b4bfbb005df40f05826856309d2d7232272c2ccaf1c2a64,2026-09-01T09:47:04.220380+00:00,Data scientist / AI engineer,Parallel Wireless,Kfar Saba,False,"[""Machine Learning"", ""Data Analysis"", ""AI"", ""Deep Learning"", ""Software Development""]",,https://secrethunter.io/jobz/bedad65687?utm_source=telegram,"**Data scientist / AI engineer**
+Parallel Wireless
+Kfar Saba
+31/8/26
+ㅤ
+__Machine Learning, Data Analysis, AI, Deep Learning, Software Development, Problem-solving, Teamwork__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/bedad65687?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",7,2,"POSITIVES: Relevant field (AI/engineering), location in Israel. NEGATIVES: Title includes 'Data scientist' which is not a primary target role; mid-level designation is a mild negative. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 2 — hard exclusion due to title not aligning with candidate's target roles."
+eac3ddc70f369ec393cc28d7d10c94582b93483c648eb478fc77f4133e9029ba,2026-09-01T09:47:05.164689+00:00,Strategic market & competitor analyst,Paragon,Tel Aviv,False,[],,https://secrethunter.io/jobz/bc2aa44128?utm_source=telegram,"**Strategic market & competitor analyst**
+Paragon
+Tel Aviv
+31/8/26
+ㅤ
+__Market analysis, Competitor analysis, Strategic thinking, Research, Communication, Problem solving, Attention to detail__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/bc2aa44128?utm_source=telegram
+ㅤ
+--
+Search jobs:
+https://secrethunter.io/search?utm_source=telegram",9,1,POSITIVES: Preferred city. NEGATIVES: Senior title is a hard exclusion. HARD BLOCK: Senior. SCORE: 1 — the senior title disqualifies the candidate.
+e74157a0c3a5858ffa3646dd2fc9161ccfd02bd6a9cd10cc28106b6416420991,2026-09-01T09:47:05.461517+00:00,Financial Solutions & Business Analyst,REAL,Tel Aviv,False,"[""SaaS"", ""AI Execution Platform""]",,https://apply.workable.com/real-dev-inc/j/9188839C3E,"🆕 **Financial Solutions & Business Analyst**
+
+💼 **Company:** REAL
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** About REAL REAL is building an AI Execution Platform for enterprise real estate organizations. Our platform transforms fragmented business and financial data into connected intelligence, enabling.......
+
+---------------
+
+📊 **Requirements:** What We’re Looking For 2–5 years of experience in one or more of the following: Product / Business / Financial Analyst Technical Product Support Solutions Consultant Product / FinTech Operations Implementation Consultant Experience working with SaaS ....
+
+[**View full position listing and submit CV**](https://apply.workable.com/real-dev-inc/j/9188839C3E)",8,5,"POSITIVES: Exact location, relevant analytical role, AI and SaaS experience aligns with candidate's domain preferences. NEGATIVES: Requires 2–5 years of experience, which is a mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with some experience requirement, but still a good match."
+2bfaf3c2d339fac32a2741931b06349afdf5bd2ead709519134d52a327a369d2,2026-09-01T09:47:05.754731+00:00,Data & BI Engineer,Rhino Federated Computing,Tel Aviv,False,"[""Data Engineering"", ""BI"", ""Data Pipelines"", ""Dashboards""]",,https://ats.rippling.com/rhino-federated-computing-jobs/jobs/93bf5386-d691-40c9-ab43-ec454afda7c0,"🆕 **Data & BI Engineer**
+
+💼 **Company:** Rhino Federated Computing
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** We're looking for a Data & BI Engineer to build and own our data platform from the ground up. You'll design the architecture, implement scalable data pipelines, and deliver trusted dashboards and.......
+
+---------------
+
+📊 **Requirements:** About the role We're looking for a Data & BI Engineer to build and own our data platform from the ground up. You'll design the architecture, implement scalable data pipelines, and deliver trusted dashboards and analytics that drive business decisions....
+
+[**View full position listing and submit CV**](https://ats.rippling.com/rhino-federated-computing-jobs/jobs/93bf5386-d691-40c9-ab43-ec454afda7c0)",7,4,"POSITIVES: Located in Tel Aviv, relevant BI work, full-time position. NEGATIVES: Requires 4 years of experience — significant penalty. HARD BLOCK: NONE. SCORE: 4 — relevant role but penalized for experience requirement."
+c1876b1767187c3a3c6488e7221390364d423b7efdcf589ccdf4fc6740a75b66,2026-09-01T09:47:06.431907+00:00,Data Analyst,Autofleet Systems Ltd.,Tel Aviv,False,[],,https://apply.workable.com/j/144092745E,"🆕 **Data Analyst**
+
+💼 **Company:** Autofleet Systems Ltd.
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 4 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** At Autofleet, we're transforming the way fleets operate by leveraging data, automation, and AI to power smarter mobility. As a Data Analyst, you'll play a key role in shaping product strategy and.......
+
+---------------
+
+📊 **Requirements:** 5+ years of experience in Product Analytics, Data Analytics, Analytics Engineering, or a similar analytical role, with a track record of owning product analytics end to end. Hands-on experience building product analytics infrastructure from scratch, ....
+
+[**View full position listing and submit CV**](https://apply.workable.com/j/144092745E)",7,3,"POSITIVES: Exact title, preferred city, relevant analytical role. NEGATIVES: 5+ years required — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant analytical work, penalized 2–3 points for experience requirement."
+d2d8cf8920546bc01460764e7c3bb7f304ab1486b5a5d8fdd0b0b535792ebba9,2026-09-01T09:47:06.716650+00:00,"Senior Director, Credit Risk and Analytics",Deel,Israel,False,[],,https://www.linkedin.com/jobs/view/4456508374/,"🆕 **Senior Director, Credit Risk and Analytics**
+
+💼 **Company:** Deel
+🔍 **Location:** Israel
+🧑 **Experience required:** 15 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Who We Are Is What We Do. Deel is the all-in-one payroll and HR platform for global teams. Our vision is to unlock global opportunity for every person, team, and business. Built for the way the world.......
+
+---------------
+
+📊 **Requirements:** what you bring to it. Some things you'll enjoy Stock grant opportunities dependent on your role, employment status and location Additional perks and benefits based on your employment status and country Optional flexible working office membership, wit....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4456508374/)",9,1,"POSITIVES: Located in Israel.
+NEGATIVES: Senior title, 15 years of experience required — both are hard exclusions.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to seniority."
+76049448b946aa11df9ded97df7ef29614f80d93f13ac81af93efe87084d0493,2026-09-01T09:47:07.004190+00:00,מנהל.ת אתר- מאמן שריון,Elbit Systems,Ashdod,False,[],,https://elbitsystemscareer.com/jobs/?jobId=20980,"🆕 **מנהל.ת אתר- מאמן שריון**
+
+💼 **Company:** Elbit Systems
+🔍 **Location:** Ashdod
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** אנחנו מחפשים לאתר החברה באשדוד דרוש.ה מנהל.ת אתר סימולטור שריון. אם את.ה מחפש.ת תפקיד ניהולי עם משמעות אמיתית, שבו את.ה מוביל.ה עשייה טכנולוגית בשטח, מנהל.ה צוות מקצועי ומהווה את הפנים של אלביט מול.......
+
+---------------
+
+📊 **Requirements:** אנחנו מחפשים לאתר החברה באשדוד דרוש.ה מנהל.ת אתר סימולטור שריון. אם את.ה מחפש.ת תפקיד ניהולי עם משמעות אמיתית, שבו את.ה מוביל.ה עשייה טכנולוגית בשטח, מנהל.ה צוות מקצועי ומהווה את הפנים של אלביט מול לקוח צבאי – זו ההזדמנות שלך. בוא.י להיות חלק מעולם ה....
+
+[**View full position listing and submit CV**](https://elbitsystemscareer.com/jobs/?jobId=20980)",9,1,"POSITIVES: None.
+NEGATIVES: Job title contains 'מנהל.ת' (Manager) — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to managerial title."
+76d9e0b2562de28ef357cef8d86d0a56a107036d6e67c525e5ad5f2727b1b840,2026-09-01T09:47:07.288709+00:00,Technical Account Manager,Perion,Tel Aviv,False,[],,https://www.linkedin.com/jobs/view/4461229432/,"🆕 **Technical Account Manager (IL)**
+
+💼 **Company:** Perion
+🔍 **Location:** Tel Aviv
+🧑 **Experience required:** 2 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** Perion is a global advertising technology company delivering solutions to the biggest brands and publishers around the globe across search, social media and display, video, CTV, and programmatic.......
+
+---------------
+
+📊 **Requirements:** What we're looking for 2-4 years of Proven experience in account management, publisher success, or business development at a media company, agency, or publisher Previous experience working with in programmatic space, including familiarity with header....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4461229432/)",9,1,POSITIVES: Located in preferred city. NEGATIVES: Role is not relevant to candidate's target (Technical Account Manager). HARD BLOCK: Role is outside candidate's target roles. SCORE: 1 — hard exclusion due to irrelevant role type.
+cc5b033229b5b51c13c9a8f642452c4220755f8e1fbdc3d5532952295b228e43,2026-09-01T09:47:07.567386+00:00,GNC & Simulation Engineer,DRS RADA Technologies,Netanya,False,[],,https://www.linkedin.com/jobs/view/4461075884/,"🆕 **GNC & Simulation Engineer**
+
+💼 **Company:** DRS RADA Technologies
+🔍 **Location:** Netanya
+🧑 **Experience required:** 3 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** DRS RADA Technologies, a leading defense company developing and manufacturing life-saving radar systems, is seeking a GNC & Simulation Engineer. Position Overview We are seeking an analytical and.......
+
+---------------
+
+📊 **Requirements:** Requirements: Education: B.Sc./M.Sc. in Aerospace Engineering, Mechanical Engineering (with a robotics/control focus), Electrical Engineering, or Physics. Experience: 3+ years of experience in GNC development and dynamic modelling for missiles, loite....
+
+[**View full position listing and submit CV**](https://www.linkedin.com/jobs/view/4461075884/)",9,1,"POSITIVES: None.
+NEGATIVES: Role is located outside Israel, requires 3+ years of experience.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 1 — hard exclusion due to location."
+cc9b7c720de9a3a902c1a5d7bf2a317cabec488c6182bc64b83d7c2b2186ea87,2026-09-01T09:47:07.846260+00:00,Data Analyst,Comblack,Jerusalem,False,[],,https://comblack.co.il/careers/position-24870/,"🆕 **Data Analyst**
+
+💼 **Company:** Comblack
+🔍 **Location:** Jerusalem
+🧑 **Experience required:** 6 yrs
+📁 **Position:** Full Time
+
+---------------
+
+📄 **Description:** חברת Comblack מגייסת Data Analyst לארגון יציב וגדול בשפלה! התפקיד כולל שליפת נתונים ממסדי נתונים גדולים, ניתוח מגמות בשיטות סטטיסטיות, גיבוש תובנות עסקיות והמלצות לתהליכים ומוצרים, העברת דרישות.......
+
+---------------
+
+📊 **Requirements:** חברת Comblack מגייסת Data Analyst לארגון יציב וגדול בשפלה! התפקיד כולל שליפת נתונים ממסדי נתונים גדולים, ניתוח מגמות בשיטות סטטיסטיות, גיבוש תובנות עסקיות והמלצות לתהליכים ומוצרים, העברת דרישות לצוותי הפיתוח והמוצר וניהול מידע שוטף. מה אנחנו מחפשים? ....
+
+[**View full position listing and submit CV**](https://comblack.co.il/careers/position-24870/)",7,3,"POSITIVES: Relevant role as Data Analyst, located in Israel. NEGATIVES: 6 years of experience required — significant penalty. HARD BLOCK: NONE. SCORE: 3 — relevant role but penalized for high experience requirement."
