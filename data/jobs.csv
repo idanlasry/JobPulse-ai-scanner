@@ -45868,3 +45868,79 @@ bfd0f2b0e0d4b0a0fb0decc85ea34c3c802387c41058bf99c57b0595816f6f32,2026-09-13T10:0
 NEGATIVES: Senior title, 5 years experience required — both significant penalties.
 HARD BLOCK: Job TITLE contains: Senior.
 SCORE: 1 — hard exclusion due to seniority in title."
+330d9c8d1c862254b1a00bb05c5ef25866d3b6e1d0f77fe666dc392764c43fa6,2026-09-14T10:21:23.899145+00:00,Data engineer,FINQ ISRAEL,Tel Aviv,False,"[""Python"", ""Airflow"", ""SQL"", ""Data Modeling"", ""Data Warehousing""]",,https://secrethunter.io/jobz/e0fb8292b9?utm_source=telegram,"**Data engineer**
+FINQ ISRAEL
+Tel Aviv
+14/9/26
+ㅤ
+__Python, Airflow, SQL, Data Modeling, Data Warehousing, Teamwork, Communication__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/e0fb8292b9?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Job title is Data Engineer, which is not relevant; mid-level role is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to the job title."
+7d6d9b423b27b4ec3bb472989747bd2678b4e4a870d2361c6176af870c7dc323,2026-09-14T10:21:24.933102+00:00,Senior data scientist,Rafael Advanced Defense Systems,Karmiel,False,"[""Python"", ""AI"", ""Machine Learning"", ""Deep Learning"", ""NLP""]",,https://secrethunter.io/jobz/f0da5f7681?utm_source=telegram,"**Senior data scientist**
+Rafael Advanced Defense Systems
+Karmiel
+13/9/26
+ㅤ
+__Python, AI, Machine Learning, Deep Learning, NLP, Research, Problem solving__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/f0da5f7681?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+38a00eda2a67a7154fac912c1beb0b593e695f888bfbe824958b5d21f20e924a,2026-09-14T10:21:25.279203+00:00,Bi analyst,ClixScale,Ramat Gan,True,"[""SQL"", ""BI tools"", ""Data analysis""]",,https://secrethunter.io/jobz/4d9a468ec7?utm_source=telegram,"**Bi analyst**
+ClixScale
+Ramat Gan
+13/9/26
+ㅤ
+__SQL, BI tools, Data analysis, Communication, Flexibility, Teamwork__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/4d9a468ec7?utm_source=telegram
+ㅤ
+--
+Never apply before checking our referrers list:
+https://secrethunter.io/referers?utm_source=telegram",9,9,"POSITIVES: Exact title, junior, preferred city, SQL and BI tools are relevant to candidate skills. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+1a99586cb6dc5956f4b8884887056cf4f5b9a29f00c2138c82ba28be298844dd,2026-09-14T10:21:25.614621+00:00,System Analyst - CRM Dynamics 365,MalamTeam,Rishon Lezion,False,"[""CRM Dynamics"", ""System Analysis""]",,https://secrethunter.io/jobz/f396645042?utm_source=telegram,"**System analyst - crm dynamics 365**
+MalamTeam
+Rishon Lezion
+13/9/26
+ㅤ
+__system analysis, CRM Dynamics, client relations, teamwork, analytical thinking__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/f396645042?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",7,2,"POSITIVES: Relevant analytical role, located in Israel. NEGATIVES: Mid-level position — significant penalty. HARD BLOCK: NONE. SCORE: 2 — mid-level role is not acceptable for the candidate."
+9a6c9bc9dc4dd128fe46338dd4b387ef53b101468a050c9b51f0ad10fb79cbfd,2026-09-14T10:21:25.960353+00:00,"Data scientist, data & AI",MER Group,Oryehuda,True,"[""Python"", ""Data analysis"", ""AI"", ""LLMs"", ""NLP""]",,https://secrethunter.io/jobz/9c7f16e328?utm_source=telegram,"**Data scientist, data & AI**
+MER Group
+Oryehuda
+13/9/26
+ㅤ
+__Python, Data analysis, AI, LLMs, NLP, Fast learner, Analytical thinking__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/9c7f16e328?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",7,5,"POSITIVES: Junior role, Python and data analysis are relevant skills, company is in Israel. NEGATIVES: Data scientist title is not the primary target role; location is not a preferred city. HARD BLOCK: NONE SCORE: 5 — relevant work despite title; junior status and tech stack overlap provide a moderate fit."
