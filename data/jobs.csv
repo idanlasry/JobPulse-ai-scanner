@@ -45944,3 +45944,99 @@ https://secrethunter.io/jobz/9c7f16e328?utm_source=telegram
 --
 Post a job 👇
 https://hire.secrethunter.io?utm_source=telegram",7,5,"POSITIVES: Junior role, Python and data analysis are relevant skills, company is in Israel. NEGATIVES: Data scientist title is not the primary target role; location is not a preferred city. HARD BLOCK: NONE SCORE: 5 — relevant work despite title; junior status and tech stack overlap provide a moderate fit."
+bd36ead11f80e6e5f22ac8b59eb72a7499ff714f5b686669465bea3f0af27c7c,2026-09-15T09:48:07.478162+00:00,Staff Data Scientist,ServiceNow,Tel Aviv,False,"[""Machine Learning"", ""Generative AI"", ""Python"", ""LLM"", ""Cybersecurity""]",,https://secrethunter.io/jobz/4ccb472688?utm_source=telegram,"**Staff data scientist (armis)**
+ServiceNow
+Tel Aviv
+14/9/26
+ㅤ
+__Machine Learning, Generative AI, Python, LLM, Cybersecurity, Teamwork, Ownership__
+ㅤ
+Techlead
+ㅤ
+https://secrethunter.io/jobz/4ccb472688?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,5,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Staff title is a hard exclusion; role is not relevant to candidate's target.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to 'Staff' in the title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+c2edbfb5ecbad29117ef0ddb7c27bd29fbda33a11144337831c37a73d6577ec0,2026-09-15T09:48:08.254451+00:00,Payment data analyst,Sunflower,Tel Aviv,True,"[""SQL"", ""Python"", ""BI Tools""]",,https://secrethunter.io/jobz/2f216c9fbd?utm_source=telegram,"**Payment data analyst**
+Sunflower
+Tel Aviv
+14/9/26
+ㅤ
+__SQL, Data Analysis, Python, BI Tools, Analytical Thinking, Detail-oriented, Problem-solving__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/2f216c9fbd?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",9,9,"POSITIVES: Exact title, junior role, preferred city, relevant tech stack including SQL and Python. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+e1f47f9761f39b4ec8ffc0480875989dd251c999e9805dc4965a2eeebb1b0efe,2026-09-15T09:48:08.920594+00:00,Core banking systems analyst,Moveo Source,Modiin,False,"[""Mainframe"", ""COBOL"", ""DB2"", ""SQL Server"", ""HLD/DLD"", ""Business Analysis""]",,https://secrethunter.io/jobz/f7037978c4?utm_source=telegram,"**Core banking systems analyst**
+Moveo Source
+Modiin
+14/9/26
+ㅤ
+__Mainframe, COBOL, DB2, SQL Server, HLD/DLD, Business Analysis, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/f7037978c4?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+aea029e61038f5a00841ef61c6dc33f40e5a35abeada0381ff12e257f04bf384,2026-09-15T09:48:09.603548+00:00,Senior data analyst,Holisto,Rishon Lezion,False,"[""SQL"", ""Python"", ""BI Tools"", ""Data Analysis""]",,https://secrethunter.io/jobz/7008535814?utm_source=telegram,"**Senior data analyst**
+Holisto
+Rishon Lezion
+14/9/26
+ㅤ
+__SQL, Python, BI Tools, Data Analysis, Communication, Stakeholder Mgmt, Execution__
+ㅤ
+__German__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/7008535814?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+3c01b98e2370635b3c857b502aa757d047091b8bf1ac547243d44c8949c51689,2026-09-15T09:48:10.266916+00:00,Commission analyst,AppsFlyer,Herzliya,False,"[""Excel"", ""Data analysis""]",,https://secrethunter.io/jobz/a5669c68c5?utm_source=telegram,"**Commission analyst**
+AppsFlyer
+Herzliya
+14/9/26
+ㅤ
+__Excel, Data analysis, Attention to detail, Communication, Ownership, Problem-solving__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/a5669c68c5?utm_source=telegram
+ㅤ
+--
+Get our Android app:
+https://play.google.com/store/apps/details?id=io.secrethunter&utm_source=telegram",7,5,"POSITIVES: Relevant analytical role, located in preferred city, data analysis is a primary skill. NEGATIVES: Mid-level designation — mild penalty. HARD BLOCK: NONE SCORE: 5 — relevant role with a mild penalty for seniority."
+fafdf4ba53e7454ba933d4736ed4b3957e2b69bba1b470e01b4c1b05bd545d02,2026-09-15T09:48:10.540337+00:00,Data infrastructure lead,,Tel Aviv,False,"[""MySQL"", ""SingleStore"", ""Snowflake"", ""Airflow"", ""Python"", ""AWS""]",,https://secrethunter.io/jobz/3a88048e7d?utm_source=telegram,"**Data infrastructure lead**
+
+Tel Aviv
+14/9/26
+ㅤ
+__Data Infrastructure, MySQL, SingleStore, Snowflake, Airflow, Python, AWS__
+ㅤ
+Senior, Techlead
+ㅤ
+https://secrethunter.io/jobz/3a88048e7d?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,1,"POSITIVES: Located in Tel Aviv, Python is part of the tech stack. NEGATIVES: Senior title and Techlead designation are hard exclusions. HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff. SCORE: 1 — hard exclusion due to seniority in title."
