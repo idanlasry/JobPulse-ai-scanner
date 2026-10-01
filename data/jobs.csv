@@ -47721,3 +47721,61 @@ ffb12590f480db8804bfed9d7b1ad9d95db1ae69054e8b327d53ab1373646acb,2026-09-30T10:5
 NEGATIVES: Title contains 'Team Leader' which indicates a senior role; location is outside preferred area (Haifa).
 HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
 SCORE: 1 — hard exclusion due to seniority in title."
+0d1a713b4ac3e6fd8f9f3e3f6a25a324392a5821f8200edf594eb2d5c335b9ff,2026-10-01T11:24:31.218982+00:00,Social media & marketing analyst,Zota,Tel Aviv,False,"[""Data Analysis"", ""AI Tools"", ""Social Media Management""]",,https://secrethunter.io/jobz/f33024748e?utm_source=telegram,"**Social media & marketing analyst**
+Zota
+Tel Aviv
+30/9/26
+ㅤ
+__Social Media Mgmt, Content Creation, Data Analysis, AI Tools, Community Engagement, Communication, Self-motivated__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/f33024748e?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",7,4,"POSITIVES: Location is preferred (Tel Aviv), role involves data analysis which aligns with candidate skills. NEGATIVES: Mid-level designation is a mild penalty. HARD BLOCK: NONE SCORE: 4 — relevant role but penalized for mid-level designation."
+83ff262d7c3b78b93f4bfb8c5459da2eea06c76f52149bda7f97a4fe194a718e,2026-10-01T11:24:32.302622+00:00,Data insights & analytics lead,Lumenis,Tel Aviv,False,"[""SQL"", ""AWS"", ""QuickSight"", ""BI Platforms"", ""Data Visualization""]",,https://secrethunter.io/jobz/d93ab26b9d?utm_source=telegram,"**Data insights & analytics lead**
+Lumenis
+Tel Aviv
+30/9/26
+ㅤ
+__SQL, AWS, QuickSight, BI Platforms, Data Visualization, Business Acumen, Stakeholder Mgmt__
+ㅤ
+Senior, Techlead
+ㅤ
+https://secrethunter.io/jobz/d93ab26b9d?utm_source=telegram
+ㅤ
+--
+Checkout our Telegram channels:
+https://secrethunter.io/telegram?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack includes SQL.
+NEGATIVES: Senior title — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to senior title."
+6ad87c0c50c7e9e384de554609d4e2bb5e0936f42011416ef3cb9a86c24d657b,2026-10-01T11:24:33.122832+00:00,Senior power bi developer,D-Fend Solutions,Raanana,False,"[""Power BI"", ""SQL"", ""Data Modeling"", ""DAX"", ""Azure DW""]",,https://secrethunter.io/jobz/3d3b061a58?utm_source=telegram,"**Senior power bi developer**
+D-Fend Solutions
+Raanana
+30/9/26
+ㅤ
+__Power BI, SQL, Data Modeling, DAX, Azure DW, Executive Presence, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/3d3b061a58?utm_source=telegram
+ㅤ
+--
+Find a job faster with our premium:
+https://secrethunter.io/upgrade?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to seniority."
+86ecb0ff59bf0ec63ede3d187971a006de8ed854dce9e2eb985442a9fa40e564,2026-10-01T11:24:33.893578+00:00,Product Data Analyst,Plarium,Herzliya,True,[],,https://company.plarium.com/en/career/product-data-analyst-56-1268/,"📬 **Data Analytics & BI** — 8 new roles
+
+• [Sr. Product Analyst](https://doubleverify.wd5.myworkdayjobs.com/en-GB/DV_Careers/job/Tel-Aviv-Israel/Sr-Product-Analyst_JR00001076) — DoubleVerify · Tel Aviv
+• [Private Journey and Monetization Lead](https://www.linkedin.com/jobs/view/4471982528/) — Yad2 · Petah Tikva
+• [Senior Product Engineer](https://www.linkedin.com/jobs/view/4467284044/) — XSight Labs · Givatayim
+• [E-commerce Operations Manager](https://www.comeet.com/jobs/mayven/0B.002/e-commerce-operations-manager/94.275) — Mayven · Tel Aviv
+• [Project Manager - Global Internal Audit Strategy & Planning Team (Maternity Leave Cover)](https://www.careers.teva/careers/job/563602813635567) — Teva · Tel Aviv
+• [Product Data Analyst](https://company.plarium.com/en/career/product-data-analyst-56-1268/) — Plarium · Herzliya
+• [Head of Technology](https://www.linkedin.com/jobs/view/4471721963/) — Amdocs · Center District
+• [Sr Data Analyst](https://paloaltonetworks.wd5.myworkdayjobs.com/en-GB/panwexternalcareers/job/Office---Israel---Petach-Tikva/Sr-Data-Analyst_JR-022304?locations=45eb6188f3f71001f086499c91d00000&locations=45eb6188f3f71001f08639efd22e0000&locations=bafc965434591001f0472e9b5bfa0000) — CyberArk · Petah Tikva",8,7,"POSITIVES: Relevant title (Data Analyst), located in Herzliya, potential for analytics work. NEGATIVES: No specific tech stack mentioned. HARD BLOCK: NONE SCORE: 7 — strong match with location and title, but lack of tech stack details prevents a higher score."
