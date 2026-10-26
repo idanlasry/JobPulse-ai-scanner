@@ -50079,3 +50079,67 @@ https://secrethunter.io/upgrade?utm_source=telegram",9,1,POSITIVES: Location is 
 NEGATIVES: Role is located outside Israel — hard exclusion.
 HARD BLOCK: Role is located OUTSIDE ISRAEL.
 SCORE: 1 — hard exclusion due to location."
+002c269be70be231711c843d2d1581059fbf5cd7b23c6c72e963c64d293ee3d7,2026-10-26T10:47:34.133041+00:00,Junior data scientist,Rafael Advanced Defense Systems,Karmiel,True,"[""Python"", ""Machine Learning"", ""Deep Learning"", ""Generative AI"", ""LLMs""]",,https://secrethunter.io/jobz/c4004118fe?utm_source=telegram,"**Junior data scientist**
+Rafael Advanced Defense Systems
+Karmiel
+26/10/26
+ㅤ
+__Python, Machine Learning, Deep Learning, Generative AI, LLMs, analytical thinking, independent learning__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/c4004118fe?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",8,2,"POSITIVES: Junior role, Python is a primary candidate skill. NEGATIVES: Location is outside Israel (Karmiel). HARD BLOCK: Role is located OUTSIDE ISRAEL. SCORE: 2 — hard exclusion due to location."
+28d81ed6e9fd64ca429613986d0844e275f96dd386ba6201a1f2629a359351cd,2026-10-26T10:47:34.889826+00:00,"Senior manager, AI & data solutions engineering",Palo Alto Networks,Petahtikva,False,"[""Generative AI"", ""MLOps"", ""Data Engineering"", ""AI Architecture"", ""Cloud Computing"", ""Cybersecurity""]",,https://secrethunter.io/jobz/d443b84618?utm_source=telegram,"**Senior manager, AI & data solutions engineering**
+Palo Alto Networks
+Petahtikva
+25/10/26
+ㅤ
+__Generative AI, MLOps, Data Engineering, Leadership, AI Architecture, Cloud Computing, Cybersecurity__
+ㅤ
+Senior, Director
+ㅤ
+https://secrethunter.io/jobz/d443b84618?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title — hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to senior title."
+f203b66fd9e7329a4667e6cc1699a84b462ea57b273e3226c7b35a03b1ebb24d,2026-10-26T10:47:35.494959+00:00,Data analyst lead,Mixtiles,Tel Aviv,False,"[""SQL"", ""Python"", ""Data Analysis"", ""Business Partnering"", ""Storytelling"", ""Proactive"", ""AI""]",,https://secrethunter.io/jobz/b81cc83f84?utm_source=telegram,"**Data analyst lead, easyplant**
+Mixtiles
+Tel Aviv
+25/10/26
+ㅤ
+__SQL, Python, Data Analysis, Business Partnering, Storytelling, Proactive, AI__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/b81cc83f84?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack includes SQL and Python.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+c7c020d41a28f78185f5f309ad96994ca6e3e5c6d8f0733ed955e146a11a4fcd,2026-10-26T10:47:36.086601+00:00,Data Analyst,Global-e,Petah Tikva,True,[],,https://www.global-e.com/careers/b5-47c/,"‎📬 **Data Analytics & BI** — 5 new roles
+
+‎🔹 [Data Analyst - Fulfillment](https://www.global-e.com/careers/b5-47c/)
+‎🏢 Global-e · 📍 Petah Tikva · 🧑 2+ years
+
+‎🔹 [Data Analyst Lead, easyplant](https://www.mixtiles.com/positions/8915138002?gh_jid=8915138002)
+‎🏢 Mixtiles · 📍 Tel Aviv · 🧑 2+ years
+
+‎🔹 [DATA ANALYST](https://careers.eladsoft.com/jobs/1008069/)
+‎🏢 Elad Systems · 📍 Lod · 🧑 3+ years
+
+‎🔹 [Senior BI Engineer](https://job-boards.greenhouse.io/similarweb/jobs/8312429)
+‎🏢 SimilarWeb · 📍 Tel Aviv · 🧑 5+ years
+
+‎🔹 [Senior Competitive Intelligence Analyst](https://filigran.io/careers/1c14bbdd-6209-44eb-83f9-319a247ac944)
+‎🏢 Filigran · 📍 Israel",7,6,"POSITIVES: Exact title, located in Israel, relevant analytical role. NEGATIVES: 2+ years required — mild penalty. HARD BLOCK: NONE SCORE: 6 — relevant role with a mild penalty for experience requirement."
