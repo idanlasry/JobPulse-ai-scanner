@@ -52004,3 +52004,123 @@ SCORE: 1 — role does not align with candidate's target positions."
 
 ‎🔹 [Senior AI Data Analyst](https://www.linkedin.com/jobs/view/4490318893/)
 ‎🏢 Aidoc · 📍 Tel Aviv · 🧑 5+ years",9,6,"POSITIVES: Exact title, preferred city, relevant analytical role. NEGATIVES: 3+ years required — significant penalty. HARD BLOCK: NONE. SCORE: 6 — relevant analytical work, penalized for experience requirement."
+324d5e1371e066120939c551c36b7ad8264c22532c495bfe42c08b8ede8d04ae,2026-11-15T12:31:29.443008+00:00,Bi & data analyst student,ThetaRay,,True,"[""SQL""]",,https://secrethunter.io/jobz/6c01c5afb4?utm_source=weekly_channel_digest,"Jobs posted last week:
+
+**Financial systems analyst** - abra_rnd
+https://secrethunter.io/jobz/fe4d8def60?utm_source=weekly_channel_digest
+
+**Bi & data analyst student** - ThetaRay
+https://secrethunter.io/jobz/6c01c5afb4?utm_source=weekly_channel_digest
+
+**Sql server dba** - appsforce
+https://secrethunter.io/jobz/e29fa5a8a3?utm_source=weekly_channel_digest
+
+**Data & signal analysis scientist - q** - Apple
+https://secrethunter.io/jobz/691f180e53?utm_source=weekly_channel_digest
+
+**Sodastream: finance analyst** - PepsiCo
+https://secrethunter.io/jobz/f1e912a0ea?utm_source=weekly_channel_digest
+
+**Product economics & business performance analyst** - travelbooster
+https://secrethunter.io/jobz/a819bf46f2?utm_source=weekly_channel_digest
+
+**Senior data scientist - platform team** - CaliAlfa (Previously Alfabet)
+https://secrethunter.io/jobz/458c2e7325?utm_source=weekly_channel_digest
+
+Find a job faster with our premium subscription:
+https://secrethunter.io/upgrade?utm_source=weekly_channel_digest",8,9,"POSITIVES: Exact title aligns with candidate's target role, likely junior position, SQL is a primary candidate skill. NEGATIVES: None. HARD BLOCK: NONE SCORE: 9 — strong match with all signals aligning."
+b755e0c1f02ef48331e8fb4db4bf19f85d781019549168408353408504424029,2026-11-15T12:31:30.296485+00:00,Senior software engineer - data platform,nextta,Tel Aviv,False,"[""Java"", ""Python"", ""Flink"", ""Kafka"", ""Kubernetes"", ""SQL"", ""Communication""]",,https://secrethunter.io/jobz/b8b21c709c?utm_source=telegram,"**Senior software engineer - data platform**
+nextta
+Tel Aviv
+14/11/26
+ㅤ
+__Java, Python, Flink, Kafka, Kubernetes, SQL, Communication__
+ㅤ
+Senior, Mid
+ㅤ
+https://secrethunter.io/jobz/b8b21c709c?utm_source=telegram
+ㅤ
+--
+Post a job 👇
+https://hire.secrethunter.io?utm_source=telegram",9,1,"POSITIVES: Located in Tel Aviv.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+5e45e56b7632d196385a2ea4e79fb1092af3209c28e9ae1e60feed5c181575d8,2026-11-15T12:31:30.562895+00:00,Senior data engineer,BetterCharge,Tel Aviv,False,"[""Python"", ""SQL"", ""AWS"", ""Spark"", ""Data Modeling""]",,https://secrethunter.io/jobz/d5e268bc16?utm_source=telegram,"**Senior data engineer**
+BetterCharge
+Tel Aviv
+14/11/26
+ㅤ
+__Python, SQL, AWS, Spark, Data Modeling, Teamwork, Communication__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/d5e268bc16?utm_source=telegram
+ㅤ
+--
+Make your CV shine:
+https://secrethunter.io/cv-agent?utm_source=telegram",9,1,"POSITIVES: Location is preferred (Tel Aviv). 
+NEGATIVES: Senior title is a hard exclusion. 
+HARD BLOCK: Job TITLE contains: Senior. 
+SCORE: 1 — hard exclusion due to seniority."
+e2506fe3547ed17137fb417c3ac770b39b3b902739f431c64e5f49c7d99a4346,2026-11-15T12:31:30.897017+00:00,"Senior data scientist, clinical AI",MedBAR.ai,Tel Aviv,False,"[""LLM"", ""Data Science"", ""Python""]",,https://secrethunter.io/jobz/46e2fa8f4c?utm_source=telegram,"**Senior data scientist, clinical AI**
+MedBAR(.)ai
+Tel Aviv
+14/11/26
+ㅤ
+__LLM, Data Science, Python, Problem solving, Collaboration, Communication, Ownership__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/46e2fa8f4c?utm_source=telegram
+ㅤ
+--
+Checkout our WhatsApp groups:
+https://secrethunter.io/whatsapp?utm_source=telegram",9,5,"POSITIVES: Preferred city, relevant tech stack includes Python.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title.
+[POST-PROCESSING: Score raised to 5 — analytical LLM signals detected; score <= 3 over-penalized for this role type.]"
+b299e5c41f839c901a881110a9132677b923d6b9131ce3ae8f993b529327c152,2026-11-15T12:31:31.441666+00:00,Junior data scientist,BetterCharge,Tel Aviv,True,"[""Python"", ""SQL"", ""ML"", ""Data Analysis""]",,https://secrethunter.io/jobz/9be8d02263?utm_source=telegram,"**Junior data scientist**
+BetterCharge
+Tel Aviv
+14/11/26
+ㅤ
+__Python, SQL, ML, Data Analysis, Curiosity, Communication, Ownership__
+ㅤ
+Junior
+ㅤ
+https://secrethunter.io/jobz/9be8d02263?utm_source=telegram
+ㅤ
+--
+Get our iOS app:
+https://apps.apple.com/us/app/secret-hunter-jobs/id6757434186?utm_source=telegram",8,5,"POSITIVES: Junior title, preferred city, Python and SQL match candidate skills. NEGATIVES: Data Scientist title is not the primary target role; ML is a secondary skill. HARD BLOCK: NONE SCORE: 5 — relevant work despite title; the presence of ML and Data Scientist title prevents a higher score."
+ee1ca5036e9f401549f2f60402301320b35f550301b7c769d0ac1f6aae6219d7,2026-11-15T12:31:31.705896+00:00,סטודנט.ית להנדסת תעשייה וניהול,Rafael,Kiryat Bialik,True,[],,https://career.rafael.co.il/job/14027/,"‎📬 **Junior roles** — 7 new roles
+
+‎🔹 [סטודנט.ית להנדסת תעשייה וניהול](https://career.rafael.co.il/job/14027/)
+‎🏢 Rafael · 📍 Kiryat Bialik
+
+‎🔹 [MSc Hardware Engineering Student](https://jobs.apple.com/en-us/details/200694237-6109/msc-hardware-engineering-student?team=HRDWR)
+‎🏢 Apple · 📍 Jerusalem
+
+‎🔹 [סטודנט.ית לבקרת תשתיות ואכלוס](https://career.rafael.co.il/job/14025/)
+‎🏢 Rafael · 📍 Kiryat Bialik
+
+‎🔹 [סטודנט.ית לניהול תצורה](https://career.rafael.co.il/job/14052/)
+‎🏢 Rafael · 📍 Kiryat Bialik
+
+‎🔹 [MSc Hardware Engineering Student](https://jobs.apple.com/en-us/details/200694237-1451/msc-hardware-engineering-student?team=HRDWR)
+‎🏢 Apple · 📍 Haifa
+
+‎🔹 [MSc Hardware Engineering Student](https://jobs.apple.com/en-us/details/200694237-0865/msc-hardware-engineering-student?team=HRDWR)
+‎🏢 Apple · 📍 Herzliya
+
+‎🔹 [MS.c/Ph.D Process Engineering Intern, Camera Modules](https://jobs.apple.com/en-us/details/200694502-0865/ms-c-ph-d-process-engineering-intern-camera-modules?team=HRDWR)
+‎🏢 Apple · 📍 Herzliya",7,2,"POSITIVES: Junior role, located in Israel.
+NEGATIVES: Title does not match candidate's target roles; no relevant tech stack mentioned.
+HARD BLOCK: NONE
+SCORE: 2 — while it's a junior role in Israel, the title and lack of relevant tech stack significantly lower the score."
+b40ff5e7bd346a2b1b16ba6ef66bcf709b219a0ce664c2d287d7a40bcd2c6108,2026-11-15T12:31:31.958266+00:00,BI Developer,SQLink,Tel Aviv,False,[],,https://www.drushim.co.il/job/39080609/ce61c2c3/,"‎📬 **Data Analytics & BI** — 1 new role
+
+‎🔹 [BI Developer](https://www.drushim.co.il/job/39080609/ce61c2c3/)
+‎🏢 SQLink · 📍 Tel Aviv · 🧑 5+ years",7,3,"POSITIVES: Relevant role type (BI Developer), located in preferred city (Tel Aviv). NEGATIVES: 5+ years required — significant penalty. HARD BLOCK: NONE — experience count is not a hard exclusion; minimum score is 2. SCORE: 3 — relevant role but penalized for experience requirement."
