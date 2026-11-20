@@ -52591,3 +52591,77 @@ https://secrethunter.io/saved-searches?utm_source=telegram",9,9,"POSITIVES: Exac
 
 ‎🔹 [בקר/ית לחדר בקרה תח""צ בחולון- מתאים לסטודנטים/יות](https://www.drushim.co.il/job/39128299/e49c5e4d/)
 ‎🏢 Bynet · 📍 Holon",8,6,"POSITIVES: Junior title aligns with candidate's target, relevant analytical role. NEGATIVES: Location in Netanya is acceptable but not preferred; no tech stack specified. HARD BLOCK: NONE SCORE: 6 — relevant role with mild penalties for location and lack of stack details."
+dce2b3b108791d09f88e40babcb5471d47666ff372c367b834c0d32f7dea17d0,2026-11-20T13:51:48.341441+00:00,Data Science Manager,sett,Tel Aviv,False,"[""Data Science"", ""ML Engineering"", ""Team Leadership"", ""Product Management"", ""Experimentation"", ""Communication"", ""Data Analysis""]",,https://secrethunter.io/jobz/e950afd1fa?utm_source=telegram,"**Data science manager**
+sett
+Tel Aviv
+20/11/26
+ㅤ
+__Data Science, ML Engineering, Team Leadership, Product Management, Experimentation, Communication, Data Analysis__
+ㅤ
+Director
+ㅤ
+https://secrethunter.io/jobz/e950afd1fa?utm_source=telegram
+ㅤ
+--
+Set up a saved search to get weekly updates:
+https://secrethunter.io/saved-searches?utm_source=telegram",9,1,"POSITIVES: Preferred city, relevant tech stack signals.
+NEGATIVES: Job title contains 'Manager' — hard exclusion.
+HARD BLOCK: Job title contains: Senior, Lead, Manager, Principal, Staff.
+SCORE: 1 — hard exclusion due to 'Manager' in the title."
+fe0573cb37bdcd494e236cc533057ed97b116b102d6531040324123d5632813f,2026-11-20T13:51:49.228782+00:00,Data engineer,Sela,Kiryatgat,False,"[""Python"", ""Apache Airflow"", ""Kubernetes"", ""Docker"", ""PostgreSQL"", ""SQL Server"", ""Oracle""]",,https://secrethunter.io/jobz/3eddb6209a?utm_source=telegram,"**Data enginee**
+Sela
+Kiryatgat
+19/11/26
+ㅤ
+__Python, Apache Airflow, Kubernetes, Docker, PostgreSQL, SQL Server, Oracle__
+ㅤ
+Mid
+ㅤ
+https://secrethunter.io/jobz/3eddb6209a?utm_source=telegram
+ㅤ
+--
+Search jobs:
+https://secrethunter.io/search?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Job title contains 'Data engineer', which is not relevant; location is Kiryatgat, which is acceptable but not preferred; mid-level is not a target seniority. 
+HARD BLOCK: Job TITLE contains: Data Engineer (pure infra).
+SCORE: 1 — hard exclusion due to job title."
+e80fcca0c3f6255be75e0cbbc392991a29ced810a1e66f25b2f9ef2de2835422,2026-11-20T13:51:50.039635+00:00,Senior data engineer,NielsenIQ,Yokneam Illit,False,"[""Python"", ""Scala"", ""AWS"", ""Azure"", ""GCP"", ""Spark"", ""Kafka""]",,https://secrethunter.io/jobz/1889e83b83?utm_source=telegram,"**Senior data engineer**
+NielsenIQ
+Yokneam Illit
+19/11/26
+ㅤ
+__Python, Scala, AWS, Azure, GCP, Spark, Kafka__
+ㅤ
+Senior
+ㅤ
+https://secrethunter.io/jobz/1889e83b83?utm_source=telegram
+ㅤ
+--
+Browse companies:
+https://secrethunter.io/companies?utm_source=telegram",9,1,"POSITIVES: None.
+NEGATIVES: Senior title is a hard exclusion.
+HARD BLOCK: Job TITLE contains: Senior.
+SCORE: 1 — hard exclusion due to senior title."
+3aa026fa3c0a6fc8f25a93814bd05b5cd87bef8046bcdee65f1f1a8aba3c52f0,2026-11-20T13:51:50.819618+00:00,Associate Project Analyst Professional- student position,Marvell,Petah Tikva,True,[],,https://marvell.wd1.myworkdayjobs.com/en-GB/MarvellCareers/job/Petah-Tikva/Associate-Project-Analyst-Professional--student-position_2605309?Country=084562884af243748dad7c84c304d89a,"‎📬 **Junior roles** — 3 new roles
+
+‎🔹 [Associate Project Analyst Professional- student position](https://marvell.wd1.myworkdayjobs.com/en-GB/MarvellCareers/job/Petah-Tikva/Associate-Project-Analyst-Professional--student-position_2605309?Country=084562884af243748dad7c84c304d89a)
+‎🏢 Marvell · 📍 Petah Tikva
+
+‎🔹 [Quality Assurance (QA) Student](https://www.linkedin.com/jobs/view/4491397449/)
+‎🏢 Kamada · 📍 South District
+
+‎🔹 [Entry-Level SDR (Sales Development Representative)](https://materialspace.io/careers/entry-level-sdr-sales-development-representative)
+‎🏢 Materialspace · 📍 Israel (Hybrid)",8,9,"POSITIVES: Junior role, acceptable location, relevant title variant (Analyst). NEGATIVES: No specific tech stack mentioned. HARD BLOCK: NONE SCORE: 9 — strong match for a junior analyst role in a preferred location."
+f866d1da6b435ba4f7ef925068ecd783dd783e2e5881e03f3e4e64726bb444d8,2026-11-20T13:51:51.589015+00:00,Algorithm Data Analyst - Objects Modeling,Mobileye,Jerusalem,True,[],,https://jobs.eu.lever.co/mobileye/a9dc5853-1894-40c8-ae40-0297a99f352e,"‎📬 **Data Analytics & BI** — 3 new roles
+
+‎🔹 [Algorithm Data Analyst - Objects Modeling](https://jobs.eu.lever.co/mobileye/a9dc5853-1894-40c8-ae40-0297a99f352e)
+‎🏢 Mobileye · 📍 Jerusalem
+
+‎🔹 [אנליסט/ית שיווקית לחברת דיגטל ידועה וגדולה](https://g-stat.com/jobs/%d7%90%d7%a0%d7%9c%d7%99%d7%a1%d7%98-%d7%99%d7%aa-%d7%a9%d7%99%d7%95%d7%95%d7%a7%d7%99%d7%aa-%d7%9c%d7%97%d7%91%d7%a8%d7%aa-%d7%93%d7%99%d7%92%d7%98%d7%9c-%d7%99%d7%93%d7%95%d7%a2%d7%94-%d7%95%d7%92/)
+‎🏢 G-STAT · 📍 Tel Aviv · 🧑 2+ years
+
+‎🔹 [Senior Business Analyst](https://www.comeet.com/jobs/lusha/73.00B/senior-business-analyst/37.57E)
+‎🏢 Lusha · 📍 Tel Aviv",7,2,"POSITIVES: Relevant role in data analytics.
+NEGATIVES: Location in Jerusalem — outside preferred area; no tech stack specified.
+HARD BLOCK: Role is located OUTSIDE ISRAEL.
+SCORE: 2 — hard exclusion due to location."
